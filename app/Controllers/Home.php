@@ -6,7 +6,7 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('layout/template.php');
+		return view('dokumentasi.php');
 	}
 
 	//--------------------------------------------------------------------
