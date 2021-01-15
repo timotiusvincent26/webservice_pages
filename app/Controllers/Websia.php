@@ -6,7 +6,7 @@ class Websia extends BaseController
 {
     public function index()
     {
-        $data['judulHalaman'] = 'Beranda';
+        $data['judulHalaman'] = 'Beranda WEBSIA';
         return view('kontenWebsia/beranda', $data);
     }
 }
