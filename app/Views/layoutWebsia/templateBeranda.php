@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/output.css">
-    <link rel="stylesheet" href="/css/add_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?php echo $judulHalaman ?></title>
 </head>
@@ -15,17 +13,20 @@
 
 <body>
     <!-- HEADER -->
-
+    <div class="w-full fixed bg-primary p-3" id="navbar">
+        <!-- Codingan Navbar Taruh Sini -->NAVBAR
+    </div>
+    <div class="h-10"></div>
     <!-- END HEADER -->
 
     <!-- CONTENT PAGE DI SINI -->
-    <div class="w-full px-24">
+    <div class="w-full">
         <?= $this->renderSection('content'); ?>
     </div>
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <div class="bg-primary w-full mt-6 pt-6 pb-3 lg:px-20 md:px-8 px-2">
+    <div class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2">
         <div class="flex flex-col md:flex-row md:justify-around ">
 
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
@@ -84,5 +85,7 @@
     </div>
     <!-- END FOOTER -->
 </body>
+
+<script type="text/javascript" src="/js/add.js"></script>
 
 </html>
