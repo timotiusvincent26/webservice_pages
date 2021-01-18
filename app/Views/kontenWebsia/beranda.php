@@ -1,15 +1,19 @@
-<?= $this->extend('layoutWebsia/templateBerandaLogin.php'); ?>
+<?= $this->extend('layoutWebsia/templateBeranda.php'); ?>
 
 <?= $this->section('content'); ?>
 
 <!-- Awal Carousel -->
 <!-- bisa taruh sini, img di bawah ganti aja gak pa pa -->
-<img class="w-full" src="/img/sampel.jpeg">
+<div class="w-full bg-primary">
+    <img class="w-full" src="/img/komponen 1.png">
+</div>
 <!-- Akhir Carousel -->
 
 <!-- Awal Sejarah Singkat HAISTIS -->
-<div class="flex md:flex-row flex-col-reverse my-8 md:py-8 pb-4 pt-0 lg:px-20 md:px-8 px-2">
-    <div class="md:w-2/3 block md:px-2 ">
+
+</div>
+<div class="flex md:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 px-2">
+    <div class="md:w-2/3 block md:px-2 md:py-8 pb-4">
         <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-black font-semibold">SEJARAH SINGKAT HAISTIS</div>
         <p class="text-primary text-justify md:text-left ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
@@ -19,19 +23,19 @@
         </p>
     </div>
 
-    <div class="md:w-1/3 w-full md:flex md:items-stretch">
-        <img class="lg:w-1/2 md:w-2/3 w-1/2 mb-2 md:mb-0  mx-auto md:self-center" src="/img/STISlogo.png" alt="" data-aos="fade-left">
+    <div class="md:w-1/3 w-full md:flex md:items-stretch bg-contain bg-no-repeat bg-right" style="background-image: url(/img/segitiga2.png)">
+        <img class="lg:w-1/2 md:w-2/3 w-1/2 mb-2 md:mb-0  mx-auto md:self-center" src="/img/logo PKL.png" alt="" data-aos="fade-left">
     </div>
 </div>
 <!-- Akhir Sejarah Singkat HAISTIS -->
 
 <!-- Awal Sejarah Singkat HAISTIS -->
-<div class="flex md:flex-row flex-col bg-primary my-8 md:py-8 pb-4 pt-0 lg:px-20 md:px-8 px-2">
-    <div class="md:w-1/3 w-full md:flex md:items-stretch">
+<div class="flex md:flex-row flex-col bg-primary my-8 pt-0 lg:px-20 md:px-8 px-2">
+    <div class="md:w-1/3 w-full md:flex md:items-stretch bg-contain bg-no-repeat bg-left" style="background-image: url(/img/segitiga1.png)">
         <img class="lg:w-2/3 md:w-11/12 w-10/12  mx-auto md:self-center" src="/img/logo_haisstis1.png" alt="" data-aos="fade-right">
     </div>
 
-    <div class="md:w-2/3 block md:px-2 ">
+    <div class="md:w-2/3 block md:px-2 md:py-8 pb-4 ">
         <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-secondary font-semibold">SEJARAH SINGKAT HAISTIS</div>
         <p class="text-white text-justify md:text-left ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
@@ -49,17 +53,17 @@
 
     <div class="flex flex-col items-center md:flex-row md:justify-around w-full mt-4">
 
-        <div class="w-min mb-2 md:mb-0 py-4 px-4" data-aos="zoom-in">
+        <div class="w-min mb-2 md:mb-0 py-6 px-6 bg-contain bg-no-repeat bg-center" style="background-image: url(/img/bulat.png)" data-aos="zoom-in">
             <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2">38.578</div>
             <div class="text-gray-500 text-sm font-semibold text-center">Jumlah alumni</div>
         </div>
 
-        <div class="w-min mb-2 md:mb-0 py-4 px-4" data-aos="zoom-in">
+        <div class="w-min mb-2 md:mb-0 py-6 px-6 bg-contain bg-no-repeat bg-center" style="background-image: url(/img/bulat.png)" data-aos="zoom-in">
             <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2">38.578</div>
             <div class="text-gray-500 text-sm font-semibold text-center">Jumlah alumni</div>
         </div>
 
-        <div class="w-min mb-2 md:mb-0 py-4 px-4" data-aos="zoom-in">
+        <div class="w-min mb-2 md:mb-0 py-6 px-6 bg-contain bg-no-repeat bg-center" style="background-image: url(/img/bulat.png)" data-aos="zoom-in">
             <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2">38.578</div>
             <div class="text-gray-500 text-sm font-semibold text-center">Jumlah alumni</div>
         </div>

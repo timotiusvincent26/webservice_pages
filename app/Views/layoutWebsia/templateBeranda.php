@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/aos.css" />
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?php echo $judulHalaman ?></title>
 </head>
@@ -13,10 +14,12 @@
 
 <body>
     <!-- HEADER -->
-    <div class="w-full fixed bg-primary p-3" id="navbar">
+    <div class="w-full fixed bg-blue-600 p-3" id="navbar">
         <!-- Codingan Navbar Taruh Sini -->NAVBAR
     </div>
-    <div class="h-10"></div>
+    <div class="w-full p-3 invisible" id="navbar">
+        <!-- Codingan Navbar Taruh Sini juga buat semacam marginnya -->NAVBAR
+    </div>
     <!-- END HEADER -->
 
     <!-- CONTENT PAGE DI SINI -->
@@ -87,5 +90,10 @@
 </body>
 
 <script type="text/javascript" src="/js/add.js"></script>
+<script type="text/javascript" src="/js/add.js"></script>
+<script src="/js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
