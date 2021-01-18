@@ -90,7 +90,6 @@
 </body>
 
 <script type="text/javascript" src="/js/add.js"></script>
-<script type="text/javascript" src="/js/add.js"></script>
 <script src="/js/aos.js"></script>
 <script>
     AOS.init();

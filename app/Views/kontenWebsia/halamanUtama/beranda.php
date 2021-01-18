@@ -1,12 +1,21 @@
-<?= $this->extend('layoutWebsia/templateBeranda.php'); ?>
+<?php
+// Kalo mau akses carousel, di controller websia ganti variabel login = 'sudah'
+//  Kalo mau akses jumbotron, di controller websia ganti variabel login = 'belum'
+if ($login == 'belum') {
+    $urlTemplate = 'layoutWebsia/templateBeranda.php';
+    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/jumbotron.php';
+} else {
+    $urlTemplate = 'layoutWebsia/templateBerandaLogin.php';
+    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/carousel.php';
+}
+?>
+
+<?= $this->extend($urlTemplate); ?>
 
 <?= $this->section('content'); ?>
 
 <!-- Awal Carousel -->
-<!-- bisa taruh sini, img di bawah ganti aja gak pa pa -->
-<div class="w-full bg-primary">
-    <img class="w-full" src="/img/komponen 1.png">
-</div>
+<?= $this->include($urlCarouselorJumbotron) ?>
 <!-- Akhir Carousel -->
 
 <!-- Awal Sejarah Singkat HAISTIS -->

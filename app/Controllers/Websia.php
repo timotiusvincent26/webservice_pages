@@ -6,7 +6,9 @@ class Websia extends BaseController
 {
     public function index()
     {
+        // ganti login ='sudah' atau 'belum' sesuai keadaan sudah login atau belum
         $data['judulHalaman'] = 'Beranda WEBSIA';
-        return view('kontenWebsia/beranda', $data);
+        $data['login'] = 'sudah';
+        return view('kontenWebsia/halamanUtama/beranda', $data);
     }
 }
