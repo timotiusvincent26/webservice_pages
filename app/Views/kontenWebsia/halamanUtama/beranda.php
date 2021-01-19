@@ -4,7 +4,7 @@
 if ($login == 'belum') {
     $urlTemplate = 'layoutWebsia/templateBeranda.php';
     $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/jumbotron.php';
-} else {
+} else if ($login == 'sudah') {
     $urlTemplate = 'layoutWebsia/templateBerandaLogin.php';
     $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/carousel.php';
 }
@@ -84,7 +84,7 @@ if ($login == 'belum') {
 <!-- Awal Peta Sebaran ALUMNI -->
 <div class="bg-primary my-8 md:py-8 py-4 lg:px-20 md:px-8 px-2">
     <div class="w-full md:mb-6 mb-4 text-center text-xl text-secondary font-bold">PETA SEBARAN ALUMNI</div>
-    <img class="mx-auto w-full" src="/img/sampel peta.png" alt="">
+    <div id="mapid" class="bg-primary" style="height: 26rem;" data-aos="zoom-in"></div>
 </div>
 <!-- Akhir Peta Sebaran ALUMNI -->
 

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" href="/css/leaflet.css">
+    <link rel="stylesheet" href="/css/output.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
 </head>
 
@@ -77,10 +79,12 @@
     </div>
     <!-- END FOOTER -->
 </body>
-<script type="text/javascript" src="/js/add.js"></script>
+
 <script src="/js/aos.js"></script>
 <script>
     AOS.init();
 </script>
+<script type="text/javascript" src="/js/leaflet.ajax.js"></script>
+<script type="text/javascript" src="/js/add.js"></script>
 
 </html>

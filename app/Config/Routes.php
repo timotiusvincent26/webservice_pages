@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Webservice::index');
 $routes->get('/WebSia/Beranda', 'Websia::index');
+$routes->get('/WebSia/Coba', 'Websia::coba');
 
 /**
  * --------------------------------------------------------------------

@@ -11,4 +11,9 @@ class Websia extends BaseController
         $data['login'] = 'sudah';
         return view('kontenWebsia/halamanUtama/beranda', $data);
     }
+
+    public function coba()
+    {
+        return view('cobaWebsia/map');
+    }
 }
