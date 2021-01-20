@@ -6,13 +6,13 @@ class Webservice extends BaseController
 {
 	public function index()
 	{
-		return view('dokumentasi.php');
+		return view('kontenWebservice/dokumentasi.php');
 	}
 
-    public function dokumentasi()
-    {
-        return view('dokumentasi.php');
-    }
+	public function dokumentasi()
+	{
+		return view('kontenWebservice/dokumentasi.php');
+	}
 	//--------------------------------------------------------------------
 
 }

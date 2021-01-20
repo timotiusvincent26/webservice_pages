@@ -1,4 +1,4 @@
-<?= $this->extend('layout/template.php'); ?>
+<?= $this->extend('layoutWebservice/templateWebservice.php'); ?>
 
 <?= $this->section('content'); ?>
 <div class="grid grid-cols-3 gap-x-16">
