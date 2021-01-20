@@ -13,6 +13,11 @@ class Webservice extends BaseController
 	{
 		return view('kontenWebservice/dokumentasi.php');
 	}
+
+	public function proyek()
+	{
+		return view('kontenWebservice/proyek.php');
+	}
 	//--------------------------------------------------------------------
 
 }
