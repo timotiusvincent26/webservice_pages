@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aos.css" />
     <link rel="stylesheet" href="/css/leaflet.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
+    <script type="text/javascript" src="/js/navbar.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
@@ -17,10 +19,72 @@
 <body>
     <!-- HEADER -->
     <div class="w-full fixed bg-blue-600 p-3" id="navbar">
-        <!-- Codingan Navbar Taruh Sini -->NAVBAR
+        <header>
+            <div class="absolute lingkaran">
+            </div>
+            <div class="flex items-center justify-between px-6 pt-3">
+                <div class="" style="font-family: Poppins;">
+                    <div class="flex">
+                        <div class="mb-1 py-1 text-secondary font-bold text-5xl z-50">
+                            SIA
+                        </div>
+                        <div class="px-3 py-2 text-2xl text-white font-light z-50">
+                            Sistem Informasi Alumni
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-end justify-start pt-1">
+                        <a href="">
+                            <div class="text-white ml-1 -mb-3 p-3 menu">
+                                BERANDA
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="text-white ml-1 -mb-3 p-3 menu">
+                                PROFIL
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="text-white ml-1 -mb-3 p-3 menu">
+                                ADMIN
+                            </div>
+                        </a>
+                        <div class="flex items-end text-sm relative text-white ml-1 -mb-3 p-3 cari">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute h-5 w-5 text-white">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                            <input type="text" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <button type="button" class="hidden md:flex md:px-4 md:mt-4 md:-mb-14 md:border md:border-transparent md:shadow-sm md:text-base md:font-medium md:text-white md:bg-gradient-to-b md:from-secondary hover:bg-secondary hover:rounded">
+                        KELUAR
+                    </button>
+                    <div class="-mt-3">
+                        <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 md:hidden" id="hamburger">
+                            <svg class="w-8 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 py-3 text-sm hidden text-center" style="font-family: Cabin;" id="list">
+                <a href="" class="block text-white mt-1 px-2 py-2 rounded menu">BERANDA</a>
+                <a href="" class="block text-white mt-1 px-2 py-2 rounded menu">PROFIL</a>
+                <a href="" class="block text-white mt-1 px-2 py-2 rounded menu">ADMIN</a>
+                <div class="flex block justify-center text-sm relative text-white -mb-3 p-3 mt-1 px-2 py-2 rounded cari">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute -ml-12 h-5 w-5 text-white">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                    </svg>
+                    <input type="text" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6 text-center">
+                </div>
+                <a href="" class="block text-white mt-1 px-2 py-2 rounded bg-gradient-to-t from-secondary hover:bg-secondary">KELUAR</a>
+            </div>
+        </header>
     </div>
-    <div class="w-full p-3 invisible" id="navbar">
-        <!-- Codingan Navbar Taruh Sini juga buat semacam marginnya -->NAVBAR
+    <div class="w-full h-32 bg-primary" id="navbar">
+        <!-- Codingan Navbar Taruh Sini juga buat semacam marginnya -->
     </div>
     <!-- END HEADER -->
 
