@@ -17,19 +17,19 @@
 
 <body>
     <!-- HEADER -->
-    <div class="w-full fixed bg-blue-600 z-10" id="navbar">
+    <div class="w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
-            <div class="absolute  lingkaran">
-            </div>
             <div class="flex items-center justify-between px-6 pt-3">
-                <div class="flex" style="font-family: Poppins;">
-                    <img src="/img/logoSIA.png" class="mb-1 z-50 md:w-16 w-10" alt="">
-                    <div class="md:px-3 px-2 my-auto md:text-2xl text-lg text-white font-light z-50">
+                <div class="flex">
+                    <a href="">
+                        <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
+                    </a>
+                    <div class="md:px-3 px-2 my-auto md:text-2xl text-lg text-white font-heading z-50">
                         Sistem Informasi Alumni
                     </div>
                 </div>
 
-                <button type="button" class=" flex px-3 md:py-2 py-1 my-auto rounded-3xl border border-transparent shadow-sm md:text-base text-xs font-medium text-white bg-secondary hover:bg-white hover:border-solid hover:border-2 hover:border-red-400 hover:text-secondary">
+                <button type="button" class=" font-paragraph font-medium flex px-3 md:py-2 py-1 my-auto rounded-3xl border border-transparent shadow-sm md:text-base text-xs  text-white bg-secondary hover:bg-white hover:border-solid hover:border-2 hover:border-red-400 hover:text-secondary">
                     MASUK
                 </button>
             </div>

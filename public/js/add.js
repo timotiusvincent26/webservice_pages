@@ -1,12 +1,3 @@
-// awal buat navbar
-// let hamburger = document.getElementById('hamburger');
-// let list = document.getElementById('list');
-
-// hamburger.addEventListener('click', () => {
-//     list.classList.toggle('active');
-// });
-// akhir buat navbar
-
 // awal js buat scroll navbar interaktif
 var lastScroll = 0;
 $(window).scroll(function(event){
@@ -21,6 +12,7 @@ $(window).scroll(function(event){
 // akhir js buat scroll navbar interaktif
 
 // awal js buat map
+// screen.width
 var mymap = L.map('mapid', {
     center: [-2.5, 118],
     zoom: 5
