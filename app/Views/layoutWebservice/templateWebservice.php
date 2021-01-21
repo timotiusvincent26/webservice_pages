@@ -10,9 +10,7 @@
     <title>Web Service | SIA</title>
 </head>
 
-<!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
-
-<body class="flex min-h-screen flex-col w-screen overflow-x-hidden">
+<body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
     <div class="bg-primary py-8 px-12 w-full">
         <div class="lingkaran-luar" id="kiri">

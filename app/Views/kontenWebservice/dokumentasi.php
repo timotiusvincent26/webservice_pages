@@ -8,15 +8,15 @@
             <button><i class="fa fa-search fa-lg text-gray-500 ml-3 hover:text-gray-800"></i></button>
         </div>
         <hr class="border-gray-300 mt-2">
-        <ul class="mt-4 font-heading text-secondary text-2xl font-bold">
-            <li class="mt-2"><a href="#judul1">Judul 1</a>
-                <ul class="ml-4 mt-2 text-black text-xl">
+        <ul class="mt-4 font-heading text-secondary text-2xl">
+            <li class="mt-2 font-bold"><a href="#judul1">Judul 1</a>
+                <ul class="ml-4 mt-2 text-black text-xl font-paragraph font-bold">
                     <li><a href="#sub11">Subjudul 1.1</a></li>
                     <li><a href="#sub12">Subjudul 1.2</a></li>
                 </ul>
             </li>
-            <li class="mt-2"><a href="#judul2">Judul 2</a>
-                <ul class="ml-4 mt-2 text-black text-xl">
+            <li class="mt-2 font-bold"><a href="#judul2">Judul 2</a>
+                <ul class="ml-4 mt-2 text-black text-xl font-paragraph font-bold">
                     <li><a href="#sub21">Subjudul 2.1</a></li>
                     <li><a href="#sub22">Subjudul 2.2</a></li>
                 </ul>
@@ -29,11 +29,11 @@
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
         </div>
-        <h3 class="text-xl mt-4 font-heading font-bold" id="sub11">Subjudul 1.1</h3>
+        <h3 class="text-xl mt-4 font-bold" id="sub11">Subjudul 1.1</h3>
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum was introduced to the digital world in the mid-1980s when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Lorem ipsum was introduced to the digital world in the mid-1980s when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker.
         </div>
-        <h3 class="text-xl mt-4 font-heading font-bold" id="sub12">Subjudul 1.2</h3>
+        <h3 class="text-xl mt-4 font-bold" id="sub12">Subjudul 1.2</h3>
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
@@ -41,11 +41,11 @@
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
         </div>
-        <h3 class="text-xl mt-4 font-heading font-bold" id="sub21">Subjudul 2.1</h3>
+        <h3 class="text-xl mt-4 font-bold" id="sub21">Subjudul 2.1</h3>
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum was introduced to the digital world in the mid-1980s when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. Lorem ipsum was introduced to the digital world in the mid-1980s when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker.
         </div>
-        <h3 class="text-xl mt-4 font-heading font-bold" id="sub22">Subjudul 2.2</h3>
+        <h3 class="text-xl mt-4 font-bold" id="sub22">Subjudul 2.2</h3>
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
