@@ -1,6 +1,7 @@
-let hamburger = document.getElementById('hamburger');
-    let list = document.getElementById('list');
-
-    hamburger.addEventListener('click', () => {
-        list.classList.toggle('active');
-    });
+$('#hamburger').click(function() {
+    if($('#menu').hasClass('hidden')){
+        $('#menu').removeClass('hidden');
+    } else {
+        $('#menu').addClass('hidden');
+    }
+  });

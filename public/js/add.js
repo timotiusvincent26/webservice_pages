@@ -12,6 +12,7 @@ $(window).scroll(function(event){
 // akhir js buat scroll navbar interaktif
 
 // awal js buat map
+// screen.width
 var mymap = L.map('mapid', {
     center: [-2.5, 118],
     zoom: 5
@@ -30,9 +31,9 @@ var myStyle = {
 function popUp(f, l) {
     var out = [];
     if (f.properties) {
-        out.push("<div class='font-bold text-primary text-center uppercase'> " + f.properties["Propinsi"] + "</div> </br>");
-        out.push("<div class='text-left font-semibold text-primary uppercase'> Kab. Malang : " + f.properties["kode"] + "</div>");
-        out.push("<div class='text-left font-semibold text-primary uppercase'> Kab. Magelang : " + f.properties["kode"] + "</div>");
+        out.push("<div class='font-bold text-primary text-center uppercase font-heading'> " + f.properties["Propinsi"] + "</div> <hr>");
+        out.push("<div class='text-center font-semibold text-primary uppercase font-paragraph'>" + f.properties["kode"] + "</div>");
+        out.push("<div class='text-center font-semibold text-primary uppercase font-paragraph'> ALUMNI </div>");
         l.bindPopup(out.join(""));
     }
 }

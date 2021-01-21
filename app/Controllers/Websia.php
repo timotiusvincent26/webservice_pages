@@ -8,7 +8,7 @@ class Websia extends BaseController
     {
         // ganti login ='sudah' atau 'belum' sesuai keadaan sudah login atau belum
         $data['judulHalaman'] = 'Beranda WEBSIA';
-        $data['login'] = 'sudah';
+        $data['login'] = 'belum';
         return view('kontenWebsia/halamanUtama/beranda', $data);
     }
 
