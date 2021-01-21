@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
+>>>>>>> bca02065faf3eb9c44022b9556aee12a2d1bd3b9
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
@@ -128,7 +137,7 @@
             </div>
 
             <div class="text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
-                <a href="/">
+                <a href="/webservice/">
                     <h3>Webservice(API)</h3>
                 </a>
             </div>
