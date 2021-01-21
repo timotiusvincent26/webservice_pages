@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary : '#014F86',
         secondary : '#FFAA00',
+        secondaryhover : '#FFBB34',
       },
       fontFamily: {
         heading: ['Poppins'],
