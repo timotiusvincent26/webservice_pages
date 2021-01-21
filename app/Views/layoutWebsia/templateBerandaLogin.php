@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/css/aos.css" />
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
