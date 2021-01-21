@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
-    <script type="text/javascript" src="/js/navbar.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
@@ -18,37 +17,35 @@
 
 <body>
     <!-- HEADER -->
-    <div class="w-full fixed bg-blue-600 p-3" id="navbar">
+    <div class="w-full fixed bg-blue-600 z-10" id="navbar">
         <header>
-            <div class="absolute lingkaran">
+            <div class=" absolute lingkaran ">
             </div>
-            <div class="flex items-center justify-between px-6 pt-3">
+            <div class="flex items-center justify-between px-6 pt-3 ">
                 <div class="" style="font-family: Poppins;">
                     <div class="flex">
-                        <div class="mb-1 py-1 text-secondary font-bold text-5xl z-50">
-                            SIA
-                        </div>
-                        <div class="px-3 py-2 text-2xl text-white font-light z-50">
+                        <img src="/img/logoSIA.png" class="mb-1 z-50 md:w-16 w-10" alt="">
+                        <div class="md:px-3 px-2 my-auto md:text-2xl text-lg text-white font-light z-50">
                             Sistem Informasi Alumni
                         </div>
                     </div>
                     <div class="hidden md:flex items-end justify-start pt-1">
                         <a href="">
-                            <div class="text-white ml-1 -mb-3 p-3 menu">
+                            <div class="text-white ml-1  p-3 menu">
                                 BERANDA
                             </div>
                         </a>
                         <a href="">
-                            <div class="text-white ml-1 -mb-3 p-3 menu">
+                            <div class="text-white ml-1 p-3 menu">
                                 PROFIL
                             </div>
                         </a>
                         <a href="">
-                            <div class="text-white ml-1 -mb-3 p-3 menu">
+                            <div class="text-white ml-1 p-3 menu">
                                 ADMIN
                             </div>
                         </a>
-                        <div class="flex items-end text-sm relative text-white ml-1 -mb-3 p-3 cari">
+                        <div class="flex items-end text-sm relative text-white ml-1  p-3 cari">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute h-5 w-5 text-white">
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                             </svg>
@@ -83,7 +80,7 @@
             </div>
         </header>
     </div>
-    <div class="w-full h-32 bg-primary" id="navbar">
+    <div class="w-full h-32 bg-primary">
         <!-- Codingan Navbar Taruh Sini juga buat semacam marginnya -->
     </div>
     <!-- END HEADER -->

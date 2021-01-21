@@ -33,7 +33,7 @@ if ($login == 'belum') {
     </div>
 
     <div class="md:w-1/3 w-full md:flex md:items-stretch bg-contain bg-no-repeat bg-right" style="background-image: url(/img/segitiga2.png)">
-        <img class="lg:w-1/2 md:w-2/3 w-1/2 mb-2 md:mb-0  mx-auto md:self-center" src="/img/logo PKL.png" alt="" data-aos="fade-left">
+        <img class="lg:w-1/2 md:w-2/3 w-1/3 mb-2 md:mb-0  mx-auto md:self-center" src="/img/logo PKL.png" alt="" data-aos="fade-left">
     </div>
 </div>
 <!-- Akhir Sejarah Singkat HAISTIS -->

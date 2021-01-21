@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
-    <script type="text/javascript" src="/js/navbar.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
@@ -18,38 +17,25 @@
 
 <body>
     <!-- HEADER -->
-    <div class="w-full fixed bg-blue-600 p-3" id="navbar">
+    <div class="w-full fixed bg-blue-600 z-10" id="navbar">
         <header>
-            <div class="absolute lingkaran">
+            <div class="absolute  lingkaran">
             </div>
             <div class="flex items-center justify-between px-6 pt-3">
                 <div class="flex" style="font-family: Poppins;">
-                    <div class="mb-1 py-1 text-secondary font-bold text-5xl z-50">
-                        SIA
-                    </div>
-                    <div class="px-3 py-2 text-2xl text-white font-light z-50">
+                    <img src="/img/logoSIA.png" class="mb-1 z-50 md:w-16 w-10" alt="">
+                    <div class="md:px-3 px-2 my-auto md:text-2xl text-lg text-white font-light z-50">
                         Sistem Informasi Alumni
                     </div>
                 </div>
-                <div class="flex">
-                    <button type="button" class="-mt-2 hidden md:flex md:px-3 py-2 rounded-3xl md:border md:border-transparent md:shadow-sm md:text-base md:font-medium md:text-white bg-secondary hover:bg-white hover:border-solid hover:border-2 hover:border-red-400 hover:text-secondary">
-                        MASUK
-                    </button>
-                    <div class="">
-                        <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 md:hidden -mt-3" id="hamburger">
-                            <svg class="w-8 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="px-4 py-3 text-sm hidden" style="font-family: Cabin;" id="list">
-                <a href="" class="block text-white mt-1 px-2 py-2 rounded bg-gradient-to-t from-secondary hover:bg-secondary text-center">MASUK</a>
+
+                <button type="button" class=" flex px-3 md:py-2 py-1 my-auto rounded-3xl border border-transparent shadow-sm md:text-base text-xs font-medium text-white bg-secondary hover:bg-white hover:border-solid hover:border-2 hover:border-red-400 hover:text-secondary">
+                    MASUK
+                </button>
             </div>
         </header>
     </div>
-    <div class="w-full h-24 bg-primary" id="navbar">
+    <div class="w-full md:h-24 h-12 bg-primary">
         <!-- Codingan Navbar Taruh Sini juga buat semacam marginnya -->
     </div>
     <!-- END HEADER -->
