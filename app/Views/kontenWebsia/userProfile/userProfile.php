@@ -36,8 +36,8 @@ if ($login == 'belum') {
                 Sebagai Kepala BPS
             </p>
             <span>
-                <img class="mb-2 mr-2 w-5 float-left" src="/img/icon/maps_flag.png" alt="">
-                <p> Alamat tempat tinggal </p>
+                <img class="my-2 mr-2 w-5 float-left" src="/img/icon/maps_flag.png" alt="">
+                <p class="my-2"> Alamat tempat tinggal </p>
             </span>
 
         </div>
@@ -189,7 +189,6 @@ if ($login == 'belum') {
             <?php endfor; ?>
         </tbody>
     </table>
-    <hr class="border-primary border-opacity-75 w-3/4 object-center mx-auto mt-8">
 </div>
 <!-- Akhir Riwayat Organisasi -->
 

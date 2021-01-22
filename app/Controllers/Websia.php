@@ -25,6 +25,13 @@ class Websia extends BaseController
         return view('kontenWebsia/userProfile/userProfile', $data);
     }
 
+    public function rekomendasi()
+    {
+        $data['judulHalaman'] = 'Rekomendasi';
+        $data['login'] = 'sudah';
+        return view('kontenWebsia/userProfile/rekomendasi', $data);
+    }
+
     public function coba()
     {
         return view('cobaWebsia/map');

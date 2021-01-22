@@ -36,6 +36,7 @@ $routes->get('/Webservice', 'Webservice::index');
 $routes->get('/WebSia/Coba', 'Websia::coba');
 $routes->get('/searchAndFilter', 'Websia::searchAndFilter');
 $routes->get('/profil', 'Websia::profil');
+$routes->get('/rekom', 'Websia::rekomendasi');
 
 
 /**
