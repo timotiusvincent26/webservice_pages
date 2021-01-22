@@ -18,6 +18,13 @@ class Websia extends BaseController
         return view('kontenWebsia/searchAndFilter/searchAndFilter', $data);
     }
 
+    public function profil()
+    {
+        $data['judulHalaman'] = 'User Profile';
+        $data['login'] = 'sudah';
+        return view('kontenWebsia/userProfile/userProfile', $data);
+    }
+
     public function coba()
     {
         return view('cobaWebsia/map');
