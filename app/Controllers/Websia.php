@@ -15,7 +15,7 @@ class Websia extends BaseController
     public function searchAndFilter()
     {
         $data['judulHalaman'] = 'Search And Filter';
-        return view('kontenWebsia/searchAndFilter/searchAndFilter', $data);
+        return view('kontenWebsia/searchAndFilter/search', $data);
     }
 
     public function coba()

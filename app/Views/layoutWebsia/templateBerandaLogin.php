@@ -13,9 +13,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <script type="text/javascript" src="/js/navbar.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
 </head>
 
@@ -166,8 +164,6 @@
 <script>
     AOS.init();
 </script>
-<script type="text/javascript" src="/js/leaflet.ajax.js"></script>
-<script type="text/javascript" src="/js/add.js"></script>
 <script type="text/javascript" src="/js/navbar.js"></script>
 
 </html>

@@ -14,6 +14,8 @@ if ($login == 'belum') {
 
 <?= $this->section('content'); ?>
 
+<script type="text/javascript" src="/js/leaflet.js"></script>
+
 <!-- Awal Carousel -->
 <?= $this->include($urlCarouselorJumbotron) ?>
 <!-- Akhir Carousel -->
@@ -167,5 +169,9 @@ if ($login == 'belum') {
     </div>
 </div>
 <!-- akhir card -->
+
+
+<script type="text/javascript" src="/js/leaflet.ajax.js"></script>
+<script type="text/javascript" src="/js/add.js"></script>
 
 <?= $this->endSection(); ?>

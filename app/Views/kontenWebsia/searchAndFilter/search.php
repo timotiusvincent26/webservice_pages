@@ -2,24 +2,40 @@
 
 <?= $this->section('content'); ?>
 
-<div class="bg-white w-full py-6">
+<div class="w-full ">
     <!--FILTER -->
-    <div class="flex justify-center gap-x-36">
-        <div class=" flex items-center gap-x-2">
-            <input type="checkbox" name="alumni" id="alumni" class="cursor-pointer">
-            <label for="alumni" class="text-sm font-heading font-light">Filter Alumni</label>
+    <div class="flex justify-around lg:px-20 md:px-8 px-2 my-8">
+        <div class="flex flex-col">
+            <div class=" flex items-center gap-x-2 mx-auto">
+                <input type="checkbox" name="filterAlumni" id="filterAlumni" class="cursor-pointer my-auto">
+                <label for="filterAlumni" id="namaFilterAlumni" class="text-sm text-gray-500 font-heading font-medium cursor-pointer">Filter Alumni</label>
+            </div>
+            <div class="flex flex-col hidden mt-4" id="pilihanFilterAlumni">
+                <button class="flex justify-between w-52 py-1 px-3 text-gray-500 text-sm font-paragraph font-medium border-2 border-gray-500 rounded-lg focus:outline-none focus:border-black focus:text-black" id="dropdownFilterAlumni">
+                    <div id="filterBerdasarkan"> Filter Berdasarkan</div>
+                    <svg class=" w-4 h-4 my-auto font-medium text-gray-500" id="tombolUpFilterAlumni" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                    <svg class="w-4 h-4 my-auto font-medium text-gray-500 hidden" id="tombolDownFilterAlumni" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                    </svg>
+                </button>
+                <div class="flex flex-col font-heading font-semibold mt-2 rounded-lg border border-gray-500 hidden" id="listFilterAlumni">
+                    <div class="flex px-3 py-2 border-b border-gray-300 cursor-pointer hover:bg-gray-300" id="filterNama">Nama</div>
+                    <div class="px-3 py-2 border-b border-gray-300 cursor-pointer hover:bg-gray-300" id="filterNIM">NIM</div>
+                    <div class="px-3 py-2 cursor-pointer hover:bg-gray-300" id="filterAngkatan">Angkatan</div>
+                </div>
+            </div>
         </div>
-        <div class="flex items-center gap-x-2">
-            <input type="checkbox" name="berita" id="berita" class="cursor-pointer">
-            <label for="berita" class="text-sm font-heading font-light">Filter Tahun Berita</label>
+        <div class="flex flex-col">
+            <div class="flex items-center gap-x-2 mx-auto">
+                <input type="checkbox" name="filterBerita" id="filterBerita" class="cursor-pointer">
+                <label for="filterBerita" class="text-sm text-gray-500 font-heading font-medium cursor-pointer">Filter Tahun Berita</label>
+            </div>
+            <div class="mx-auto" id="pilihanFilterBerita">damndbndvnbfvnbdfvnbv</div>
         </div>
     </div>
-    <div class="p-3 flex justify-center">
-        <div class="" id="filterAlumni">
-        </div>
-        <div class="hidden" id="filterThBerita">
-        </div>
-    </div>
+
 
     <!-- END FILTER -->
 
@@ -199,4 +215,5 @@
 </div>
 <!-- END HASIL PENCARIAN TIDAK DITEMUKAN-->
 
+<script type="text/javascript" src="/js/search.js"></script>
 <?= $this->endSection(); ?>
