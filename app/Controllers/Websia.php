@@ -22,4 +22,10 @@ class Websia extends BaseController
     {
         return view('cobaWebsia/map');
     }
+
+    public function search()
+    {
+        $data['judulHalaman'] = 'Pencarian WEBSIA';
+        return view('kontenWebsia/halamanUtama/search.php', $data);
+    }
 }
