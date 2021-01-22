@@ -5,3 +5,7 @@ $('#hamburger').click(function() {
         $('#menu').addClass('hidden');
     }
   });
+
+  $('#inputCari').click(function(){
+    $('#tombolCari').addClass('hidden');
+  })

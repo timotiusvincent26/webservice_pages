@@ -76,15 +76,21 @@
 
                 <div class="md:hidden">
                     <div class="flex flex-col hidden w-full border-t border-b border-white py-2 font-paragraph" id="menu">
-                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white ">BERANDA</div>
-                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">PROFIL</div>
-                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">ADMIN</div>
+                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white ">
+                            <a href="/">BERANDA </a>
+                        </div>
+                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
+                            <a href=""> PROFIL</a>
+                        </div>
+                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
+                            <a href=""> ADMIN</a>
+                        </div>
 
-                        <div class="flex  justify-center text-sm relative text-white p-3  cari mt-1 px-2 py-2 w-11/12 mx-auto border-b border-white">
-                            <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute -ml-12 h-5 w-5 text-white">
+                        <div class="flex  justify-center text-sm relative text-white p-3 cari mt-1 px-2 py-2 w-11/12 mx-auto border-b border-white">
+                            <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="tombolCari" class="absolute -ml-12 h-5 w-5 text-white">
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                             </svg>
-                            <input type="text" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3">
+                            <input type="text" placeholder="|  CARI" id="inputCari" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3 outline-none ">
                         </div>
                         <div class=" mt-1 px-2 py-2 w-11/12 mx-auto font-medium  bg-gradient-to-t from-secondary hover:bg-secondary text-xs text-center text-white ">
                             <a href="" class="">KELUAR</a>

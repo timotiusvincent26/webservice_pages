@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Websia::index');
 $routes->get('/Webservice', 'Webservice::index');
 $routes->get('/WebSia/Coba', 'Websia::coba');
+$routes->get('/searchAndFilter', 'Websia::searchAndFilter');
+
 
 /**
  * --------------------------------------------------------------------
