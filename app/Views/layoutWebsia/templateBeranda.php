@@ -24,7 +24,7 @@
                     <a href="">
                         <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
                     </a>
-                    <div class="md:px-3 px-2 my-auto md:text-2xl text-lg text-white font-heading z-50">
+                    <div class="md:px-3 px-2 my-auto md:text-2xl text-base text-white font-heading font-light z-50">
                         Sistem Informasi Alumni
                     </div>
                 </div>
@@ -47,8 +47,8 @@
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <div class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2">
-        <div class="flex flex-col md:flex-row md:justify-around ">
+    <div class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2 ">
+        <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
 
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
                 <div class="w-36 md:w-auto">

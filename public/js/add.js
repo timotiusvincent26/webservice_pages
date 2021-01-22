@@ -31,9 +31,9 @@ var myStyle = {
 function popUp(f, l) {
     var out = [];
     if (f.properties) {
-        out.push("<div class='font-bold text-primary text-center uppercase'> " + f.properties["Propinsi"] + "</div> <hr>");
-        out.push("<div class='text-center font-semibold text-primary uppercase'>" + f.properties["kode"] + "</div>");
-        out.push("<div class='text-center font-semibold text-primary uppercase'> ALUMNI </div>");
+        out.push("<div class='font-bold text-primary text-center uppercase font-heading'> " + f.properties["Propinsi"] + "</div> <hr>");
+        out.push("<div class='text-center font-semibold text-primary uppercase font-paragraph'>" + f.properties["kode"] + "</div>");
+        out.push("<div class='text-center font-semibold text-primary uppercase font-paragraph'> ALUMNI </div>");
         l.bindPopup(out.join(""));
     }
 }

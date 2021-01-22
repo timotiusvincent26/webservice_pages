@@ -23,8 +23,8 @@ if ($login == 'belum') {
 </div>
 <div class="flex md:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 px-2">
     <div class="md:w-2/3 block md:px-2 md:py-8 pb-4">
-        <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-black font-semibold">SEJARAH SINGKAT HAISTIS</div>
-        <p class="text-primary text-justify md:text-left ">
+        <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-black font-heading font-semibold">HASIL DARI PROYEK PKL RISET 5</div>
+        <p class="text-primary text-justify md:text-left font-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
@@ -45,8 +45,8 @@ if ($login == 'belum') {
     </div>
 
     <div class="md:w-2/3 block md:px-2 md:py-8 pb-4 ">
-        <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-secondary font-semibold">SEJARAH SINGKAT HAISTIS</div>
-        <p class="text-white text-justify md:text-left ">
+        <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-secondary font-heading font-semibold">SEJARAH SINGKAT HAISTIS</div>
+        <p class="text-white text-justify md:text-left font-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
@@ -58,23 +58,23 @@ if ($login == 'belum') {
 
 <!-- Awal Jumlah Alumni AIS/STIS/Polstat STIS -->
 <div class="w-full my-8 lg:px-20 md:px-8 px-2">
-    <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-bold">Alumni AIS/STIS/Polstat STIS</div>
+    <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-heading font-bold">ALUMNI AIS/STIS/POLSTAT STIS</div>
 
     <div class="flex flex-col items-center md:flex-row md:justify-around w-full mt-4">
 
         <div class="w-min mb-2 md:mb-0 py-6 px-6 bg-contain bg-no-repeat bg-center" style="background-image: url(/img/bulat.png)" data-aos="zoom-in">
-            <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2">38.578</div>
-            <div class="text-gray-500 text-sm font-semibold text-center">Jumlah alumni</div>
+            <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2 font-heading">38.578</div>
+            <div class="text-gray-500 text-sm font-semibold text-center font-paragraph">Jumlah alumni</div>
         </div>
 
         <div class="w-min mb-2 md:mb-0 py-6 px-6 bg-contain bg-no-repeat bg-center" style="background-image: url(/img/bulat.png)" data-aos="zoom-in">
-            <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2">38.578</div>
-            <div class="text-gray-500 text-sm font-semibold text-center">Jumlah alumni</div>
+            <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2 font-heading">38.578</div>
+            <div class="text-gray-500 text-sm font-semibold text-center font-paragraph">Jumlah alumni</div>
         </div>
 
         <div class="w-min mb-2 md:mb-0 py-6 px-6 bg-contain bg-no-repeat bg-center" style="background-image: url(/img/bulat.png)" data-aos="zoom-in">
-            <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2">38.578</div>
-            <div class="text-gray-500 text-sm font-semibold text-center">Jumlah alumni</div>
+            <div class="text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2 font-heading">38.578</div>
+            <div class="text-gray-500 text-sm font-semibold text-center font-paragraph">Jumlah alumni</div>
         </div>
 
     </div>
@@ -83,14 +83,14 @@ if ($login == 'belum') {
 
 <!-- Awal Peta Sebaran ALUMNI -->
 <div class="bg-primary my-8 md:py-8 py-4 lg:px-20 md:px-8 px-2">
-    <div class="w-full md:mb-6 mb-4 text-center text-xl text-secondary font-bold">PETA SEBARAN ALUMNI</div>
+    <div class="w-full md:mb-6 mb-4 text-center text-xl text-secondary font-bold font-heading">PETA SEBARAN ALUMNI</div>
     <div id="mapid" class="bg-primary" style="height: 26rem;" data-aos="zoom-in"></div>
 </div>
 <!-- Akhir Peta Sebaran ALUMNI -->
 
 <!-- awal card -->
 <div class="w-full my-8 lg:px-20 md:px-8 px-2">
-    <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-bold">BERITA TERBARU</div>
+    <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-bold font-heading">BERITA TERBARU</div>
 
     <div class="flex flex-col md:flex-row md:justify-between w-full mt-4">
 
@@ -100,14 +100,14 @@ if ($login == 'belum') {
             </a>
             <div class="py-4">
                 <div>
-                    <a href="#" class="text-black text-xl font-semibold hover:font-bold">
+                    <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
                         Pelatihan Kepegawaian di Masa Pandemi
                     </a>
                 </div>
 
-                <div class="text-gray-700 text-sm font-semibold ">1 Januari 2020</div>
+                <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
 
-                <p class="text-gray-600 break-words text-justify leading-none mt-4">
+                <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
                 </p>
 
@@ -120,14 +120,14 @@ if ($login == 'belum') {
             </a>
             <div class="py-4">
                 <div>
-                    <a href="#" class="text-black text-xl font-semibold hover:font-bold">
+                    <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
                         Pelatihan Kepegawaian di Masa Pandemi
                     </a>
                 </div>
 
-                <div class="text-gray-700 text-sm font-semibold ">1 Januari 2020</div>
+                <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
 
-                <p class="text-gray-600 break-words text-justify leading-none mt-4">
+                <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
                 </p>
 
@@ -140,14 +140,14 @@ if ($login == 'belum') {
             </a>
             <div class="py-4">
                 <div>
-                    <a href="#" class="text-black text-xl font-semibold hover:font-bold">
+                    <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
                         Pelatihan Kepegawaian di Masa Pandemi
                     </a>
                 </div>
 
-                <div class="text-gray-700 text-sm font-semibold ">1 Januari 2020</div>
+                <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
 
-                <p class="text-gray-600 break-words text-justify leading-none mt-4">
+                <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
                 </p>
 
@@ -156,7 +156,7 @@ if ($login == 'belum') {
 
     </div>
     <div class="flex w-full justify-end">
-        <div class="text-primary font-bold my-auto"><a href="">Lihat Berita Selanjutnya</a> </div>
+        <div class="text-primary font-paragraph my-auto"><a href="">Lihat Berita Selanjutnya</a> </div>
         <div>
             <a href="">
                 <svg class="w-6 h-6 font-bold text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
