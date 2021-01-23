@@ -58,7 +58,7 @@
                     </div>
                     <div class="flex my-auto">
                         <button type="button" class="font-paragraph font-medium items-center hidden md:flex md:px-5 md:mt-4 md:-mb-14 md:shadow-sm md:text-base  md:text-white md:bg-secondary hover:bg-secondaryhover transition-colors duration-200 hover:rounded">
-                            KELUAR
+                            <a href="/login/">KELUAR</a>
                         </button>
                         <div class="">
                             <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 md:hidden" id="hamburger">
@@ -89,7 +89,7 @@
                             <input type="text" placeholder="|  CARI" id="inputCari" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3 outline-none ">
                         </div>
                         <div class=" mt-1 px-2 py-2 w-11/12 mx-auto font-medium bg-secondary hover:bg-secondaryhover transition-colors duration-200 text-xs text-center text-white ">
-                            <a href="" class="">KELUAR</a>
+                            <a href="/login/">KELUAR</a>
                         </div>
                     </div>
                 </div>
