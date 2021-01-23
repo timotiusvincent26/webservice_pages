@@ -17,9 +17,10 @@
             <div class="lingkaran-dalam"></div>
         </div>
         <div class="flex justify-between">
-            <div class="font-heading flex items-center gap-x-6">
-                <!-- KETERANGAN: Belum ada logo dari sistem informasi alumninya -->
-                <h1 class="text-secondary text-4xl font-bold relative z-10">SIA</h1>
+            <div class="font-heading flex items-center gap-x-6 z-50">
+                <a href="/">
+                    <img src="/img/logoSIA.png" class="z-50 md:w-16 w-10" alt="">
+                </a>
                 <h1 class="text-white text-2xl font-light relative z-10">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>
             </div>
             <div id="nav" class="flex items-center">
