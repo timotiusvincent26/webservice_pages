@@ -34,7 +34,7 @@
                             </ul>
                         </li>
                         <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="">PROFIL</a></li>
-                        <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="">KELUAR</a></li>
+                        <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="/login/">KELUAR</a></li>
                     </ul>
                 </div>
             </div>
