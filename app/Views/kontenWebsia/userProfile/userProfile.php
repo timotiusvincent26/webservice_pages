@@ -1,28 +1,15 @@
-<?php
-// Kalo mau akses carousel, di controller websia ganti variabel login = 'sudah'
-//  Kalo mau akses jumbotron, di controller websia ganti variabel login = 'belum'
-if ($login == 'belum') {
-    $urlTemplate = 'layoutWebsia/templateBeranda.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/jumbotron.php';
-} else if ($login == 'sudah') {
-    $urlTemplate = 'layoutWebsia/templateBerandaLogin.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/carousel.php';
-}
-?>
-
-<?= $this->extend($urlTemplate); ?>
+<?= $this->extend('layoutWebsia/templateBerandaLogin.php'); ?>
 
 <?= $this->section('content'); ?>
-
-
 <!-- Awal User Profile-->
 
 </div>
 <div class="md:flex items-center md:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 md:pt-4">
     <div class="md:w-1/2 w-full md:flex items-center font-paragraph text-sm">
         <div class="md:w-1/2 mb-8 justify-center object-center space-y-4">
+            <!-- Avatar user profile -->
             <img class="block float-none mx-auto w-60 md:w-72 mb-2 px-6 object-contain" src="/img/avatar.png" alt="">
-            <a class="block bg-secondary text-white text-center py-1 px-4 mx-auto rounded-full w-28 cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="">Edit Profil</a>
+            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 md:px-6 mx-auto rounded-full w-28 cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="">Edit Profil</a>
         </div>
         <div class="md:w-1/2 block justify-center mx-auto items-center text-center md:text-left object-center md:px-8 md:py-6">
             <h3 class="font-heading text-secondary text-3xl mb-2 font-extrabold">ZAHLUL FUADI</h3>
@@ -44,10 +31,13 @@ if ($login == 'belum') {
         </div>
     </div>
     <div class="md:w-1/2 w-full md:px-8 md:py-6 pb-4">
+        <!-- Awal Deskripsi user profile -->
         <p class="px-8 md:px-0 mt-8 md:mt-0font-heading text-base italic text-justify mb-8 md:mb-0 text-center md:text-left font-paragraph">
             `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt quos saepe doloribus esse, fugit ratione culpa reprehenderit eos totam tenetur consectetur. Id, recusandae aspernatur incidunt cum, quo quaerat sequi earum ex doloremque eos ullam accusantium porro quos laudantium dolore delectus? Natus minima voluptates alias suscipit aperiam debitis voluptatum iusto officiis temporibus labore excepturi voluptate ipsa, perferendis dolores adipisci molestias`
         </p>
+        <!-- Akhir Deskripsi user profile -->
         <div class="space-x-3 md:py-6 px-8 md:px-0">
+            <!-- Awal sosial media dan telepon -->
             <a href="https://facebook.com" class="inline-block">
                 <img src="/img/icon/fb.png" alt="" class="w-6">
             </a>
@@ -65,6 +55,7 @@ if ($login == 'belum') {
                 <img src="/img/icon/msg.png" alt="" class="float-left w-8">
                 <span class="font-heading text-xs object-center"> 0852-XXXX-XXXX </span>
             </div>
+            <!--  Akhir sosial media dan telepon -->
         </div>
     </div>
 
@@ -85,8 +76,8 @@ if ($login == 'belum') {
             <!-- 1 card -->
             <div class="rounded-3xl md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
                 <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <!-- <div class="badge absolute top-0 right-0 bg-secondary m-3 text-white p-1 px-2 text-xs font-bold rounded">Hai</div> -->
                 <div class="desc p-2">
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
                     <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
                     <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
                     <div class="mt-4 md:mt-6 lg:mt-8 px-4">
@@ -94,11 +85,11 @@ if ($login == 'belum') {
                     </div>
                 </div>
             </div>
-            <!-- 1 card -->
+            <!-- 2 card -->
             <div class="rounded-3xl md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
                 <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <!-- <div class="badge absolute top-0 right-0 bg-secondary m-3 text-white p-1 px-2 text-xs font-bold rounded">Hai</div> -->
                 <div class="desc p-2">
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
                     <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
                     <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
                     <div class="mt-4 md:mt-6 lg:mt-8 px-4">
@@ -106,11 +97,11 @@ if ($login == 'belum') {
                     </div>
                 </div>
             </div>
-            <!-- 1 card -->
+            <!-- 3 card -->
             <div class="rounded-3xl md:m-2 shadow-lg border-gray-800 bg-white relative">
                 <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <!-- <div class="badge absolute top-0 right-0 bg-secondary m-3 text-white p-1 px-2 text-xs font-bold rounded">Hai</div> -->
                 <div class="desc p-2">
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
                     <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
                     <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
                     <div class="mt-4 md:mt-6 lg:mt-8 px-4">
@@ -118,11 +109,11 @@ if ($login == 'belum') {
                     </div>
                 </div>
             </div>
-            <!-- 1 card -->
+            <!-- 4 card -->
             <div class="rounded-3xl md:m-2 shadow-lg border-gray-800 bg-white relative">
                 <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <!-- <div class="badge absolute top-0 right-0 bg-secondary m-3 text-white p-1 px-2 text-xs font-bold rounded">Hai</div> -->
                 <div class="desc p-2">
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
                     <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
                     <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
                     <div class="mt-4 md:mt-6 lg:mt-8 px-4">

@@ -34,17 +34,17 @@
                         </div>
                         <div class="font-paragraph hidden md:flex items-end justify-start pt-1">
                             <a href="">
-                                <div class="text-white ml-1  p-3 menu">
+                                <div class="text-white ml-1 p-3 menu px-5 transition-colors duration-300">
                                     BERANDA
                                 </div>
                             </a>
                             <a href="">
-                                <div class="text-white ml-1 p-3 menu">
+                                <div class="text-white ml-1 p-3 menu px-5 transition-colors duration-300">
                                     PROFIL
                                 </div>
                             </a>
                             <a href="">
-                                <div class="text-white ml-1 p-3 menu">
+                                <div class="text-white ml-1 p-3 menu px-5 transition-colors duration-300">
                                     ADMIN
                                 </div>
                             </a>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="flex my-auto">
-                        <button type="button" class="font-paragraph font-medium hidden md:flex md:px-4 md:mt-4 md:-mb-14 md:border md:border-transparent md:shadow-sm md:text-base  md:text-white md:bg-gradient-to-b md:from-secondary hover:bg-secondary hover:rounded">
+                        <button type="button" class="font-paragraph font-medium items-center hidden md:flex md:px-5 md:mt-4 md:-mb-14 md:shadow-sm md:text-base  md:text-white md:bg-secondary hover:bg-secondaryhover transition-colors duration-200 hover:rounded">
                             KELUAR
                         </button>
                         <div class="">
@@ -88,7 +88,7 @@
                             </svg>
                             <input type="text" placeholder="|  CARI" id="inputCari" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3 outline-none ">
                         </div>
-                        <div class=" mt-1 px-2 py-2 w-11/12 mx-auto font-medium  bg-gradient-to-t from-secondary hover:bg-secondary text-xs text-center text-white ">
+                        <div class=" mt-1 px-2 py-2 w-11/12 mx-auto font-medium bg-secondary hover:bg-secondaryhover transition-colors duration-200 text-xs text-center text-white ">
                             <a href="" class="">KELUAR</a>
                         </div>
                     </div>
