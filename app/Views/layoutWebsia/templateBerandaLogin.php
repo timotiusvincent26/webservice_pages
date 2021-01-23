@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="/css/swiper-bundle.css">
     <script src="/js/swiper-bundle.js"></script>
     <script src="/js/alpine.min.js" defer></script>
-    <script type="text/javascript" src="/js/navbar.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
 </head>
 
@@ -164,8 +162,6 @@
 <script>
     AOS.init();
 </script>
-<script type="text/javascript" src="/js/leaflet.ajax.js"></script>
-<script type="text/javascript" src="/js/add.js"></script>
 <script type="text/javascript" src="/js/navbar.js"></script>
 
 </html>
