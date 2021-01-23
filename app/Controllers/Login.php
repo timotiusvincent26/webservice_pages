@@ -8,4 +8,13 @@ class Login extends BaseController
     {
         return view('Login/login.php');
     }
+    public function resetpass()
+    {
+        return view('Login/resetpass.php');
+    }
+
+    public function daftar()
+    {
+        return view('Login/daftar.php');
+    }
 }
