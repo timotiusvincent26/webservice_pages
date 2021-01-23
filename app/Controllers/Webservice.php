@@ -6,12 +6,14 @@ class Webservice extends BaseController
 {
 	public function index()
 	{
-		return view('kontenWebservice/utama_dev.php');
+		$data['judul'] = 'Web Service | SIA';
+		return view('webservice/kontenWebservice/halamanUtama/utama_dev.php', $data);
 	}
 
 	public function dokumentasi()
 	{
-		return view('kontenWebservice/dokumentasi.php');
+		$data['judul'] = 'Dokumentasi Web Service | SIA';
+		return view('webservice/kontenWebservice/dokumentasi/dokumentasi.php', $data);
 	}
 	//--------------------------------------------------------------------
 
