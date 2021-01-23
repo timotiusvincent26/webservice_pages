@@ -1,6 +1,13 @@
-<?= $this->extend('webservice/layoutWebservice/templateWebservice.php'); ?>
+<?php
+if ($login == 'sudah') {
+    echo $this->extend('layoutWebservice/templateWebserviceLogin.php');
+} else if ($login == 'belum') {
+    echo $this->extend('layoutWebservice/templateWebservice.php');
+}
 
-<?= $this->section('content'); ?>
+echo $this->section('content');
+?>
+
 <div class="flex items-center my-20">
     <div class="mr-16 w-8/12">
         <h1 class="text-5xl font-heading text-secondary font-bold">PENJELASAN SINGKAT</h1>
