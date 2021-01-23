@@ -7,37 +7,40 @@
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/add_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Web Service | SIA</title>
+    <title><?= $judul; ?></title>
 </head>
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
-    <div class="bg-primary py-8 px-12 w-full">
-        <div class="lingkaran-luar" id="kiri">
-            <div class="lingkaran-dalam"></div>
-        </div>
-        <div class="flex justify-between">
-            <div class="font-heading flex items-center gap-x-6">
-                <!-- KETERANGAN: Belum ada logo dari sistem informasi alumninya -->
-                <h1 class="text-secondary text-4xl font-bold relative z-10">SIA</h1>
-                <h1 class="text-white text-2xl font-light relative z-10">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>
+    <div id="navbar">
+        <div class="bg-primary py-8 px-12 w-full">
+            <div class="lingkaran-luar" id="kiri">
+                <div class="lingkaran-dalam"></div>
             </div>
-            <div id="nav" class="flex items-center">
-                <ul class="flex gap-x-6 relative z-10">
-                    <li id="nav-li" class="bg-secondary rounded-full text-white py-2 px-3 w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300">API <i class="fa fa-caret-down"></i>
-                        <ul class="hidden absolute transform -translate-x-4 translate-y-2 bg-secondary text-white w-24 py-2 px-3 border-secondary border-2 w-max rounded-xl">
-                            <li class="hover:text-secondary hover:bg-white -mt-2 -mx-3 hover:border-opacity-70 rounded-t-xl hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300"><a href="/webservice/">BERANDA</a></li>
-                            <li class="hover:text-secondary hover:bg-white -mx-3 hover:border-opacity-70 hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300"><a href="/webservice/dokumentasi">DOKUMENTASI</a></li>
-                            <li class="hover:text-secondary rounded-b-xl hover:bg-white hover:border-opacity-70 hover:bg-white py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300"><a href="#">PROYEK</a></li>
-                        </ul>
-                    </li>
-                    <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="">PROFIL</a></li>
-                    <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="">KELUAR</a></li>
-                </ul>
+            <div class="flex justify-between">
+                <div class="font-heading flex items-center gap-x-6 z-50">
+                    <a href="/">
+                        <img src="/img/logoSIA.png" class="z-50 md:w-16 w-10" alt="">
+                    </a>
+                    <h1 class="text-white text-2xl font-light relative z-10">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>
+                </div>
+                <div id="nav" class="hidden md:flex md:items-center">
+                    <ul class="flex gap-x-6 relative z-10">
+                        <li id="nav-li" class="bg-secondary rounded-full text-white py-2 px-3 w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300">API <i class="fa fa-caret-down"></i>
+                            <ul class="hidden absolute transform -translate-x-4 translate-y-2 bg-secondary text-white w-24 py-2 px-3 border-secondary border-2 w-max rounded-xl">
+                                <li class="hover:text-secondary hover:bg-white -mt-2 -mx-3 hover:border-opacity-70 rounded-t-xl hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300"><a href="/webservice/">BERANDA</a></li>
+                                <li class="hover:text-secondary hover:bg-white -mx-3 hover:border-opacity-70 hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300"><a href="/webservice/dokumentasi">DOKUMENTASI</a></li>
+                                <li class="hover:text-secondary rounded-b-xl hover:bg-white hover:border-opacity-70 hover:bg-white py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300"><a href="#">PROYEK</a></li>
+                            </ul>
+                        </li>
+                        <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="">PROFIL</a></li>
+                        <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="/login/">KELUAR</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="lingkaran-luar" id="kanan">
-            <div class="lingkaran-dalam"></div>
+            <div class="lingkaran-luar" id="kanan">
+                <div class="lingkaran-dalam"></div>
+            </div>
         </div>
     </div>
     <!-- END HEADER -->

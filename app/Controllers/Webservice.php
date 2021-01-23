@@ -7,7 +7,8 @@ class Webservice extends BaseController
 	public function index()
 	{
 		$data['judul'] = 'Web Service | SIA';
-		return view('webservice/kontenWebservice/halamanUtama/utama_dev.php', $data);
+		$data['login'] = 'sudah';
+		return view('webservice/kontenWebservice/halamanUtama/utama.php', $data);
 	}
 
 	public function dokumentasi()

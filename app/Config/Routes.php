@@ -32,8 +32,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Websia::index');
-$routes->get('/Webservice', 'Webservice::index');
-$routes->get('/WebSia/Coba', 'Websia::coba');
+$routes->get('/login', 'Login::index');
+$routes->get('/webservice', 'Webservice::index');
+$routes->get('/websia/Coba', 'Websia::coba');
 $routes->get('/searchAndFilter', 'Websia::searchAndFilter');
 $routes->get('/profil', 'Websia::profil');
 $routes->get('/rekom', 'Websia::rekomendasi');
