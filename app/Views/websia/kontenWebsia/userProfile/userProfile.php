@@ -4,39 +4,39 @@
 <!-- Awal User Profile-->
 
 </div>
-<div class="md:flex items-center md:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 md:pt-4">
-    <div class="md:w-1/2 w-full md:flex items-center font-paragraph text-sm">
-        <div class="md:w-1/2 mb-8 justify-center object-center space-y-4">
+<div class="md:flex block items-center md:flex-col lg:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 md:pt-4">
+    <div class="lg:w-3/5 w-full md:flex items-center font-paragraph text-sm">
+        <div class="md:w-2/5 mb-8 justify-center object-center space-y-4">
             <!-- Avatar user profile -->
-            <img class="block float-none mx-auto w-60 md:w-72 mb-2 px-6 object-contain" src="/img/avatar.png" alt="">
-            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 md:px-6 mx-auto rounded-full w-28 cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="">Edit Profil</a>
+            <img class="block float-none mx-auto w-60 md:w-72 px-6 object-contain" src="/img/avatar.png" alt="">
+            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="">Edit Profil</a>
         </div>
-        <div class="md:w-1/2 block justify-center mx-auto items-center text-center md:text-left object-center md:px-8 md:py-6">
-            <h3 class="font-heading text-secondary text-3xl mb-2 font-extrabold">ZAHLUL FUADI</h3>
+        <div class="md:w-3/5 justify-center mx-auto items-center text-center md:text-left object-center md:px-8 md:py-6">
+            <h3 class="font-heading text-secondary text-2xl md:text-3xl lg:pr-1 px-8 md:px-0 mb-2 font-extrabold uppercase">Muhammad Nirwansyah Adi Eka Putra</h3>
             <div class="mb-8">
-                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 rounded-lg text-primary align-middle uppercase">Alumni</span>
-                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 rounded-lg text-primary align-middle uppercase">Admin</span>
-                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 rounded-lg text-primary align-middle uppercase">Developer</span>
+                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Alumni</span>
+                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Admin</span>
+                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Developer</span>
             </div>
             <p class="font-heading text-center md:text-left text-base mb-5">Aceh, 32 Januari 2021</p>
             <p class="font-heading text-base text-center md:text-left">
                 Bekerja di BPS Provinsi Aceh <br />
                 Sebagai Kepala BPS
             </p>
-            <span class="font-heading text-base items-center text-center md:text-left">
+            <span class="font-heading flex justify-center md:justify-start px-8 md:px-0 text-base items-center text-center md:text-left">
                 <img class="my-2 mt-4 mr-2 w-5 float-left" src="/img/icon/maps_flag.png" alt="">
-                <p class="my-2 mt-4"> Alamat tempat tinggal </p>
+                <p class="my-2 mt-4"> Natus minima voluptates alias suscipit aperiam debitis Natus minima voluptates alias suscipit aperiam debitis </p>
             </span>
 
         </div>
     </div>
-    <div class="md:w-1/2 w-full md:px-8 md:py-6 pb-4">
+    <div class="lg:w-2/5 w-full md:px-8 md:py-6 pb-4">
         <!-- Awal Deskripsi user profile -->
-        <p class="px-8 md:px-0 mt-8 md:mt-0font-heading text-base italic text-justify mb-8 md:mb-0 text-center md:text-left font-paragraph">
-            `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt quos saepe doloribus esse, fugit ratione culpa reprehenderit eos totam tenetur consectetur. Id, recusandae aspernatur incidunt cum, quo quaerat sequi earum ex doloremque eos ullam accusantium porro quos laudantium dolore delectus? Natus minima voluptates alias suscipit aperiam debitis voluptatum iusto officiis temporibus labore excepturi voluptate ipsa, perferendis dolores adipisci molestias`
+        <p class="px-8 md:px-0 mt-8 md:mt-0 font-heading text-base italic text-justify mb-8 md:mb-0 text-center md:text-left">
+            `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt quos saepe doloribus esse, fugit ratione culpa reprehenderit eos totam tenetur consectetur. Id, recusandae aspernatur incidunt cum, quo quaerat sequi earum ex doloremque eos ullam accusantium porro quos laudantium dolore delectus? Natus minima voluptates alias suscipit aperiam debitis voluptatum iusto`
         </p>
         <!-- Akhir Deskripsi user profile -->
-        <div class="space-x-3 md:py-6 px-8 md:px-0">
+        <div class="space-x-3 lg:space-x-2 flex justify-center lg:justify-start md:py-6 px-8 md:px-0">
             <!-- Awal sosial media dan telepon -->
             <a href="https://facebook.com" class="inline-block">
                 <img src="/img/icon/fb.png" alt="" class="w-6">
@@ -47,13 +47,13 @@
             <a href="https://instagram.com" class="inline-block">
                 <img src="/img/icon/ig.png" alt="" class="w-6">
             </a>
-            <div class="inline-block -mt-8">
-                <img src="/img/icon/telp.png" alt="" class="float-left w-8">
-                <span class="font-heading text-xs object-center"> 0852-XXXX-XXXX </span>
+            <div class="inline-block">
+                <img src="/img/icon/telp.png" alt="" class="float-left w-10 md:w-8">
+                <span class="font-heading text-xs object-center"> 0852-XXXX-XXXXX </span>
             </div>
             <div class="inline-block">
-                <img src="/img/icon/msg.png" alt="" class="float-left w-8">
-                <span class="font-heading text-xs object-center"> 0852-XXXX-XXXX </span>
+                <img src="/img/icon/msg.png" alt="" class="float-left w-10 md:w-8">
+                <span class="font-heading text-xs object-center"> 0852-XXXX-XXXXX </span>
             </div>
             <!--  Akhir sosial media dan telepon -->
         </div>
@@ -72,53 +72,53 @@
             </a>
             <h2 class="font-heading mb-6 text-xl inline-block">Alumni yang mungkin Anda kenal</h2>
         </div>
-        <div class="holder mx-auto w-10/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-8">
+        <div class="holder mx-auto w-11/12 md:w-full lg:w-11/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-0 lg:gap-x-8">
             <!-- 1 card -->
-            <div class="rounded-3xl md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
-                <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <div class="desc p-2">
+            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+                <div class="">
+                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
                     <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
-                    <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
-                    <div class="mt-4 md:mt-6 lg:mt-8 px-4">
-                        <a class="block bg-gray-300 font-paragraph text-primary text-xs md:text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Muhammad Nirwansyah Adi Eka Putra</a>
+                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                </div>
+                <div class="px-4">
+                    <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
                 </div>
             </div>
             <!-- 2 card -->
-            <div class="rounded-3xl md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
-                <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <div class="desc p-2">
+            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+                <div class="">
+                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
                     <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
-                    <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
-                    <div class="mt-4 md:mt-6 lg:mt-8 px-4">
-                        <a class="block bg-gray-300 font-paragraph text-primary text-xs md:text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Muhammad Putra</a>
+                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                </div>
+                <div class="px-4">
+                    <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
                 </div>
             </div>
             <!-- 3 card -->
-            <div class="rounded-3xl md:m-2 shadow-lg border-gray-800 bg-white relative">
-                <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <div class="desc p-2">
+            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+                <div class="">
+                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
                     <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
-                    <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
-                    <div class="mt-4 md:mt-6 lg:mt-8 px-4">
-                        <a class="block bg-gray-300 font-paragraph text-primary text-xs md:text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Nirwansyah Adi Eka Putra</a>
+                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                </div>
+                <div class="px-4">
+                    <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
                 </div>
             </div>
             <!-- 4 card -->
-            <div class="rounded-3xl md:m-2 shadow-lg border-gray-800 bg-white relative">
-                <img class="w-16 lg:w-24 mx-auto mt-6 md:mt-8" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                <div class="desc p-2">
+            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+                <div class="">
+                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
                     <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title font-heading text-sm md:text-lg font-semibold text-primary block cursor-pointer text-center hover:underline">Nama Lengkap</a>
-                    <span class="description font-paragraph text-primary text-center text-xs md:text-base block py-2 border-gray-400 mb-2">Atribut</span>
-                    <div class="mt-4 md:mt-6 lg:mt-8 px-4">
-                        <a class="block bg-gray-300 font-paragraph text-primary text-xs md:text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                    </div>
+                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Nirwansyah Adi Eka Putra</a>
+                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                </div>
+                <div class="px-4">
+                    <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
                 </div>
             </div>
         </div>
