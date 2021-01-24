@@ -1,15 +1,3 @@
-// awal js buat scroll navbar interaktif
-var lastScroll = 0;
-$(window).scroll(function(event){
-    var st = $(this).scrollTop();
-    if (st > lastScroll){
-        $('#navbar').addClass('invisible');
-    } else {
-        $('#navbar').removeClass('invisible');
-    }
-    lastScroll = st;
-});
-// akhir js buat scroll navbar interaktif
 
 // awal js buat map
 // screen.width

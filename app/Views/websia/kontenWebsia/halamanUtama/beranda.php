@@ -2,11 +2,11 @@
 // Kalo mau akses carousel, di controller websia ganti variabel login = 'sudah'
 //  Kalo mau akses jumbotron, di controller websia ganti variabel login = 'belum'
 if ($login == 'belum') {
-    $urlTemplate = 'layoutWebsia/templateBeranda.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/jumbotron.php';
+    $urlTemplate = 'websia/layoutWebsia/templateBeranda.php';
+    $urlCarouselorJumbotron = 'websia/kontenWebsia/halamanUtama/jumbotron.php';
 } else if ($login == 'sudah') {
-    $urlTemplate = 'layoutWebsia/templateBerandaLogin.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/carousel.php';
+    $urlTemplate = 'websia/layoutWebsia/templateBerandaLogin.php';
+    $urlCarouselorJumbotron = 'websia/kontenWebsia/halamanUtama/carousel.php';
 }
 ?>
 

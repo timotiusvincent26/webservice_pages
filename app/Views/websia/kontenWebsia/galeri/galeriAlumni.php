@@ -1,16 +1,4 @@
-<?php
-// Kalo mau akses carousel, di controller websia ganti variabel login = 'sudah'
-//  Kalo mau akses jumbotron, di controller websia ganti variabel login = 'belum'
-if ($login == 'belum') {
-    $urlTemplate = 'layoutWebsia/templateBeranda.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/jumbotron.php';
-} else if ($login == 'sudah') {
-    $urlTemplate = 'layoutWebsia/templateBerandaLogin.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/carousel.php';
-}
-?>
-
-<?= $this->extend($urlTemplate); ?>
+<?= $this->extend('websia/layoutWebsia/templateBerandaLogin.php'); ?>
 
 <?= $this->section('content'); ?>
 <!-- Awal Galeri Alumni -->

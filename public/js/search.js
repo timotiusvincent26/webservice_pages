@@ -24,26 +24,14 @@ $('#dropdownFilterAlumni').click(function(){
     }
 })
 
-
-$('#filterNama').click(function(){
-    $('#filterBerdasarkan').html($('#filterNama').text());
-    $('#listFilterAlumni').addClass('hidden');
-    $('#tombolUpFilterAlumni').removeClass('hidden');
-    $('#tombolDownFilterAlumni').addClass('hidden');
-})
-
-$('#filterNIM').click(function(){
-    $('#filterBerdasarkan').html($('#filterNIM').text());
-    $('#listFilterAlumni').addClass('hidden');
-    $('#tombolUpFilterAlumni').removeClass('hidden');
-    $('#tombolDownFilterAlumni').addClass('hidden');
-})
-
-$('#filterAngkatan').click(function(){
-    $('#filterBerdasarkan').html($('#filterAngkatan').text());
-    $('#listFilterAlumni').addClass('hidden');
-    $('#tombolUpFilterAlumni').removeClass('hidden');
-    $('#tombolDownFilterAlumni').addClass('hidden');
+const list = document.querySelectorAll("#daftarFilter");
+list.forEach(o => {
+    o.addEventListener("click", () => {
+        $('#filterBerdasarkan').html(o.innerHTML);
+        $('#listFilterAlumni').addClass('hidden');
+        $('#tombolUpFilterAlumni').removeClass('hidden');
+        $('#tombolDownFilterAlumni').addClass('hidden');
+    })
 })
 // Akhir Filter Alumni
 
@@ -60,6 +48,31 @@ $('#filterBerita').click(function(){
     }
 })
 
+var waktu = new Date();
+var tahunfix = waktu.getFullYear();
+var tahunAwal = waktu.getFullYear();
+var tahunAkhir = waktu.getFullYear();
+
+
+const tahunKalenderAwal = document.querySelectorAll("#tahunKalenderAwal");
+
+function getWaktuKalenderAwal(param){
+    var param = param - 11;
+    tahunKalenderAwal.forEach(o =>{
+        o.innerHTML = param;
+        param++;
+    })
+};
+
+tahunKalenderAwal.forEach(o => {
+    o.addEventListener("click", () => {
+        $('#tahunAwal').html(o.innerHTML);
+        $('#tombolUpFilterAwal').removeClass('hidden');
+        $('#tombolDownFilterAwal').addClass('hidden');
+        $('#listFilterTahunAwal').addClass('hidden');
+    })
+})
+
 
 $('#dropdownFilterAwal').click(function(){
     
@@ -69,92 +82,72 @@ $('#dropdownFilterAwal').click(function(){
         $('#listFilterTahunAwal').addClass('hidden');
     } else {
         tahunAwal = tahunfix;
-        getWaktuKalender(tahunAwal);
+        getWaktuKalenderAwal(tahunAwal);
         $('#tombolDownFilterAwal').removeClass('hidden');
         $('#tombolUpFilterAwal').addClass('hidden');
         $('#listFilterTahunAwal').removeClass('hidden');
     }
 })
 
-// $('#dropdownFilterAkhir').click(function(){
-//     if($('#tombolUpFilterAkhir').hasClass('hidden')){
-//         $('#tombolUpFilterAkhir').removeClass('hidden');
-//         $('#tombolDownFilterAkhir').addClass('hidden');
-//         $('#listFilterAlumni').addClass('hidden');
-//     } else {
-//         $('#tombolDownFilterAkhir').removeClass('hidden');
-//         $('#tombolUpFilterAkhir').addClass('hidden');
-//         $('#listFilterAlumni').removeClass('hidden');
-//     }
-// })
-
-var waktu = new Date();
-var tahunfix = waktu.getFullYear();
-var tahunAwal = waktu.getFullYear();
-var tahunAkhir = waktu.getFullYear();
-
-function getWaktuKalender(param){
-    var param = param - 11;
-    for(i=1; i<13; i++){
-        $('#awalKe'+ i).html(param);
-        param = param + 1;
-    }
-};
-
-
-
 $('#perviousAwal').click(function(){
     tahunAwal = tahunAwal - 11;
-    getWaktuKalender(tahunAwal);
+    getWaktuKalenderAwal(tahunAwal);
 })
 
 $('#nextAwal').click(function(){
     if(tahunAwal + 11 <= tahunfix){
         tahunAwal = tahunAwal + 11;
-        getWaktuKalender(tahunAwal);
+        getWaktuKalenderAwal(tahunAwal);
+    }
+})
+// ----------------------------------------
+const tahunKalenderAkhir = document.querySelectorAll("#tahunKalenderAkhir");
+
+function getWaktuKalenderAkhir(param){
+    var param = param - 11;
+    tahunKalenderAkhir.forEach(o =>{
+        o.innerHTML = param;
+        param++;
+    })
+};
+
+tahunKalenderAkhir.forEach(o => {
+    o.addEventListener("click", () => {
+        $('#tahunAkhir').html(o.innerHTML);
+        $('#tombolUpFilterAkhir').removeClass('hidden');
+        $('#tombolDownFilterAkhir').addClass('hidden');
+        $('#listFilterTahunAkhir').addClass('hidden');
+    })
+})
+
+$('#dropdownFilterAkhir').click(function(){
+    if($('#tombolUpFilterAkhir').hasClass('hidden')){
+        $('#tombolUpFilterAkhir').removeClass('hidden');
+        $('#tombolDownFilterAkhir').addClass('hidden');
+        $('#listFilterTahunAkhir').addClass('hidden');
+    } else {
+        tahunAkhir = tahunfix;
+        getWaktuKalenderAkhir(tahunAkhir);
+        $('#tombolDownFilterAkhir').removeClass('hidden');
+        $('#tombolUpFilterAkhir').addClass('hidden');
+        $('#listFilterTahunAkhir').removeClass('hidden');
     }
 })
 
-function addTanggal(param){
-    $('#tahunAwal').html($('#' + param).text());
-    $('#tombolUpFilterAwal').removeClass('hidden');
-    $('#tombolDownFilterAwal').addClass('hidden');
-    $('#listFilterTahunAwal').addClass('hidden');
-}
-$('#awalKe1').click(function(){
-    addTanggal('awalKe1');
+$('#perviousAkhir').click(function(){
+    tahunAkhir = tahunAkhir - 11;
+    getWaktuKalenderAkhir(tahunAkhir);
 })
-$('#awalKe2').click(function(){
-    addTanggal('awalKe2');
+
+$('#nextAkhir').click(function(){
+    if(tahunAkhir + 11 <= tahunfix){
+        tahunAkhir = tahunAkhir + 11;
+        getWaktuKalenderAkhir(tahunAkhir);
+    }
 })
-$('#awalKe3').click(function(){
-    addTanggal('awalKe3');
-})
-$('#awalKe4').click(function(){
-    addTanggal('awalKe4');
-})
-$('#awalKe5').click(function(){
-    addTanggal('awalKe5');
-})
-$('#awalKe6').click(function(){
-    addTanggal('awalKe6');
-})
-$('#awalKe7').click(function(){
-    addTanggal('awalKe7');
-})
-$('#awalKe8').click(function(){
-    addTanggal('awalKe8');
-})
-$('#awalKe9').click(function(){
-    addTanggal('awalKe9');
-})
-$('#awalKe10').click(function(){
-    addTanggal('awalKe10');
-})
-$('#awalKe11').click(function(){
-    addTanggal('awalKe11');
-})
-$('#awalKe12').click(function(){
-    addTanggal('awalKe12');
-})
+
+
+
+
+
 // Akhir Filter Berita

@@ -1,4 +1,4 @@
-<?= $this->extend('layoutWebsia/templateBerandaLogin.php'); ?>
+<?= $this->extend('websia/layoutWebsia/templateBerandaLogin.php'); ?>
 
 <?= $this->section('content'); ?>
 <!--FILTER -->
@@ -19,9 +19,9 @@
                 </svg>
             </button>
             <div class="flex flex-col font-heading font-semibold mt-2 rounded-lg border border-gray-500 hidden" id="listFilterAlumni">
-                <div class="flex px-3 py-2 border-b border-gray-300 cursor-pointer hover:bg-gray-300 text-sm" id="filterNama">Nama</div>
-                <div class="px-3 py-2 border-b border-gray-300 cursor-pointer hover:bg-gray-300 text-sm" id="filterNIM">NIM</div>
-                <div class="px-3 py-2 cursor-pointer hover:bg-gray-300 text-sm" id="filterAngkatan">Angkatan</div>
+                <div class="flex px-3 py-2 border-b border-gray-300 cursor-pointer hover:bg-gray-300 text-sm" id="daftarFilter">Nama</div>
+                <div class="px-3 py-2 border-b border-gray-300 cursor-pointer hover:bg-gray-300 text-sm" id="daftarFilter">NIM</div>
+                <div class="px-3 py-2 cursor-pointer hover:bg-gray-300 text-sm" id="daftarFilter">Angkatan</div>
             </div>
         </div>
     </div>
@@ -56,25 +56,25 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
                         </svg>
                     </div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe1"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe2"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe3"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe4"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe5"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe6"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe7"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe8"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe9"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe10"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe11"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe12"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
 
                 </div>
             </div>
 
             <div class="flex flex-col" id="pilihanFilterAkhir">
                 <button class="flex justify-between md:w-36 w-32 mx-auto py-1 px-3 text-gray-500 text-sm font-paragraph font-medium border-2 border-gray-500 rounded-lg focus:outline-none focus:border-black focus:text-black" id="dropdownFilterAkhir">
-                    <div> Akhir</div>
+                    <div id="tahunAkhir"> Akhir</div>
                     <svg class=" w-4 h-4 my-auto font-medium text-gray-500" id="tombolUpFilterAkhir" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
@@ -83,32 +83,32 @@
                     </svg>
                 </button>
 
-                <!-- <div class="py-1 px-3 mt-2 grid grid-cols-4 gap-1 font-heading font-semibold rounded-lg border border-gray-500 hidden" id="listFilterTahunAwal">
+                <div class="py-1 px-3 mt-2 grid grid-cols-4 gap-1 font-heading font-semibold rounded-lg border border-gray-500 hidden" id="listFilterTahunAkhir">
                     <div class="flex justify-center">
-                        <svg class="w-3 h-3 cursor-pointer" fill="none" stroke="currentColor" id="perviousAwal" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-3 h-3 cursor-pointer" fill="none" stroke="currentColor" id="perviousAkhir" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path>
                         </svg>
                     </div>
                     <div class="col-span-2"></div>
                     <div class="flex justify-center">
-                        <svg class="w-3 h-3 cursor-pointer" fill="none" stroke=" currentColor" id="nextAwal" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-3 h-3 cursor-pointer" fill="none" stroke=" currentColor" id="nextAkhir" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
                         </svg>
                     </div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe1"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe2"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe3"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe4"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe5"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe6"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe7"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe8"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe9"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe10"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe11"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="awalKe12"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
 
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -121,15 +121,15 @@
         Sekitar 28.899 hasil pencarian alumni
     </div>
 
-    <div class="w-full grid md:grid-cols-3 grid-cols-2 gap-y-4">
+    <div class="w-full grid md:grid-cols-3 grid-cols-2 gap-x-2 gap-y-4">
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -139,11 +139,11 @@
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -153,11 +153,11 @@
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -167,11 +167,11 @@
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -181,11 +181,11 @@
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -195,11 +195,11 @@
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -209,11 +209,11 @@
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -223,11 +223,11 @@
         <div class="flex justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
@@ -237,11 +237,11 @@
         <div class="md:flex hidden justify-center">
             <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
                 <div class="flex items-center">
-                    <img src="/img/avatar.png" class="md:w-20 w-16 mx-auto" alt="">
+                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
                 </div>
                 <div class="flex items-center">
                     <div>
-                        <h2 class="font-heading text-primary md:text-lg text-sm font-heading font-semibold">Nama Lengkap</h2>
+                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
                         <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
                     </div>
                 </div>
