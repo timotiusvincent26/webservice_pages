@@ -35,9 +35,6 @@
   animation: zoomAndFade 1s;
 }
 
-.overlay .close {
-}
-
 /* animasi */
 @keyframes zoomAndFade {
   0% {
