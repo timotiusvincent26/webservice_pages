@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/swiper-bundle.css">
+    <link rel="stylesheet" href="/css/img-viewer.css">
     <script src="/js/swiper-bundle.js"></script>
     <script src="/js/alpine.min.js" defer></script>
-    <script type="text/javascript" src="/js/navbar.js"></script>
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/leaflet.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/leaflet.js"></script>
     <title><?php echo $judulHalaman ?></title>
 </head>
 
