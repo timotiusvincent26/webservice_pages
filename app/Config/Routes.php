@@ -37,8 +37,10 @@ $routes->get('/webservice', 'Webservice::index');
 $routes->get('/websia/Coba', 'Websia::coba');
 $routes->get('/searchAndFilter', 'Websia::searchAndFilter');
 $routes->get('/profil', 'Websia::profil');
-$routes->get('/rekom', 'Websia::rekomendasi');
-$routes->get('/galeri', 'Websia::galeri');
+$routes->get('/rekomendasi', 'Websia::rekomendasi');
+$routes->get('/galeriFoto', 'Websia::galeriFoto');
+$routes->get('/galeriVideo', 'Websia::galeriVideo');
+$routes->get('/galeriWisuda', 'Websia::galeriWisuda');
 
 
 /**

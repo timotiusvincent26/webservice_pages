@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
     <title>Sistem Informasi Alumni</title>
 
     <style>
@@ -30,7 +31,7 @@
         <header>
             <div class="flex items-center justify-between px-6 pt-3">
                 <div class="flex">
-                    <a href="">
+                    <a href="<?= base_url(); ?>">
                         <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
                     </a>
                     <div class="md:px-3 px-2 my-auto md:text-2xl text-base text-white font-heading font-light z-50">

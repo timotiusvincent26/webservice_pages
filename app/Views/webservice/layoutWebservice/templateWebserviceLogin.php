@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/add_style.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title><?= $judul; ?></title>
 </head>
@@ -19,14 +20,14 @@
             </div>
             <div class="flex justify-between">
                 <div class="font-heading flex items-center gap-x-6 z-50">
-                    <a href="/">
+                    <a href="<?= base_url(); ?>">
                         <img src="/img/logoSIA.png" class="z-50 md:w-16 w-10" alt="">
                     </a>
                     <h1 class="text-white text-2xl font-light relative z-10">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>
                 </div>
                 <div id="nav" class="hidden md:flex md:items-center">
                     <ul class="flex gap-x-6 relative z-10">
-                        <a href="/">
+                        <a href="<?= base_url(); ?>">
                             <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300">SIA</li>
                         </a>
                         <li id="nav-li" class="bg-secondary rounded-full text-white py-2 px-3 w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300">API <i class="fa fa-caret-down"></i>
@@ -45,7 +46,7 @@
                         <a href="">
                             <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300">PROFIL</li>
                         </a>
-                        <a href="/login/">
+                        <a href="/logout">
                             <li class="bg-secondary text-white py-2 px-3 rounded-full w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300">KELUAR</li>
                         </a>
                     </ul>

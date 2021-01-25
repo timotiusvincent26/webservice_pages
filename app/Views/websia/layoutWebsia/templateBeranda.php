@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?php echo $judulHalaman ?></title>
 </head>
@@ -16,11 +17,11 @@
 
 <body>
     <!-- HEADER -->
-    <div class="w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
+    <div class="navbar w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
             <div class="flex items-center justify-between px-6 pt-3">
                 <div class="flex">
-                    <a href="">
+                    <a href="<?= base_url(); ?>">
                         <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
                     </a>
                     <div class="md:px-3 px-2 my-auto md:text-2xl text-base text-white font-heading font-light z-50">
@@ -28,8 +29,8 @@
                     </div>
                 </div>
 
-                <button type="button" class=" font-paragraph font-medium flex px-3 md:px-5 md:py-2 py-1 my-auto rounded-3xl shadow-sm md:text-base text-xs text-white bg-secondary hover:bg-secondaryhover transition-colors duration-200">
-                    <a href="/login/">MASUK</a>
+                <button type="button" class="font-paragraph font-medium flex px-3 md:px-5 md:py-2 py-1 my-auto rounded-3xl shadow-sm md:text-base text-xs text-white bg-secondary hover:bg-secondaryhover transition-colors duration-200">
+                    <a href="/login">MASUK</a>
                 </button>
             </div>
         </header>

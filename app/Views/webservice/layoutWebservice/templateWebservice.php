@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/add_style.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Web Service | SIA</title>
 </head>
@@ -18,7 +19,7 @@
         </div>
         <div class="flex justify-between">
             <div class="font-heading flex items-center gap-x-6 z-50">
-                <a href="/">
+                <a href="<?= base_url(); ?>">
                     <img src="/img/logoSIA.png" class="z-50 md:w-16 w-10" alt="">
                 </a>
                 <h1 class="text-white text-2xl font-light relative z-10">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>

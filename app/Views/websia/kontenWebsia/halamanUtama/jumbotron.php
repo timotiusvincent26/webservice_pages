@@ -11,7 +11,7 @@
                 </div>
                 <div class="my-8 px-14 lg:px-28 md:px-20 mt-4 md:-mt-2">
                     <!-- tombol masuk di jumbotron, fungsinya sama seperti tombol masuk yang ada di navbar -->
-                    <a href="#" class="bg-secondary ease-linear font-paragraph text-xs md:text-xl hover:bg-secondaryhover text-white px-4 py-2 md:px-6 md:py-2 rounded-full">Masuk</a>
+                    <a href="/login" class="bg-secondary ease-linear font-paragraph text-xs md:text-xl hover:bg-secondaryhover text-white px-4 py-2 md:px-6 md:py-2 rounded-full">Masuk</a>
                 </div>
             </div>
         </div>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
+    <!-- <link rel="stylesheet" href="/css/tambahan.css"> -->
     <link rel="stylesheet" href="/css/swiper-bundle.css">
     <link rel="stylesheet" href="/css/img-viewer.css">
     <script src="/js/swiper-bundle.js"></script>
@@ -15,7 +17,35 @@
     <script type="text/javascript" src="/js/navbar.js"></script>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/add_style.css">
+
     <title><?php echo $judulHalaman ?></title>
+
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 
 <!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
@@ -28,7 +58,7 @@
                 <div class="flex items-center justify-between px-6 pt-3 ">
                     <div class="">
                         <div class="flex">
-                            <a href="/">
+                            <a href="<?= base_url(); ?>">
                                 <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
                             </a>
                             <div class="md:px-3 px-2 my-auto md:text-2xl text-lg text-white font-heading font-light z-50">
@@ -36,18 +66,28 @@
                             </div>
                         </div>
                         <div class="font-paragraph hidden md:flex items-end justify-start pt-1">
-                            <a href="">
-                                <div class="text-white ml-1 p-3 menu px-5 transition-colors duration-300">
+                            <a href="<?= base_url(); ?>">
+                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 transition-colors duration-300">
                                     BERANDA
                                 </div>
                             </a>
-                            <a href="">
-                                <div class="text-white ml-1 p-3 menu px-5 transition-colors duration-300">
+                            <a href="/profil">
+                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 transition-colors duration-300">
                                     PROFIL
                                 </div>
                             </a>
-                            <a href="">
-                                <div class="text-white ml-1 p-3 menu px-5 transition-colors duration-300">
+                            <div class="dropdown">
+                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 cursor-pointer transition-colors duration-300">
+                                    GALERI
+                                </div>
+                                <div class="dropdown-content">
+                                    <a href="/galeriFoto" class="menu text-white hover:text-secondary -mt-2 -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI FOTO </a>
+                                    <a href="/galeriVideo" class="menu text-white hover:text-secondary -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI VIDEO </a>
+                                    <a href="/galeriWisuda" class="menu text-white hover:text-secondary hover:border-opacity-70 py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300"> GALERI WISUDA </a>
+                                </div>
+                            </div> <!-- </a> -->
+                            <a href="/admin">
+                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 transition-colors duration-300">
                                     ADMIN
                                 </div>
                             </a>
@@ -55,14 +95,16 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute h-5 w-5 text-white">
                                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                                 </svg>
-                                <input type="text" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6 font-paragraph">
+                                <form action="/searchAndFilter">
+                                    <input type="text" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6 font-paragraph">
+                                </form>
                             </div>
                         </div>
                     </div>
                     <div class="flex my-auto">
-                        <button type="button" class="font-paragraph font-medium items-center hidden md:flex md:px-5 md:mt-4 md:-mb-14 md:shadow-sm md:text-base  md:text-white md:bg-secondary hover:bg-secondaryhover transition-colors duration-200 hover:rounded">
-                            <a href="/login/">KELUAR</a>
-                        </button>
+                        <a href="/logout" class="font-paragraph font-medium items-center hidden md:flex md:px-5 md:mt-4 md:-mb-14 md:shadow-sm md:text-base  md:text-white md:bg-secondary hover:bg-secondaryhover transition-colors duration-200 hover:rounded">
+                            KELUAR
+                        </a>
                         <div class="">
                             <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 md:hidden" id="hamburger">
                                 <svg class="w-8 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -76,23 +118,28 @@
                 <div class="md:hidden">
                     <div class="flex flex-col hidden w-full border-t border-b border-white py-2 font-paragraph" id="menu">
                         <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white ">
-                            <a href="/">BERANDA </a>
+                            <a href="<?= base_url(); ?>">BERANDA </a>
                         </div>
                         <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
-                            <a href=""> PROFIL</a>
+                            <a href="/profil"> PROFIL</a>
                         </div>
                         <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
-                            <a href=""> ADMIN</a>
+                            <a href="/galeri"> GALERI</a>
+                        </div>
+                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
+                            <a href="/admin"> ADMIN</a>
                         </div>
 
                         <div class="flex  justify-center text-sm relative text-white p-3 cari mt-1 px-2 py-2 w-11/12 mx-auto border-b border-white">
                             <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="tombolCari" class="absolute -ml-12 h-5 w-5 text-white">
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                             </svg>
-                            <input type="text" placeholder="|  CARI" id="inputCari" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3 outline-none ">
+                            <form action="/searchAndFilter">
+                                <input type="text" placeholder="|  CARI" id="inputCari" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3 outline-none ">
+                            </form>
                         </div>
                         <div class=" mt-1 px-2 py-2 w-11/12 mx-auto font-medium bg-secondary hover:bg-secondaryhover transition-colors duration-200 text-xs text-center text-white ">
-                            <a href="/login/">KELUAR</a>
+                            <a href="/logout">KELUAR</a>
                         </div>
                     </div>
                 </div>

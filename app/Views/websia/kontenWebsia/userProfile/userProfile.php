@@ -80,7 +80,7 @@ if ($status == 'bukan user') {
     <div class="static md:w-full md:px-2 md:py-8 pb-4">
         <div class="md:mb-6 mb-2 text-center md:text-left text-secondary font-semibold">
             <!-- link ini mengarah ke halaman tampilan semua rekomendasi -->
-            <a class="bg-secondary mb-8 mt-1 md:mt-0 float-right font-paragraph text-sm text-white text-center py-1 px-4 mx-auto rounded-full cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="">
+            <a class="bg-secondary mb-8 mt-1 md:mt-0 float-right font-paragraph text-sm text-white text-center py-1 px-4 mx-auto rounded-full cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="/rekomendasi">
                 Lihat Semua Rekomendasi
                 <img src="/img/icon/panah.png" alt="" class="float-right pl-2">
             </a>
@@ -90,58 +90,74 @@ if ($status == 'bukan user') {
             <!-- 1 card -->
             <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
                 <div class="">
-                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Muhammad Nirwansyah Adi Eka Putra</a>
-                    <!-- Atribut belum ditentukan -->
-                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                    <a href="/profil" target="_new">
+                        <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
+                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad Nirwansyah Adi Eka Putra</span>
+                        <!-- Atribut belum ditentukan -->
+                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block py-0 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block pb-0 border-gray-400 mb-2">Atribut</span>
+                    </a>
                 </div>
-                <div class="px-4">
-                    <!-- tombol lihat profil ketika diklik akan mengarah ke profil orang tsb -->
-                    <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                </div>
+                <!-- <div class="px-4"> -->
+                <!-- tombol lihat profil ketika diklik akan mengarah ke profil orang tsb -->
+                <!-- <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a> -->
+                <!-- </div> -->
             </div>
             <!-- 2 card -->
             <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
-                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Muhammad Putra</a>
-                    <!-- Atribut belum ditentukan -->
-                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                    <a href="/profil" target="_new">
+                        <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
+                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad Putra</span>
+                        <!-- Atribut belum ditentukan -->
+                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block py-0 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block pb-0 border-gray-400 mb-2">Atribut</span>
+                    </a>
                 </div>
-                <div class="px-4">
-                    <!-- tombol lihat profil ketika diklik akan mengarah ke profil orang tsb -->
+                <!-- <div class="px-4">
+                    tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
                     <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                </div>
+                </div> -->
             </div>
             <!-- 3 card -->
             <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
-                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Nirwansyah Adi Eka Putra</a>
-                    <!-- Atribut belum ditentukan -->
-                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                    <a href="/profil" target="_new">
+                        <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
+                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Nirwansyah Adi Eka Putra</span>
+                        <!-- Atribut belum ditentukan -->
+                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block py-0 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block pb-0 border-gray-400 mb-2">Atribut</span>
+                    </a>
                 </div>
-                <div class="px-4">
-                    <!-- tombol lihat profil ketika diklik akan mengarah ke profil orang tsb -->
+                <!-- <div class="px-4">
+                    tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
                     <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                </div>
+                </div> -->
             </div>
             <!-- 4 card -->
             <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
-                    <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                    <a href="https://www.youtube.com/watch?v=dvqT-E74Qlo" target="_new" class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center hover:underline">Nirwansyah Adi Eka Putra</a>
-                    <!-- Atribut belum ditentukan -->
-                    <div class="description font-paragraph text-primary text-center text-sm md:text-base block py-2 border-gray-400 mb-2">Atribut</div>
+                    <a href="/profil" target="_new">
+                        <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
+                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Nirwansyah Adi Eka Putra</span>
+                        <!-- Atribut belum ditentukan -->
+                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block py-0 border-gray-400 mb-0">Atribut</span>
+                        <span class="description font-paragraph text-primary text-center md:text-base block pb-0 border-gray-400 mb-2">Atribut</span>
+                    </a>
                 </div>
-                <div class="px-4">
-                    <!-- tombol lihat profil ketika diklik akan mengarah ke profil orang tsb -->
+                <!-- <div class="px-4">
+                    tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
                     <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
