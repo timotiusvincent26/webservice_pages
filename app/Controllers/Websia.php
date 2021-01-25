@@ -32,10 +32,24 @@ class Websia extends BaseController
         return view('websia/kontenWebsia/userProfile/rekomendasi', $data);
     }
 
-    public function galeri()
+    public function galeriFoto()
     {
         $data['judulHalaman'] = 'Galeri Kenangan Alumni';
         return view('websia/kontenWebsia/galeri/galeriAlumni', $data);
+    }
+
+    public function galeriVideo()
+    {
+        $data['judulHalaman'] = 'Galeri Video Kegiatan Alumni';
+        $data['login'] = 'sudah';
+        return view('kontenWebsia/galeri/galeriVidAlumni', $data);
+    }
+
+    public function galeriWisuda()
+    {
+        $data['judulHalaman'] = 'Galeri Video Wisuda';
+        $data['login'] = 'sudah';
+        return view('kontenWebsia/galeri/galeriWisuda', $data);
     }
 
     public function coba()
