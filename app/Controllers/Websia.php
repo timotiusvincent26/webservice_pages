@@ -8,7 +8,7 @@ class Websia extends BaseController
     {
         // ganti login ='sudah' atau 'belum' sesuai keadaan sudah login atau belum
         $data['judulHalaman'] = 'Beranda WEBSIA';
-        $data['login'] = 'belum';
+        $data['login'] = 'sudah';
         return view('websia/kontenWebsia/halamanUtama/beranda', $data);
     }
 
@@ -20,6 +20,8 @@ class Websia extends BaseController
 
     public function profil()
     {
+        // ganti status ='user' atau 'bukan user' sesuai pengakses, user itu untuk melihat profil diri sendiri, sedangkan bukan user untuk melihat profil orang lain
+        $data['status'] = 'user';
         $data['judulHalaman'] = 'User Profile';
         return view('websia/kontenWebsia/userProfile/userProfile', $data);
     }

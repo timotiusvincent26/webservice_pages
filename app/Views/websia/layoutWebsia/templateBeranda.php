@@ -29,7 +29,7 @@
                 </div>
 
                 <button type="button" class=" font-paragraph font-medium flex px-3 md:px-5 md:py-2 py-1 my-auto rounded-3xl shadow-sm md:text-base text-xs text-white bg-secondary hover:bg-secondaryhover transition-colors duration-200">
-                   <a href="/login/">MASUK</a>
+                    <a href="/login/">MASUK</a>
                 </button>
             </div>
         </header>
@@ -110,5 +110,6 @@
 <script>
     AOS.init();
 </script>
+<script type="text/javascript" src="/js/navbar.js"></script>
 
 </html>

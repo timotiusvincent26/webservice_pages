@@ -1,3 +1,11 @@
+<!-- ganti status ='user' atau 'bukan user' di controller websia class userProfile sesuai pengakses, user itu untuk melihat profil diri sendiri, sedangkan bukan user untuk melihat profil orang lain -->
+<?php
+if ($status == 'bukan user') {
+    $tombolEdit = 'hidden';
+} else if ($status == 'user') {
+    $tombolEdit = '';
+}
+?>
 <?= $this->extend('websia/layoutWebsia/templateBerandaLogin.php'); ?>
 
 <?= $this->section('content'); ?>
@@ -9,7 +17,7 @@
         <div class="md:w-2/5 mb-8 justify-center object-center space-y-4">
             <!-- Avatar user profile -->
             <img class="block float-none mx-auto w-60 md:w-72 px-6 object-contain" src="/img/avatar.png" alt="">
-            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="">Edit Profil</a>
+            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300 <?= $tombolEdit ?>" href="">Edit Profil</a>
         </div>
         <div class="md:w-3/5 justify-center mx-auto items-center text-center md:text-left object-center md:px-8 md:py-6">
             <h3 class="font-heading text-secondary text-2xl md:text-3xl lg:pr-1 px-8 md:px-0 mb-2 font-extrabold uppercase">Muhammad Nirwansyah Adi Eka Putra</h3>
@@ -72,7 +80,7 @@
             </a>
             <h2 class="font-heading mb-6 text-xl inline-block">Alumni yang mungkin Anda kenal</h2>
         </div>
-        <div class="holder mx-auto w-11/12 md:w-full lg:w-11/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-0 lg:gap-x-8">
+        <div class="holder mx-auto w-11/12 md:w-full lg:w-11/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-0 lg:gap-x-8" data-aos="zoom-in">
             <!-- 1 card -->
             <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
                 <div class="">
@@ -86,7 +94,7 @@
                 </div>
             </div>
             <!-- 2 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
                     <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
@@ -98,7 +106,7 @@
                 </div>
             </div>
             <!-- 3 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
                     <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
@@ -110,7 +118,7 @@
                 </div>
             </div>
             <!-- 4 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+            <div class="rounded-3xl flex flex-col justify-between p-2 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
                     <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
