@@ -16,6 +16,13 @@ class Webservice extends BaseController
 		$data['judul'] = 'Dokumentasi Web Service | SIA';
 		return view('webservice/kontenWebservice/dokumentasi/dokumentasi.php', $data);
 	}
+
+	public function proyek()
+	{
+		$data['judul'] = 'Proyek Web Service | SIA';
+		return view('webservice/kontenWebservice/proyek/proyek.php', $data);
+	}
+
 	//--------------------------------------------------------------------
 
 }

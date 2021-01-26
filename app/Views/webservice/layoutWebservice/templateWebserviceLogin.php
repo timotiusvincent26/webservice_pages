@@ -38,7 +38,7 @@
                                 <a href="/webservice/dokumentasi">
                                     <li class="hover:text-secondary hover:bg-white -mx-3 hover:border-opacity-70 hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300">DOKUMENTASI</li>
                                 </a>
-                                <a href="#">
+                                <a href="/webservice/proyek">
                                     <li class="hover:text-secondary rounded-b-xl hover:bg-white hover:border-opacity-70 hover:bg-white py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300">PROYEK</li>
                                 </a>
                             </ul>
