@@ -1,7 +1,7 @@
 <!-- Kalo mau akses carousel, di controller websia ganti variabel login = 'sudah' -->
-<!-- Gambar/konten yang didalam carousel belum fix, bisa berubah jika desain selesai dibuat -->
-<!-- Awal Carousel -->
+<!-- Gambar/konten yang didalam carousel belum fix, bisa berubah jika konten selesai dibuat -->
 
+<!-- Awal Carousel -->
 <div class="w-full bg-primary">
     <div id="slider" class="swiper-container w-full">
         <div class="swiper-wrapper">
@@ -14,6 +14,7 @@
                             <hr class="bg-secondary w-20 md:w-28 mt-2 md:mt-4">
                         </div>
                         <div class="my-8 px-14 lg:px-28 md:px-20 mt-4 md:-mt-2">
+                            <!-- tombol yang ada di dalam carousel masih belum ditentukan ada atau tidaknya, konten masih belum fix -->
                             <a href="#" class="bg-secondary ease-linear font-paragraph text-xs md:text-xl hover:bg-secondaryhover text-white px-4 py-2 md:px-6 md:py-2 rounded-full">Masuk</a>
                         </div>
                     </div>
@@ -28,6 +29,7 @@
                             <hr class="bg-secondary w-20 md:w-28 mt-2 md:mt-4">
                         </div>
                         <div class="my-8 px-14 lg:px-28 md:px-20 mt-4 md:-mt-2">
+                            <!-- tombol yang ada di dalam carousel masih belum ditentukan ada atau tidaknya, konten masih belum fix -->
                             <a href="#" class="bg-secondary ease-linear font-paragraph text-xs md:text-xl hover:bg-secondaryhover text-white px-4 py-2 md:px-6 md:py-2 rounded-full">Masuk</a>
                         </div>
                     </div>
@@ -42,6 +44,7 @@
                             <hr class="bg-secondary w-20 md:w-28 mt-2 md:mt-4">
                         </div>
                         <div class="my-8 px-14 lg:px-28 md:px-20 mt-4 md:-mt-2">
+                            <!-- tombol yang ada di dalam carousel masih belum ditentukan ada atau tidaknya, konten masih belum fix -->
                             <a href="#" class="bg-secondary ease-linear font-paragraph text-xs md:text-xl hover:bg-secondaryhover text-white px-4 py-2 md:px-6 md:py-2 rounded-full">Masuk</a>
                         </div>
                     </div>
