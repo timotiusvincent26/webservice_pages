@@ -49,6 +49,7 @@
     <div class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2 ">
         <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
 
+            <!-- awal footer stis -->
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
                 <div class="w-36 md:w-auto">
                     <a href="https://stis.ac.id/"><img class="w-24 h-24" src="/img/STISlogo.png" alt=""></a>
@@ -74,7 +75,9 @@
                     </div>
                 </div>
             </div>
+            <!-- akhir footer stis -->
 
+            <!-- awal footer haistis -->
             <div class="flex items-center mt-4 gap-x-2 md:mt-0 mx-auto md:mx-0">
                 <a href="https://haisstis.org/"><img class="md:h-24 h-20 w-36 md:w-auto" src="/img/logo_haisstis1.png" alt=""></a>
                 <div class="text-white font-heading">
@@ -99,6 +102,7 @@
                 </div>
             </div>
         </div>
+        <!-- akhir footer haistis -->
 
         <hr class="text-white mt-2 border-2">
         <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>

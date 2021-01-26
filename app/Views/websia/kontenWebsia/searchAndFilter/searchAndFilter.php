@@ -4,10 +4,15 @@
 <!--FILTER -->
 <div class="flex md:flex-row flex-col justify-around lg:px-20 md:px-8 px-2 my-8">
     <div class="flex flex-col mb-4 md:mb-0 ">
+
+        <!-- awal checkbox "Filter Alumni" -->
         <div class=" flex  md:flex-row items-center gap-x-2 mx-auto">
             <input type="checkbox" name="filterAlumni" id="filterAlumni" class="cursor-pointer my-auto">
             <label for="filterAlumni" id="namaFilterAlumni" class="text-sm text-gray-500 font-heading font-medium cursor-pointer">Filter Alumni</label>
         </div>
+        <!-- akhir checkbox "Filter Alumni" -->
+
+        <!-- awal select "Filter Berdasarkan" -->
         <div class="flex flex-col hidden md:mt-4 mt-2 mx-auto" id="pilihanFilterAlumni">
             <button class="flex justify-between w-52 py-1 px-3 text-gray-500 text-sm font-paragraph font-medium border-2 border-gray-500 rounded-lg focus:outline-none focus:border-black focus:text-black" id="dropdownFilterAlumni">
                 <div id="filterBerdasarkan"> Filter Berdasarkan</div>
@@ -24,15 +29,22 @@
                 <div class="px-3 py-2 cursor-pointer hover:bg-gray-300 text-sm" id="daftarFilter">Angkatan</div>
             </div>
         </div>
+        <!-- awal select "Filter Berdasarkan" -->
+
     </div>
 
     <div class="flex flex-col">
+
+        <!-- awal checkbox "Filter Tahun Berita" -->
         <div class="flex items-center gap-x-2 mx-auto">
             <input type="checkbox" name="filterBerita" id="filterBerita" class="cursor-pointer">
             <label for="filterBerita" class="text-sm text-gray-500 font-heading font-medium cursor-pointer">Filter Tahun Berita</label>
         </div>
+        <!-- akhir checkbox "Filter Tahun berita" -->
 
         <div class="flex gap-x-2 mx-auto mt-4 hidden" id="filterTahunBerita">
+
+            <!-- awal kalender Filter Tahun Berita "Awal" -->
             <div class="flex flex-col" id="pilihanFilterAwal">
                 <button class="flex justify-between md:w-36 w-32 py-1 px-3 mx-auto text-gray-500 text-sm font-paragraph font-medium border-2 border-gray-500 rounded-lg focus:outline-none focus:border-black focus:text-black" id="dropdownFilterAwal">
                     <div id="tahunAwal"> Awal</div>
@@ -56,22 +68,15 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
                         </svg>
                     </div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
-
+                    <?php for ($x = 0; $x < 12; $x++) : ?>
+                        <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAwal"></div>
+                    <?php endfor; ?>
                 </div>
-            </div>
 
+            </div>
+            <!-- akhir kalender Filter Tahun Berita "Awal" -->
+
+            <!-- awal kalender Filter Tahun Berita "Akhir" -->
             <div class="flex flex-col" id="pilihanFilterAkhir">
                 <button class="flex justify-between md:w-36 w-32 mx-auto py-1 px-3 text-gray-500 text-sm font-paragraph font-medium border-2 border-gray-500 rounded-lg focus:outline-none focus:border-black focus:text-black" id="dropdownFilterAkhir">
                     <div id="tahunAkhir"> Akhir</div>
@@ -95,21 +100,14 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
                         </svg>
                     </div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-                    <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
-
+                    <?php for ($x = 0; $x < 12; $x++) : ?>
+                        <div class="text-xs hover:bg-gray-300 text-center rounded border-b border-gray-300 cursor-pointer" id="tahunKalenderAkhir"></div>
+                    <?php endfor; ?>
                 </div>
+
             </div>
+            <!-- akhir kalender Filter Tahun Berita "Akhir" -->
+
         </div>
     </div>
 </div>
@@ -117,144 +115,42 @@
 
 <!-- HASIL PENCARIAN ALUMNI -->
 <div class="bg-primary w-full lg:px-20 md:px-8 px-2 my-8 py-4">
+
+    <!-- awal jumlah hasil pencarian alumni  -->
     <div class="text-white mb-6 font-paragraph font-extralightt text-sm text-center">
         Sekitar 28.899 hasil pencarian alumni
     </div>
+    <!-- akhir jumlah hasil pencarian alumni  -->
 
     <div class="w-full grid md:grid-cols-3 grid-cols-2 gap-x-2 gap-y-4">
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
+        <!-- awal card hasil pencarian alumni -->
+        <?php for ($x = 0; $x < 9; $x++) : ?>
+            <div class="flex justify-center">
+                <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
+                    <div class="flex items-center">
+                        <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
+                    </div>
+                    <div class="flex items-center">
+                        <div>
+                            <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
+                            <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <?php endfor; ?>
+        <!-- akhir card hasil pencarian alumni -->
 
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="md:flex hidden justify-center">
-            <div class="rounded-xl bg-white px-4 py-3 flex md:flex-row flex-col justify-between md:gap-x-2">
-                <div class="flex items-center">
-                    <img src="/img/avatar.png" class="lg:w-20 w-16 mx-auto" alt="">
-                </div>
-                <div class="flex items-center">
-                    <div>
-                        <h2 class="font-heading text-primary lg:text-lg md:text-base text-sm font-heading font-semibold">Nama Lengkap</h2>
-                        <h3 class="font-paragraph text-primary md:text-sm text-xs font-paragraph">Atribut</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
+    <!-- awal tulisan "Selengkapnya" di hasil pencarian -->
     <div class="flex justify-end mt-6">
         <div class="flex bg-secondary text-white rounded-full md:py-2 py-1 md:px-3 px-2 items-center gap-x-2 cursor-pointer md:text-sm text-xs">
             Selengkapnya
             <img src="/img/right-off.png" class="md:w-4 md:h-4 w-3 h-3" alt="">
         </div>
     </div>
+    <!-- akhir tulisan "Selengkapnya" di hasil pencarian -->
 </div>
 
 <!-- AKHIR HASIL PENCARIAN ALUMNI -->
@@ -267,44 +163,35 @@
     <hr class="my-2 border-2 border-gray-400">
     <!-- DAFTAR HASIL PENCARIAN BERITA -->
     <div>
-        <div class="mx-4">
-            <h2 class="font-heading text-primary text-lg font-semibold">Judul Berita</h2>
-            <h4 class="font-paragraph text-primary text-xs">11 Januari 2021</h4>
-            <div class="text-justify font-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit turpis sem, eu laoreet odio pretium ac. Mauris eget aliquet lorem. Cras dignissim leo non ante molestie, at vulputate justo lobortis. Pellentesque quam elit, mattis eu nibh et, maximus congue mauris
+
+        <!-- awal card hasil pencarian berita  -->
+        <?php for ($x = 0; $x < 3; $x++) : ?>
+            <div class="mx-4">
+                <h2 class="font-heading text-primary text-lg font-semibold">Judul Berita</h2>
+                <h4 class="font-paragraph text-primary text-xs">11 Januari 2021</h4>
+                <div class="text-justify font-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit turpis sem, eu laoreet odio pretium ac. Mauris eget aliquet lorem. Cras dignissim leo non ante molestie, at vulputate justo lobortis. Pellentesque quam elit, mattis eu nibh et, maximus congue mauris
+                </div>
             </div>
-        </div>
-        <hr class="my-2 border-2 border-gray-400">
-        <div class="mx-4">
-            <h2 class="font-heading text-primary text-lg font-semibold">Judul Berita</h2>
-            <h4 class="font-paragraph text-primary text-xs">11 Januari 2021</h4>
-            <div class="text-justify font-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit turpis sem, eu laoreet odio pretium ac. Mauris eget aliquet lorem. Cras dignissim leo non ante molestie, at vulputate justo lobortis. Pellentesque quam elit, mattis eu nibh et, maximus congue mauris
-            </div>
-        </div>
-        <hr class="my-2 border-2 border-gray-400">
-        <div class="mx-4">
-            <h2 class="font-heading text-primary text-lg font-semibold">Judul Berita</h2>
-            <h4 class="font-paragraph text-primary text-xs">11 Januari 2021</h4>
-            <div class="text-justify font-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit turpis sem, eu laoreet odio pretium ac. Mauris eget aliquet lorem. Cras dignissim leo non ante molestie, at vulputate justo lobortis. Pellentesque quam elit, mattis eu nibh et, maximus congue mauris
-            </div>
-        </div>
-        <hr class="my-2 border-2 border-gray-400">
+            <hr class="my-2 border-2 border-gray-400">
+        <?php endfor; ?>
+        <!-- akhir card hasil pencarian berita  -->
+
     </div>
     <!-- END DAFTAR HASIL PENCARIAN BERITA -->
+
+    <!-- awal tulisan "Selengkapnya" di hasil pencarian -->
     <div class="flex justify-end mt-6">
         <div class="flex bg-secondary text-white rounded-full md:py-2 py-1 md:px-3 px-2 items-center gap-x-2 cursor-pointer md:text-sm text-xs">
             Selengkapnya
             <img src="/img/right-off.png" class="md:w-4 md:h-4 w-3 h-3" alt="">
         </div>
     </div>
+    <!-- akhir tulisan "Selengkapnya" di hasil pencarian -->
+
 </div>
 <!-- END HASIL PENCARIAN BERITA -->
 
-<div class=" grid grid-cols-3 gap-4 bg-primary my-8 pt-0 lg:px-20 md:px-8 px-2">
-
-</div>
 
 <script type="text/javascript" src="/js/search.js"></script>
 <?= $this->endSection(); ?>

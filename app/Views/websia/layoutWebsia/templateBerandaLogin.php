@@ -112,6 +112,7 @@
     <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-2 ">
         <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
 
+            <!-- awal footer stis -->
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
                 <div class="w-36 md:w-auto">
                     <a href="https://stis.ac.id/"><img class="lg:w-24 lg:h-24 w-20 h-20" src="/img/STISlogo.png" alt=""></a>
@@ -128,7 +129,9 @@
                     </div>
                 </div>
             </div>
+            <!-- akhir footer stis -->
 
+            <!-- awal footer haistis -->
             <div class="flex items-center mt-4 gap-x-2 md:mt-0 mx-auto md:mx-0">
                 <a href="https://haisstis.org/"><img class="lg:h-24 h-20 w-36 lg:w-auto" src="/img/logo_haisstis1.png" alt=""></a>
                 <div class="text-white font-heading">
@@ -143,12 +146,15 @@
                     </div>
                 </div>
             </div>
+            <!-- akhir footer haistis -->
 
+            <!-- awal link ke webservice  -->
             <div class="text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
                 <a href="/webservice/">
                     <h3>Webservice(API)</h3>
                 </a>
             </div>
+            <!-- akhir link ke webservice  -->
 
         </div>
 
