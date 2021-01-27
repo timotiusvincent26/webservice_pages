@@ -3,9 +3,9 @@ var lastScroll = 0;
 $(window).scroll(function(event){
     var st = $(this).scrollTop();
     if (st > lastScroll){
-        $('#navbar').addClass('invisible');
+        $('.navbar').addClass('invisible');
     } else {
-        $('#navbar').removeClass('invisible');
+        $('.navbar').removeClass('invisible');
     }
     lastScroll = st;
 });
@@ -19,6 +19,14 @@ $('#hamburger').click(function() {
         $('#menu').addClass('hidden');
     }
   });
+
+$('#hamburgerApi').click(function () {
+    if ($('#menuApi').hasClass('hidden')) {
+        $('#menuApi').removeClass('hidden');
+    } else {
+        $('#menuApi').addClass('hidden');
+    }
+});
 
   $('#inputCari').click(function(){
     $('#tombolCari').addClass('hidden');
