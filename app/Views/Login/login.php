@@ -21,7 +21,7 @@
             <div class="flex sm:mx-4 md:mx-8 mx-8 my-1 h-10 relative">
                 <label for="pass" class="w-1/4 text-primary font-medium flex items-center sm:text-sm md:text-base">Kata Sandi</label>
                 <input type="password" name="pass" class="input pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" id="pass" placeholder="Ketik kata sandi di sini">
-                <i class="eyes fas fa-eye-slash absolute right-0 transform translate-y-3 -translate-x-3 cursor-pointer text-primary"></i>
+                <i class="fas fa-eye-slash absolute right-0 transform translate-y-3 -translate-x-3 cursor-pointer text-primary" id="eye"></i>
             </div>
             <div class="flex sm:mx-4 md:mx-8 mx-8">
                 <div class="w-1/4"></div>
@@ -33,7 +33,7 @@
                 <div class="w-3/4 flex justify-between">
                     <div>
                         <input type="checkbox" class="cursor-pointer">
-                        <label for="check" id="remember" class="text-sm cursor-pointer hover:text-blue-600 text-primary font-medium">Ingat saya</label>
+                        <label for="check" id="remember" class="text-sm cursor-pointer hover:text-blue-600 text-primary font-medium select-none">Ingat saya</label>
                     </div>
                     <a href="/login/resetpass/" class="text-sm cursor-pointer text-secondary font-medium hover:text-yellow-700">Lupa kata sandi?</a>
                 </div>
