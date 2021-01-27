@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
     <title>Sistem Informasi Alumni</title>
 
     <style>
