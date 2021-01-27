@@ -54,6 +54,7 @@ class Websia extends BaseController
 
     public function coba()
     {
-        return view('cobaWebsia/map');
+        $data['judulHalaman'] = 'Halaman buat coba coba';
+        return view('cobaWebsia/sidebar', $data);
     }
 }
