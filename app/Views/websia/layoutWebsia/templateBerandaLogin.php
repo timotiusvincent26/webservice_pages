@@ -52,7 +52,7 @@
 
 <body>
     <!-- HEADER -->
-    <div class="w-full fixed  z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
+    <div class="navbar w-full fixed  z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
             <div class="flex flex-col ">
                 <div class="flex items-center justify-between px-6 pt-3 ">
