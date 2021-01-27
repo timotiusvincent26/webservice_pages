@@ -1,45 +1,39 @@
-const inputs = document.querySelectorAll('.input');
-inputs.forEach(input => {
-    input.addEventListener('focus', () => {
-        input.classList.replace('border-gray-400', 'border-primary')
-        input.style.borderWidth = '3px'
-
+$(".input").each(function () {
+    $(".input").focus(function () {
+        $(this).addClass('border-primary').removeClass('border-gray-400')
+        $(this).css("border-width", "3px")
     })
-    input.addEventListener('blur', () => {
-        input.classList.replace('border-primary', 'border-gray-400')
-        input.style.borderWidth = '2px'
+    $(".input").blur(function () {
+        $(this).addClass('border-gray-400').removeClass('border-primary')
+        $(this).css("border-width", "2px")
     })
-})
+});
 
-const eye = document.querySelectorAll('.eyes')[0];
-var arg = false;
-eye.addEventListener('click', () => {
+var arg = true
+$("#eye").click(function () {
     if (!arg) {
-        eye.classList.replace('fa-eye-slash', 'fa-eye')
-        eye.previousElementSibling.setAttribute('type', 'text');
+        $('#eye').addClass('fa-eye-slash').removeClass('fa-eye')
+        $('#pass').attr('type', 'password')
         arg = true
     } else {
-        eye.classList.replace('fa-eye', 'fa-eye-slash')
-        eye.previousElementSibling.setAttribute('type', 'password');
+        $('#eye').addClass('fa-eye').removeClass('fa-eye-slash')
+        $('#pass').attr('type', 'text')
         arg = false
     }
 })
 
-const remember = document.getElementById('remember')
-remember.addEventListener('click', () => {
-    if (!remember.previousElementSibling.checked) {
-        remember.previousElementSibling.checked = true;
+$("#remember").click(function () {
+    if ($("#remember").prev().is(':checked')) {
+        $("#remember").prev().attr('checked', false)
     } else {
-        remember.previousElementSibling.checked = false;
+        $("#remember").prev().attr('checked', true)
     }
 })
 
-const sso = document.querySelectorAll('.sso');
-sso.forEach(el => {
-    el.addEventListener('mouseover', () => {
-        el.lastElementChild.classList.replace('text-secondary', 'text-yellow-600')
-    })
-    el.addEventListener('mouseout', () => {
-        el.lastElementChild.classList.replace('text-yellow-600', 'text-secondary')
-    })
+$(".sso").each(function () {
+    $(".sso").hover(function () {
+        $(this).children().last().addClass('text-yellow-600').removeClass('text-secondary')
+    }, function () {
+        $(this).children().last().addClass('text-secondary').removeClass('text-yellow-600')
+    });
 });
