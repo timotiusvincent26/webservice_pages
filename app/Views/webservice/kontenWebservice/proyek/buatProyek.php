@@ -19,7 +19,7 @@
                             <div class="font-bold text-secondary text-lg">API*</div>
                             <div>
                                 <div class="flex items-center gap-x-2">
-                                    <input type="checkbox" name="scope1" id="scope1" class="cursor-pointer">
+                                    <input type="checkbox" name="scope1" id="scope1" class="cursor-pointer" onclick="scope1JS()">
                                     <div class="font-heading font-medium" id="labelScope1">Scope 1</div>
                                 </div>
                                 <div class="ml-5 mt-2 mb-2">
@@ -28,7 +28,7 @@
                             </div>
                             <div>
                                 <div class="flex items-center gap-x-2">
-                                    <input type="checkbox" name="scope2" id="scope2" class="cursor-pointer">
+                                    <input type="checkbox" name="scope2" id="scope2" class="cursor-pointer" onclick="scope2JS()">
                                     <div class="font-heading font-medium" id="labelScope2">Scope 2</div>
                                 </div>
                                 <div class="ml-5 mt-2 mb-2">
@@ -37,7 +37,7 @@
                             </div>
                             <div>
                                 <div class="flex items-center gap-x-2">
-                                    <input type="checkbox" name="scope3" id="scope3" class="cursor-pointer">
+                                    <input type="checkbox" name="scope3" id="scope3" class="cursor-pointer" onclick="scope3JS()">
                                     <div class="font-heading font-medium" id="labelScope3">Scope 3</div>
                                 </div>
                                 <div class="ml-5 mt-2 mb-2">
@@ -63,4 +63,6 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="/js/checkbox.js"></script>
 <?php $this->endSection(); ?>
