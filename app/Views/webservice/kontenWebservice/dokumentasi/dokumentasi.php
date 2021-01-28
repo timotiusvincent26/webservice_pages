@@ -4,11 +4,15 @@
 
 <div class="grid grid-cols-3 gap-x-16 md:my-28 sm:my-24 my-12 md:mx-8 mx-4">
     <div class="col-span-1 mt-8">
+        <!-- SEARCH DOKUMENTASI -->
         <div class="w-full flex items-center">
             <input type="text" name="pencarian" id="pencarian" placeholder="Pencarian..." class="border-2 border-gray-300 rounded-lg px-3 py-2 w-full">
             <button><i class="fa fa-search fa-lg text-gray-500 ml-3 hover:text-gray-800"></i></button>
         </div>
+        <!-- END SEARCH DOKUMENTASI -->
         <hr class="border-gray-300 mt-2">
+
+        <!-- MINIMAP UNTUK DOKUMENTASI -->
         <ul class="mt-4 font-heading text-secondary text-2xl">
             <li class="mt-2 font-bold"><a href="#judul1">Judul 1</a>
                 <ul class="ml-4 mt-2 text-black text-xl font-paragraph font-bold">
@@ -23,9 +27,12 @@
                 </ul>
             </li>
         </ul>
+        <!-- END MINIMAP UNTUK DOKUMENTASI -->
     </div>
     <div class="col-span-2 mt-8">
         <h1 class="lg:text-6xl text-2xl text-center font-heading text-secondary font-bold">DOKUMENTASI</h1>
+
+        <!-- DAFTAR DOKUMENTASI -->
         <h2 class="text-2xl text-secondary mt-4 font-heading font-bold" id="judul1">Judul 1</h2>
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -50,6 +57,7 @@
         <div class="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
+        <!-- END DAFTAR DOKUMENTASI -->
     </div>
 </div>
 

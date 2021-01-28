@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="/css/scrollbar.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title>Web Service | SIA</title>
 </head>
 
-<body class="flex min-h-screen flex-col w-screen overflow-x-hidden">
+<body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
     <header class="bg-primary sm:py-8 py-3 md:px-12 px-4 w-full fixed">
         <div class="lingkaran-luar" id="kiri">

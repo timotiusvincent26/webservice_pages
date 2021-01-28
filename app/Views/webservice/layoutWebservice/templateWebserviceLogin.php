@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
-    <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/add_style.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?= $judul; ?></title>
 
@@ -26,9 +26,7 @@
 
 </head>
 
-<!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
-
-<body class="flex min-h-screen flex-col w-screen overflow-x-hidden">
+<body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
     <header class="bg-primary sm:py-8 py-3 md:px-12 px-4 w-full navbar fixed">
         <div class="lingkaran-luar" id="kiri">
@@ -54,7 +52,7 @@
                             <a href="/webservice/dokumentasi">
                                 <li class="hover:text-secondary hover:bg-white -mx-3 hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300">DOKUMENTASI</li>
                             </a>
-                            <a href="#">
+                            <a href="/webservice/proyek">
                                 <li class="hover:text-secondary rounded-b-xl hover:bg-white hover:bg-white py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300">PROYEK</li>
                             </a>
                         </ul>
