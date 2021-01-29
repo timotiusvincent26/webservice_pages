@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 
 <div class="mt-32 w-full flex justify-center">
-    <div class="shadow-2xl w-3/4 mt-6 rounded-xl p-4">
+    <div class="shadow-2xl w-3/4 mt-6 mb-12 rounded-xl p-4">
         <h1 class="lg:text-6xl text-2xl text-center font-heading text-secondary font-bold">PROYEK</h1>
         <div class="flex justify-center">
             <div class="w-3/5">
