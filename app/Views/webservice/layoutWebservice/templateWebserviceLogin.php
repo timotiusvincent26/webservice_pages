@@ -98,7 +98,7 @@
                         <a href="/webservice/dokumentasi">
                             <li class="bg-secondary m-auto hover:text-secondary hover:bg-white text-center text-sm py-0.5 w-44 border-b-2 border-gray-500">DOKUMENTASI</li>
                         </a>
-                        <a href="#">
+                        <a href="/webservice/proyek">
                             <li class="bg-secondary m-auto hover:text-secondary hover:bg-white text-center text-sm rounded-b-xl py-0.5 w-44 border-b-2 border-gray-500">PROYEK</li>
                         </a>
                     </ul>
