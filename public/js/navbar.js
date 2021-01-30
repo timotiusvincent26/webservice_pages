@@ -33,3 +33,17 @@ $('#hamburgerApi').click(function () {
   })
 
 // doropdown navbar mobile
+
+// awal dropdown galeri mobile
+$('#galeri').click(function() {
+    if($('#listGaleri').hasClass('hidden')){
+        $('#upGaleri').removeClass('hidden');
+        $('#downGaleri').addClass('hidden');
+        $('#listGaleri').removeClass('hidden');
+    } else {
+        $('#upGaleri').addClass('hidden');
+        $('#downGaleri').removeClass('hidden');
+        $('#listGaleri').addClass('hidden');
+    }
+  });
+// akhir dropdown galeri mobile

@@ -47,7 +47,7 @@
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <div class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2 ">
+    <div class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-3 ">
         <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
 
             <!-- awal footer stis -->

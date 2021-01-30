@@ -123,8 +123,26 @@
                         <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
                             <a href="/profil"> PROFIL</a>
                         </div>
-                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
-                            <a href="/galeri"> GALERI</a>
+                        <div class="flex flex-col">
+                            <div class="flex text-white justify-center text-xs mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white" id="galeri">
+                                <div> GALERI</div>
+                                <svg class="w-4 h-4 my-auto ml-2" fill="none" id="downGaleri" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                                <svg class="w-4 h-4 my-auto ml-2 hidden" fill="currentColor" id="upGaleri" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col hidden" id="listGaleri">
+                                <a href="/galeriFoto" class="text-white text-xs text-center  mt-1 py-2  w-11/12 mx-auto border-b border-white"> GALERI FOTO </a>
+                                <a href="/galeriVideo" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> GALERI VIDEO </a>
+                                <a href="/galeriWisuda" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> GALERI WISUDA </a>
+                            </div>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="/galeriFoto" class="menu text-white hover:text-secondary -mt-2 -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI FOTO </a>
+                            <a href="/galeriVideo" class="menu text-white hover:text-secondary -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI VIDEO </a>
+                            <a href="/galeriWisuda" class="menu text-white hover:text-secondary hover:border-opacity-70 py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300"> GALERI WISUDA </a>
                         </div>
                         <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
                             <a href="/admin"> ADMIN</a>
@@ -159,7 +177,7 @@
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-2 ">
+    <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-3 ">
         <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
 
             <!-- awal footer stis -->

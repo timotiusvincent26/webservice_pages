@@ -22,7 +22,7 @@ if ($login == 'belum') {
 
 <!-- Awal Sejarah Singkat HAISTIS -->
 </div>
-<div class="flex md:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 px-2">
+<div class="flex md:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 px-3">
     <div class="md:w-2/3 block md:px-2 md:py-8 pb-4">
         <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-black font-heading font-semibold">HASIL DARI PROYEK PKL RISET 5</div>
         <!-- awal keterangan hasil proyek pkl riset 5 -->
@@ -42,7 +42,7 @@ if ($login == 'belum') {
 <!-- Akhir Sejarah Singkat HAISTIS -->
 
 <!-- Awal Sejarah Singkat HAISTIS -->
-<div class="flex md:flex-row flex-col bg-primary my-8 pt-0 lg:px-20 md:px-8 px-2">
+<div class="flex md:flex-row flex-col bg-primary my-8 pt-0 lg:px-20 md:px-8 px-3">
     <div class="md:w-1/3 w-full md:flex md:items-stretch bg-contain bg-no-repeat bg-left" style="background-image: url(/img/segitiga1.png)">
         <img class="lg:w-2/3 md:w-11/12 w-10/12  mx-auto md:self-center" src="/img/logo_haisstis1.png" alt="" data-aos="fade-right">
     </div>
@@ -62,7 +62,7 @@ if ($login == 'belum') {
 <!-- Akhir Sejarah Singkat HAISTIS -->
 
 <!-- Awal Jumlah Alumni AIS/STIS/Polstat STIS -->
-<div class="w-full my-8 lg:px-20 md:px-8 px-2">
+<div class="w-full my-8 lg:px-20 md:px-8 px-3">
     <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-heading font-bold">ALUMNI AIS/STIS/POLSTAT STIS</div>
 
     <div class="flex flex-col items-center md:flex-row md:justify-around w-full mt-4">
@@ -92,7 +92,7 @@ if ($login == 'belum') {
 <!-- Akhir Jumlah Alumni AIS/STIS/Polstat STIS -->
 
 <!-- Awal Peta Sebaran ALUMNI -->
-<div class="bg-primary my-8 md:py-8 py-4 lg:px-20 md:px-8 px-2">
+<div class="bg-primary my-8 md:py-8 py-4 lg:px-20 md:px-8 px-3">
     <div class="w-full md:mb-6 mb-4 text-center text-xl text-secondary font-bold font-heading">PETA SEBARAN ALUMNI</div>
     <!-- awal gambar peta alumni -->
     <div id="mapid" class="bg-primary" style="height: 26rem;" data-aos="zoom-in"></div>
@@ -101,110 +101,57 @@ if ($login == 'belum') {
 <!-- Akhir Peta Sebaran ALUMNI -->
 
 <!-- awal card -->
-<div class="w-full my-8 lg:px-20 md:px-8 px-2">
+<div class="w-full mt-8 lg:px-20 md:px-8 px-3">
     <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-bold font-heading">BERITA TERBARU</div>
 
     <div class="flex flex-col md:flex-row md:justify-between w-full mt-4">
 
-        <!-- awal card I-->
-        <div class="w-full mb-6 lg:w-80 md:w-60 w-full md:border-0 border-b-2 border-gray-300">
-            <a href="#" class="mb-4">
-                <img class="lg:w-80 lg:h-60 md:w-60 md:h-44" src="/img/sampel.jpeg">
-            </a>
-            <div class="py-4">
-                <!-- Awal judul berita -->
-                <div>
-                    <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
-                        Pelatihan Kepegawaian di Masa Pandemi
-                    </a>
+        <?php for ($x = 0; $x < 3; $x++) : ?>
+            <!-- awal card-->
+            <div class="w-full mb-6 lg:w-80 md:w-60 w-full md:border-0 border-b-2 border-gray-300">
+                <a href="#" class="mb-4">
+                    <img class="lg:w-80 lg:h-60 md:w-60 md:h-44" src="/img/sampel.jpeg">
+                </a>
+                <div class="py-4">
+                    <!-- Awal judul berita -->
+                    <div>
+                        <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
+                            Pelatihan Kepegawaian di Masa Pandemi
+                        </a>
+                    </div>
+                    <!-- akhir judul berita -->
+
+                    <!-- awal tanggal berita -->
+                    <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
+                    <!-- akhir tanggal berita -->
+
+                    <!-- awal isi berita -->
+                    <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
+                    </p>
+                    <!-- akhir isi berita -->
+
                 </div>
-                <!-- akhir judul berita -->
-
-                <!-- awal tanggal berita -->
-                <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
-                <!-- akhir tanggal berita -->
-
-                <!-- awal isi berita -->
-                <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
-                </p>
-                <!-- akhir isi berita -->
-
             </div>
-        </div>
-        <!-- akhir card I-->
-
-        <!-- awal card II-->
-        <div class="w-full mb-6 lg:w-80 md:w-60 w-full md:border-0 border-b-2 border-gray-300">
-            <a href="#" class="mb-4">
-                <img class="lg:w-80 lg:h-60 md:w-60 md:h-44" src="/img/sampel.jpeg">
-            </a>
-            <div class="py-4">
-                <!-- Awal judul berita -->
-                <div>
-                    <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
-                        Pelatihan Kepegawaian di Masa Pandemi
-                    </a>
-                </div>
-                <!-- akhir judul berita -->
-
-                <!-- awal tanggal berita -->
-                <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
-                <!-- akhir tanggal berita -->
-
-                <!-- awal isi berita -->
-                <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
-                </p>
-                <!-- akhir isi berita -->
-
-            </div>
-        </div>
-        <!-- akhir card II-->
-
-        <!-- awal card III-->
-        <div class="w-full mb-6 lg:w-80 md:w-60 w-full md:border-0 border-b-2 border-gray-300">
-            <a href="#" class="mb-4">
-                <img class="lg:w-80 lg:h-60 md:w-60 md:h-44" src="/img/sampel.jpeg">
-            </a>
-            <div class="py-4">
-                <!-- Awal judul berita -->
-                <div>
-                    <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
-                        Pelatihan Kepegawaian di Masa Pandemi
-                    </a>
-                </div>
-                <!-- akhir judul berita -->
-
-                <!-- awal tanggal berita -->
-                <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
-                <!-- akhir tanggal berita -->
-
-                <!-- awal isi berita -->
-                <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
-                </p>
-                <!-- akhir isi berita -->
-
-            </div>
-            <!-- akhir card III-->
-
-        </div>
+            <!-- akhir card-->
+        <?php endfor; ?>
 
     </div>
 
-    <!-- awal tombol "Lihat Berita Selanjutnya" -->
-    <div class="flex w-full justify-end">
-        <div class="text-primary font-paragraph my-auto"><a href="">Lihat Berita Selanjutnya</a> </div>
-        <div>
-            <a href="">
-                <svg class="w-6 h-6 font-bold text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </a>
-        </div>
+</div>
+
+<!-- awal tombol "Lihat Berita Selanjutnya" -->
+<div class="flex w-full justify-end lg:px-20 md:px-8 px-3">
+    <div class="text-primary font-paragraph my-auto"><a href="">Lihat Berita Selanjutnya</a> </div>
+    <div>
+        <a href="">
+            <svg class="w-6 h-6 font-bold text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </a>
     </div>
-    <!-- akhir tombol "Lihat Berita Selanjutnya" -->
+</div>
+<!-- akhir tombol "Lihat Berita Selanjutnya" -->
 
 </div>
 <!-- akhir card -->
