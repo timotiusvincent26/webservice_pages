@@ -41,15 +41,13 @@ class Websia extends BaseController
     public function galeriVideo()
     {
         $data['judulHalaman'] = 'Galeri Video Kegiatan Alumni';
-        $data['login'] = 'sudah';
-        return view('kontenWebsia/galeri/galeriVidAlumni', $data);
+        return view('websia/kontenWebsia/galeri/galeriVidAlumni', $data);
     }
 
     public function galeriWisuda()
     {
         $data['judulHalaman'] = 'Galeri Video Wisuda';
-        $data['login'] = 'sudah';
-        return view('kontenWebsia/galeri/galeriWisuda', $data);
+        return view('websia/kontenWebsia/galeri/galeriWisuda', $data);
     }
 
     public function coba()
