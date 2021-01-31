@@ -92,31 +92,39 @@ if ($status == 'bukan user') {
         </div>
         <div class="holder mx-auto w-11/12 md:w-full lg:w-11/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-0 lg:gap-x-8" data-aos="zoom-in">
             <!-- 1 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative">
+            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad Nirwansyah Adi Eka Putra</span>
-                        <!-- Atribut belum ditentukan -->
-                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
                     </a>
                 </div>
-                <!-- <div class="px-4"> -->
-                <!-- tombol lihat profil ketika diklik akan mengarah ke profil orang tsb -->
-                <!-- <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a> -->
-                <!-- </div> -->
+                <div>
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                    <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad Nirwansyah Adi Eka Putra</span>
+                </div>
+                <div>
+                    <!-- Atribut adalah angkatan alumni -->
+                    <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
+                </div>
+                <!-- <div class="px-4">
+                    tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
+                    <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
+                </div> -->
             </div>
             <!-- 2 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad Putra</span>
-                        <!-- Atribut belum ditentukan -->
-                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
                     </a>
+                </div>
+                <div>
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                    <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad Putra</span>
+                </div>
+                <div>
+                    <!-- Atribut adalah angkatan alumni -->
+                    <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
                 </div>
                 <!-- <div class="px-4">
                     tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
@@ -124,15 +132,19 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 3 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Nama Lengkap</span>
-                        <!-- Atribut belum ditentukan -->
-                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
                     </a>
+                </div>
+                <div>
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                    <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad Nirwansyah Adi Eka</span>
+                </div>
+                <div>
+                    <!-- Atribut adalah angkatan alumni -->
+                    <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
                 </div>
                 <!-- <div class="px-4">
                     tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
@@ -140,15 +152,19 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 4 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
-                        <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
-                        <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Nama Lengkap</span>
-                        <!-- Atribut belum ditentukan -->
-                        <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
                     </a>
+                </div>
+                <div>
+                    <!-- Nama lengkap bisa diklik dan mengarah ke profil orang tsb -->
+                    <span class="title mt-4 font-heading text-sm md:text-base lg:text-lg font-semibold text-primary block px-2 md:px-0 cursor-pointer text-center">Muhammad</span>
+                </div>
+                <div>
+                    <!-- Atribut adalah angkatan alumni -->
+                    <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
                 </div>
                 <!-- <div class="px-4">
                     tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
