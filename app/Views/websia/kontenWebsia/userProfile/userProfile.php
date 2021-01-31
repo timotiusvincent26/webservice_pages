@@ -16,7 +16,13 @@ if ($status == 'bukan user') {
     <div class="lg:w-3/5 w-full md:flex items-center font-paragraph text-sm">
         <div class="md:w-2/5 mb-8 justify-center object-center space-y-4">
             <!-- Avatar user profile -->
-            <img class="block float-none mx-auto w-60 md:w-72 px-6 object-contain" src="/img/avatar.png" alt="">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-3/4 sm:w-full px-4">
+                    <!-- syarat foto disini harus persegi (solusi : object fit) -->
+                    <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-1-800x800-fa5a7ac2c81a43925586ea85f2fea332.jpg" alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+                    <!-- <img src="/img/tes/download.jpg" alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" /> -->
+                </div>
+            </div>
             <!-- Tombol edit profil yang ketika di klik akan mengarah ke halaman edit profil -->
             <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300 <?= $tombolEdit ?>" href="">Edit Profil</a>
         </div>
@@ -25,9 +31,9 @@ if ($status == 'bukan user') {
             <h3 class="font-heading text-secondary text-2xl md:text-3xl lg:pr-1 px-8 md:px-0 mb-2 font-extrabold uppercase">Nama Lengkap</h3>
             <div class="mb-8">
                 <!-- role alumni -->
-                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Alumni</span>
-                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Admin</span>
-                <span class="font-paragraph text-xs bg-gray-300 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Developer</span>
+                <span class="font-paragraph text-xs inline-block bg-gray-300 mb-1 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Alumni</span>
+                <span class="font-paragraph text-xs inline-block bg-gray-300 mb-1 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Admin</span>
+                <span class="font-paragraph text-xs inline-block bg-gray-300 mb-1 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Developer</span>
             </div>
             <!-- tempat dan tanggal lahir -->
             <p class="font-heading text-center md:text-left text-base mb-5">Aceh, 32 Januari 2021</p>
@@ -82,12 +88,14 @@ if ($status == 'bukan user') {
 <!-- Awal Rekomendasi -->
 <div class="bg-primary py-8 md:py-4 lg:px-20 md:px-8 px-3">
     <div class="static md:w-full md:px-2 md:py-8 pb-4">
-        <div class="md:mb-6 mb-2 text-center md:text-left text-secondary font-semibold">
+        <div class="-mt-16 sm:mt-0 md:mb-6 mb-2 text-center md:text-left text-secondary font-semibold">
             <!-- link ini mengarah ke halaman tampilan semua rekomendasi -->
-            <a class="bg-secondary mb-8 mt-1 md:mt-0 float-right font-paragraph text-sm text-white text-center py-1 px-4 mx-auto rounded-full cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="/rekomendasi">
-                Lihat Semua Rekomendasi
-                <img src="/img/icon/panah.png" alt="" class="float-right pl-2">
-            </a>
+            <div class="invisible sm:visible">
+                <a class="bg-secondary mb-8 mt-1 md:mt-0 float-right font-paragraph text-sm text-white text-center py-1 px-4 mx-auto rounded-full cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="/rekomendasi">
+                    Lihat Semua Rekomendasi
+                    <img src="/img/icon/panah.png" alt="" class="float-right pl-2">
+                </a>
+            </div>
             <h2 class="font-heading mb-6 text-xl inline-block">Alumni yang mungkin Anda kenal</h2>
         </div>
         <div class="holder mx-auto w-11/12 md:w-full lg:w-11/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-0 lg:gap-x-8" data-aos="zoom-in">
@@ -171,6 +179,12 @@ if ($status == 'bukan user') {
                     <a class="block bg-gray-300 font-paragraph text-primary text-sm text-center py-1 md:py-2 px-3 my-4 mx-auto rounded-lg w-full cursor-pointer hover:bg-opacity-70 transition-colors duration-300" href="">Lihat Profil</a>
                 </div> -->
             </div>
+        </div>
+        <div class="visible sm:invisible">
+            <a class="bg-secondary mb-8 mt-1 md:mt-0 float-right font-paragraph text-sm text-white text-center py-1 px-4 mx-auto rounded-full cursor-pointer hover:bg-secondaryhover transition-colors duration-300" href="/rekomendasi">
+                Lihat Semua Rekomendasi
+                <img src="/img/icon/panah.png" alt="" class="float-right pl-2">
+            </a>
         </div>
     </div>
 </div>
