@@ -12,18 +12,90 @@
             </div>
         </div>
     </a>
-    <div class="flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
+    <div class="proyek flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
         <span class="font-paragraph md:text-base text-sm">Judul Proyek : Lorem Ipsum Dolor Sit Amet</span>
         <span class="font-paragraph md:text-base text-sm rounded-full border bg-gray-400 text-white px-3 py-1 md:w-32 w-24 text-center">Menunggu</span>
     </div>
-    <div class="flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
+    <div class="proyek flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
         <span class="font-paragraph md:text-base text-sm">Judul Proyek : Lorem Ipsum Dolor Sit Amet</span>
         <span class="font-paragraph md:text-base text-sm rounded-full border bg-green-400 text-white px-3 py-1 md:w-32 w-24 text-center">Disetujui</span>
     </div>
-    <div class="flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
+    <div class="proyek flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
         <span class="font-paragraph md:text-base text-sm">Judul Proyek : Lorem Ipsum Dolor Sit Amet</span>
         <span class="font-paragraph md:text-base text-sm rounded-full border bg-red-600 text-white px-3 py-1 md:w-32 w-24 text-center">Ditolak</span>
     </div>
+
 </div>
+
+<script>
+    $(".proyek").click(function() {
+        if (!$(this).hasClass('border-primary')) {
+            $(this).addClass('border-primary')
+            $(this).css("border-width", "2px")
+            $(this).after(`
+            <div class="w-11/12 mx-auto mb-4 rounded-b-xl shadow-xl hidden opacity-0 duration-500 transition-all">
+        <div class="flex justify-start text-sm">
+            <div class="token text-white py-1 w-20 text-center mr-1 cursor-pointer transform hover:scale-105 duration-150 outline-none choosed">TOKEN</div>
+            <div class="detail text-white py-1 w-20 text-center mr-1 cursor-pointer transform hover:scale-105 duration-150 outline-none notchoose">DETAIL</div>
+        </div>
+        <div id="isiToken" class="sm:mx-3 mx-2">
+            <div class="flex mt-3 mb-2">
+                <p class="w-1/4 text-primary text-sm font-bold">Token Pengguna</p>
+                <p class="w-3/4 text-primary text-sm break-all">fafdsfsgdfgdfhgfhs24235gh43y@4gfdhdshgshshsggrgrgrg4y4456547fefgfeggfgf</p>
+            </div>
+            <div class="flex mb-2">
+                <p class="w-1/4 text-primary text-sm font-bold">Tanggal Disetujui</p>
+                <p class="w-3/4 text-primary text-sm">30 Feruari 2021 - 21.00</p>
+            </div>
+            <div class="flex pb-4">
+                <p class="w-1/4 text-primary text-sm font-bold">Masa Berlaku</p>
+                <p class="w-3/4 text-primary text-sm">2 Bulan</p>
+            </div>
+        </div>
+        <div class="hidden" id="isiDetail">
+            <div class="flex mx-3 mt-3 mb-2">
+                <p class="w-1/4 text-primary text-sm font-bold">Deskripsi</p>
+                <p class="w-3/4 text-justify text-primary text-sm">Berisikan Data yang diisikan saat membuat proyek. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, iusto id? Natus officiis nemo laborum similique molestiae in labore tenetur nihil. Cum temporibus alias modi ratione est assumenda, commodi possimus?</p>
+            </div>
+            <div class="flex mx-3 pb-4">
+                <p class="w-1/4 text-primary text-sm font-bold">Cakupan Data</p>
+                <p class="w-3/4 text-justify text-primary text-sm">Menggunakan informasi pribadi</p>
+            </div>
+        </div>
+    </div>
+        `)
+            var $this = $(this);
+            $(this).next().removeClass('hidden')
+            setTimeout(function() {
+                $this.next().removeClass('opacity-0');
+            }, 30);
+
+
+            $(this).next().children().first().children().eq(1).click(function() {
+                $(this).removeClass('notchoose').addClass('choosed')
+                $(this).prev().removeClass('choosed').addClass('notchoose')
+
+                $(this).parent().next().next().removeClass('hidden')
+                $(this).parent().next().addClass('hidden')
+            })
+
+            $(this).next().children().first().children().eq(0).click(function() {
+                $(this).removeClass('notchoose').addClass('choosed')
+                $(this).next().removeClass('choosed').addClass('notchoose')
+
+                $(this).parent().next().next().addClass('hidden')
+                $(this).parent().next().removeClass('hidden')
+            })
+
+        } else {
+            $(this).removeClass('border-primary')
+            $(this).css("border-width", "1px")
+            // $(this).next().addClass('hidden')
+
+            $(this).next().addClass('opacity-0')
+            $(this).next().addClass('hidden')
+        }
+    })
+</script>
 
 <?= $this->endSection(); ?>

@@ -20,16 +20,20 @@
         .tombol:hover {
             background-position: right;
         }
+
+        body>div:first-child {
+            background-image: url('/img/bgHeader.png');
+        }
     </style>
 
 </head>
 
 <!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
 
-<body class="flex min-h-screen flex-col w-screen">
+<body class="flex min-h-screen flex-col w-screen overflow-x-hidden">
     <!-- HEADER -->
-    <div class="w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
-        <header>
+    <div class="navbar w-full fixed z-10 bg-cover bg-no-repeat bg-left">
+        <header class="mb-2">
             <div class="flex items-center justify-between px-6 pt-3">
                 <div class="flex">
                     <a href="<?= base_url(); ?>">
@@ -42,13 +46,10 @@
             </div>
         </header>
     </div>
-    <div class="w-full md:h-24 h-12 bg-primary">
-        <!-- Codingan Navbar Taruh Sini juga buat semacam marginnya -->
-    </div>
     <!-- END HEADER -->
 
     <!-- CONTENT PAGE DI SINI -->
-    <div class="w-full flex flex-1 justify-center items-center xl:px-0 sm:px-3 lg:px-16 px-0">
+    <div class="w-full flex flex-1 justify-center items-center xl:px-0 sm:px-3 lg:px-16 px-0 md:mt-24 mt-16">
         <?= $this->renderSection('content'); ?>
     </div>
     <!-- END CONTENT PAGE -->
@@ -96,6 +97,7 @@
     </footer>
     <!-- END FOOTER -->
     <script src="/js/login.js"></script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
 </body>
 
 </html>

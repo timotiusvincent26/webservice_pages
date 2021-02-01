@@ -4,7 +4,7 @@
 
 <div class="flex sm:w-max w-11/12 px-2">
     <div class="w-full xl:mr-40 md:mr-10 mr-4 items-center sm:flex hidden">
-        <img src="/img/login.png" alt="gambar login" class="">
+        <img src="/img/login.png" alt="gambar login">
     </div>
     <div class="w-full">
         <form method="POST" action="/websia/" class="py-8 rounded-3xl shadow-2xl flex flex-col">
@@ -16,7 +16,7 @@
             </div>
             <div class="flex sm:mx-4 md:mx-8 mx-8 my-1">
                 <div class="w-1/4"></div>
-                <p class="w-3/4 text-xs text-red-500" id="msg-email">Email yang anda masukkan tidak cocok</p>
+                <p class="w-3/4 text-xs text-red-500 w-3/4 text-justify" id="msg-email">Email yang anda masukkan tidak cocok</p>
             </div>
             <div class="flex sm:mx-4 md:mx-8 mx-8 my-1 h-10 relative">
                 <label for="pass" class="w-1/4 text-primary font-medium flex items-center sm:text-sm md:text-base">Kata Sandi</label>
@@ -25,15 +25,15 @@
             </div>
             <div class="flex sm:mx-4 md:mx-8 mx-8">
                 <div class="w-1/4"></div>
-                <p class="text-xs text-red-500" id="msg-pass">Kata sandi yang anda masukkan kurang tepat</p>
+                <p class="text-xs text-red-500 w-3/4 text-justify" id="msg-pass">Kata sandi yang anda masukkan kurang tepat</p>
             </div>
 
             <div class="flex sm:mx-4 md:mx-8 mx-8 my-3">
                 <div class="w-1/4"></div>
                 <div class="w-3/4 flex justify-between">
-                    <div>
-                        <input type="checkbox" class="cursor-pointer">
-                        <label for="check" id="remember" class="text-sm cursor-pointer hover:text-blue-600 text-primary font-medium select-none">Ingat saya</label>
+                    <div class="transform -translate-y-1">
+                        <input type="checkbox" class="cursor-pointer transform translate-y-0.5">
+                        <label for="check" id="remember" class="text-sm cursor-pointer hover:text-blue-600 text-primary font-medium select-none ">Ingat saya</label>
                     </div>
                     <a href="/login/resetpass/" class="text-sm cursor-pointer text-secondary font-medium hover:text-yellow-700">Lupa kata sandi?</a>
                 </div>
