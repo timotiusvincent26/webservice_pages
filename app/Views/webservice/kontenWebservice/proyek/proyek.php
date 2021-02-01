@@ -2,67 +2,100 @@
 
 <?= $this->section('content'); ?>
 
-<div class="lg:mt-32 md:mt-24 mt-16 w-full flex justify-center">
-    <div class="shadow-2xl sm:w-3/4 w-full mt-6 lg:mb-12 mb-6 rounded-xl px-0 pt-4 pb-6 sm:mx-0 mx-6">
-        <h1 class="lg:text-6xl md:text-3xl text-2xl text-center font-heading text-secondary font-bold">PROYEK</h1>
-        <div class="flex justify-center">
-            <div class="lg:w-3/5 w-4/5">
-                <hr class="border-primary border-2 lg:mt-6 md:mt-4 mt-2">
-                <div class="mx-2 mt-4">
-                    <form action="" class="lg:text-base md:text-sm text-xs">
-                        <div class="font-bold text-secondary lg:text-lg md:text-base text-sm">Nama*</div>
-                        <input type="text" name="nama" id="nama" placeholder="Nama Proyek" class="border-2 border-gray w-full rounded-lg p-2 mt-2 lg:mb-4 mb-2">
+<div class="lg:mx-36 mx-5 lg:mt-36 md:mt-28 mt-20 w-full">
+    <h3 class="font-heading font-bold text-center text-secondary lg:text-6xl md:text-3xl text-2xl">PROYEK</h3>
+    <a href="/webservice/buatProyek">
+        <div class="flex justify-center md:w-40 w-36 md:px-3 md:py-2 px-1 py-1 lg:mt-12 mt-4 mb-8 rounded-lg border-gray shadow-lg tracking-wider cursor-pointer hover:bg-gray-100">
+            <div class="flex gap-x-2 items-center justify-center">
+                <i class="fa md:fa-lg fa-plus text-secondary"></i>
+                <div class="font-heading font-semibold md:text-base text-sm">Buat Proyek</div>
+            </div>
+        </div>
+    </a>
+    <div class="proyek flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
+        <span class="font-paragraph md:text-base text-sm">Judul Proyek : Lorem Ipsum Dolor Sit Amet</span>
+        <span class="font-paragraph md:text-base text-sm rounded-full border bg-gray-400 text-white px-3 py-1 md:w-32 w-24 text-center">Menunggu</span>
+    </div>
+    <div class="proyek flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
+        <span class="font-paragraph md:text-base text-sm">Judul Proyek : Lorem Ipsum Dolor Sit Amet</span>
+        <span class="font-paragraph md:text-base text-sm rounded-full border bg-green-400 text-white px-3 py-1 md:w-32 w-24 text-center">Disetujui</span>
+    </div>
+    <div class="proyek flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer">
+        <span class="font-paragraph md:text-base text-sm">Judul Proyek : Lorem Ipsum Dolor Sit Amet</span>
+        <span class="font-paragraph md:text-base text-sm rounded-full border bg-red-600 text-white px-3 py-1 md:w-32 w-24 text-center">Ditolak</span>
+    </div>
 
-                        <div class="font-bold text-secondary lg:text-lg md:text-base text-sm">Deskripsi*</div>
-                        <textarea name="deskripsi" id="deskripsi" cols="50" rows="5" class="w-full border-2 border-gray rounded-lg p-2 mt-2 lg:mb-4 mb-2" placeholder="Masukkan Deskripsi Proyek"></textarea>
-                        <div>
-                            <div class="font-bold text-secondary lg:text-lg md:text-base text-sm">API*</div>
-                            <div>
-                                <div class="flex items-center gap-x-2">
-                                    <input type="checkbox" name="scope1" id="scope1" class="cursor-pointer" onclick="scope1JS()">
-                                    <div class="font-heading font-medium text-gray-500" id="labelScope1">Scope 1</div>
-                                </div>
-                                <div class="ml-5 md:mt-2 mb-2">
-                                    Mengakses informasi dengan cakupan Scope 1.
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex items-center gap-x-2">
-                                    <input type="checkbox" name="scope2" id="scope2" class="cursor-pointer" onclick="scope2JS()">
-                                    <div class="font-heading font-medium text-gray-500" id="labelScope2">Scope 2</div>
-                                </div>
-                                <div class="ml-5 md:mt-2 mb-2">
-                                    Mengakses informasi dengan cakupan Scope 2.
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex items-center gap-x-2">
-                                    <input type="checkbox" name="scope3" id="scope3" class="cursor-pointer" onclick="scope3JS()">
-                                    <div class="font-heading font-medium text-gray-500" id="labelScope3">Scope 3</div>
-                                </div>
-                                <div class="ml-5 md:mt-2 mb-2">
-                                    Mengakses informasi dengan cakupan Scope 3.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-xs text-secondary md:mt-6 mt-4">
-                            *Harus diisi
-                        </div>
-                        <div class="flex md:justify-end justify-between gap-x-6 items-center mt-2">
-                            <a href="/webservice/proyek">
-                                <div class="flex items-center gap-x-2">
-                                    <img src="/img/left-on.png" class="w-3 h-3" alt="">
-                                    <div class="text-secondary">KEMBALI</div>
-                                </div>
-                            </a>
-                            <input type="submit" value="BUAT" class="bg-secondary hover:bg-secondaryhover text-white py-1 px-5 cursor-pointer rounded-full">
-                        </div>
-                    </form>
-                </div>
+</div>
+
+<script>
+    $(".proyek").click(function() {
+        if (!$(this).hasClass('border-primary')) {
+            $(this).addClass('border-primary')
+            $(this).css("border-width", "2px")
+            $(this).after(`
+            <div class="w-11/12 mx-auto mb-4 rounded-b-xl shadow-xl hidden opacity-0 duration-500 transition-all">
+        <div class="flex justify-start text-sm">
+            <div class="token text-white py-1 w-20 text-center mr-1 cursor-pointer transform hover:scale-105 duration-150 outline-none choosed">TOKEN</div>
+            <div class="detail text-white py-1 w-20 text-center mr-1 cursor-pointer transform hover:scale-105 duration-150 outline-none notchoose">DETAIL</div>
+        </div>
+        <div id="isiToken" class="sm:mx-3 mx-2">
+            <div class="flex mt-3 mb-2">
+                <p class="w-1/4 text-primary text-sm font-bold">Token Pengguna</p>
+                <p class="w-3/4 text-primary text-sm break-all">fafdsfsgdfgdfhgfhs24235gh43y@4gfdhdshgshshsggrgrgrg4y4456547fefgfeggfgf</p>
+            </div>
+            <div class="flex mb-2">
+                <p class="w-1/4 text-primary text-sm font-bold">Tanggal Disetujui</p>
+                <p class="w-3/4 text-primary text-sm">30 Feruari 2021 - 21.00</p>
+            </div>
+            <div class="flex pb-4">
+                <p class="w-1/4 text-primary text-sm font-bold">Masa Berlaku</p>
+                <p class="w-3/4 text-primary text-sm">2 Bulan</p>
+            </div>
+        </div>
+        <div class="hidden" id="isiDetail">
+            <div class="flex mx-3 mt-3 mb-2">
+                <p class="w-1/4 text-primary text-sm font-bold">Deskripsi</p>
+                <p class="w-3/4 text-justify text-primary text-sm">Berisikan Data yang diisikan saat membuat proyek. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, iusto id? Natus officiis nemo laborum similique molestiae in labore tenetur nihil. Cum temporibus alias modi ratione est assumenda, commodi possimus?</p>
+            </div>
+            <div class="flex mx-3 pb-4">
+                <p class="w-1/4 text-primary text-sm font-bold">Cakupan Data</p>
+                <p class="w-3/4 text-justify text-primary text-sm">Menggunakan informasi pribadi</p>
             </div>
         </div>
     </div>
-</div>
+        `)
+            var $this = $(this);
+            $(this).next().removeClass('hidden')
+            setTimeout(function() {
+                $this.next().removeClass('opacity-0');
+            }, 30);
 
-<script type="text/javascript" src="/js/checkbox.js"></script>
-<?php $this->endSection(); ?>
+
+            $(this).next().children().first().children().eq(1).click(function() {
+                $(this).removeClass('notchoose').addClass('choosed')
+                $(this).prev().removeClass('choosed').addClass('notchoose')
+
+                $(this).parent().next().next().removeClass('hidden')
+                $(this).parent().next().addClass('hidden')
+            })
+
+            $(this).next().children().first().children().eq(0).click(function() {
+                $(this).removeClass('notchoose').addClass('choosed')
+                $(this).next().removeClass('choosed').addClass('notchoose')
+
+                $(this).parent().next().next().addClass('hidden')
+                $(this).parent().next().removeClass('hidden')
+            })
+
+        } else {
+            $(this).removeClass('border-primary')
+            $(this).css("border-width", "1px")
+            // $(this).next().addClass('hidden')
+
+            $(this).next().addClass('opacity-0')
+            $(this).next().addClass('hidden')
+        }
+    })
+</script>
+
+<?= $this->endSection(); ?>
