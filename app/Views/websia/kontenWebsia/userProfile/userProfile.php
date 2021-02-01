@@ -24,7 +24,7 @@ if ($status == 'bukan user') {
                 </div>
             </div>
             <!-- Tombol edit profil yang ketika di klik akan mengarah ke halaman edit profil -->
-            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300 <?= $tombolEdit ?>" href="">Edit Profil</a>
+            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300 <?= $tombolEdit ?>" href="/websia/editProfil">Edit Profil</a>
         </div>
         <div class="md:w-3/5 justify-center mx-auto items-center text-center md:text-left object-center md:px-8 md:py-6">
             <!-- nama alumni -->
