@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary : '#014F86',
+        primaryHover : '#003C75',
+        primaryDark : '#015998',
         secondary : '#FFAA00',
         secondaryhover : '#FFBB34',
       },

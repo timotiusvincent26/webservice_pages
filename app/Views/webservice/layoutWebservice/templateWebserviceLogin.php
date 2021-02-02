@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
-    <link rel="stylesheet" href="/css/add_style.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/add_style.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?= $judul; ?></title>
 
@@ -21,6 +21,14 @@
         .menu:hover {
             background-image: linear-gradient(to right, #014f86, #025e9e, #0567ab);
             background-size: 200% auto;
+        }
+
+        .choosed {
+            background-color: #003c75;
+        }
+
+        .notchoose {
+            background-color: #005490;
         }
     </style>
 
@@ -44,8 +52,9 @@
                     <a href="<?= base_url(); ?>">
                         <li class="bg-secondary text-white py-2 px-3 rounded-full md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">SIA</li>
                     </a>
-                    <li class="bg-secondary rounded-full text-white py-2 px-3 md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">API <i class="fa fa-caret-down"></i>
-                        <ul class="hidden absolute transform -translate-x-4 translate-y-2 bg-secondary text-white w-full py-2 px-3 border-secondary border-2 w-max rounded-xl">
+                    <li class="bg-secondary rounded-full text-white py-2 px-3 md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">API
+                        <i class="fa fa-caret-down"></i>
+                        <ul class="invisible opacity-0 duration-700 transition-all absolute transform -translate-x-4 translate-y-2 bg-secondary text-white w-full py-2 px-3 border-secondary border-2 w-max rounded-xl">
                             <a href="/webservice/">
                                 <li class="hover:text-secondary hover:bg-white -mt-2 -mx-3 rounded-t-xl hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300">BERANDA</li>
                             </a>
@@ -66,7 +75,7 @@
                 </ul>
             </div>
 
-            <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 sm:hidden transform -translate-y-1" id="hamburgerApi">
+            <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 sm:hidden" id="hamburgerApi">
                 <svg class="w-8 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -91,7 +100,7 @@
                     <li class="cursor-pointer flex justify-center text-white py-1">
                         <div class="rounded-xl bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">API<i class="fa fa-caret-down transform translate-y-1 translate-x-1"></i></div>
                     </li>
-                    <ul class="hidden transform -translate-y-0.5 text-white w-screen flex flex-col items-center">
+                    <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden top-o right-0">
                         <a href="/webservice/">
                             <li class="bg-secondary m-auto hover:text-secondary hover:bg-white text-center text-sm rounded-t-xl py-0.5 w-44 border-b-2 border-gray-500">BERANDA</li>
                         </a>
