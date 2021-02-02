@@ -56,11 +56,4 @@ class Websia extends BaseController
     {
         return view('cobaWebsia/map');
     }
-
-    public function editProfil()
-    {
-        $data['judulHalaman'] = 'Edit Profil';
-        $data['login'] = 'sudah';
-        return view('websia/kontenWebsia/editProfile/editBiodata.php', $data);
-    }
 }
