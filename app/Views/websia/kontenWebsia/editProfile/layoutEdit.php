@@ -16,7 +16,7 @@
     <div class="col-span-1 bg-primary">
         <div id="navEdit" class="mt-4">
             <ul>
-                <a href="/edit/biodata">
+                <a href="/websia/editBiodata">
                     <li id="biodata" class="button bg-primaryHover font-heading p-3 text-sm text-white hover:text-secondary hover:bg-whtie text-center font-semibold active">Biodata</li>
                 </a>
                 <a href="">
@@ -31,7 +31,7 @@
                 <a href="">
                     <li id="publikasi" class="button bg-primaryHover font-heading p-3 text-sm text-white hover:text-secondary hover:bg-white text-center font-semibold">Publikasi</li>
                 </a>
-                <a href="/edit/akun">
+                <a href="/websia/editAkun">
                     <li id="akun" class="button bg-primaryHover font-heading p-3 text-sm text-white hover:text-secondary hover:bg-white text-center font-semibold">Akun</li>
                 </a>
             </ul>
