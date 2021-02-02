@@ -5,9 +5,11 @@ $('#hamburgerSidebar').click(function(){
     if($('#param1').hasClass('hidden')){
         $('#param1').removeClass('hidden');
         $('#param2').removeClass('hidden');
+        $('#sidebarSearch').addClass('w-10/12 md:w-auto'); 
     } else {
         $('#param1').addClass('hidden');
         $('#param2').addClass('hidden');
+        $('#sidebarSearch').removeClass('w-10/12 md:w-auto'); 
     }
 })
 
@@ -27,6 +29,8 @@ filterSidebar.forEach(o => {
     })
 })
 
+
+
 function getList(param){
     
     if(param == 'Semua'){
@@ -43,6 +47,8 @@ function getList(param){
         $('#listFilterSidebarBerita').removeClass('hidden');
         $('#listFilterSidebarAlumni').addClass('hidden');
     }
+
+
     
 }
 // akhir sidebar

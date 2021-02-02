@@ -2,35 +2,34 @@
 
 <?= $this->section('content'); ?>
 
-<div class="flex w-full my-4">
+<div class="flex w-full">
 
     <!-- awal sidebar -->
     <div class="md:relative fixed flex flex-col bg-primary rounded-r md:h-auto h-full" id="sidebarSearch">
-        <div class="flex md:px-4 px-2 py-1 justify-between bg-indigo-900">
-            <div class="md:text-xl text-base my-auto font-semibold text-secondary hidden mr-12" id="param1"> FILTER</div>
-            <svg class="w-8 fill-current text-secondary cursor-pointer hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex md:px-4 px-2 py-1 justify-between bg-primaryHover">
+            <div class="md:text-xl text-base my-auto font-semibold text-secondary hidden mr-20" id="param1"> FILTER</div>
+            <svg class="md:w-6 w-4 fill-current text-secondary cursor-pointer" id="hamburgerSidebar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="md:w-6 w-4 fill-current text-secondary cursor-pointer" id="hamburgerSidebar" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
-                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
             </svg>
         </div>
 
         <div class="flex flex-col mt-4 hidden" id="param2">
-            <div class="md:text-base text-sm text-secondary hover:bg-blue-800 hover:bg-opacity-75 font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Semua</div>
-            <div class="md:text-base text-sm  text-white hover:bg-blue-800 hover:bg-opacity-75 font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Alumni</div>
+            <div class="md:text-base text-sm text-secondary hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Semua</div>
+
+            <div class="md:text-base text-sm  text-white hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Alumni</div>
             <div class="flex flex-col py-1 px-7 w-full hidden" id="listFilterSidebarAlumni">
-                <div class="flex justify-between mb-1">
-                    <div class="md:text-sm text-xs text-white cursor-pointer "> jurusan</div>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                <div class="flex justify-between mb-1" id="listSidebar">
+                    <div class="md:text-sm text-xs text-white cursor-pointer" id="namaListSidebar"> Jurusan</div>
+                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" id="downJurusan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer hidden" id="upJurusan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
                     </svg>
                 </div>
 
-                <div class="flex justify-between mb-1">
+                <div class="flex justify-between mb-1" id="listSidebar">
                     <div class="md:text-sm text-xs text-white cursor-pointer"> Angkatan</div>
                     <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -40,7 +39,7 @@
                     </svg>
                 </div>
 
-                <div class="flex justify-between mb-1">
+                <div class="flex justify-between mb-1" id="listSidebar">
                     <div class="md:text-sm text-xs text-white cursor-pointer"> Tempat Kerja</div>
                     <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -51,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="md:text-base text-sm text-white hover:bg-blue-800 hover:bg-opacity-75 font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Artikel/Berita</div>
+            <div class="md:text-base text-sm text-white hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Artikel/Berita</div>
             <div class="flex flex-col py-1 px-7 w-full hidden" id="listFilterSidebarBerita">
                 <div class="flex justify-between mb-1">
                     <div class="md:text-sm text-xs text-white cursor-pointer"> Rentang Waktu</div>
