@@ -29,7 +29,41 @@ filterSidebar.forEach(o => {
     })
 })
 
+const listSidebar = document.querySelectorAll("#listSidebar");
 
+listSidebar.forEach(o => {
+    o.addEventListener("click", () => {
+        a = o.firstElementChild.innerHTML;
+        o.children[1].classList.toggle("hidden");
+        o.children[2].classList.toggle("hidden");
+        getList(a);
+    })
+})
+
+const namaProdi = document.querySelectorAll("#namaProdi");
+namaProdi.forEach(o => {
+    o.addEventListener("click", () => {
+        namaProdi.forEach(p => {
+            p.classList.remove('bg-primaryDark');
+        });
+        o.classList.add('bg-primaryDark');
+    })
+})
+
+
+$('#BPS').click(function(){
+    $('#onBPS').toggleClass('hidden');
+    $('#offBPS').toggleClass('hidden');
+    $('#onLainnya').toggleClass('hidden');
+    $('#offLainnya').toggleClass('hidden');
+})
+
+$('#Lainnya').click(function(){
+    $('#onLainnya').toggleClass('hidden');
+    $('#offLainnya').toggleClass('hidden');
+    $('#onBPS').toggleClass('hidden');
+    $('#offBPS').toggleClass('hidden');
+})
 
 function getList(param){
     
@@ -48,7 +82,27 @@ function getList(param){
         $('#listFilterSidebarAlumni').addClass('hidden');
     }
 
+    if(param == 'Prodi'){
+        $('#listProdi').toggleClass('hidden');
+    } 
+
+    if(param == 'Angkatan'){
+        $('#listAngkatan').toggleClass('hidden');
+    } 
+    
+    if(param == 'Tempat Kerja'){
+        $('#listTempatKerja').toggleClass('hidden');
+    } 
+
+    if(param == 'Rentang Waktu'){
+        $('#listRentangWaktu').toggleClass('hidden');
+    } 
 
     
 }
+
+$('#beritaSelengkapnya').click(function(){
+    $('#hasilPencarian').load('websia/kontenWebsia/searchAndFilter/searchAlumni.php');
+})
+
 // akhir sidebar

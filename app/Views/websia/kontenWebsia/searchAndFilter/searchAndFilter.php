@@ -7,7 +7,7 @@
     <!-- awal sidebar -->
     <div class="md:relative fixed flex flex-col bg-primary rounded-r md:h-auto h-full" id="sidebarSearch">
         <div class="flex md:px-4 px-2 py-1 justify-between bg-primaryHover">
-            <div class="md:text-xl text-base my-auto font-semibold text-secondary hidden mr-20" id="param1"> FILTER</div>
+            <div class="md:text-xl text-base my-auto font-semibold text-secondary hidden md:mr-24" id="param1"> FILTER</div>
             <svg class="md:w-6 w-4 fill-current text-secondary cursor-pointer" id="hamburgerSidebar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -17,163 +17,117 @@
             <div class="md:text-base text-sm text-secondary hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Semua</div>
 
             <div class="md:text-base text-sm  text-white hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Alumni</div>
-            <div class="flex flex-col py-1 px-7 w-full hidden" id="listFilterSidebarAlumni">
+            <div class="flex flex-col py-1 px-6 w-full hidden" id="listFilterSidebarAlumni">
 
-                <div class="flex justify-between mb-1" id="listSidebar">
-                    <div class="md:text-sm text-xs text-white cursor-pointer" id="namaListSidebar"> Jurusan</div>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" id="downJurusan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer hidden" id="upJurusan" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
-                    </svg>
+                <div class="flex flex-col">
+                    <div class="flex justify-between mb-1 hover:bg-primaryDark py-1 px-2 rounded-lg cursor-pointer" id="listSidebar">
+                        <div class="md:text-sm text-xs text-white ">Prodi</div>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold  hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                        </svg>
+                    </div>
+
+                    <div class="flex flex-col mb-1 px-3 hidden" id="listProdi">
+                        <div class="text-xs text-white cursor-pointer py-1 px-1 hover:bg-primaryDark rounded-lg" id="namaProdi">DIII Statistika</div>
+                        <div class="text-xs text-white cursor-pointer py-1 px-1 hover:bg-primaryDark rounded-lg" id="namaProdi">DIV Statistika</div>
+                        <div class="text-xs text-white cursor-pointer py-1 px-1 hover:bg-primaryDark rounded-lg" id="namaProdi">DIV Komputasi Statistik</div>
+                    </div>
                 </div>
 
-                <div class="flex justify-between mb-1" id="listSidebar">
-                    <div class="md:text-sm text-xs text-white cursor-pointer"> Angkatan</div>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
-                    </svg>
+                <div class="flex flex-col">
+                    <div class="flex justify-between mb-1 hover:bg-primaryDark py-1 px-2 rounded-lg cursor-pointer" id="listSidebar">
+                        <div class="md:text-sm text-xs text-white">Angkatan</div>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                        </svg>
+                    </div>
+
+                    <div class="mb-1 px-4 hidden" id="listAngkatan">
+                        <input type="text" placeholder="Contoh : 60" class="placeholder-primary text-primary text-xs px-2 py-1 outline-none focus:ring-2 focus:ring-blue-600 font-paragraph rounded-lg">
+                    </div>
+
                 </div>
 
-                <div class="flex justify-between mb-1" id="listSidebar">
-                    <div class="md:text-sm text-xs text-white cursor-pointer"> Tempat Kerja</div>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
-                    </svg>
+                <div class="flex flex-col">
+                    <div class="flex justify-between mb-1 hover:bg-primaryDark py-1 px-2 rounded-lg cursor-pointer" id="listSidebar">
+                        <div class="md:text-sm text-xs text-white ">Tempat Kerja</div>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold  hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                        </svg>
+                    </div>
+
+                    <div class="flex flex-col mb-1 px-4 hidden" id="listTempatKerja">
+                        <div class="flex justify-between mb-1 cursor-pointer" id="BPS">
+                            <div class="text-white text-xs">BPS</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-white" id="onBPS" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                                <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-white hidden" id="offBPS" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                                <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Contoh : BPS RI" class="placeholder-primary text-primary text-xs px-2 py-1 outline-none mb-2 focus:ring-2 focus:ring-blue-600 font-paragraph rounded-lg">
+
+                        <div class="flex justify-between mb-1 cursor-pointer" id="Lainnya">
+                            <div class="text-white text-xs">Lainnya</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-white hidden" id="onLainnya" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                                <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-white" id="offLainnya" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                                <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Contoh : Polstat STIS" class="placeholder-primary text-xs text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-blue-600 font-paragraph rounded-lg">
+                    </div>
                 </div>
+
             </div>
 
             <div class="md:text-base text-sm text-white hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer" id="filterSidebar">Artikel/Berita</div>
+
             <div class="flex flex-col py-1 px-7 w-full hidden" id="listFilterSidebarBerita">
-                <div class="flex justify-between mb-1">
-                    <div class="md:text-sm text-xs text-white cursor-pointer"> Rentang Waktu</div>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
-                    </svg>
+
+                <div class="flex flex-col">
+                    <div class="flex justify-between mb-1 hover:bg-primaryDark py-1 px-2 rounded-lg cursor-pointer" id="listSidebar">
+                        <div class="md:text-sm text-xs text-white">Rentang Waktu</div>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                        <svg class="w-3 h-3 my-auto text-white font-semibold hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
+                        </svg>
+                    </div>
+
+                    <div class="flex flex-col mb-1 px-4 hidden" id="listRentangWaktu">
+                        INPUTAN
+                    </div>
                 </div>
 
-                <div class="flex justify-between mb-1">
-                    <div class="md:text-sm text-xs text-white cursor-pointer"> Penulis</div>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                    <svg class="w-3 h-3 my-auto text-white font-semibold cursor-pointer hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
-                    </svg>
-                </div>
             </div>
         </div>
 
     </div>
     <!-- akhir sidebar -->
-
+    <!-- awal Hasil Pencarian  -->
     <div class=" ml-2  flex-grow ">
-        <!-- HASIL PENCARIAN ALUMNI -->
         <div class="flex">
             <div class=" md:hidden flex w-24"></div>
-            <div class="flex-grow">
-                <div class="md:ml-12 ml-3 mr-3">
-                    <div>
-                        <h1 class="text-secondary font-heading text-2xl font-bold">ALUMNI</h1>
-                        <!-- awal jumlah hasil pencarian alumni  -->
-                        <div class="text-primary md:mb-6 mb-2 font-paragraph font-extralight text-sm">
-                            Sekitar 2.547 hasil pencarian alumni
-                        </div>
-                        <hr class="my-4 border-2 border-gray-400">
-                        <!-- akhir jumlah hasil pencarian alumni  -->
-
-                        <!-- DAFTAR HASIL PENCARIAN ALUMNI -->
-                        <div>
-                            <?php for ($x = 0; $x < 4; $x++) : ?>
-                                <div class="mx-2">
-                                    <div class="flex gap-x-4">
-                                        <div class="flex items-center">
-                                            <img src="/img/avatar.png" class="lg:w-18 w-12 mx-auto" alt="">
-                                        </div>
-                                        <div class="flex items-center">
-                                            <div>
-                                                <h2 class="md:text-lg font-heading text-primary font-semibold">Nama Lengkap</h2>
-                                                <div class="md:text-sm text-xs font-paragraph text-primary">Atribut</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4 border-gray-400">
-                            <?php endfor; ?>
-                            <hr class="-my-4 border-2 border-gray-400">
-                        </div>
-                        <!-- awal tulisan "Selengkapnya" di hasil pencarian -->
-                        <div class="flex justify-end mt-12">
-                            <div class="flex bg-secondary text-white rounded-full md:py-2 py-1 md:px-3 px-2 items-center gap-x-2 cursor-pointer md:text-sm text-xs">
-                                Selengkapnya
-                                <img src="/img/right-off.png" class="md:w-4 md:h-4 w-3 h-3 my-auto" alt="">
-                            </div>
-                        </div>
-                        <!-- akhir tulisan "Selengkapnya" di hasil pencarian -->
-                        <!-- END DAFTAR HASIL PENCARIAN ALUMNI -->
-                    </div>
-                </div>
-                <!-- AKHIR HASIL PENCARIAN ALUMNI -->
-
-                <!-- HASIL PENCARIAN BERITA -->
-                <div class="md:ml-12 ml-3 mr-3 mt-6">
-                    <div>
-                        <h1 class="text-secondary font-heading text-2xl font-bold">BERITA</h1>
-                        <!-- awal jumlah hasil pencarian berita  -->
-                        <div class="text-primary mb-6 font-paragraph font-extralight text-sm">
-                            Sekitar 28.899 hasil pencarian berita
-                        </div>
-                        <hr class="my-4 border-2 border-gray-400">
-                        <!-- akhir jumlah hasil pencarian berita  -->
-
-                        <!-- DAFTAR HASIL PENCARIAN BERITA -->
-                        <div>
-                            <?php for ($x = 0; $x < 4; $x++) : ?>
-                                <div class="mx-2">
-                                    <div class="flex md:flex-row flex-col md:gap-x-4 gap-x-0">
-                                        <div class="flex">
-                                            <img src="/img/sampel.jpeg" alt="" class="md:w-48 md:h-36 w-full h-52 ">
-                                        </div>
-                                        <div class="flex items-center">
-                                            <div>
-                                                <h2 class="text-lg font-heading text-primary font-semibold mb-2">Judul Berita</h2>
-                                                <div class="text-xs font-paragraph text-primary">11 Januari 2021</div>
-                                                <div class="text-sm font-paragraph ">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit turpis sem, eu laoreet odio pretium ac. Mauris eget aliquet lorem. Cras dignissim leo non ante molestie, at vulputate justo lobortis. Pellentesque quam elit, mattis eu nibh et, maximus congue mauris
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="my-4 border-gray-400">
-                            <?php endfor; ?>
-                            <hr class="-my-4 border-2 border-gray-400">
-                        </div>
-                        <!-- awal tulisan "Selengkapnya" di hasil pencarian -->
-                        <div class="flex justify-end mt-12">
-                            <div class="flex bg-secondary text-white rounded-full md:py-2 py-1 md:px-3 px-2 items-center gap-x-2 cursor-pointer md:text-sm text-xs">
-                                Selengkapnya
-                                <img src="/img/right-off.png" class="md:w-4 md:h-4 w-3 h-3" alt="">
-                            </div>
-                        </div>
-                        <!-- akhir tulisan "Selengkapnya" di hasil pencarian -->
-                        <!-- END DAFTAR HASIL PENCARIAN BERITA -->
-                    </div>
-                </div>
+            <div class="flex-grow" id="hasilPencarian">
+                <?= $this->include('websia/kontenWebsia/searchAndFilter/searchKosong.php') ?>
             </div>
         </div>
-        <!-- END HASIL PENCARIAN BERITA -->
     </div>
+    <!-- akhir Hasil Pencarian  -->
+
 
 </div>
 
