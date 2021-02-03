@@ -54,7 +54,7 @@
     <!-- HEADER -->
     <div class="navbar w-full fixed  z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
-            <div class="flex flex-col ">
+            <div class="flex flex-col">
                 <div class="flex items-center justify-between px-6 pt-3 ">
                     <div class="">
                         <div class="flex">
@@ -237,5 +237,5 @@
     AOS.init();
 </script>
 <script type="text/javascript" src="/js/navbar.js"></script>
-
+<script type="text/javascript" src="/js/editProfil.js"></script>
 </html>
