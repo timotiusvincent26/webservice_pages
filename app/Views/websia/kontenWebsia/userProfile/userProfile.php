@@ -24,12 +24,12 @@ if ($status == 'bukan user') {
                 </div>
             </div>
             <!-- Tombol edit profil yang ketika di klik akan mengarah ke halaman edit profil -->
-            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300 <?= $tombolEdit ?>" href="/websia/editProfil">Edit Profil</a>
+            <a class="block bg-secondary text-white text-center py-1 md:py-2 px-4 mx-auto rounded-full w-24 md:w-32 cursor-pointer hover:bg-secondaryhover transition-colors duration-300 <?= $tombolEdit ?>" href="websia/editProfil">Edit Profil</a>
         </div>
         <div class="md:w-3/5 justify-center mx-auto items-center text-center md:text-left object-center md:px-8 md:py-6">
             <!-- nama alumni -->
             <h3 class="font-heading text-secondary text-2xl md:text-3xl lg:pr-1 px-8 md:px-0 mb-2 font-extrabold uppercase">Nama Lengkap</h3>
-            <div class="mb-8">
+            <div class="mb-4">
                 <!-- role alumni -->
                 <span class="font-paragraph text-xs inline-block bg-gray-300 mb-1 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Alumni</span>
                 <span class="font-paragraph text-xs inline-block bg-gray-300 mb-1 py-1 px-2 md:px-3 lg:px-4 rounded-lg text-primary align-middle uppercase">Admin</span>
@@ -37,25 +37,33 @@ if ($status == 'bukan user') {
             </div>
             <!-- tempat dan tanggal lahir -->
             <p class="font-heading text-center md:text-left text-base mb-5">Aceh, 32 Januari 2021</p>
+            <p class="font-heading text-center md:text-left text-base mb-5">
+                <!-- Angkatan -->
+                Angkatan ke-XX <br />
+                <!-- AIS / STIS/ POLSTAT STIS -->
+                Sekolah Tinggi Ilmu Satistik <br />
+                <!-- NIM -->
+                NIM 22314567
+            </p>
             <!-- Instansi tempat bekerja dan jabatan -->
             <p class="font-heading text-base text-center md:text-left">
                 Bekerja di BPS Provinsi Aceh <br />
                 Sebagai Kepala BPS
             </p>
-            <span class="font-heading flex justify-center md:justify-start px-8 md:px-0 text-base items-center text-center md:text-left">
-                <img class="my-2 mt-4 mr-2 w-5 float-left" src="/img/icon/maps_flag.png" alt="">
-                <!-- Lokasi tempat tinggal -->
-                <p class="my-2 mt-4"> Lokasi Tempat Tinggal </p>
-            </span>
-
         </div>
     </div>
     <div class="lg:w-2/5 w-full md:px-8 md:py-6 pb-4">
         <!-- Awal Deskripsi user profile -->
         <p class="px-8 md:px-0 mt-8 md:mt-0 font-heading text-base italic text-justify mb-8 md:mb-0 text-center md:text-justify lg:text-left">
-            `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt quos saepe doloribus esse, fugit ratione culpa reprehenderit eos totam tenetur consectetur. Id, recusandae aspernatur incidunt cum, quo quaerat sequi earum ex doloremque eos ullam accusantium porro quos laudantium dolore delectus? Natus minima voluptates alias suscipit aperiam debitis voluptatum iusto`
+            `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt quos saepe doloribus esse, fugit ratione culpa reprehenderit eos totam tenetur consectetur. Id, recusandae aspernatur incidunt cum, quo quaerat sequi earum ex doloremque eos ullam`
         </p>
         <!-- Akhir Deskripsi user profile -->
+        <p class="font-heading text-primary text-xs mt-6">Lokasi Tempat Tinggal Saat Ini</p>
+        <span class="font-heading flex justify-center md:justify-start px-8 md:px-0 text-base items-center text-center md:text-left">
+            <img class="my-2 mt-2 mr-2 w-5 float-left" src="/img/icon/maps_flag.png" alt="">
+            <!-- Lokasi tempat tinggal -->
+            <p class="my-2 mt-2"> Jl Gading Griya Lestari Bl Y-1, Dki Jakarta </p>
+        </span>
         <div class="space-x-4 flex flex-col md:flex-row items-center justify-center lg:justify-start md:py-6 px-8 md:px-0">
             <!-- Awal media sosial dan telepon -->
             <div class="">
@@ -76,7 +84,7 @@ if ($status == 'bukan user') {
                 </div>
                 <div class="inline-block">
                     <img src="/img/icon/msg.png" alt="" class="float-left w-8">
-                    <span class="font-heading text-xs object-center">0852-XXXX-XXXX</span>
+                    <span class="font-heading text-xs object-center">stis@stis.ac.id</span>
                 </div>
             </div>
             <!--  Akhir media sosial dan telepon -->
