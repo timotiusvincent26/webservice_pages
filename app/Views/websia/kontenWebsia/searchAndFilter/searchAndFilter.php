@@ -7,7 +7,7 @@
     <!-- awal sidebar -->
     <div class="md:relative fixed flex flex-col bg-primary rounded-r md:h-auto h-full" id="sidebarSearch">
         <div class="flex md:px-4 px-2 py-1 justify-between bg-primaryHover">
-            <div class="md:text-xl text-base my-auto font-semibold text-secondary hidden md:mr-24" id="param1"> FILTER</div>
+            <div class="md:text-xl text-base my-auto font-semibold text-secondary hidden md:mr-32" id="param1"> FILTER</div>
             <svg class="md:w-6 w-4 fill-current text-secondary cursor-pointer" id="hamburgerSidebar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -108,28 +108,32 @@
                     </div>
 
                     <div class="flex flex-col mb-1 px-4 hidden" id="listRentangWaktu">
-                        <div class="flex justify-between gap-x-2 mb-2">
-                            <input type="text" placeholder="Awal" class="placeholder-gray-300 text-xs text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2">
-                            <input type="text" placeholder="Akhir" class="placeholder-gray-300 text-xs text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2">
+                        <div class="flex justify-between gap-x-1 mb-2">
+                            <!-- <div class="text-xs text-gray-300 bg-white px-2 py-1 mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2 cursor-pointer">Awal</div> -->
+                            <!-- <div class="text-xs text-gray-300 bg-white px-2 py-1 mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2 cursor-pointer">khir</div> -->
+
+                            <input type="text" placeholder="Awal" id="inputTahunAwal" class="placeholder-gray-300 text-xs text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2">
+                            <input type="text" placeholder="Akhir" id="inputTahunAkhir" class="placeholder-gray-300 text-xs text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2">
                         </div>
 
-                        <div class="mx-auto bg-white grid grid-cols-4 gap-1 p-1 rounded-lg">
-                            <div class="text-sm text-secondary my-auto">
+                        <div class="mx-auto bg-white grid grid-cols-4 gap-1 p-2 rounded-lg font-medium hidden" id="kalenderAwal">
+                            <div class="text-sm text-secondary my-auto cursor-pointer" id="perviousTahunAwal">
                                 <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
                                 </svg>
                             </div>
 
-                            <div class="text-sm text-secondary col-span-2">2010-2020</div>
+                            <div class="text-sm text-secondary col-span-2" id="rentangTahunAwal">2010-2020</div>
 
-                            <div class="text-sm text-secondary my-auto ">
-                                <svg class="w-3 h-3 justify-self-end " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <div class="text-sm text-secondary my-auto flex justify-end  cursor-pointer" id="nextTahunAwal">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                                     <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                                 </svg>
                             </div>
+
                             <?php for ($x = 0; $x < 12; $x++) : ?>
-                                <div class="text-xs">a</div>
+                                <div class="text-xs text-gray-400 hover:text-primary mx-auto cursor-pointer" id="tahunKalenderAwal">a</div>
                             <?php endfor; ?>
                         </div>
                     </div>

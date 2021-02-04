@@ -105,4 +105,62 @@ $('#beritaSelengkapnya').click(function(){
     $('#hasilPencarian').load('websia/kontenWebsia/searchAndFilter/searchAlumni.php');
 })
 
+// Awal Kalender
+
+var waktu = new Date();
+var tahunfix = waktu.getFullYear();
+var tahunAwal = waktu.getFullYear();
+var tahunAkhir = waktu.getFullYear();
+
+// Awal Kalender Tahun Akhir
+$('#inputTahunAkhir').click(function(){
+    $('#kalenderAwal').addClass('hidden');
+})	
+//Akhir Kalender Tahun AKhir
+
+
+// Awal kalender Tahun Awal
+$('#inputTahunAwal').click(function(){
+    $('#kalenderAwal').removeClass('hidden');
+})	
+
+const tahunKalenderAwal = document.querySelectorAll("#tahunKalenderAwal");
+const inputTahunAwal = document.querySelector("#inputTahunAwal");
+const rentangTahunAwal = document.querySelector("#rentangTahunAwal");
+
+function getWaktuKalenderAwal(param){
+    var param = param - 11;
+    rentangTahunAwal.innerHTML = param+"-"+ (param + 11);
+    tahunKalenderAwal.forEach(o =>{
+
+        o.innerHTML = param;
+        param++;
+
+    })
+};
+
+getWaktuKalenderAwal(tahunfix)
+
+$('#perviousTahunAwal').click(function(){
+    tahunAwal = tahunAwal - 11;
+    getWaktuKalenderAwal(tahunAwal);
+})	
+
+$('#nextTahunAwal').click(function(){
+    if(tahunAwal + 11 <= tahunfix){
+        tahunAwal = tahunAwal + 11;	
+        getWaktuKalenderAwal(tahunAwal);
+    }	    
+})
+
+tahunKalenderAwal.forEach(o => {
+    o.addEventListener("click", () => {
+        param = o.innerHTML;
+        inputTahunAwal.value=param;
+    })
+})
+//Awal Kalender Tahun AKhir
+
+// Akhir Kaleneder
+
 // akhir sidebar
