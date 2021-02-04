@@ -67,38 +67,38 @@ $(".sort").click(function () {
 $('.editPendidikan').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditPendidikan'>
-        <div class="hidden opacity-0 duration-700 transition-all w-1/2 bg-gray bg-opacity-0"> 
-        <div class="bg-primary py-4 px-6 rounded-t-2xl flex items-center justify-between text-secondary text-2xl">
-            <p class="font-bold">Edit Pendidikan</p>
-            <i class="closePendidikan fas fa-times cursor-pointer" ></i>
+        <div class=" duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0">
+            <div class="bg-primary py-4 px-6 rounded-t-2xl flex items-center justify-between text-secondary text-2xl">
+                <p class="font-bold">Edit Pendidikan</p>
+                <i class="closePendidikan fas fa-times cursor-pointer"></i>
+            </div>
+            <form action="" method="post" class="flex flex-col bg-gray-100 sm:px-12 px-4 rounded-b-2xl">
+                <label for="editJenjang" class="text-primary text-sm mt-4">Jenjang :</label>
+                <input type="text" placeholder="Nama Jenjang" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editJenjang" id="editJenjang">
+                <label for="editUniversitas" class="text-primary text-sm mt-3">Universitas :</label>
+                <input type="text" placeholder="Nama Universitas" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editUniversitas" id="editUniversitas">
+                <label for="editStudi" class="text-primary text-sm mt-3">Program Studi :</label>
+                <input type="text" placeholder="Nama Program Studi" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editStudi" id="editStudi">
+                <div class="flex">
+                    <div class="flex flex-col mr-8 w-1/3">
+                        <label for="editMasuk" class="text-primary text-sm mt-3">Tahun Masuk :</label>
+                        <input type="date" placeholder="2021" class="cursor-pointer px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editMasuk" id="editMasuk">
+                    </div>
+                    <div class="flex flex-col w-1/3">
+                        <label for="editLulus" class="text-primary text-sm mt-3">Tahun Lulus :</label>
+                        <input type="date" placeholder="2021" class="cursor-pointer px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editLulus" id="editLulus">
+                    </div>
+                </div>
+                <label for="editTulisan" class="text-primary text-sm mt-3">Judul Tulisan</label>
+                <textarea name="editTulisan" id="editTulisan" rows="2" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2 resize-none" placeholder="Gadget Paling Top Untuk Digunakan Sehari-Hari"></textarea>
+                <div class="flex justify-end my-8">
+                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
+                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
+                </div>
+
+            </form>
+
         </div>
-        <form action="" method="post" class="flex flex-col bg-gray-100 px-12 rounded-b-2xl">
-            <label for="editJenjang" class="text-primary text-sm mt-4">Jenjang :</label>
-            <input type="text" placeholder="Nama Jenjang" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editJenjang" id="editJenjang">
-            <label for="editUniversitas" class="text-primary text-sm mt-3">Universitas :</label>
-            <input type="text" placeholder="Nama Universitas" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editUniversitas" id="editUniversitas">
-            <label for="editStudi" class="text-primary text-sm mt-3">Program Studi :</label>
-            <input type="text" placeholder="Nama Program Studi" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editStudi" id="editStudi">
-            <div class="flex">
-                <div class="flex flex-col mr-8 w-1/3">
-                    <label for="editMasuk" class="text-primary text-sm mt-3">Tahun Masuk :</label>
-                    <input type="date" placeholder="2021" class="cursor-pointer px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editMasuk" id="editMasuk">
-                </div>
-                <div class="flex flex-col w-1/3">
-                    <label for="editLulus" class="text-primary text-sm mt-3">Tahun Lulus :</label>
-                    <input type="date" placeholder="2021" class="cursor-pointer px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editLulus" id="editLulus">
-                </div>
-            </div>
-            <label for="editTulisan" class="text-primary text-sm mt-3">Judul Tulisan</label>
-            <textarea name="editTulisan" id="editTulisan" rows="2" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2 resize-none" placeholder="Gadget Paling Top Untuk Digunakan Sehari-Hari"></textarea>
-            <div class="flex justify-end my-8">
-                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
-            </div>
-
-        </form>
-
-        </div> 
     </div>
 `)
 
@@ -132,7 +132,7 @@ $('.editPendidikan').click(function () {
         }, 10);
         setTimeout(function () {
             $('#formEditPendidikan').children().eq(1).children().eq(1).submit()
-        }, 800);
+        }, 700);
     })
 
 })
