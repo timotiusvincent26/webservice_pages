@@ -103,15 +103,6 @@ function getList(param){
     
 }
 
-$('#beritaSelengkapnya').click(function(){
-    $('#hasilPencarian').html(`<div class="flex flex-col md:ml-12 -ml-12 mt-2 h-screen">
-
-    <img src="/img/searchNotFound.png" class="w-96 mx-auto" alt="">
-    <div class="text-primary font-bold md:text-xl -mt-8 mx-auto">Hasil Pencarian Tidak Ditemukan</div>
-    <hr class="border-b-2 border-t-0 w-32 border-gray-400 mx-auto">
-
-</div>`);
-})
 
 // Awal Kalender
 
