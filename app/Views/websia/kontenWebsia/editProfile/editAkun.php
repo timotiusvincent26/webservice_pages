@@ -1,9 +1,9 @@
 <?= $this->extend('websia/kontenWebsia/editProfile/layoutEdit.php'); ?>
 
 <?= $this->section('contentEdit'); ?>
-<div class="p-6 font-paragraph text-primary min-h-screen">
+<div class="p-6 font-paragraph text-primary lg:min-h-screen">
     <form action="" method="POST">
-        <div class="w-1/2">
+        <div class="md:w-1/2 w-full">
             <label for="username" class="font-medium mb-2">Username:</label>
             <input type="text" name="username" id="username" class="w-full p-2 border-2 border-gray rounded-lg mb-2" placeholder="Username">
             <label for="passbaru" class="font-medium mb-2">Password Baru:</label>
@@ -14,7 +14,7 @@
             <label for="passlama" class="font-medium mb-2">Password Lama:</label>
             <input type="password" name="passlama" id="passlama" class="w-full p-2 border-2 border-gray rounded-lg" placeholder="●●●●●●●●">
         </div>
-        <div class="flex justify-end mb-6 mt-48">
+        <div class="flex justify-end md:mb-6 mt-48">
             <input type="submit" value="KIRIM" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer" id="submitAkun">
         </div>
     </form>
