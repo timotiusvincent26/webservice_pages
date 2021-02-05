@@ -1,4 +1,18 @@
 // awal js edit biodata 
+$(document).ready(function() {
+    $('.jk_radio').on('click',function() {
+    $('.jk_radio').parent().css('color','gray');    
+        $(this).parent().css('color','#014F86');
+    });
+    $('.sb_radio').on('click',function() {
+    $('.sb_radio').parent().css('color','gray');    
+        $(this).parent().css('color','#014F86');
+    });
+    $('.sp_radio').on('click',function() {
+    $('.sp_radio').parent().css('color','gray');    
+        $(this).parent().css('color','#014F86');
+    });
+  });
 $('.updateFotoProfil').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditFoto'>
@@ -38,7 +52,7 @@ $('#submitBiodata').click(function () {
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='modalBiodata'>
     <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
     <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
-    <p class="sm:text-base text-sm font-bold" style="color: #54AC00;">Biodata Berhasil Disimpan</p>
+    <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00;">Biodata Berhasil Disimpan</p>
 </div>
     </div>
 `)
@@ -66,10 +80,10 @@ $(".sort").click(function () {
 
 $('.editPendidikan').click(function () {
     $('body').prepend(`
-    <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditPendidikan'>
+    <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formEditPendidikan'>
         <div class=" duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0">
             <div class="bg-primary py-4 px-6 rounded-t-2xl flex items-center justify-between text-secondary text-2xl">
-                <p class="font-bold">Edit Pendidikan</p>
+                <p class="font-heading font-bold">Edit Pendidikan</p>
                 <i class="closePendidikan fas fa-times cursor-pointer"></i>
             </div>
             <form action="" method="post" class="flex flex-col bg-gray-100 sm:px-12 px-4 rounded-b-2xl">
@@ -123,7 +137,7 @@ $('.editPendidikan').click(function () {
         $('#formEditPendidikan').prepend(`
         <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
             <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
-            <p class="sm:text-base text-sm font-bold" style="color: #54AC00;">Pendidikan Berhasil Disimpan</p>
+            <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00;">Pendidikan Berhasil Disimpan</p>
         </div>
         `)
         $('#formEditPendidikan').children().first().removeClass('hidden')
@@ -144,9 +158,9 @@ $('.editPendidikan').click(function () {
 $('.editPrestasi').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditPrestasi'>
-        <div class="hidden opacity-0 duration-700 transition-all w-1/2 bg-gray bg-opacity-0">
+        <div class="hidden opacity-0 duration-700 transition-all w-1/2 bg-gray bg-opacity-0 font-paragraph">
         <div class="bg-primary py-4 px-6 rounded-t-2xl flex items-center justify-between text-secondary text-2xl">
-            <p class="font-bold">Edit Prestasi</p>
+            <p class="font-heading font-bold">Edit Prestasi</p>
             <i class="closePrestasi fas fa-times cursor-pointer"></i>
         </div>
         <form action="" method="post" class="flex flex-col bg-gray-100 px-12 rounded-b-2xl">
@@ -184,7 +198,7 @@ $('.editPrestasi').click(function () {
         $('#formEditPrestasi').prepend(`
         <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
             <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
-            <p class="sm:text-base text-sm font-bold" style="color: #54AC00;">Prestasi Berhasil Disimpan</p>
+            <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00;">Prestasi Berhasil Disimpan</p>
         </div>
         `)
         $('#formEditPrestasi').children().first().removeClass('hidden')
@@ -204,7 +218,7 @@ $('#submitAkun').click(function () {
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='modalAkun'>
     <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
     <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
-    <p class="sm:text-base text-sm font-bold" style="color: #54AC00;">Akun Berhasil Diperbarui</p>
+    <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00;">Akun Berhasil Diperbarui</p>
 </div>
     </div>
 `)

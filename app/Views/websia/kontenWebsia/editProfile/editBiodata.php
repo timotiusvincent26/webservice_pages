@@ -24,16 +24,14 @@
                     <div class="font-heading text-black">XX</div>
                 </div>
             </div>
-            <div class="mb-2 md:w-1/2 md:mr-4">
+            <div class="mb-2 lg:w-1/2 lg:mr-4">
                 <label for="jeniskelamin" class="font-medium mb-2">Jenis Kelamin:</label>
                 <div class="grid grid-cols-2 gap-x-2">
-                    <div class="flex gap-x-2 items-center">
-                        <input type="radio" name="jeniskelamin" id="lakilaki" value="laki-laki" class="cursor-pointer" checked>
-                        <label for="lakilaki" class="font-heading text-sm text-gray-500 font-medium" id="labellk">Laki-laki</label>
+                    <div class="flex items-center">
+                        <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="lakilaki" value="lakilaki" class="cursor-pointer jk_radio mr-2">Laki-laki</label>
                     </div>
-                    <div class="flex gap-x-2 items-center">
-                        <input type="radio" name="jeniskelamin" id="perempuan" value="perempuan" class="cursor-pointer">
-                        <label for="perempuan" class="font-heading text-sm text-gray-500 font-medium">Perempuan</label>
+                    <div class="flex items-center">
+                        <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="perempuan" value="perempuan" class="cursor-pointer jk_radio mr-2">Perempuan</label>
                     </div>
                 </div>
             </div>
@@ -47,8 +45,8 @@
                     <input type="date" name="tanggallahir" id="tanggallahir" class="w-full md:p-2 p-1 border-2 border-gray rounded-lg mb-2">
                 </div>
             </div>
-            <div class="md:w-1/2 md:mb-2">
-                <div class="md:mr-2">
+            <div class="lg:w-1/2 lg:mb-2">
+                <div class="lg:mr-2">
                     <label for="notelepon" class="font-medium mb-2">No. Telepon:</label>
                     <input type="text" name="notelepon" id="notelepon" class="w-full md:p-2 p-1 border-2 border-gray rounded-lg mb-2" placeholder="08999339379">
                     <label for="email" class="font-medium mb-2">Email:</label>
@@ -57,16 +55,14 @@
             </div>
             <label for="alamat" class="font-medium mb-2">Alamat:</label>
             <textarea name="alamat" id="alamat" cols="50" rows="3" placeholder="Jl. Terwilen Margodadi, Seyegan, Kregolan, Margomulyo, Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55561" class="w-full md:p-2 p-1 border-2 border-gray rounded-lg mb-2"></textarea>
-            <div class="md:w-1/2 md:mr-4">
+            <div class="lg:w-1/2 lg:mr-4">
                 <label for="statusbekerja" class="font-medium mb-2">Status Bekerja:</label>
                 <div class="grid grid-cols-2 gap-x-2 mb-2">
-                    <div class="flex gap-x-2 items-center">
-                        <input type="radio" name="statusbekerja" id="bekerja" value="bekerja" class="cursor-pointer" checked>
-                        <label for="bekerja" class="font-heading text-sm text-gray-500 font-medium">Bekerja</label>
+                    <div class="flex items-center">
+                        <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="bekerja" value="bekerja" class="cursor-pointer sb_radio mr-2">Bekerja</label>
                     </div>
-                    <div class="flex gap-x-2 items-center">
-                        <input type="radio" name="statusbekerja" id="tidakbekerja" value="tidakbekerja" class="cursor-pointer">
-                        <label for="tidakbekerja" class="font-heading text-sm text-gray-500 font-medium">Tidak Bekerja</label>
+                    <div class="flex items-center">
+                        <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="tidakbekerja" value="tidakbekerja" class="cursor-pointer sb_radio mr-2">Tidak Bekerja</label>
                     </div>
                 </div>
                 <div class="mr-2">
@@ -77,13 +73,11 @@
                 </div>
                 <label for="pns" class="font-medium mb-2">Aktif PNS:</label>
                 <div class="grid grid-cols-2 gap-x-2 mb-2">
-                    <div class="flex gap-x-2 items-center">
-                        <input type="radio" name="pns" id="aktif" value="aktif" class="cursor-pointer" checked>
-                        <label for="aktif" class="font-heading text-sm text-gray-500 font-medium">Aktif</label>
+                    <div class="flex items-center">
+                        <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="aktif" value="aktif" class="cursor-pointer sp_radio mr-2">Aktif</label>
                     </div>
-                    <div class="flex gap-x-2 items-center">
-                        <input type="radio" name="pns" id="tidakaktif" value="tidakaktif" class="cursor-pointer">
-                        <label for="tidakaktif" class="font-heading text-sm text-gray-500 font-medium">Tidak Aktif</label>
+                    <div class="flex items-center">
+                        <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="tidakaktif" value="tidakaktif" class="cursor-pointer sp_radio mr-2">Tidak Aktif</label>
                     </div>
                 </div>
             </div>
