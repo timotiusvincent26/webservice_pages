@@ -44,9 +44,11 @@ const namaProdi = document.querySelectorAll("#namaProdi");
 namaProdi.forEach(o => {
     o.addEventListener("click", () => {
         namaProdi.forEach(p => {
-            p.classList.remove('bg-primaryDark');
+            p.classList.remove('text-secondary');
+            p.classList.add('text-white');
         });
-        o.classList.add('bg-primaryDark');
+        o.classList.add('text-secondary');
+        o.classList.remove('text-white');
     })
 })
 
@@ -102,7 +104,13 @@ function getList(param){
 }
 
 $('#beritaSelengkapnya').click(function(){
-    $('#hasilPencarian').load('websia/kontenWebsia/searchAndFilter/searchAlumni.php');
+    $('#hasilPencarian').html(`<div class="flex flex-col md:ml-12 -ml-12 mt-2 h-screen">
+
+    <img src="/img/searchNotFound.png" class="w-96 mx-auto" alt="">
+    <div class="text-primary font-bold md:text-xl -mt-8 mx-auto">Hasil Pencarian Tidak Ditemukan</div>
+    <hr class="border-b-2 border-t-0 w-32 border-gray-400 mx-auto">
+
+</div>`);
 })
 
 // Awal Kalender
@@ -112,16 +120,10 @@ var tahunfix = waktu.getFullYear();
 var tahunAwal = waktu.getFullYear();
 var tahunAkhir = waktu.getFullYear();
 
-// Awal Kalender Tahun Akhir
-$('#inputTahunAkhir').click(function(){
-    $('#kalenderAwal').addClass('hidden');
-})	
-//Akhir Kalender Tahun AKhir
-
-
 // Awal kalender Tahun Awal
 $('#inputTahunAwal').click(function(){
     $('#kalenderAwal').removeClass('hidden');
+    $('#kalenderAkhir').addClass('hidden');
 })	
 
 const tahunKalenderAwal = document.querySelectorAll("#tahunKalenderAwal");
@@ -156,10 +158,82 @@ $('#nextTahunAwal').click(function(){
 tahunKalenderAwal.forEach(o => {
     o.addEventListener("click", () => {
         param = o.innerHTML;
-        inputTahunAwal.value=param;
+        if(inputTahunAkhir.value != ""){
+            if(param < inputTahunAkhir.value ){
+                inputTahunAwal.value=param;
+                inputTahunAwal.classList.remove('border-2');
+                inputTahunAwal.classList.remove('border-red-600');
+            } else {
+                inputTahunAwal.classList.add('border-2');
+                inputTahunAwal.classList.add('border-red-600');
+            }
+        } else {
+            inputTahunAwal.value=param;
+            inputTahunAwal.classList.remove('border-2');
+            inputTahunAwal.classList.remove('border-red-600');
+        }
     })
 })
-//Awal Kalender Tahun AKhir
+//Akhir Kalender Tahun Awal
+
+
+// Awal Kalender Tahun Akhir
+$('#inputTahunAkhir').click(function(){
+    $('#kalenderAwal').addClass('hidden');
+    $('#kalenderAkhir').removeClass('hidden');
+})	
+
+const tahunKalenderAkhir = document.querySelectorAll("#tahunKalenderAkhir");
+const inputTahunAkhir = document.querySelector("#inputTahunAkhir");
+const rentangTahunAkhir = document.querySelector("#rentangTahunAkhir");
+
+function getWaktuKalenderAkhir(param){
+    var param = param - 11;
+    rentangTahunAkhir.innerHTML = param+"-"+ (param + 11);
+    tahunKalenderAkhir.forEach(o =>{
+
+        o.innerHTML = param;
+        param++;
+
+    })
+};
+
+getWaktuKalenderAkhir(tahunfix)
+
+$('#perviousTahunAkhir').click(function(){
+    tahunAkhir = tahunAkhir - 11;
+    getWaktuKalenderAkhir(tahunAkhir);
+})	
+
+$('#nextTahunAkhir').click(function(){
+    if(tahunAkhir + 11 <= tahunfix){
+        tahunAkhir = tahunAkhir + 11;	
+        getWaktuKalenderAkhir(tahunAkhir);
+    }	    
+})
+
+tahunKalenderAkhir.forEach(o => {
+    o.addEventListener("click", () => {
+        param = o.innerHTML;
+        if(inputTahunAwal.value != ""){
+            if(param > inputTahunAwal.value ){
+                inputTahunAkhir.value=param;
+                inputTahunAkhir.classList.remove('border-2');
+                inputTahunAkhir.classList.remove('border-red-600');
+            } else {
+                inputTahunAkhir.classList.add('border-2');
+                inputTahunAkhir.classList.add('border-red-600');
+            }
+        } else {
+            inputTahunAkhir.value=param;
+            inputTahunAkhir.classList.remove('border-2');
+            inputTahunAkhir.classList.remove('border-red-600');
+        }
+    })
+})
+//Akhir Kalender Tahun AKhir
+
+
 
 // Akhir Kaleneder
 

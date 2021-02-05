@@ -2,7 +2,7 @@
 
 <?= $this->section('content'); ?>
 
-<div class="flex w-full">
+<div class="flex w-full" id="konten">
 
     <!-- awal sidebar -->
     <div class="md:relative fixed flex flex-col bg-primary rounded-r md:h-auto h-full" id="sidebarSearch">
@@ -109,8 +109,6 @@
 
                     <div class="flex flex-col mb-1 px-4 hidden" id="listRentangWaktu">
                         <div class="flex justify-between gap-x-1 mb-2">
-                            <!-- <div class="text-xs text-gray-300 bg-white px-2 py-1 mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2 cursor-pointer">Awal</div> -->
-                            <!-- <div class="text-xs text-gray-300 bg-white px-2 py-1 mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2 cursor-pointer">khir</div> -->
 
                             <input type="text" placeholder="Awal" id="inputTahunAwal" class="placeholder-gray-300 text-xs text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2">
                             <input type="text" placeholder="Akhir" id="inputTahunAkhir" class="placeholder-gray-300 text-xs text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2">
@@ -136,6 +134,27 @@
                                 <div class="text-xs text-gray-400 hover:text-primary mx-auto cursor-pointer" id="tahunKalenderAwal">a</div>
                             <?php endfor; ?>
                         </div>
+
+                        <div class="mx-auto bg-white grid grid-cols-4 gap-1 p-2 rounded-lg font-medium hidden" id="kalenderAkhir">
+                            <div class="text-sm text-secondary my-auto cursor-pointer" id="perviousTahunAkhir">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+
+                            <div class="text-sm text-secondary col-span-2" id="rentangTahunAkhir">2010-2020</div>
+
+                            <div class="text-sm text-secondary my-auto flex justify-end  cursor-pointer" id="nextTahunAkhir">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                    <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+
+                            <?php for ($x = 0; $x < 12; $x++) : ?>
+                                <div class="text-xs text-gray-400 hover:text-primary mx-auto cursor-pointer" id="tahunKalenderAkhir"></div>
+                            <?php endfor; ?>
+                        </div>
                     </div>
                 </div>
 
@@ -144,12 +163,104 @@
 
     </div>
     <!-- akhir sidebar -->
+
     <!-- awal Hasil Pencarian  -->
-    <div class=" ml-2  flex-grow ">
+    <div class=" ml-2 flex-grow min-h-screen ">
         <div class="flex">
-            <div class=" md:hidden flex w-24"></div>
+            <div class=" md:hidden w-24"></div>
             <div class="flex-grow" id="hasilPencarian">
-                <?= $this->include('websia/kontenWebsia/searchAndFilter/searchSemua.php') ?>
+                <!-- HASIL PENCARIAN ALUMNI -->
+                <div class="md:ml-12 mx-3 mt-2">
+                    <div>
+                        <h1 class="text-secondary font-heading text-2xl font-bold">ALUMNI</h1>
+                        <!-- awal jumlah hasil pencarian alumni  -->
+                        <div class="text-primary md:mb-6 mb-2 font-paragraph font-extralight text-sm">
+                            Sekitar 2.547 hasil pencarian alumni
+                        </div>
+                        <hr class="md:my-4 my-2 border-2 border-gray-400">
+                        <!-- akhir jumlah hasil pencarian alumni  -->
+
+                        <!-- DAFTAR HASIL PENCARIAN ALUMNI -->
+                        <div>
+                            <?php for ($x = 0; $x < 4; $x++) : ?>
+                                <a href="">
+                                    <div class="mx-2">
+                                        <div class="flex gap-x-4">
+                                            <div class="flex items-center">
+                                                <img src="/img/avatar.png" class="lg:w-18 w-12 mx-auto" alt="">
+                                            </div>
+                                            <div class="flex items-center">
+                                                <div>
+                                                    <h2 class="md:text-lg font-heading text-primary font-semibold">Nama Lengkap</h2>
+                                                    <div class="md:text-sm text-xs font-paragraph text-primary">Atribut</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="my-4 border-gray-400">
+                            <?php endfor; ?>
+                            <hr class="-my-4 border-2 border-gray-400">
+                        </div>
+                        <!-- awal tulisan "Selengkapnya" di hasil pencarian -->
+                        <div class="flex justify-end mt-12">
+                            <div class="flex bg-secondary text-white rounded-full md:py-2 py-1 md:px-3 px-2 items-center gap-x-2 cursor-pointer md:text-sm text-xs">
+                                Selengkapnya
+                                <img src="/img/right-off.png" class="md:w-4 md:h-4 w-3 h-3 my-auto" alt="">
+                            </div>
+                        </div>
+                        <!-- akhir tulisan "Selengkapnya" di hasil pencarian -->
+                        <!-- END DAFTAR HASIL PENCARIAN ALUMNI -->
+                    </div>
+                </div>
+                <!-- AKHIR HASIL PENCARIAN ALUMNI -->
+
+                <!-- HASIL PENCARIAN BERITA -->
+                <div class="md:ml-12 mx-3 mt-2">
+                    <div>
+                        <h1 class="text-secondary font-heading text-2xl font-bold">BERITA</h1>
+                        <!-- awal jumlah hasil pencarian berita  -->
+                        <div class="text-primary md:mb-6 mb-2 font-paragraph font-extralight text-sm">
+                            Sekitar 28.899 hasil pencarian berita
+                        </div>
+                        <hr class="md:my-4 my-2 border-2 border-gray-400">
+                        <!-- akhir jumlah hasil pencarian berita  -->
+
+
+                        <!-- DAFTAR HASIL PENCARIAN BERITA -->
+                        <div>
+                            <?php for ($x = 0; $x < 4; $x++) : ?>
+                                <a href="">
+                                    <div class="flex px-2 md:flex-row flex-col md:gap-x-4 gap-x-0 items-center">
+                                        <img src="/img/sampel.jpeg" alt="" class="md:w-48 md:h-36 w-full h-52 ">
+                                        <div class="flex-grow">
+                                            <div class="flex flex-col">
+                                                <h2 class="text-lg font-heading text-primary font-semibold mb-2">Judul Berita</h2>
+                                                <div class="text-xs font-paragraph text-primary">11 Januari 2021</div>
+                                                <div class="text-sm font-paragraph break-words ">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit turpis sem, eu laoreet odio pretium ac. Mauris eget aliquet lorem. Cras dignissim leo non ante molestie, at vulputate justo lobortis. Pellentesque quam elit, mattis eu nibh et, maximus congue mauris
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="my-4 border-gray-400">
+                            <?php endfor; ?>
+                            <hr class="-my-4 border-2 border-gray-400">
+                        </div>
+                        <!-- awal tulisan "Selengkapnya" di hasil pencarian -->
+                        <div class="flex justify-end mt-12" id="beritaSelengkapnya">
+                            <div class="flex bg-secondary text-white rounded-full md:py-2 py-1 md:px-3 px-2 items-center gap-x-2 cursor-pointer md:text-sm text-xs">
+                                Selengkapnya
+                                <img src="/img/right-off.png" class="md:w-4 md:h-4 w-3 h-3" alt="">
+                            </div>
+                        </div>
+                        <!-- akhir tulisan "Selengkapnya" di hasil pencarian -->
+                        <!-- END DAFTAR HASIL PENCARIAN BERITA -->
+                    </div>
+                </div>
+
+                <!-- END HASIL PENCARIAN BERITA -->
             </div>
         </div>
     </div>
