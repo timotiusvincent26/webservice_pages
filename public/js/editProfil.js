@@ -2,7 +2,7 @@
 $('.updateFotoProfil').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditFoto'>
-        <div class="hidden opacity-0 duration-700 transition-all w-1/3 bg-gray bg-opacity-0"> 
+        <div class="hidden opacity-0 duration-700 transition-all md:w-1/3 w-2/3 bg-gray bg-opacity-0"> 
         <div class="bg-primary py-2 px-6 rounded-t-2xl flex items-center justify-center text-secondary text-sm">
             <p class="font-bold">Update Foto Profil</p>
         </div>
