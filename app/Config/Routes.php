@@ -41,6 +41,8 @@ $routes->get('/rekomendasi', 'Websia::rekomendasi');
 $routes->get('/galeriFoto', 'Websia::galeriFoto');
 $routes->get('/galeriVideo', 'Websia::galeriVideo');
 $routes->get('/galeriWisuda', 'Websia::galeriWisuda');
+$routes->get('/berandaBeritaArtikel', 'Websia::berandaBerita');
+$routes->get('/beritaArtikel', 'Websia::berita');
 
 
 /**

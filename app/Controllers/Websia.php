@@ -81,6 +81,20 @@ class Websia extends BaseController
         return view('websia/kontenWebsia/editProfile/editAkun.php', $data);
     }
 
+    public function berita()
+    {
+        $data['judulHalaman'] = 'Berita/Artikel';
+        $data['login'] = 'sudah';
+        return view('websia/kontenWebsia/beritaArtikel/berita.php', $data);
+    }
+
+    public function berandaBerita()
+    {
+        $data['judulHalaman'] = 'Beranda Berita/Artikel';
+        $data['login'] = 'sudah';
+        return view('websia/kontenWebsia/beritaArtikel/berandaBerita.php', $data);
+    }
+
     public function coba()
     {
         return view('cobaWebsia/map');
