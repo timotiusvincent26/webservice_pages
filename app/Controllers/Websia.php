@@ -51,7 +51,7 @@ class Websia extends BaseController
         $data['login'] = 'sudah';
         return view('kontenWebsia/galeri/galeriWisuda', $data);
     }
-    
+
     public function editProfil()
     {
         $data['judulHalaman'] = 'Edit Profil';
