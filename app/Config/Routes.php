@@ -49,6 +49,8 @@ $routes->get('/edit/tempatKerja', 'Websia::editTempatKerja');
 $routes->get('/edit/prestasi', 'Websia::editPrestasi');
 $routes->get('/edit/publikasi', 'Websia::editPublikasi');
 $routes->get('/edit/akun', 'Websia::editAkun');
+$routes->get('/webservice/edit/biodata', 'Webservice::editBiodata');
+$routes->get('/webservice/edit/akun', 'Webservice::editAkun');
 
 
 /**

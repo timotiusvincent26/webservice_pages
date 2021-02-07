@@ -54,22 +54,22 @@
             <div id="navEdit" class="md:mt-6 mt-3 hidden md:block">
                 <ul>
                     <a href="/edit/profil">
-                        <li id="pendidikan" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'editProfil') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Biodata</li>
+                        <li id="profil" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'profil') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Biodata</li>
                     </a>
-                    <a href="/edit/profil">
-                        <li id="pendidikan" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'editPendidikan') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Pendidikan</li>
+                    <a href="/edit/pendidikan">
+                        <li id="pendidikan" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'pendidikan') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Pendidikan</li>
                     </a>
                     <a href="/edit/tempatKerja">
-                        <li id="tempatkerja" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'editTempatKerja') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Tempat Kerja</li>
+                        <li id="tempatkerja" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'tempatKerja') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Tempat Kerja</li>
                     </a>
                     <a href="/edit/prestasi">
-                        <li id="prestasi" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'editPrestasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Prestasi</li>
+                        <li id="prestasi" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'prestasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Prestasi</li>
                     </a>
                     <a href="/edit/publikasi">
-                        <li id="publikasi" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'editPublikasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Publikasi</li>
+                        <li id="publikasi" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'publikasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Publikasi</li>
                     </a>
                     <a href="/edit/akun">
-                        <li id="akun" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'editAkun') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Akun</li>
+                        <li id="akun" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Akun</li>
                     </a>
                 </ul>
             </div>
