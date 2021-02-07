@@ -3,7 +3,9 @@ var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     autoplay: true,
-    autoplayTimeout: 1000,
+    // lazyLoad: true,
+    // smartSpeed: 1000,
+    // autoplayTimeout: 7000,
 
     // If we need pagination
     pagination: {

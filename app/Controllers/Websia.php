@@ -8,14 +8,19 @@ class Websia extends BaseController
     {
         // ganti login ='sudah' atau 'belum' sesuai keadaan sudah login atau belum
         $data['judulHalaman'] = 'Beranda WEBSIA';
-        $data['login'] = 'belum';
+        $data['login'] = 'sudah';
         return view('websia/kontenWebsia/halamanUtama/beranda', $data);
     }
 
     public function searchAndFilter()
     {
+        $kata_kunci = $_GET['kata_kunci'];
         $data['judulHalaman'] = 'Search And Filter';
-        return view('websia/kontenWebsia/searchAndFilter/searchAndFilter', $data);
+        if ($kata_kunci == "kosong") {
+            return view('websia/kontenWebsia/searchAndFilter/searchKosong', $data);
+        } else {
+            return view('websia/kontenWebsia/searchAndFilter/searchAndFilter', $data);
+        }
     }
 
     public function profil()
@@ -41,15 +46,13 @@ class Websia extends BaseController
     public function galeriVideo()
     {
         $data['judulHalaman'] = 'Galeri Video Kegiatan Alumni';
-        $data['login'] = 'sudah';
-        return view('kontenWebsia/galeri/galeriVidAlumni', $data);
+        return view('websia/kontenWebsia/galeri/galeriVidAlumni', $data);
     }
 
     public function galeriWisuda()
     {
         $data['judulHalaman'] = 'Galeri Video Wisuda';
-        $data['login'] = 'sudah';
-        return view('kontenWebsia/galeri/galeriWisuda', $data);
+        return view('websia/kontenWebsia/galeri/galeriWisuda', $data);
     }
 
     public function editProfil()
@@ -79,6 +82,20 @@ class Websia extends BaseController
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
         return view('websia/kontenWebsia/editProfile/editAkun.php', $data);
+    }
+
+    public function berita()
+    {
+        $data['judulHalaman'] = 'Berita/Artikel';
+        $data['login'] = 'sudah';
+        return view('websia/kontenWebsia/beritaArtikel/berita.php', $data);
+    }
+
+    public function berandaBerita()
+    {
+        $data['judulHalaman'] = 'Beranda Berita/Artikel';
+        $data['login'] = 'sudah';
+        return view('websia/kontenWebsia/beritaArtikel/berandaBerita.php', $data);
     }
 
     public function coba()

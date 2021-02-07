@@ -96,8 +96,8 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute h-5 w-5 text-white">
                                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                                 </svg>
-                                <form action="/searchAndFilter">
-                                    <input type="text" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6 font-paragraph">
+                                <form action="/searchAndFilter" method="get">
+                                    <input type="text" name="kata_kunci" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6 font-paragraph">
                                 </form>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
 
     <!-- FOOTER -->
     <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-3 ">
-        <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
+        <div class="flex flex-col md:flex-row md:justify-around md:text-sm text-xs">
 
             <!-- awal footer stis -->
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
@@ -218,7 +218,11 @@
             <!-- akhir footer haistis -->
 
             <!-- awal link ke webservice  -->
-            <div class="text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
+            <div class="flex flex-col text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
+                <a href="/webservice/" class="mb-4">
+                    <h3>Website PKL60</h3>
+                </a>
+
                 <a href="/webservice/">
                     <h3>Webservice(API)</h3>
                 </a>
@@ -227,7 +231,19 @@
 
         </div>
 
-        <hr class="text-white mt-2 border-2">
+        <div class="flex items-center mt-2">
+            <div class="flex-grow">
+                <hr class="text-white border-2 my-auto">
+            </div>
+            <div class="flex-grow-0">
+                <div class="flex items-center w-8 h-8 rounded-full bg-secondary cursor-pointer" id="upPage">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
         <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>
     </div>
     <!-- END FOOTER -->
@@ -238,5 +254,7 @@
     AOS.init();
 </script>
 <script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/footer.js"></script>
 <script type="text/javascript" src="/js/editProfil.js"></script>
+
 </html>

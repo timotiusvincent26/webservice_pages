@@ -1,16 +1,4 @@
-<?php
-// Kalo mau akses carousel, di controller websia ganti variabel login = 'sudah'
-//  Kalo mau akses jumbotron, di controller websia ganti variabel login = 'belum'
-if ($login == 'belum') {
-    $urlTemplate = 'layoutWebsia/templateBeranda.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/jumbotron.php';
-} else if ($login == 'sudah') {
-    $urlTemplate = 'layoutWebsia/templateBerandaLogin.php';
-    $urlCarouselorJumbotron = 'kontenWebsia/halamanUtama/carousel.php';
-}
-?>
-
-<?= $this->extend($urlTemplate); ?>
+<?= $this->extend('websia/layoutWebsia/templateBerandaLogin.php'); ?>
 
 <?= $this->section('content'); ?>
 <!-- Awal Galeri Alumni -->
@@ -31,20 +19,20 @@ if ($login == 'belum') {
             <?php endfor; ?>
         </div>
         <!-- Awal Navigasi -->
-        <div class="flex justify-center md:justify-end items-center mx-8 p-2 text-primary font-paragraph">
+        <div class="flex justify-center md:justify-end items-center mx-8 p-2 text-secondary font-paragraph">
             <a href="" class="p-1 w-8 transform hover:scale-110">
                 <img src="/img/left-on.png" alt="">
             </a>
-            <a href="" class="p-1 hover:text-secondary">
+            <a href="" class="p-1 hover:text-primary">
                 1
             </a>
-            <a href="" class="p-1 hover:text-secondary">
+            <a href="" class="p-1 hover:text-primary">
                 2
             </a>
-            <a href="" class="p-1 hover:text-secondary">
+            <a href="" class="p-1 hover:text-primary">
                 ..
             </a>
-            <a href="" class="p-1 hover:text-secondary">
+            <a href="" class="p-1 hover:text-primary">
                 45
             </a>
             <a href="" class="p-1 w-8 transform hover:scale-110">

@@ -108,9 +108,9 @@ if ($login == 'belum') {
 
         <?php for ($x = 0; $x < 3; $x++) : ?>
             <!-- awal card-->
-            <div class="w-full mb-6 lg:w-80 md:w-60 w-full md:border-0 border-b-2 border-gray-300">
+            <div class="mb-6 md:w-1/4 w-full md:border-0 border-b-2 border-gray-300">
                 <a href="#" class="mb-4">
-                    <img class="lg:w-80 lg:h-60 md:w-60 md:h-44" src="/img/sampel.jpeg">
+                    <img class="w-full gambarBerita" src="/img/sampel.jpeg">
                 </a>
                 <div class="py-4">
                     <!-- Awal judul berita -->
@@ -142,9 +142,9 @@ if ($login == 'belum') {
 
 <!-- awal tombol "Lihat Berita Selanjutnya" -->
 <div class="flex w-full justify-end lg:px-20 md:px-8 px-3">
-    <div class="text-primary font-paragraph my-auto"><a href="">Lihat Berita Selanjutnya</a> </div>
+    <div class="text-primary font-paragraph my-auto"><a href="/websia/berandaBerita">Lihat Berita Selanjutnya</a> </div>
     <div>
-        <a href="">
+        <a href="/websia/berandaBerita">
             <svg class="w-6 h-6 font-bold text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
@@ -158,4 +158,6 @@ if ($login == 'belum') {
 
 <script type="text/javascript" src="/js/leaflet.ajax.js"></script>
 <script type="text/javascript" src="/js/add.js"></script>
+<script type="text/javascript" src="/js/berita.js"></script>
+
 <?= $this->endSection(); ?>

@@ -12,12 +12,12 @@ if ($status == 'bukan user') {
 
 <?= $this->section('content'); ?>
 <!-- Awal User Profile-->
-<div class="md:flex block items-center md:flex-col lg:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 md:pt-4">
+<div class="md:flex block items-center md:flex-col lg:flex-row flex-col-reverse mt-10 mb-8 pt-0 lg:px-20 md:px-8 md:pt-4">
     <div class="lg:w-3/5 w-full md:flex items-center font-paragraph text-sm">
         <div class="md:w-2/5 mb-8 justify-center object-center space-y-4">
             <!-- Avatar user profile -->
             <div class="flex flex-wrap justify-center">
-                <div class="w-3/4 sm:w-full px-4">
+                <div class="w-2/3 sm:w-full px-4">
                     <!-- syarat foto disini harus persegi (solusi : object fit) -->
                     <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-1-800x800-fa5a7ac2c81a43925586ea85f2fea332.jpg" alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
                     <!-- <img src="/img/tes/download.jpg" alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" /> -->
@@ -40,7 +40,7 @@ if ($status == 'bukan user') {
             <p class="font-heading text-center md:text-left text-base mb-5">
                 <!-- Angkatan -->
                 Angkatan ke-XX <br />
-                <!-- AIS / STIS/ POLSTAT STIS -->
+                <!-- Akademi Ilmu Statistik / STIS/ POLSTAT STIS -->
                 Sekolah Tinggi Ilmu Satistik <br />
                 <!-- NIM -->
                 NIM 22314567
@@ -54,15 +54,15 @@ if ($status == 'bukan user') {
     </div>
     <div class="lg:w-2/5 w-full md:px-8 md:py-6 pb-4">
         <!-- Awal Deskripsi user profile -->
-        <p class="px-8 md:px-0 mt-8 md:mt-0 font-heading text-base italic text-justify mb-8 md:mb-0 text-center md:text-justify lg:text-left">
+        <p class="px-5 md:px-0 mt-8 md:mt-0 font-heading text-base italic text-justify mb-4 md:mb-0 text-center md:text-justify lg:text-left">
             `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt quos saepe doloribus esse, fugit ratione culpa reprehenderit eos totam tenetur consectetur. Id, recusandae aspernatur incidunt cum, quo quaerat sequi earum ex doloremque eos ullam`
         </p>
         <!-- Akhir Deskripsi user profile -->
-        <p class="font-heading text-primary text-xs mt-6">Lokasi Tempat Tinggal Saat Ini</p>
-        <span class="font-heading flex justify-center md:justify-start px-8 md:px-0 text-base items-center text-center md:text-left">
-            <img class="my-2 mt-2 mr-2 w-5 float-left" src="/img/icon/maps_flag.png" alt="">
+        <p class="font-heading text-primary text-xs px-5 md:px-0 mt-6">Lokasi Tempat Tinggal Saat Ini</p>
+        <span class="font-heading flex md:justify-start px-5 md:px-0 text-base text-left mb-5 md:mb-0">
+            <img class="my-2 mt-2 mr-0 md:mr-2 w-5 float-left" src="/img/icon/maps_flag.png" alt="">
             <!-- Lokasi tempat tinggal -->
-            <p class="my-2 mt-2"> Jl Gading Griya Lestari Bl Y-1, Dki Jakarta </p>
+            <p class="font-heading my-2 mt-2"> Jl Gading Griya Lestari Bl Y-1, Dki Jakarta </p>
         </span>
         <div class="space-x-4 flex flex-col md:flex-row items-center justify-center lg:justify-start md:py-6 px-8 md:px-0">
             <!-- Awal media sosial dan telepon -->
@@ -108,7 +108,7 @@ if ($status == 'bukan user') {
         </div>
         <div class="holder mx-auto w-11/12 md:w-full lg:w-11/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-0 lg:gap-x-8" data-aos="zoom-in">
             <!-- 1 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
@@ -128,7 +128,7 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 2 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
@@ -148,7 +148,7 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 3 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
@@ -168,7 +168,7 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 4 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
@@ -199,71 +199,109 @@ if ($status == 'bukan user') {
 <!-- Akhir Rekomendasi -->
 
 <!-- Atribut pada section ini belum ditentukan -->
-<!-- Awal Informasi Umum -->
+<!-- Awal Informasi Instansi -->
 <div class="w-full my-8 lg:px-20 md:px-8 px-2">
-    <h3 class="font-heading font-bold text-xl text-secondary">Informasi Umum</h3>
-    <table class="table-auto font-paragraph text-primary ml-5 mt-3">
+    <h3 class="font-heading font-bold text-xl text-secondary">Informasi Instansi</h3>
+    <table class="table-auto font-paragraph mx-6 lg:mx-20 mt-3 md:mt-5">
         <tbody>
-            <?php for ($x = 0; $x <= 5; $x++) : ?>
-                <tr>
-                    <td class="font-bold">Atribut : </td>
-                    <td class="pl-4">Isi Atribut</td>
-                </tr>
-            <?php endfor; ?>
+            <tr>
+                <td class="font-bold text-primary lg:pb-2">Instansi : </td>
+                <td class="pl-3 md:pl-6">Badan Pusat Statistik (BPS)</td>
+            </tr>
+            <tr>
+                <td class="font-bold text-primary lg:pb-2">Alamat : </td>
+                <td class="pl-3 md:pl-6">Jl. Otto Iskandardinata 64C, Jatinegara</td>
+            </tr>
+            <tr>
+                <td class="font-bold text-primary lg:pb-2">Telp : </td>
+                <td class="pl-3 md:pl-6">021 - 12002112</td>
+            </tr>
+            <tr>
+                <td class="font-bold text-primary lg:pb-2">Faks : </td>
+                <td class="pl-3 md:pl-6">1234 - 12345</td>
+            </tr>
+            <tr>
+                <td class="font-bold text-primary lg:pb-2">Email : </td>
+                <td class="pl-3 md:pl-6">bps@bps.go.id</td>
+            </tr>
         </tbody>
     </table>
     <hr class="border-primary border-opacity-75 w-3/4 object-center mx-auto mt-8">
 </div>
-<!-- Akhir Informasi Umum -->
+<!-- Akhir Informasi Intsansi -->
+
+<!-- Awal Riwayat Prestasi -->
+<div class="w-full my-8 lg:px-20 md:px-8 px-2">
+    <h3 class="font-heading font-bold text-xl text-secondary">Riwayat Prestasi</h3>
+    <div class="flex justify-between px-6 lg:px-20 font-paragraph text-primary mt-3 md:mt-5">
+        <div class=""><b>Juara 1 : </b><span class="text-black">Kejuaraan pengolahan data tingkat nasional</span> </div>
+        <div class="font-bold">2020</div>
+    </div>
+    <div class="flex justify-between px-6 lg:px-20 font-paragraph text-primary mt-1 lg:mt-3">
+        <div class=""><b>Juara 1 : </b><span class="text-black">Kejuaraan pengolahan data tingkat nasional</span> </div>
+        <div class="font-bold">2020</div>
+    </div>
+    <div class="flex justify-between px-6 lg:px-20 font-paragraph text-primary mt-1 lg:mt-3">
+        <div class=""><b>Juara 1 : </b><span class="text-black">Kejuaraan pengolahan data tingkat nasional</span> </div>
+        <div class="font-bold">2020</div>
+    </div>
+    <hr class="border-primary border-opacity-75 w-4/5 object-center mx-auto mt-8">
+</div>
+<!-- Akhir Riwayat Prestasi -->
 
 <!-- Awal Riwayat Pendidikan -->
 <div class="w-full my-8 lg:px-20 md:px-8 px-2">
     <h3 class="font-heading font-bold text-xl text-secondary">Riwayat Pendidikan</h3>
-    <table class="table-auto font-paragraph text-primary ml-5 mt-3">
-        <tbody>
-            <?php for ($x = 0; $x <= 5; $x++) : ?>
+    <div class="overflow-x-scroll md:overflow-x-hidden">
+        <table class="table-auto font-paragraph text-black mx-auto mt-5">
+            <thead>
                 <tr>
-                    <td class="font-bold">Atribut : </td>
-                    <td class="pl-4">Isi Atribut</td>
+                    <th class="bg-gray-100 border-b-2 border-gray-200 rounded-tl-xl lg:rounded-tl-3xl text-sm text-left pl-3 lg:pl-5 py-2 md:py-3 lg:py-4">Jenjang Pendidikan</th>
+                    <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-12 md:pr-0 py-2 md:py-3 lg:py-4">Univeristas</th>
+                    <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-12 md:pr-0 py-2 md:py-3 lg:py-4">Program Studi</th>
+                    <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 py-2 md:py-3 lg:py-4">Tahun Masuk</th>
+                    <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 py-2 md:py-3 lg:py-4">Tahun Lulus</th>
+                    <th class="bg-gray-100 border-b-2 border-gray-200 rounded-tr-xl lg:rounded-tr-3xl text-sm text-left pl-3 pr-32 md:pr-0 lg:pl-5 py-2 md:py-3 lg:py-4">Judul Tulisan</th>
                 </tr>
-            <?php endfor; ?>
-        </tbody>
-    </table>
-    <hr class="border-primary border-opacity-75 w-3/4 object-center mx-auto mt-8">
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">D3</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Politeknik Statistika STIS</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">DIII Komputasi Statistik</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">1989</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">1989</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Implementasi KSA dan Penerapan Metode COD </td>
+                </tr>
+                <tr>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">D3</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Politeknik Statistika STIS</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">DIII Komputasi Statistik</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">1989</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">1989</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Cara Menghemat Uang</td>
+                </tr>
+                <tr>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">D3</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Politeknik Statistika STIS</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">DIII Komputasi Statistik</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">1989</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">1989</td>
+                    <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Penerapan Metode COD dan Cara Menghemat Uang</td>
+                </tr>
+                <tr>
+                    <td class="bg-gray-100 rounded-bl-xl lg:rounded-bl-3xl py-3">
+                    </td>
+                    <td class="bg-gray-100 py-3"></td>
+                    <td class="bg-gray-100 py-3"></td>
+                    <td class="bg-gray-100 py-3"></td>
+                    <td class="bg-gray-100 py-3"></td>
+                    <td class="bg-gray-100 rounded-br-xl lg:rounded-br-3xl py-3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 <!-- Akhir Riwayat Pendidikan -->
-
-<!-- Awal Riwayat Pekerjaan -->
-<div class="w-full my-8 lg:px-20 md:px-8 px-2">
-    <h3 class="font-heading font-bold text-xl text-secondary">Riwayat Pekerjaan</h3>
-    <table class="table-auto font-paragraph text-primary ml-5 mt-3">
-        <tbody>
-            <?php for ($x = 0; $x <= 5; $x++) : ?>
-                <tr>
-                    <td class="font-bold">Atribut : </td>
-                    <td class="pl-4">Isi Atribut</td>
-                </tr>
-            <?php endfor; ?>
-        </tbody>
-    </table>
-    <hr class="border-primary border-opacity-75 w-3/4 object-center mx-auto mt-8">
-</div>
-<!-- Akhir Riwayat Pekerjaan -->
-
-<!-- Awal Riwayat Organisasi -->
-<div class="w-full my-8 lg:px-20 md:px-8 px-2">
-    <h3 class="font-heading font-bold text-xl text-secondary">Riwayat Organisasi</h3>
-    <table class="table-auto font-paragraph text-primary ml-5 mt-3">
-        <tbody>
-            <?php for ($x = 0; $x <= 5; $x++) : ?>
-                <tr>
-                    <td class="font-heading font-semibold">Atribut : </td>
-                    <td class="pl-4">Isi Atribut</td>
-                </tr>
-            <?php endfor; ?>
-        </tbody>
-    </table>
-</div>
-<!-- Akhir Riwayat Organisasi -->
 
 <?= $this->endSection(); ?>
