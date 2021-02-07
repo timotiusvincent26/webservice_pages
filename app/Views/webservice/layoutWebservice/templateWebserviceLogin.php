@@ -68,7 +68,7 @@
                             </a>
                         </ul>
                     </li>
-                    <a href="">
+                    <a href="/webservice/profilDeveloper">
                         <li class="bg-secondary text-white py-2 px-3 rounded-full md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
                     </a>
                     <a href="/logout">
