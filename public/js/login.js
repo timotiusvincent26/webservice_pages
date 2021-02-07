@@ -49,6 +49,6 @@ $(".sso").each(function () {
 });
 
 
-if ($(window).width() <= 640) {
+if ($(window).width() <= 1024) {
     $('form').attr('data-aos', 'zoom-in')
 }
