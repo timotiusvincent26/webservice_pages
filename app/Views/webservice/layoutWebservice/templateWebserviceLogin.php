@@ -4,21 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/add_style.css">
+    <link rel="stylesheet" href="/css/aos.css" />
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?= $judul; ?></title>
 
     <style>
         .menu {
-            background-image: linear-gradient(to right, #014f86, #025e9e, #0567ab);
-            background-size: 200% auto;
-        }
-
-        .menu:hover {
             background-image: linear-gradient(to right, #014f86, #025e9e, #0567ab);
             background-size: 200% auto;
         }
@@ -30,13 +25,21 @@
         .notchoose {
             background-color: #005490;
         }
+
+        .list:hover {
+            background-color: #FF8A00;
+        }
+
+        #utama {
+            z-index: -1;
+        }
     </style>
 
 </head>
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
-    <header class="bg-primary sm:py-8 py-3 md:px-12 px-4 w-full navbar fixed">
+    <header class="bg-primary sm:py-4 py-3 md:px-12 sm:px-8 px-4 w-full navbar fixed">
         <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div>
@@ -45,32 +48,29 @@
                 <a href="<?= base_url(); ?>">
                     <img src="/img/logoSIA.png" class="xl:w-16 lg:w-14 md:w-12 w-8" alt="">
                 </a>
-                <h1 class="judulApi text-white xl:text-2xl lg:text-lg md:text-base text-sm font-light">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>
+                <h1 class="judulApi text-white xl:text-2xl lg:text-xl md:text-base text-sm font-light">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>
             </div>
             <div id="nav" class="hidden sm:flex sm:items-center z-10">
                 <ul class="flex lg:gap-x-6 md:gap-x-4 gap-x-2 relative">
-                    <a href="<?= base_url(); ?>">
-                        <li class="bg-secondary text-white py-2 px-3 rounded-full md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">SIA</li>
-                    </a>
-                    <li class="bg-secondary rounded-full text-white py-2 px-3 md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">API
+                    <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300 relative">API
                         <i class="fa fa-caret-down"></i>
-                        <ul class="invisible opacity-0 duration-700 transition-all absolute transform -translate-x-4 translate-y-2 bg-secondary text-white w-full py-2 px-3 border-secondary border-2 w-max rounded-xl">
+                        <ul class="text-secondary absolute top-11 left-0 overflow-hidden transition-all max-h-0 bg-white duration-300">
                             <a href="/webservice/">
-                                <li class="hover:text-secondary hover:bg-white -mt-2 -mx-3 rounded-t-xl hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300">BERANDA</li>
+                                <li class="list hover:text-white py-1.5 text-left border-2 border-secondary transiton duration-300 px-3">BERANDA</li>
                             </a>
                             <a href="/webservice/dokumentasi">
-                                <li class="hover:text-secondary hover:bg-white -mx-3 hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300">DOKUMENTASI</li>
+                                <li class="list hover:text-white py-1.5 text-left border-l-2 border-r-2 border-secondary transiton duration-300 px-3">DOKUMENTASI</li>
                             </a>
                             <a href="/webservice/proyek">
-                                <li class="hover:text-secondary rounded-b-xl hover:bg-white hover:bg-white py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300">PROYEK</li>
+                                <li class="list hover:text-white py-1.5 text-left border-2 border-secondary transiton duration-300 px-3">PROYEK</li>
                             </a>
                         </ul>
                     </li>
                     <a href="">
-                        <li class="bg-secondary text-white py-2 px-3 rounded-full md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
+                        <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
                     </a>
                     <a href="/logout">
-                        <li class="bg-secondary text-white py-2 px-3 rounded-full md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">KELUAR</li>
+                        <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">KELUAR</li>
                     </a>
                 </ul>
             </div>
@@ -86,29 +86,20 @@
         </div>
 
         <div class="sm:hidden hidden transform translate-y-3" id="menuApi">
-            <div class="menu border-t border-b flex justify-center">
-                <ul class="w-min">
-                    <a href="<?= base_url(); ?>">
-                        <li class="cursor-pointer flex justify-center text-white py-1">
-                            <div class="rounded-xl bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">SIA</div>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-            <div class="menu border-b flex justify-center">
+            <div class="menu  border-t border-b flex justify-center">
                 <ul class="w-min" id="navmobile">
                     <li class="cursor-pointer flex justify-center text-white py-1">
-                        <div class="rounded-xl bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">API<i class="fa fa-caret-down transform translate-y-1 translate-x-1"></i></div>
+                        <div class="bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">API<i class="fa fa-caret-down transform translate-y-1 translate-x-1"></i></div>
                     </li>
                     <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden top-o right-0">
                         <a href="/webservice/">
-                            <li class="bg-secondary m-auto hover:text-secondary hover:bg-white text-center text-sm rounded-t-xl py-0.5 w-44 border-b-2 border-gray-500">BERANDA</li>
+                            <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">BERANDA</li>
                         </a>
                         <a href="/webservice/dokumentasi">
-                            <li class="bg-secondary m-auto hover:text-secondary hover:bg-white text-center text-sm py-0.5 w-44 border-b-2 border-gray-500">DOKUMENTASI</li>
+                            <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">DOKUMENTASI</li>
                         </a>
                         <a href="/webservice/proyek">
-                            <li class="bg-secondary m-auto hover:text-secondary hover:bg-white text-center text-sm rounded-b-xl py-0.5 w-44 border-b-2 border-gray-500">PROYEK</li>
+                            <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">PROYEK</li>
                         </a>
                     </ul>
                 </ul>
@@ -117,7 +108,7 @@
                 <ul class="w-min">
                     <a href="#">
                         <li class="cursor-pointer flex justify-center text-white py-1">
-                            <div class="rounded-xl bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">PROFIL</div>
+                            <div class="bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">PROFIL</div>
                         </li>
                     </a>
                 </ul>
@@ -126,12 +117,13 @@
                 <ul class="w-min">
                     <a href="/logout/">
                         <li class="cursor-pointer flex justify-center text-white py-1">
-                            <div class="rounded-xl bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">KELUAR</div>
+                            <div class="bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">KELUAR</div>
                         </li>
                     </a>
                 </ul>
             </div>
         </div>
+
     </header>
     <!-- END HEADER -->
 
@@ -184,6 +176,10 @@
     </footer>
     <!-- END FOOTER -->
     <script type="text/javascript" src="/js/navbar.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
