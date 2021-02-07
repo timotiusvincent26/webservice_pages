@@ -53,7 +53,9 @@
                         <li class="bg-secondary text-white py-2 px-3 rounded-full md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">SIA</li>
                     </a>
                     <li class="bg-secondary rounded-full text-white py-2 px-3 md:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">API
-                        <i class="fa fa-caret-down"></i>
+                        <svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
                         <ul class="invisible opacity-0 duration-700 transition-all absolute transform -translate-x-4 translate-y-2 bg-secondary text-white w-full py-2 px-3 border-secondary border-2 w-max rounded-xl">
                             <a href="/webservice/">
                                 <li class="hover:text-secondary hover:bg-white -mt-2 -mx-3 rounded-t-xl hover:bg-white py-2 px-3 text-left border-b-2 border-gray-500 transiton duration-300">BERANDA</li>
