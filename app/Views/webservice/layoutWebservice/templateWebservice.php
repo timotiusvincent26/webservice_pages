@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/add_style.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
-    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title>Web Service | SIA</title>
 </head>
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
-    <header class="bg-primary sm:py-8 py-3 md:px-12 px-4 w-full fixed">
+    <header class="bg-primary sm:py-4 py-3 md:px-12 px-4 w-full fixed">
         <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div>
@@ -29,7 +27,7 @@
             </div>
             <div id="nav" class="flex items-center">
                 <ul class="flex lg:gap-x-6 md:gap-x-4 gap-x-2 relative z-10">
-                    <li class="bg-secondary text-white sm:py-2 py-0 rounded-full sm:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="/login/">MASUK</a></li>
+                    <li class="bg-secondary text-white sm:py-1.5 py-0 sm:w-24 w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300"><a href="/login/">MASUK</a></li>
                 </ul>
             </div>
         </div>
