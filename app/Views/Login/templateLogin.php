@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
+    <link rel="stylesheet" href="/css/aos.css" />
     <title>Sistem Informasi Alumni</title>
 
     <style>
@@ -49,13 +49,13 @@
     <!-- END HEADER -->
 
     <!-- CONTENT PAGE DI SINI -->
-    <div class="w-full flex flex-1 justify-center items-center xl:px-0 sm:px-3 lg:px-16 px-0 md:mt-24 mt-16">
+    <div class="w-full flex flex-1 justify-center items-center md:mt-24 mt-16">
         <?= $this->renderSection('content'); ?>
     </div>
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <footer class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2 ">
+    <footer class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2">
         <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
                 <div class="w-36 md:w-auto">
@@ -98,6 +98,10 @@
     <!-- END FOOTER -->
     <script src="/js/login.js"></script>
     <script type="text/javascript" src="/js/navbar.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
