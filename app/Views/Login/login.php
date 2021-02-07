@@ -3,11 +3,11 @@
 <?= $this->section('content'); ?>
 
 <div class="flex sm:w-max w-11/12 px-2">
-    <div class="w-full xl:mr-40 md:mr-10 mr-4 items-center sm:flex hidden">
+    <div class="w-full xl:mr-40 md:mr-10 mr-4 items-center sm:flex hidden" data-aos="fade-right">
         <img src="/img/login.png" alt="gambar login">
     </div>
     <div class="w-full">
-        <form method="POST" action="/websia/" class="py-8 rounded-3xl shadow-2xl flex flex-col">
+        <form method="POST" action="/websia" class="py-8 rounded-3xl shadow-2xl flex flex-col" data-aos="fade-left">
             <?= csrf_field(); ?>
             <h2 class="text-2xl mb-6 mt-2 font-bold text-center cursor-default text-primary">LOGIN PENGGUNA</h2>
             <div class="flex sm:mx-4 md:mx-8 mx-8 h-10">
@@ -21,8 +21,14 @@
             <div class="flex sm:mx-4 md:mx-8 mx-8 my-1 h-10 relative">
                 <label for="pass" class="w-1/4 text-primary font-medium flex items-center sm:text-sm md:text-base">Kata Sandi</label>
                 <input type="password" name="pass" class="input pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" id="pass" placeholder="Ketik kata sandi di sini">
-                <i class="fas fa-eye-slash absolute right-0 transform translate-y-3 -translate-x-3 cursor-pointer text-primary" id="eye"></i>
+                <div class="relative right-7 top-2.5" id="eye">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary cursor-pointer w-5 absolute">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                    </svg>
+                </div>
             </div>
+
             <div class="flex sm:mx-4 md:mx-8 mx-8">
                 <div class="w-1/4"></div>
                 <p class="text-xs text-red-500 w-3/4 text-justify" id="msg-pass">Kata sandi yang anda masukkan kurang tepat</p>
@@ -65,6 +71,5 @@
         </form>
     </div>
 </div>
-
 
 <?= $this->endSection(); ?>
