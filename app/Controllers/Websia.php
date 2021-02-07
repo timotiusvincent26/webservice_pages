@@ -14,8 +14,13 @@ class Websia extends BaseController
 
     public function searchAndFilter()
     {
+        $kata_kunci = $_GET['kata_kunci'];
         $data['judulHalaman'] = 'Search And Filter';
-        return view('websia/kontenWebsia/searchAndFilter/searchAndFilter', $data);
+        if ($kata_kunci == "kosong") {
+            return view('websia/kontenWebsia/searchAndFilter/searchKosong', $data);
+        } else {
+            return view('websia/kontenWebsia/searchAndFilter/searchAndFilter', $data);
+        }
     }
 
     public function profil()
