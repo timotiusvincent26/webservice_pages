@@ -39,7 +39,7 @@
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
-    <header class="bg-primary sm:py-4 py-3 md:px-12 sm:px-8 px-4 w-full navbar fixed">
+    <header class="bg-primary sm:py-4 py-3 md:px-12 sm:px-8 px-4 w-full navbar fixed z-50">
         <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div>
