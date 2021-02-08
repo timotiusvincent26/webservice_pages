@@ -48,7 +48,7 @@
 
     <!-- FOOTER -->
     <div class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-3 ">
-        <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
+        <div class="flex flex-col md:flex-row md:justify-around md:text-sm text-xs">
 
             <!-- awal footer stis -->
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
@@ -105,7 +105,19 @@
         </div>
         <!-- akhir footer haistis -->
 
-        <hr class="text-white mt-2 border-2">
+        <div class="flex items-center mt-2">
+            <div class="flex-grow">
+                <hr class="text-white border-2 my-auto">
+            </div>
+            <div class="flex-grow-0">
+                <div class="flex items-center w-8 h-8 rounded-full bg-secondary cursor-pointer" id="upPage">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
         <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>
     </div>
     <!-- END FOOTER -->
@@ -116,5 +128,6 @@
     AOS.init();
 </script>
 <script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/footer.js"></script>
 
 </html>
