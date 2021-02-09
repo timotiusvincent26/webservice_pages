@@ -134,49 +134,78 @@
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <footer class="bg-primary w-full mt-4 pt-6 pb-3 lg:px-20 md:px-8 px-2">
-        <div class="flex flex-col md:flex-row md:justify-around lg:text-base text-sm ">
+    <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-3">
+        <div class="flex flex-col md:flex-row md:justify-around md:text-sm text-xs">
+
+            <!-- awal footer stis -->
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
                 <div class="w-36 md:w-auto">
-                    <a href="https://stis.ac.id/"><img class="w-24 h-24" src="/img/STISlogo.png" alt=""></a>
+                    <a href="https://stis.ac.id/"><img class="lg:w-24 lg:h-24 w-20 h-20" src="/img/STISlogo.png" alt=""></a>
                 </div>
                 <div class="text-white font-heading">
                     <h3>Jalan Otto Iskandardinatta</h3>
                     <h3>64C Jakarta 13330</h3>
                     <h3>08967xxxxx</h3>
                     <div class="flex gap-x-2 mt-2">
-                        <a href="https://www.facebook.com/PolstatSTIS/"><img class="md:h-6 h-4" src="/img/facebook.png" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCwmpr4lmrApoGRpq4TcmsvA"><img src="/img/youtube.png" alt="yt" class="md:h-6 h-4">
-                        </a>
-                        <a href="https://twitter.com/stisjkt"><img class="md:h-6 h-4" src="/img/twitter.png" alt=""></a>
-                        <a href="https://www.instagram.com/polstatstis/"><img class="md:h-6 h-4" src="/img/instagram.png" alt=""></a>
+                        <a href="https://www.facebook.com/PolstatSTIS/"><img class="lg:h-6 h-4" src="/img/facebook.png" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCwmpr4lmrApoGRpq4TcmsvA"><img class="lg:h-6 h-4" src="/img/youtube.png" alt=""></a>
+                        <a href="https://twitter.com/stisjkt"><img class="lg:h-6 h-4" src="/img/twitter.png" alt=""></a>
+                        <a href="https://www.instagram.com/polstatstis/"><img class="lg:h-6 h-4" src="/img/instagram.png" alt=""></a>
                     </div>
                 </div>
             </div>
+            <!-- akhir footer stis -->
 
+            <!-- awal footer haistis -->
             <div class="flex items-center mt-4 gap-x-2 md:mt-0 mx-auto md:mx-0">
-                <a href="https://haisstis.org/"><img class="md:h-24 h-20 w-36 md:w-auto" src="/img/logo_haisstis1.png" alt=""></a>
+                <a href="https://haisstis.org/"><img class="lg:h-24 h-20 w-36 lg:w-auto" src="/img/logo_haisstis1.png" alt=""></a>
                 <div class="text-white font-heading">
                     <h3>Jalan Otto Iskandardinatta</h3>
                     <h3>64C Jakarta 13330</h3>
                     <h3>08967xxxxx</h3>
                     <div class="flex gap-x-2 mt-2">
-                        <a href=""><img class="md:h-6 h-4" src="/img/facebook.png" alt=""></a>
-                        <a href=""><img src="/img/youtube.png" alt="yt" class="md:h-6 h-4">
-                        </a>
-                        <a href="https://twitter.com/haisstis"><img class="md:h-6 h-4" src="/img/twitter.png" alt=""></a>
-                        <a href=""><img class="md:h-6 h-4" src="/img/instagram.png" alt=""></a>
+                        <a href=""><img class="lg:h-6 h-4" src="/img/facebook.png" alt=""></a>
+                        <a href=""><img class="lg:h-6 h-4" src="/img/youtube.png" alt=""></a>
+                        <a href="https://twitter.com/haisstis"><img class="lg:h-6 h-4" src="/img/twitter.png" alt=""></a>
+                        <a href=""><img class="lg:h-6 h-4" src="/img/instagram.png" alt=""></a>
                     </div>
+                </div>
+            </div>
+            <!-- akhir footer haistis -->
+
+            <!-- awal link ke webservice  -->
+            <div class="flex flex-col text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
+                <a href="/websia/" class="mb-4">
+                    <h3>Website PKL60</h3>
+                </a>
+
+                <a href="/webservice/">
+                    <h3>Webservice(API)</h3>
+                </a>
+            </div>
+            <!-- akhir link ke webservice  -->
+
+        </div>
+
+        <div class="flex items-center mt-2">
+            <div class="flex-grow">
+                <hr class="text-white border-2 my-auto">
+            </div>
+            <div class="flex-grow-0">
+                <div class="flex items-center w-8 h-8 rounded-full bg-secondary cursor-pointer" id="upPage">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                    </svg>
                 </div>
             </div>
         </div>
 
-        <hr class="text-white mt-2 border-2">
-        <h2 class="text-white text-center mt-3 md:text-base text-sm">Copyright &copy; PKL 60 Riset 5</h2>
-    </footer>
+        <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>
+    </div>
     <!-- END FOOTER -->
     <script type="text/javascript" src="/js/navbar.js"></script>
     <script src="/js/aos.js"></script>
+    <script type="text/javascript" src="/js/footer.js"></script>
     <script>
         AOS.init();
     </script>
