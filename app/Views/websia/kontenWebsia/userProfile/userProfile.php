@@ -108,7 +108,7 @@ if ($status == 'bukan user') {
         </div>
         <div class="holder mx-auto w-11/12 md:w-full lg:w-11/12 grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-0 lg:gap-x-8" data-aos="zoom-in">
             <!-- 1 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
@@ -128,7 +128,7 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 2 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
@@ -148,7 +148,7 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 3 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->
@@ -168,7 +168,7 @@ if ($status == 'bukan user') {
                 </div> -->
             </div>
             <!-- 4 card -->
-            <div class="rounded-3xl flex flex-col justify-between p-3 md:p-2 lg:p-4 md:m-2 mb-4 shadow-lg border-gray-800 bg-white relative" data-aos="zoom-in">
+            <div class="card border-gray-800 bg-white relative" data-aos="zoom-in">
                 <div class="">
                     <a href="/profil" target="_new">
                         <img class="w-16 md:w-20 lg:w-24 mx-auto mt-4" src="/img/avatar.png" alt="" /> <!-- Hilangin padding klo dah ada gambar, dan pake w-full aja -->

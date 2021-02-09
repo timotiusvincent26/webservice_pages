@@ -29,6 +29,12 @@ class Webservice extends BaseController
 		return view('webservice/kontenWebservice/proyek/buatProyek.php', $data);
 	}
 
+	public function profilDeveloper()
+	{
+		$data['judul'] = 'Profil Web Service | SIA';
+		return view('webservice/kontenWebservice/profilDeveloper/profilDeveloper.php', $data);
+	}
+
 	//--------------------------------------------------------------------
 
 }

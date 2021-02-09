@@ -1,6 +1,12 @@
 // awal js buat scroll navbar interaktif
-var lastScroll = 0;
-$(window).scroll(function (event) {
+
+var y = null;
+var tinggiLayar = $(window).height();
+var tinggiNavbar = $('.navbar').height();
+var lastScroll = $(window).scrollTop();;
+var batasBawahLayar = 0;
+
+$(window).scroll(function(event){
     var st = $(this).scrollTop();
     if (st > lastScroll) {
         $('.navbar').addClass('invisible');
@@ -57,6 +63,7 @@ $('#galeri').click(function () {
     }
 });
 // akhir dropdown galeri mobile
+
 $('#editTutup').click(function () {
     if (window.matchMedia('(min-width: 768px)').matches) {
         $('#layoutEdit').removeClass('lg:w-1/4 md:w-1/5 w-1/2').addClass('lg:w-16 md:w-14 sm:w-16 w-10')
@@ -118,5 +125,6 @@ $('#navEdit').prev().click(function () {
         </svg>
         `)
         // logo cross
+
     }
 });

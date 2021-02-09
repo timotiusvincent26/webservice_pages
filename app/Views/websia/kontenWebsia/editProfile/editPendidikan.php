@@ -3,6 +3,7 @@
 
 <?= $this->section('contentEdit'); ?>
 
+
 <div class="w-full bg-white min-h-screen" id="pagePendidikan">
     <div class="md:overflow-x-auto overflow-x-scroll shadow-2xl rounded-3xl">
         <table class="w-full sm:text-sm text-xs rounded-3xl shadow-2xl md:shadow-none">
@@ -19,7 +20,9 @@
                                 <i class="fas fa-caret-up text-gray-400"></i>
                                 <i class="fas fa-caret-down text-gray-400 transform -translate-y-2"></i>
                             </div>
+
                         </div>
+
 
                     </th>
                     <th class="pt-4 pb-1 pl-1">

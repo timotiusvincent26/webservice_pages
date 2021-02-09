@@ -52,20 +52,36 @@ namaProdi.forEach(o => {
     })
 })
 
-
-$('#BPS').click(function(){
+function toggleTempatKerja() {
     $('#onBPS').toggleClass('hidden');
     $('#offBPS').toggleClass('hidden');
     $('#onLainnya').toggleClass('hidden');
     $('#offLainnya').toggleClass('hidden');
+    $('#inputBPS').toggleClass('text-gray-300');
+    $('#inputBPS').toggleClass('text-primary');
+    $('#inputTempatKerjaLainnya').toggleClass('text-gray-300');
+    $('#inputTempatKerjaLainnya').toggleClass('text-primary');
+}
+
+$('#BPS').click(function(){
+    toggleTempatKerja();
 })
 
 $('#Lainnya').click(function(){
-    $('#onLainnya').toggleClass('hidden');
-    $('#offLainnya').toggleClass('hidden');
-    $('#onBPS').toggleClass('hidden');
-    $('#offBPS').toggleClass('hidden');
+    toggleTempatKerja();
 })
+
+$("#inputBPS").focus(function() {
+    if ($("#onBPS").hasClass('hidden')) {
+        toggleTempatKerja();
+    }
+});
+
+$("#inputTempatKerjaLainnya").focus(function() {
+    if ($("#onLainnya").hasClass('hidden')) {
+        toggleTempatKerja();
+    }
+});
 
 function getList(param){
     

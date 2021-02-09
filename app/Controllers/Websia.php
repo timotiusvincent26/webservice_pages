@@ -8,14 +8,19 @@ class Websia extends BaseController
     {
         // ganti login ='sudah' atau 'belum' sesuai keadaan sudah login atau belum
         $data['judulHalaman'] = 'Beranda WEBSIA';
-        $data['login'] = 'belum';
+        $data['login'] = 'sudah';
         return view('websia/kontenWebsia/halamanUtama/beranda', $data);
     }
 
     public function searchAndFilter()
     {
+        $kata_kunci = $_GET['kata_kunci'];
         $data['judulHalaman'] = 'Search And Filter';
-        return view('websia/kontenWebsia/searchAndFilter/searchAndFilter', $data);
+        if ($kata_kunci == "kosong") {
+            return view('websia/kontenWebsia/searchAndFilter/searchKosong', $data);
+        } else {
+            return view('websia/kontenWebsia/searchAndFilter/searchAndFilter', $data);
+        }
     }
 
     public function profil()
@@ -64,12 +69,25 @@ class Websia extends BaseController
         return view('websia/kontenWebsia/editProfile/editPendidikan.php', $data);
     }
 
+    public function editTempatKerja()
+    {
+        $data['judulHalaman'] = 'Edit Profil';
+        $data['login'] = 'sudah';
+        return view('websia/kontenWebsia/editProfile/editTempatKerja.php', $data);
+    }
 
     public function editPrestasi()
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
         return view('websia/kontenWebsia/editProfile/editPrestasi.php', $data);
+    }
+
+    public function editPublikasi()
+    {
+        $data['judulHalaman'] = 'Edit Profil';
+        $data['login'] = 'sudah';
+        return view('websia/kontenWebsia/editProfile/editPublikasi.php', $data);
     }
 
     public function editAkun()
