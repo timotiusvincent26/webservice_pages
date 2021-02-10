@@ -25,6 +25,7 @@
 
     <style>
         .dropdown {
+            margin-top: 5px;
             position: relative;
             display: inline-block;
         }
@@ -32,13 +33,13 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            min-width: 160px;
+            min-width: 250px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
         .dropdown-content a {
-            padding: 12px 16px;
+            padding: 0.75rem 0.5rem;
             text-decoration: none;
             display: block;
         }
@@ -82,9 +83,9 @@
                                     GALERI
                                 </div>
                                 <div class="dropdown-content">
-                                    <a href="/galeriFoto" class="menu text-white hover:text-secondary -mt-2 -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI FOTO </a>
-                                    <a href="/galeriVideo" class="menu text-white hover:text-secondary -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI VIDEO </a>
-                                    <a href="/galeriWisuda" class="menu text-white hover:text-secondary hover:border-opacity-70 py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300"> GALERI WISUDA </a>
+                                    <a href="/galeriFoto" class="menu text-white hover:text-secondary hover:border-opacity-70 text-left border-b-2 border-blue-400 transition duration-300"> GALERI KENANGAN ALUMNI </a>
+                                    <a href="/galeriVideo" class="menu text-white hover:text-secondary hover:border-opacity-70 text-left border-b-2 border-blue-400 transition duration-300"> GALERI VIDEO KEGIATAN HAISTIS </a>
+                                    <a href="/galeriWisuda" class="menu text-white hover:text-secondary hover:border-opacity-70 text-left transition duration-300"> GALERI VIDEO WISUDA AIS/STIS/Polstat STIS </a>
                                 </div>
                             </div> <!-- </a> -->
                             <a href="/admin">

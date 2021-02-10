@@ -8,13 +8,43 @@ var batasBawahLayar = 0;
 
 $(window).scroll(function(event){
     var st = $(this).scrollTop();
-    if (st > lastScroll) {
+    if (st > lastScroll){
         $('.navbar').addClass('invisible');
     } else {
         $('.navbar').removeClass('invisible');
     }
     lastScroll = st;
+
+    if(lastScroll > tinggiNavbar){
+        $( '.navbar' ).mouseout(function() {
+            $('.navbar').addClass('invisible');
+        });
+    } else {
+        $( '.navbar' ).mouseout(function() {
+            $('.navbar').removeClass('invisible');
+        });
+    }
 });
+
+$(window).resize(function() {
+    lastScroll = $(window).scrollTop();;
+});
+
+    
+window.addEventListener('mousemove', onMouseUpdate, false);
+window.addEventListener('mouseenter', onMouseUpdate, false);
+
+function onMouseUpdate(e) {
+    y = e.pageY;
+    if(y <= (lastScroll + tinggiNavbar)){
+        $('.navbar').removeClass('invisible');  
+    }
+  
+}
+
+function getMouseY() {
+  return y;
+}
 // akhir js buat scroll navbar interaktif
 
 // doropdown navbar mobile
