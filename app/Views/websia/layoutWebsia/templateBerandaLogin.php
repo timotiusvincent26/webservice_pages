@@ -78,7 +78,7 @@
                                     PROFIL
                                 </div>
                             </a>
-                            <div class="dropdown">
+                            <div class="dropdown menuGaleri">
                                 <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 cursor-pointer transition-colors duration-300">
                                     GALERI
                                 </div>

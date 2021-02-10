@@ -30,7 +30,14 @@ $(window).resize(function() {
     lastScroll = $(window).scrollTop();;
 });
 
-    
+$( '.menuGaleri' ).mouseover(function() {
+    $('.navbar').removeClass('invisible');
+});
+
+$( '.menuGaleri' ).mouseout(function() {
+    $('.navbar').addClass('invisible');
+});
+
 window.addEventListener('mousemove', onMouseUpdate, false);
 window.addEventListener('mouseenter', onMouseUpdate, false);
 
