@@ -25,6 +25,7 @@
 
     <style>
         .dropdown {
+            margin-top: 5px;
             position: relative;
             display: inline-block;
         }
@@ -32,13 +33,12 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
         .dropdown-content a {
-            padding: 12px 16px;
+            padding: 0.25rem 0.5rem;
             text-decoration: none;
             display: block;
         }
@@ -53,7 +53,7 @@
 
 <body>
     <!-- HEADER -->
-    <div class="navbar w-full fixed  z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
+    <div class="navbar w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
             <div class="flex flex-col">
                 <div class="flex items-center justify-between px-6 pt-3 ">
@@ -68,42 +68,42 @@
                         </div>
                         <div class="font-paragraph hidden md:flex items-end justify-start pt-1">
                             <a href="<?= base_url(); ?>">
-                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 transition-colors duration-300">
+                                <div class="nav-menu transition-colors duration-300">
                                     BERANDA
                                 </div>
                             </a>
                             <a href="/profil">
-                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 transition-colors duration-300">
+                                <div class="nav-menu transition-colors duration-300">
                                     PROFIL
                                 </div>
                             </a>
-                            <div class="dropdown">
-                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 cursor-pointer transition-colors duration-300">
+                            <div class="dropdown menuGaleri">
+                                <div class="nav-menu cursor-pointer transition-colors duration-300">
                                     GALERI
                                 </div>
-                                <div class="dropdown-content">
-                                    <a href="/galeriFoto" class="menu text-white hover:text-secondary -mt-2 -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI FOTO </a>
-                                    <a href="/galeriVideo" class="menu text-white hover:text-secondary -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI VIDEO </a>
-                                    <a href="/galeriWisuda" class="menu text-white hover:text-secondary hover:border-opacity-70 py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300"> GALERI WISUDA </a>
+                                <div class="dropdown-content ml-1 w-max text-sm">
+                                    <a href="/galeriFoto" class="bg-primaryDark hover:bg-primary text-white hover:text-secondary text-left w-full px-2 border-b-2 border-primary transition duration-300"> Galeri Kenangan Alumni </a>
+                                    <a href="/galeriVideo" class="bg-primaryDark hover:bg-primary text-white hover:text-secondary text-left w-full px-2 border-b-2 border-primary transition duration-300"> Galeri Video Kegiatan HAISTIS </a>
+                                    <a href="/galeriWisuda" class="bg-primaryDark hover:bg-primary text-white hover:text-secondary text-left w-full px-2 transition duration-300"> Galeri Video Wisuda AIS/STIS/Polstat STIS </a>
                                 </div>
-                            </div> <!-- </a> -->
+                            </div>
                             <a href="/admin">
-                                <div class="text-white hover:text-secondary ml-1 p-3 menu px-5 transition-colors duration-300">
+                                <div class="nav-menu transition-colors duration-300">
                                     ADMIN
                                 </div>
                             </a>
-                            <div class="flex items-end text-sm relative text-white ml-1  p-3 cari">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute h-5 w-5 text-white">
+                            <div class="flex items-end text-sm relative text-white ml-1 p-1 bg-primaryLight cursor-pointer transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="absolute h-5 w-5 m-1 text-white">
                                     <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                                 </svg>
                                 <form action="/searchAndFilter" method="get">
-                                    <input type="text" name="kata_kunci" placeholder="|  CARI" class="placeholder-white bg-transparent ml-6 font-paragraph">
+                                    <input type="text" name="kata_kunci" placeholder="|  CARI" class="placeholder-white bg-transparent focus:outline-none ml-6 font-paragraph p-1">
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="flex my-auto">
-                        <a href="/logout" class="font-paragraph font-medium items-center hidden md:flex md:px-5 md:mt-4 md:-mb-14 md:shadow-sm md:text-base  md:text-white md:bg-secondary hover:bg-secondaryhover transition-colors duration-200 hover:rounded">
+                        <a href="/logout" class="font-paragraph font-medium items-center hidden md:flex md:h-9 md:px-5 md:mt-3.5 md:-mb-14 md:shadow-sm md:text-base  md:text-white md:bg-secondary hover:bg-secondaryhover transition-colors duration-200 hover:rounded">
                             KELUAR
                         </a>
                         <div class="">
@@ -135,15 +135,10 @@
                                 </svg>
                             </div>
                             <div class="flex flex-col hidden" id="listGaleri">
-                                <a href="/galeriFoto" class="text-white text-xs text-center  mt-1 py-2  w-11/12 mx-auto border-b border-white"> GALERI FOTO </a>
-                                <a href="/galeriVideo" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> GALERI VIDEO </a>
-                                <a href="/galeriWisuda" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> GALERI WISUDA </a>
+                                <a href="/galeriFoto" class="text-white text-xs text-center  mt-1 py-2  w-11/12 mx-auto border-b border-white"> Galeri Kenangan Alumni </a>
+                                <a href="/galeriVideo" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> Galeri Video Kegiatan HAISSTIS </a>
+                                <a href="/galeriWisuda" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> Galeri Video Wisuda AIS/STIS/Polstat STIS </a>
                             </div>
-                        </div>
-                        <div class="dropdown-content">
-                            <a href="/galeriFoto" class="menu text-white hover:text-secondary -mt-2 -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI FOTO </a>
-                            <a href="/galeriVideo" class="menu text-white hover:text-secondary -mx-3 hover:border-opacity-70 py-2 px-3 text-left border-b-2 border-blue-400 transiton duration-300"> GALERI VIDEO </a>
-                            <a href="/galeriWisuda" class="menu text-white hover:text-secondary hover:border-opacity-70 py-2 px-3 text-left -mb-2 -mx-3 transiton duration-300"> GALERI WISUDA </a>
                         </div>
                         <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
                             <a href="/admin"> ADMIN</a>
@@ -154,7 +149,7 @@
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                             </svg>
                             <form action="/searchAndFilter">
-                                <input type="text" placeholder="|  CARI" id="inputCari" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3 outline-none ">
+                                <input type="text" placeholder="    |  CARI" id="inputCari" class="placeholder-white bg-transparent ml-6 text-xs text-center w-2/3 outline-none ">
                             </form>
                         </div>
                         <div class=" mt-1 px-2 py-2 w-11/12 mx-auto font-medium bg-secondary hover:bg-secondaryhover transition-colors duration-200 text-xs text-center text-white ">
@@ -166,7 +161,7 @@
             </div>
         </header>
     </div>
-    <div class="w-full md:h-32 h-12 bg-primary">
+    <div class="w-full md:h-28 h-12 bg-primary">
         <!-- Codingan Navbar Taruh Sini juga buat semacam marginnya -->
     </div>
     <!-- END HEADER -->
@@ -219,7 +214,7 @@
 
             <!-- awal link ke webservice  -->
             <div class="flex flex-col text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
-                <a href="/webservice/" class="mb-4">
+                <a href="/websia/" class="mb-4">
                     <h3>Website PKL60</h3>
                 </a>
 

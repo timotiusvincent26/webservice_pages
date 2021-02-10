@@ -108,7 +108,7 @@ if ($login == 'belum') {
 
         <?php for ($x = 0; $x < 3; $x++) : ?>
             <!-- awal card-->
-            <div class="mb-6 md:w-1/4 w-full md:border-0 border-b-2 border-gray-300">
+            <div class="mb-6 lg:w-1/4 md:w-1/3 lg:mx-0 md:mx-2 mx-0  w-full md:border-0 border-b-2 border-gray-300">
                 <a href="#" class="mb-4">
                     <img class="w-full gambarBerita" src="/img/sampel.jpeg">
                 </a>

@@ -1,6 +1,5 @@
 #nav ul li:hover>ul {
-  visibility: visible;
-  opacity: 1;
+  max-height: 9em;
 }
 
 #navmobile:hover>ul {
@@ -25,7 +24,7 @@
 
 #kiri {
   background: linear-gradient(to right, rgb(0, 87, 148), rgb(1, 79, 134));
-  top: -87px;
+  top: -108px;
   left: -27px;
 }
 
@@ -66,8 +65,14 @@
 
 #kanan {
   background: linear-gradient(to right, rgb(0, 87, 148), rgb(1, 84, 143));
-  top: -90px;
+  top: -100px;
   right: -50px;
+}
+
+@media screen and (max-width: 1024px) {
+  #kanan {
+    top: -110px;
+  }
 }
 
 #kanan div {
