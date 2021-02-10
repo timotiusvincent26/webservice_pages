@@ -129,6 +129,9 @@
     </header>
     <!-- END HEADER -->
 
+    <div class="w-full bg-primary w-full lg:h-24 md:h-20 h-12">
+    </div>
+
     <!-- CONTENT PAGE DI SINI -->
     <div class="w-full flex flex-1 justify-center items-center">
         <?= $this->renderSection('content'); ?>
