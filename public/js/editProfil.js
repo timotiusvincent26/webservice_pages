@@ -81,7 +81,7 @@ $(".sort").click(function () {
 $('.editPendidikan').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formEditPendidikan'>
-        <div class=" duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0">
+        <div class="hidden opacity-0 duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0">
             <div class="bg-primary py-4 px-6 rounded-t-2xl flex items-center justify-between text-secondary text-2xl">
                 <p class="font-heading font-bold">Edit Pendidikan</p>
                 <i class="closePendidikan fas fa-times cursor-pointer"></i>
@@ -177,12 +177,12 @@ $('#submitTempatKerja').click(function () {
 $('.editPrestasi').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditPrestasi'>
-        <div class="hidden opacity-0 duration-700 transition-all w-1/2 bg-gray bg-opacity-0 font-paragraph">
+        <div class="hidden opacity-0 duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0 font-paragraph">
         <div class="bg-primary py-4 px-6 rounded-t-2xl flex items-center justify-between text-secondary text-2xl">
             <p class="font-heading font-bold">Edit Prestasi</p>
             <i class="closePrestasi fas fa-times cursor-pointer"></i>
         </div>
-        <form action="" method="post" class="flex flex-col bg-gray-100 px-12 rounded-b-2xl">
+        <form action="" method="post" class="flex flex-col bg-gray-100 sm:px-12 px-4 rounded-b-2xl">
             <label for="editJenjang" class="text-primary text-sm mt-4">Nama Prestasi :</label>
             <input type="text" placeholder="Nama Prestasi" class="px-4 text-gray-400 text-sm border-2 rounded-lg border-gray-400 outline-none py-1 mt-2" name="editJenjang" id="editJenjang">
             <label for="editMasuk" class="text-primary text-sm mt-3">Tahun Masuk :</label>
@@ -247,7 +247,7 @@ $(".sort").click(function () {
 $('.editPublikasi').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formEditPublikasi'>
-        <div class=" duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0">
+        <div class="hidden opacity-0 duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0">
             <div class="bg-primary py-4 px-6 rounded-t-2xl flex items-center justify-between text-secondary text-2xl">
                 <p class="font-heading font-bold">Edit Publikasi</p>
                 <i class="closePublikasi fas fa-times cursor-pointer"></i>
