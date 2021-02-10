@@ -323,3 +323,21 @@ $('#submitAkun').click(function () {
     }, 10);
 })
 // akhir js edit akun
+
+// awal js edit biodata webservice
+$('#simpanBiodata').click(function () {
+    $('body').prepend(`
+    <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='popupBiodata'>
+    <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
+    <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
+    <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00;">Biodata Berhasil Disimpan</p>
+</div>
+    </div>
+`)
+
+    $('#popupBiodata').children().first().removeClass('hidden')
+    setTimeout(function () {
+        $('#popupBiodata').children().first().removeClass('opacity-0')
+    }, 10);
+})
+// akhir js edit biodata webservice

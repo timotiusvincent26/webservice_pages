@@ -43,6 +43,14 @@ $routes->get('/galeriVideo', 'Websia::galeriVideo');
 $routes->get('/galeriWisuda', 'Websia::galeriWisuda');
 $routes->get('/berandaBeritaArtikel', 'Websia::berandaBerita');
 $routes->get('/beritaArtikel', 'Websia::berita');
+$routes->get('/edit/profil', 'Websia::editProfil');
+$routes->get('/edit/pendidikan', 'Websia::editPendidikan');
+$routes->get('/edit/tempatKerja', 'Websia::editTempatKerja');
+$routes->get('/edit/prestasi', 'Websia::editPrestasi');
+$routes->get('/edit/publikasi', 'Websia::editPublikasi');
+$routes->get('/edit/akun', 'Websia::editAkun');
+$routes->get('/webservice/edit/biodata', 'Webservice::editBiodata');
+$routes->get('/webservice/edit/akun', 'Webservice::editAkun');
 
 
 /**

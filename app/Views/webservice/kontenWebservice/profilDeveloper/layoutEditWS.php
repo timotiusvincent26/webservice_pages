@@ -1,6 +1,7 @@
-<?= $this->extend('websia/layoutWebsia/templateBerandaLogin.php'); ?>
+<?= $this->extend('webservice/layoutWebservice/templateWebserviceLogin.php'); ?>
 
 <?= $this->section('content'); ?>
+
 <style>
     .active {
         background-color: #015998;
@@ -56,6 +57,7 @@
     }
 </style>
 <script src="https://code.jquery.com/jquery-1.10.1.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/editProfil.js"></script>
 
 <div class="w-full">
     <div class="flex w-full relative">
@@ -69,13 +71,13 @@
                 return $last_word;
             }
             ?>
-            <div class="md:hidden">
+            <div class="md:hidden min-h-screen">
                 <svg class="block mx-auto lg:w-10 md:w-8 sm:w-7 w-6 cursor-pointer fill-current text-secondary mt-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </div>
 
-            <div id="navEdit" class="md:block hidden">
+            <div id="navEdit" class="md:block hidden min-h-screen">
                 <div class="flex justify-between items-center text-secondary bg-primaryHover lg:text-2xl md:text-xl font-bold py-3 lg:pr-5 md:pr-2 lg:pl-7 md:pl-3 px-3">
                     <p>EDIT</p>
                     <div id="editTutup" class="select-none">
@@ -86,23 +88,11 @@
 
                 </div>
                 <ul>
-                    <a href="/edit/profil">
-                        <li id="profil" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'profil') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Biodata</li>
+                    <a href="/webservice/edit/biodata">
+                        <li id="profil" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-lg text-sm text-white <?= (getLastCurrentUrl() == 'biodata') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Biodata</li>
                     </a>
-                    <a href="/edit/pendidikan">
-                        <li id="pendidikan" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'pendidikan') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Pendidikan</li>
-                    </a>
-                    <a href="/edit/tempatKerja">
-                        <li id="tempatkerja" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'tempatKerja') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Tempat Kerja</li>
-                    </a>
-                    <a href="/edit/prestasi">
-                        <li id="prestasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'prestasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Prestasi</li>
-                    </a>
-                    <a href="/edit/publikasi">
-                        <li id="publikasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'publikasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Publikasi</li>
-                    </a>
-                    <a href="/edit/akun">
-                        <li id="akun" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Akun</li>
+                    <a href="/webservice/edit/akun">
+                        <li id="akun" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-lg text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Akun</li>
                     </a>
                 </ul>
 

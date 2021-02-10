@@ -7,24 +7,67 @@
         <h1 class="lg:text-6xl md:text-5xl text-3xl text-center font-heading text-secondary font-bold items-center flex justify-center">PROFIL</h1>
         <div class="flex justify-center">
             <div class="lg:w-4/5 w-5/6">
-                <div class="mx-2 mt-20">
-                    <h5 class="font-bold font-heading text-primary flex justify-start w-2/5 lg:text-lg md:text-sm text-xs">NAMA LENGKAP</h5>
-                    <h5 class="font-paragraph text-primary flex justify-end w-3/5 lg:text-lg md:text-base text-sm">Sukijan</h5>
-                    <hr class="border-gray border-1 lg:mt-4 md:mt-2">
-                    <h5 class="font-bold font-heading text-primary flex justify-start w-2/5 lg:text-lg md:text-sm text-xs lg:mt-4 md:mt-2 mt-1">TEMPAT/TGL LAHIR</h5>
-                    <h5 class="font-paragraph text-primary flex justify-end w-3/5 lg:text-lg md:text-base text-sm">Zimbabwe, 30 Februari 1919</h5>
-                    <hr class="border-gray border-1 lg:mt-4 md:mt-2">
-                    <h5 class="font-bold font-heading text-primary flex justify-start w-2/5 lg:text-lg md:text-sm text-xs lg:mt-4 md:mt-2 mt-1">STATUS</h5>
-                    <h5 class="font-paragraph text-primary flex justify-end w-3/5 lg:text-lg md:text-base text-sm">Pengedar Kebahagiaan</h5>
-                    <hr class="border-gray border-1 lg:mt-4 md:mt-2">
-                    <h5 class="font-bold font-heading text-primary flex justify-start w-2/5 lg:text-lg md:text-sm text-xs lg:mt-4 md:mt-2 mt-1">NAMA INSTANSI</h5>
-                    <h5 class="font-paragraph text-primary flex justify-end w-3/5 lg:text-lg md:text-base text-sm">International University of Zimbabwe</h5>
-                    <hr class="border-gray border-1 lg:mt-4 md:mt-2">
-                    <h5 class="font-bold font-heading text-primary flex justify-start w-2/5 lg:text-lg md:text-sm text-xs lg:mt-4 md:mt-2 mt-1">EMAIL</h5>
-                    <h5 class="font-paragraph text-primary flex justify-end w-3/5 lg:text-lg md:text-base text-sm">sukijanchayankdia@gmail.com</h5>
-                    <hr class="border-gray border-1 lg:mt-4 md:mt-2">
-                    <h5 class="flex md:justify-start gap-x-6 items-center lg:mt-8 lg:mb-8 md:mt-6 md:mb-6 mt-4 mb-4">
-                        <input type="submit" value="BUAT" class="bg-secondary hover:bg-secondaryhover text-white py-1 px-5 cursor-pointer rounded-full">
+                <div class="md:mx-2 lg:mt-20 mt-8">
+                    <div class="lg:mb-4 mb-2">
+                        <div class="flex justify-start items-center">
+                            <div class="w-2/5">
+                                <h5 class="font-bold font-heading text-primary lg:text-lg md:text-sm text-xs">NAMA LENGKAP</h5>
+                            </div>
+                            <div class="w-3/5">
+                                <h5 class="font-paragraph text-primary lg:text-lg md:text-base text-sm">Baek Nambong</h5>
+                            </div>
+                        </div>
+                        <hr class="border-gray border-1 lg:mt-4 mt-2">
+                    </div>
+                    <div class="lg:mb-4 mt-2">
+                        <div class="flex justify-start items-center">
+                            <div class="w-2/5">
+                                <h5 class="font-bold font-heading text-primary lg:text-lg md:text-sm text-xs">TEMPAT/TGL LAHIR</h5>
+                            </div>
+                            <div class="w-3/5">
+                                <h5 class="font-paragraph text-primary lg:text-lg md:text-base text-sm">Bojong Gede, 21 Januari 1983</h5>
+                            </div>
+                        </div>
+                        <hr class="border-gray border-1 lg:mt-4 mt-2">
+                    </div>
+                    <div class="lg:mb-4 mt-2">
+                        <div class="flex justify-start items-center">
+                            <div class="w-2/5">
+                                <h5 class="font-bold font-heading text-primary lg:text-lg md:text-sm text-xs">STATUS</h5>
+                            </div>
+                            <div class="w-3/5">
+                                <h5 class="font-paragraph text-primary lg:text-lg md:text-base text-sm">Peneliti</h5>
+                            </div>
+                        </div>
+                        <hr class="border-gray border-1 lg:mt-4 mt-2">
+                    </div>
+                    <div class="lg:mb-4 mt-2">
+                        <div class="flex justify-start items-center">
+                            <div class="w-2/5">
+                                <h5 class="font-bold font-heading text-primary lg:text-lg md:text-sm text-xs">NAMA INSTANSI</h5>
+                            </div>
+                            <div class="w-3/5">
+                                <h5 class="font-paragraph text-primary lg:text-lg md:text-base text-sm">Universitas Yonggang</h5>
+                            </div>
+                        </div>
+                        <hr class="border-gray border-1 lg:mt-4 mt-2">
+                    </div>
+                    <div class="lg:mb-4 mt-2">
+                        <div class="flex justify-start items-center">
+                            <div class="w-2/5">
+                                <h5 class="font-bold font-heading text-primary lg:text-lg md:text-sm text-xs">EMAIL</h5>
+                            </div>
+                            <div class="w-3/5">
+                                <h5 class="font-paragraph text-primary lg:text-lg md:text-base text-sm">Frost@email.com</h5>
+                            </div>
+                        </div>
+                        <hr class="border-gray border-1 lg:mt-4 mt-2">
+                    </div>
+                    <div class="">
+                        <a href="/webservice/edit/biodata">
+                            <div class="rounded-full mt-4 bg-secondary text-white p-1 md:w-24 w-16 text-center md:text-base text-xs hover:bg-secondaryhover">EDIT</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
