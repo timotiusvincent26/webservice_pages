@@ -2,10 +2,6 @@
   max-height: 9em;
 }
 
-#navmobile:hover>ul {
-  display: block;
-}
-
 .lingkaran-luar {
   position: absolute;
   width: 180px;
