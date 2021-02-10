@@ -87,22 +87,22 @@
                 </div>
                 <ul>
                     <a href="/edit/profil">
-                        <li id="profil" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'profil') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Biodata</li>
+                        <li id="profil" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'profil') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Biodata</li>
                     </a>
                     <a href="/edit/pendidikan">
-                        <li id="pendidikan" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'pendidikan') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Pendidikan</li>
+                        <li id="pendidikan" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'pendidikan') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Pendidikan</li>
                     </a>
                     <a href="/edit/tempatKerja">
-                        <li id="tempatkerja" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'tempatKerja') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Tempat Kerja</li>
+                        <li id="tempatkerja" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'tempatKerja') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Tempat Kerja</li>
                     </a>
                     <a href="/edit/prestasi">
-                        <li id="prestasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'prestasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Prestasi</li>
+                        <li id="prestasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'prestasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Prestasi</li>
                     </a>
                     <a href="/edit/publikasi">
-                        <li id="publikasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'publikasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Publikasi</li>
+                        <li id="publikasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'publikasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Publikasi</li>
                     </a>
                     <a href="/edit/akun">
-                        <li id="akun" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Akun</li>
+                        <li id="akun" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Akun</li>
                     </a>
                 </ul>
 
