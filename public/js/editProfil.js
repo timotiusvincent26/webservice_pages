@@ -64,10 +64,11 @@ $('#submitBiodata').click(function () {
 })
 // akhir js edit biodata
 
+// awal js sorting
 
-// awal js edit pendidikan
 $(".sort").click(function () {
-    if (!$(this).children().eq(1).hasClass('invisible')) {
+    $(".sort").not(this).children().removeClass('invisible text-primary')
+    if ($(this).children().eq(0).hasClass('invisible')) {
         $(this).children().first().removeClass('invisible')
         $(this).children().first().removeClass('text-gray-400').addClass('text-primary')
         $(this).children().eq(1).addClass('invisible')
@@ -77,6 +78,10 @@ $(".sort").click(function () {
         $(this).children().eq(1).removeClass('text-gray-400').addClass('text-primary')
     }
 })
+
+// akhir js sorting
+
+// awal js edit pendidikan
 
 $('.editPendidikan').click(function () {
     $('body').prepend(`
@@ -232,18 +237,6 @@ $('.editPrestasi').click(function () {
 // akhir js edit prestasi
 
 // awal js edit publikasi
-$(".sort").click(function () {
-    if (!$(this).children().eq(1).hasClass('invisible')) {
-        $(this).children().first().removeClass('invisible')
-        $(this).children().first().removeClass('text-gray-400').addClass('text-primary')
-        $(this).children().eq(1).addClass('invisible')
-    } else {
-        $(this).children().eq(1).removeClass('invisible')
-        $(this).children().first().addClass('invisible')
-        $(this).children().eq(1).removeClass('text-gray-400').addClass('text-primary')
-    }
-})
-
 $('.editPublikasi').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formEditPublikasi'>
