@@ -330,7 +330,6 @@ $('#submitAkun').click(function () {
     }, 10);
 })
 // akhir js edit akun
-<<<<<<< HEAD
 
 // awal js edit biodata webservice
 $('#simpanBiodata').click(function () {
@@ -349,5 +348,3 @@ $('#simpanBiodata').click(function () {
     }, 10);
 })
 // akhir js edit biodata webservice
-=======
->>>>>>> bc3f27173708756fbb266417374c8b1aff9b40cf

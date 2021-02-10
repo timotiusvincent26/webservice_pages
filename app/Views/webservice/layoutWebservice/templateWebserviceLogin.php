@@ -39,11 +39,7 @@
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
-<<<<<<< HEAD
-    <header class="bg-primary sm:py-8 py-3 md:px-12 px-4 w-full navbar fixed z-50">
-=======
     <header class="bg-primary sm:py-4 py-3 md:px-12 sm:px-8 px-4 w-full navbar fixed z-50">
->>>>>>> bc3f27173708756fbb266417374c8b1aff9b40cf
         <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div>
@@ -72,7 +68,7 @@
                         </ul>
                     </li>
 
-                    <a href="">
+                    <a href="/webservice/profilDeveloper">
                         <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
                     </a>
                     <a href="/logout">

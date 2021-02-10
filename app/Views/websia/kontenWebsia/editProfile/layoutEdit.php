@@ -86,7 +86,6 @@
 
                 </div>
                 <ul>
-<<<<<<< HEAD
                     <a href="/edit/profil">
                         <li id="profil" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'profil') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Biodata</li>
                     </a>
@@ -104,25 +103,6 @@
                     </a>
                     <a href="/edit/akun">
                         <li id="akun" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Akun</li>
-=======
-                    <a href="/websia/editProfil">
-                        <li id="pendidikan" class="listeditprofil p-3 xl:pl-10 lg:pl-7 lg:text-lg text-white <?= (getLastCurrentUrl() == 'editProfil') ? 'active' : ''; ?> hover:text-secondary font-semibold mr-4 rounded-tr-xl rounded-br-xl">Biodata</li>
-                    </a>
-                    <a href="/websia/editPendidikan">
-                        <li id="pendidikan" class="listeditprofil p-3 xl:pl-10 lg:pl-7 lg:text-lg text-white <?= (getLastCurrentUrl() == 'editPendidikan') ? 'active' : ''; ?> hover:text-secondary font-semibold mr-4 rounded-tr-xl rounded-br-xl">Pendidikan</li>
-                    </a>
-                    <a href="/websia/editTempatKerja">
-                        <li id="tempatkerja" class="listeditprofil p-3 xl:pl-10 lg:pl-7 lg:text-lg text-white <?= (getLastCurrentUrl() == 'editTempatKerja') ? 'active' : ''; ?> hover:text-secondary font-semibold mr-4 rounded-tr-xl rounded-br-xl">Tempat Kerja</li>
-                    </a>
-                    <a href="/websia/editPrestasi">
-                        <li id="prestasi" class="listeditprofil p-3 xl:pl-10 lg:pl-7 lg:text-lg text-white <?= (getLastCurrentUrl() == 'editPrestasi') ? 'active' : ''; ?> hover:text-secondary font-semibold mr-4 rounded-tr-xl rounded-br-xl">Prestasi</li>
-                    </a>
-                    <a href="/websia/editPublikasi">
-                        <li id="publikasi" class="listeditprofil p-3 xl:pl-10 lg:pl-7 lg:text-lg text-white <?= (getLastCurrentUrl() == 'editPublikasi') ? 'active' : ''; ?> hover:text-secondary font-semibold mr-4 rounded-tr-xl rounded-br-xl">Publikasi</li>
-                    </a>
-                    <a href="/websia/editAkun">
-                        <li id="akun" class="listeditprofil p-3 xl:pl-10 lg:pl-7 lg:text-lg text-white <?= (getLastCurrentUrl() == 'editAkun') ? 'active' : ''; ?> hover:text-secondary font-semibold mr-4 rounded-tr-xl rounded-br-xl">Akun</li>
->>>>>>> bc3f27173708756fbb266417374c8b1aff9b40cf
                     </a>
                 </ul>
 
