@@ -76,7 +76,7 @@
             </div>
 
             <div id="navEdit" class="md:block hidden">
-                <div class="flex justify-between items-center text-secondary bg-primaryHover lg:text-2xl md:text-xl font-bold py-3 lg:pr-5 md:pr-2 xl:pl-10 lg:pl-7 md:pl-3 px-3">
+                <div class="flex justify-between items-center text-secondary bg-primaryHover lg:text-2xl md:text-xl font-bold py-3 lg:pr-5 md:pr-2 lg:pl-7 md:pl-3 px-3">
                     <p>EDIT</p>
                     <div id="editTutup" class="select-none">
                         <svg class="lg:w-10 md:w-8 sm:w-7 w-6 fill-current cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -87,22 +87,22 @@
                 </div>
                 <ul>
                     <a href="/edit/profil">
-                        <li id="profil" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'profil') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Biodata</li>
+                        <li id="profil" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'profil') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Biodata</li>
                     </a>
                     <a href="/edit/pendidikan">
-                        <li id="pendidikan" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'pendidikan') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Pendidikan</li>
+                        <li id="pendidikan" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'pendidikan') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Pendidikan</li>
                     </a>
                     <a href="/edit/tempatKerja">
-                        <li id="tempatkerja" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'tempatKerja') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Tempat Kerja</li>
+                        <li id="tempatkerja" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'tempatKerja') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Tempat Kerja</li>
                     </a>
                     <a href="/edit/prestasi">
-                        <li id="prestasi" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'prestasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Prestasi</li>
+                        <li id="prestasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'prestasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Prestasi</li>
                     </a>
                     <a href="/edit/publikasi">
-                        <li id="publikasi" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'publikasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Publikasi</li>
+                        <li id="publikasi" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'publikasi') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Publikasi</li>
                     </a>
                     <a href="/edit/akun">
-                        <li id="akun" class="button bg-primaryHover font-heading p-5 text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-white text-center font-semibold">Akun</li>
+                        <li id="akun" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-l text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark text-center font-semibold">Akun</li>
                     </a>
                 </ul>
 
