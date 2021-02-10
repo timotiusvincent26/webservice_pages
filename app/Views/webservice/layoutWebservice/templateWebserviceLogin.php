@@ -39,11 +39,11 @@
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
     <!-- HEADER -->
-    <header class="bg-primary sm:py-4 py-3 md:px-12 sm:px-8 px-4 w-full navbar fixed z-50">
+    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-50">
         <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between sm:my-4 my-3">
             <div class="font-heading flex items-center sm:gap-x-6 gap-x-3 z-10">
                 <a href="<?= base_url(); ?>">
                     <img src="/img/logoSIA.png" class="xl:w-16 lg:w-14 md:w-12 w-8" alt="">
@@ -54,8 +54,7 @@
                 <ul class="flex lg:gap-x-6 md:gap-x-4 gap-x-2 relative">
                     <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300 relative">API
                         <i class="fa fa-caret-down"></i>
-                        <ul class="text-secondary absolute top-11 left-0 overflow-hidden transition-all max-h-0 bg-white duration-300">
-
+                        <ul class="text-secondary absolute top-10 -left-0.5 overflow-hidden transition-all max-h-0 bg-white duration-300 menuWebService">
                             <a href="/webservice/">
                                 <li class="list hover:text-white py-1.5 text-left border-2 border-secondary transiton duration-300 px-3">BERANDA</li>
                             </a>
@@ -68,7 +67,7 @@
                         </ul>
                     </li>
 
-                    <a href="/webservice/profilDeveloper">
+                    <a href="">
                         <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
                     </a>
                     <a href="/logout">
@@ -77,23 +76,23 @@
                 </ul>
             </div>
 
-            <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 sm:hidden" id="hamburgerApi">
-                <svg class="w-8 fill-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+
+            <svg id="hamburgerApi" class="w-8 fill-current block text-white hover:text-gray-200 focus:text-gray-200 sm:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
         </div>
         <div class="lingkaran-luar" id="kanan">
             <div class="lingkaran-dalam"></div>
         </div>
 
-        <div class="sm:hidden hidden transform translate-y-3" id="menuApi">
-            <div class="menu  border-t border-b flex justify-center">
+        <div class="sm:hidden hidden menuWebService navbar" id="menuApi">
+            <div class="menu border-t border-b flex justify-center">
                 <ul class="w-min" id="navmobile">
                     <li class="cursor-pointer flex justify-center text-white py-1">
                         <div class="bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">API<i class="fa fa-caret-down transform translate-y-1 translate-x-1"></i></div>
                     </li>
-                    <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden top-o right-0">
+                    <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden">
                         <a href="/webservice/">
                             <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">BERANDA</li>
                         </a>
@@ -101,7 +100,7 @@
                             <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">DOKUMENTASI</li>
                         </a>
                         <a href="/webservice/proyek">
-                            <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">PROYEK</li>
+                            <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-gray-500">PROYEK</li>
                         </a>
                     </ul>
                 </ul>
@@ -126,11 +125,8 @@
             </div>
         </div>
 
-    </header>
-    <!-- END HEADER -->
-
-    <div class="w-full bg-primary w-full lg:h-24 md:h-20 h-12">
     </div>
+    <!-- END HEADER -->
 
     <!-- CONTENT PAGE DI SINI -->
     <div class="w-full flex flex-1 justify-center items-center">
@@ -204,7 +200,6 @@
                 </div>
             </div>
         </div>
-
         <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>
     </div>
     <!-- END FOOTER -->
