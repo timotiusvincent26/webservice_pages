@@ -4,10 +4,10 @@
 <div class="md:grid md:grid-cols-3 md:gap-x-4">
     <div class="p-6">
         <div class="flex justify-center">
-            <img src="/img/avatar.png" alt="" class="mb-6 md:w-full w-28">
+            <img src="/img/avatar.png" alt="" class="mb-6 md:w-48 w-28">
         </div>
         <div class="flex justify-center">
-            <button class="updateFotoProfil bg-secondary rounded-full font-paragraph text-white px-3 py-1 hover:bg-secondaryhover">Ubah foto profil</button>
+            <button class="updateFotoProfil bg-secondary rounded-full font-paragraph text-white px-3 py-1 hover:bg-secondaryhover lg:text-base text-sm">Ubah foto profil</button>
         </div>
     </div>
     <div class="col-span-2 md:mt-6 ml-6 mr-6">
@@ -78,6 +78,35 @@
                     </div>
                     <div class="flex items-center">
                         <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="tidakaktif" value="tidakaktif" class="cursor-pointer sp_radio mr-2">Tidak Aktif</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="font-medium mb-2">Akun Media Sosial:</div>
+                <div class="w-full lg:w-3/4">
+                    <div class="flex items-center mb-2">
+                        <div class="w-1/4">
+                            <label for="instagram" class="font-medium">Instagram</label>
+                        </div>
+                        <div class="w-3/4">
+                            <input type="text" name="instagram" id="instagram" class="w-full md:p-2 p-1 border-2 border-gray rounded-lg" placeholder="Username Instagram">
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="w-1/4">
+                            <label for="twitter" class="font-medium">Twitter</label>
+                        </div>
+                        <div class="w-3/4">
+                            <input type="text" name="twitter" id="twitter" class="w-full md:p-2 p-1 border-2 border-gray rounded-lg" placeholder="Username Twitter">
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="w-1/4">
+                            <label for="facebook" class="font-medium">Facebook</label>
+                        </div>
+                        <div class="w-3/4">
+                            <input type="text" name="facebook" id="facebook" class="w-full md:p-2 p-1 border-2 border-gray rounded-lg" placeholder="Nama Akun Facebook">
+                        </div>
                     </div>
                 </div>
             </div>
