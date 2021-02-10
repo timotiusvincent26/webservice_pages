@@ -1,8 +1,6 @@
 <?= $this->extend('websia/kontenWebsia/editProfile/layoutEdit.php'); ?>
 
-
 <?= $this->section('contentEdit'); ?>
-
 
 <div class="w-full bg-white min-h-screen" id="pagePendidikan">
     <div class="md:overflow-x-auto overflow-x-scroll shadow-2xl rounded-3xl">
@@ -16,9 +14,9 @@
                     <th class="pt-4 pb-1 pl-1">
                         <div class="flex">
                             <span class="mr-1">Tahun Masuk</span>
-                            <div class="select-none cursor-pointer flex flex-col justify-center sort">
-                                <i class="fas fa-caret-up text-gray-400"></i>
-                                <i class="fas fa-caret-down text-gray-400 transform -translate-y-2"></i>
+                            <div class="select-none cursor-pointer flex flex-col justify-center sort text-gray-400">
+                                <i class="fas fa-caret-up"></i>
+                                <i class="fas fa-caret-down transform -translate-y-2"></i>
                             </div>
 
                         </div>
@@ -28,9 +26,9 @@
                     <th class="pt-4 pb-1 pl-1">
                         <div class="flex">
                             <span class="mr-1">Tahun Lulus</span>
-                            <div class="select-none cursor-pointer flex flex-col justify-center sort">
-                                <i class="fas fa-caret-up text-gray-400"></i>
-                                <i class="fas fa-caret-down text-gray-400 transform -translate-y-2"></i>
+                            <div class="select-none cursor-pointer flex flex-col justify-center sort text-gray-400">
+                                <i class="fas fa-caret-up"></i>
+                                <i class="fas fa-caret-down transform -translate-y-2"></i>
                             </div>
                         </div>
 
@@ -42,23 +40,23 @@
                     <td></td>
                     <td class="text-sm px-2">
                         <span>All</span>
-                        <span class="select-none cursor-pointer float-right sort">
-                            <i class="fas fa-caret-up text-gray-400 transform -translate-y-1 translate-x-3"></i>
-                            <i class="fas fa-caret-down text-gray-400 transform translate-y-1"></i>
+                        <span class="select-none cursor-pointer float-right sort text-gray-400">
+                            <i class="fas fa-caret-up transform -translate-y-1 translate-x-3"></i>
+                            <i class="fas fa-caret-down transform translate-y-1"></i>
                         </span>
                     </td>
                     <td class="text-sm px-2">
                         <span>All</span>
-                        <span class="select-none cursor-pointer float-right sort">
-                            <i class="fas fa-caret-up text-gray-400 transform -translate-y-1 translate-x-3"></i>
-                            <i class="fas fa-caret-down text-gray-400 transform translate-y-1"></i>
+                        <span class="select-none cursor-pointer float-right sort text-gray-400">
+                            <i class="fas fa-caret-up transform -translate-y-1 translate-x-3"></i>
+                            <i class="fas fa-caret-down transform translate-y-1"></i>
                         </span>
                     </td>
                     <td class="text-sm px-2">
                         <span>All</span>
-                        <span class="select-none cursor-pointer float-right sort">
-                            <i class="fas fa-caret-up text-gray-400 transform -translate-y-1 translate-x-3"></i>
-                            <i class="fas fa-caret-down text-gray-400 transform translate-y-1"></i>
+                        <span class="select-none cursor-pointer float-right sort text-gray-400">
+                            <i class="fas fa-caret-up transform -translate-y-1 translate-x-3"></i>
+                            <i class="fas fa-caret-down transform translate-y-1"></i>
                         </span>
                     </td>
                     <td colspan="2"></td>
