@@ -52,6 +52,20 @@
 <!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
 
 <body>
+    <!-- kembali ke atas -->
+    <!-- <div class="flex-grow-0">
+        <div class="flex items-center w-8 h-8 rounded-full bg-secondary cursor-pointer" id="upPage">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+            </svg>
+        </div>
+    </div> -->
+    <button onclick="topFunction()" id="onTopBtn" title="Kembali ke Atas" class="hidden fixed bottom-5 right-8 w-12 h-12 p-1 cursor-pointer rounded-full border-none focus:outline-none z-50 bg-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+    </button>
+
     <!-- HEADER -->
     <div class="navbar w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
@@ -230,13 +244,8 @@
             <div class="flex-grow">
                 <hr class="text-white border-2 my-auto">
             </div>
-            <div class="flex-grow-0">
-                <div class="flex items-center w-8 h-8 rounded-full bg-secondary cursor-pointer" id="upPage">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                        <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                    </svg>
-                </div>
-            </div>
+
+
         </div>
 
         <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>
@@ -248,6 +257,7 @@
 <script>
     AOS.init();
 </script>
+<script type="text/javascript" src="/js/onTopBtn.js"></script>
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/footer.js"></script>
 <script type="text/javascript" src="/js/editProfil.js"></script>
