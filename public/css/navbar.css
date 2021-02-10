@@ -3,18 +3,6 @@
   /* background: linear-gradient(to right, orange, #ec38bc, #7303c0, cyan); */
 }
 
-.menu {
-  background: linear-gradient(360deg, #015998 0%, rgba(1, 89, 152, 0) 100%);
-}
-
-.menu:hover {
-  background: #014f86;
-}
-
-.cari {
-  background: linear-gradient(360deg, #307bb1 0%, rgba(1, 89, 152, 0) 100%);
-}
-
 .cari:hover {
   background: linear-gradient(360deg, #015998 0%, rgba(1, 89, 152, 0) 100%);
 }
