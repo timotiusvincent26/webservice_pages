@@ -11,12 +11,16 @@ html {
 
 /* css buat body secara umum */
 body {
-  @apply font-paragraph;
+  @apply font-paragraph font-thin;
 }
 
 /* ini menu navbar saat di desktop */
 .nav-menu {
   @apply text-white bg-primaryDark hover:bg-primary hover:text-secondary ml-1 py-1.5 px-5;
+}
+
+.nav-menu-realtive {
+  @apply text-white text-xs text-center w-11/12 mx-auto border-b border-white mt-1;
 }
 
 /* ini card untuk rekomendasi */

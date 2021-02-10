@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
     <link rel="stylesheet" href="/css/all.css">
-    <!-- <link rel="stylesheet" href="/css/tambahan.css"> -->
     <link rel="stylesheet" href="/css/swiper-bundle.css">
     <link rel="stylesheet" href="/css/img-viewer.css">
     <script src="/js/swiper-bundle.js"></script>
@@ -52,14 +51,7 @@
 <!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
 
 <body>
-    <!-- kembali ke atas -->
-    <!-- <div class="flex-grow-0">
-        <div class="flex items-center w-8 h-8 rounded-full bg-secondary cursor-pointer" id="upPage">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-            </svg>
-        </div>
-    </div> -->
+    <!-- tombol kembali ke atas -->
     <button onclick="topFunction()" id="onTopBtn" title="Kembali ke Atas" class="hidden fixed bottom-5 right-8 w-12 h-12 p-1 cursor-pointer rounded-full border-none focus:outline-none z-50 bg-secondary">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
             <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
@@ -132,14 +124,14 @@
 
                 <div class="md:hidden">
                     <div class="flex flex-col hidden w-full border-t border-b border-white py-2 font-paragraph" id="menu">
-                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white ">
+                        <div class="nav-menu-relative px-2 py-2 ">
                             <a href="<?= base_url(); ?>">BERANDA </a>
                         </div>
-                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
+                        <div class="nav-menu-relative px-2 py-2">
                             <a href="/profil"> PROFIL</a>
                         </div>
                         <div class="flex flex-col">
-                            <div class="flex text-white justify-center text-xs mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white" id="galeri">
+                            <div class="flex nav-menu-relative px-2 py-2" id="galeri">
                                 <div> GALERI</div>
                                 <svg class="w-4 h-4 my-auto ml-2" fill="none" id="downGaleri" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -149,16 +141,16 @@
                                 </svg>
                             </div>
                             <div class="flex flex-col hidden" id="listGaleri">
-                                <a href="/galeriFoto" class="text-white text-xs text-center  mt-1 py-2  w-11/12 mx-auto border-b border-white"> Galeri Kenangan Alumni </a>
-                                <a href="/galeriVideo" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> Galeri Video Kegiatan HAISSTIS </a>
-                                <a href="/galeriWisuda" class="text-white text-xs text-center mt-1 py-2  w-11/12 mx-auto border-b border-white"> Galeri Video Wisuda AIS/STIS/Polstat STIS </a>
+                                <a href="/galeriFoto" class="nav-menu-relative py-2"> Galeri Kenangan Alumni </a>
+                                <a href="/galeriVideo" class="nav-menu-relative py-2"> Galeri Video Kegiatan HAISSTIS </a>
+                                <a href="/galeriWisuda" class="nav-menu-relative py-2"> Galeri Video Wisuda AIS/STIS/Polstat STIS </a>
                             </div>
                         </div>
-                        <div class="text-white text-xs text-center mt-1 px-2 py-2  w-11/12 mx-auto border-b border-white">
+                        <div class="nav-menu-relative px-2 py-2">
                             <a href="/admin"> ADMIN</a>
                         </div>
 
-                        <div class="flex  justify-center text-sm relative text-white p-3 cari mt-1 px-2 py-2 w-11/12 mx-auto border-b border-white">
+                        <div class="flex  justify-center text-sm relative text-white p-3 cari mt-1 px-2">
                             <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" id="tombolCari" class="absolute -ml-12 h-5 w-5 text-white">
                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                             </svg>

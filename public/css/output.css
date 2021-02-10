@@ -32243,6 +32243,7 @@ html {
 
 body {
   font-family: Cabin;
+  font-weight: 100;
 }
 
 /* ini menu navbar saat di desktop */
@@ -32270,6 +32271,21 @@ body {
 .nav-menu:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 170, 0, var(--tw-text-opacity));
+}
+
+.nav-menu-realtive {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-bottom-width: 1px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.25rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  width: 91.666667%;
 }
 
 /* ini card untuk rekomendasi */
