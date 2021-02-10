@@ -7,7 +7,7 @@
         <h1 class="lg:text-6xl md:text-5xl text-3xl text-center font-heading text-secondary font-bold items-center flex justify-center">PROFIL</h1>
         <div class="flex justify-center">
             <div class="lg:w-4/5 w-5/6">
-                <div class="mx-2 mt-20">
+                <div class="md:mx-2 lg:mt-20 mt-8">
                     <div class="lg:mb-4 mb-2">
                         <div class="flex justify-start items-center">
                             <div class="w-2/5">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="">
                         <a href="/webservice/edit/biodata">
-                            <div class="rounded-full bg-secondary text-white p-1 w-24 text-center hover:bg-secondaryhover">EDIT</div>
+                            <div class="rounded-full mt-4 bg-secondary text-white p-1 md:w-24 w-16 text-center md:text-base text-xs hover:bg-secondaryhover">EDIT</div>
                         </a>
                     </div>
                 </div>
