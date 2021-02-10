@@ -38,6 +38,14 @@ $( '.menuGaleri' ).mouseout(function() {
     $('.navbar').addClass('invisible');
 });
 
+$('.menuWebService').mouseover(function () {
+    $('.navbar').removeClass('invisible');
+});
+
+$('.menuWebService').mouseout(function () {
+    $('.navbar').addClass('invisible');
+});
+
 window.addEventListener('mousemove', onMouseUpdate, false);
 window.addEventListener('mouseenter', onMouseUpdate, false);
 
@@ -165,3 +173,7 @@ $('#navEdit').prev().click(function () {
 
     }
 });
+//nav mobile webservice
+$('#navmobile').click(function () {
+    $('#navmobile ul').toggleClass('hidden')
+})
