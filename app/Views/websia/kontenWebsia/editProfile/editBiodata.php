@@ -17,11 +17,11 @@
             <div class="grid grid-cols-2 gap-x-4">
                 <div>
                     <div class="font-medium">NIM:</div>
-                    <div class="font-heading text-black mb-2">XXXXXXXXX</div>
+                    <div class="text-black font-heading font-normal mb-2">XXXXXXXXX</div>
                 </div>
                 <div>
                     <div class="font-medium">Angkatan:</div>
-                    <div class="font-heading text-black">XX</div>
+                    <div class="text-black font-heading font-normal mb-2">XX</div>
                 </div>
             </div>
             <div class="mb-2 lg:w-1/2 lg:mr-4">
