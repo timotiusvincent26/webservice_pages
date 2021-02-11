@@ -18,9 +18,9 @@ var myStyle = {
 function popUp(f, l) {
     var out = [];
     if (f.properties) {
-        out.push("<div class='font-bold text-primary text-center uppercase font-heading'> " + f.properties["Propinsi"] + "</div> <hr class='my-2'>");
+        out.push("<div class='font-bold text-primary text-center uppercase font-heading'> " + f.properties["NAME_1"] + "</div> <hr class='my-2'>");
         for (i = 0; i < 10; i++) {
-            out.push("<div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["Propinsi"] + " : " + f.properties["kode"] + " Alumni </div>");
+            out.push("<div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : " + f.properties["ID_1"] + " Alumni </div>");
         }
         out.push(`
         <div class='w-full flex justify-between'>
