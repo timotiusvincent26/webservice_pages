@@ -94,6 +94,29 @@ if ($login == 'belum') {
 <!-- Awal Peta Sebaran ALUMNI -->
 <div class="bg-primary my-8 md:py-8 py-4 lg:px-20 md:px-8 px-3">
     <div class="w-full md:mb-6 mb-4 text-center text-xl text-secondary font-bold font-heading">PETA SEBARAN ALUMNI</div>
+
+    <div class="text-white font-medium text-center mb-1">Tampilkan Berdasarkan :</div>
+    <!-- <div> -->
+    <div class="flex flex-col w-32 items-center mx-auto filterPeta">
+        <div class="w-full flex justify-center items-center  mb-1 py-1 mx-auto text-primary text-sm bg-white font-medium font-paragraph rounded-lg cursor-pointer">
+            <div class="hasilFilterPeta">Provinsi</div>
+
+            <svg class="w-4 h-4 downFilterPeta" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+
+            <svg class="w-4 h-4 hidden upFilterPeta" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+            </svg>
+
+        </div>
+        <!-- </div> -->
+        <div class="mx-auto flex flex-col justify-center mb-4 bg-white cursor-pointer rounded-lg hidden listFilterPeta">
+            <div class="w-32 text-primary text-center text-sm py-1 font-medium font-paragraph border-b border-primary petaProvinsi">Provinsi</div>
+            <div class="w-32 text-primary text-center text-sm py-1 font-medium font-paragraph petaKabupaten">Kabupaten</div>
+        </div>
+    </div>
+
     <!-- awal gambar peta alumni -->
     <div id="mapid" class="bg-primary" style="height: 26rem;" data-aos="zoom-in"></div>
     <!-- akhir gambar peta alumni -->
