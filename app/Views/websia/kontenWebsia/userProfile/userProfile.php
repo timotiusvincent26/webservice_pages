@@ -19,7 +19,7 @@ if ($status == 'bukan user') {
             <div class="flex flex-wrap justify-center">
                 <div class="w-2/3 sm:w-full px-4">
                     <!-- syarat foto disini harus persegi (solusi : object fit) -->
-                    <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-1-800x800-fa5a7ac2c81a43925586ea85f2fea332.jpg" alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+                    <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-1-800x800-fa5a7ac2c81a43925586ea85f2fea332.jpg" alt="..." class="rounded-full max-w-full h-auto align-middle border-none" />
                     <!-- <img src="/img/tes/download.jpg" alt="..." class="shadow rounded-full max-w-full h-auto align-middle border-none" /> -->
                 </div>
             </div>
@@ -54,55 +54,43 @@ if ($status == 'bukan user') {
     </div>
     <div class="lg:w-5/12 w-full md:px-8 md:py-6 pb-4">
         <!-- Awal Deskripsi user profile -->
-        <div class="md:p-6 md:shadow-lg md:rounded-xl">
-            <p class="px-5 md:px-0 mt-8 md:mt-0 font-heading text-primary text-base italic text-justify mb-4 md:mb-0 text-center md:text-justify lg:text-left">
+        <div class="md:p-7 md:shadow-lg md:rounded-xl">
+            <p class="px-5 md:px-0 mt-8 md:mt-0 font-heading text-primary text-sm italic text-justify mb-4 md:mb-0 text-center md:text-justify lg:text-left">
                 `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea incidunt quos saepe doloribus esse, fugit ratione culpa reprehenderit eos totam tenetur consectetur. Id, recusandae aspernatur incidunt cum, quo quaerat sequi earum ex doloremque eos ullam`
             </p>
         </div>
         <!-- Akhir Deskripsi user profile -->
         <div class="md:pl-5 lg:pl-6">
-            <p class="font-heading text-primary text-sm px-5 md:px-0 mt-6">Lokasi Tempat Tinggal Saat Ini</p>
+            <p class="font-heading text-primary text-xs px-5 md:px-0 mt-6">Lokasi Tempat Tinggal Saat Ini</p>
             <span class="font-heading flex justify-start px-3 md:px-0 text-base text-left mb-5 md:mb-0">
                 <img class="my-2 mt-2 mr-0 md:mr-2 ml-1 md:ml-0 w-6 h-6 md:w-6 float-left" src="/img/icon/maps_flag.png" alt="">
                 <!-- Lokasi tempat tinggal -->
                 <p class="font-heading my-2 mt-2"> Jl Gading Griya Lestari Bl Y-1, DKI Jakarta </p>
             </span>
             <div class="md:space-x-4 flex flex-row items-center justify-center lg:justify-start md:py-2 px-4 md:px-0">
-                <!-- <div class="">
-                <a href="https://facebook.com" class="inline-block mr-4 md:mr-2">
-                    <img src="/img/icon/fb.png" alt="" class="w-6">
-                </a>
-                <a href="https://twitter.com" class="inline-block mr-4 md:mr-2">
-                    <img src="/img/icon/twit.png" alt="" class="w-6">
-                </a>
-                <a href="https://instagram.com" class="inline-block">
-                    <img src="/img/icon/ig.png" alt="" class="w-6">
-                </a>
-                </div> -->
-
                 <!-- Awal media sosial-->
                 <div class="w-1/2">
                     <!-- Email -->
                     <div class="inline-block mb-2 flex flex-row">
                         <img src="/img/icon/msg.png" alt="" class="float-left w-7">
-                        <span class="font-heading text-sm text-primary object-center ml-1 md:ml-2">pkl12345@gmail.com</span>
+                        <span class="font-heading text-xs text-primary object-center ml-1 md:ml-2">pkl12345@gmail.com</span>
                     </div>
                     <!-- Facebook -->
                     <div class="inline-block flex flex-row">
                         <img src="/img/icon/fb.png" alt="" class="float-left w-6 h-6">
-                        <span class="font-heading text-sm text-primary object-center ml-2 md:ml-3">Khabib Nurma</span>
+                        <span class="font-heading text-xs text-primary object-center ml-2 md:ml-3">Khabib Nurma</span>
                     </div>
                 </div>
                 <div class="w-1/2 ml-2">
                     <!-- Twitter -->
                     <div class="inline-block mb-2 flex flex-row">
                         <img src="/img/icon/twit.png" alt="" class="float-left w-6">
-                        <span class="font-heading text-sm text-primary object-center ml-1 md:ml-3">@khabibNMGDV</span>
+                        <span class="font-heading text-xs text-primary object-center ml-1 md:ml-3">@khabibNMGDV</span>
                     </div>
                     <!-- Instagram -->
                     <div class="inline-block flex flex-row">
                         <img src="/img/icon/ig.png" alt="" class="float-left w-6">
-                        <span class="font-heading text-sm text-primary object-center ml-1 md:ml-3">@IG_Khabib</span>
+                        <span class="font-heading text-xs text-primary object-center ml-1 md:ml-3">@IG_Khabib</span>
                     </div>
                 </div>
             </div>
@@ -199,7 +187,7 @@ if ($status == 'bukan user') {
                 </div>
                 <div>
                     <!-- Atribut adalah angkatan alumni -->
-                    <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Atribut</span>
+                    <span class="description font-paragraph text-primary text-center md:text-base block pt-2 pb-2 border-gray-400 mb-2">Angkatan</span>
                 </div>
                 <!-- <div class="px-4">
                     tombol lihat profil ketika diklik akan mengarah ke profil orang tsb
@@ -247,6 +235,7 @@ if ($status == 'bukan user') {
             </tbody>
         </table>
     </div>
+    <hr class="visible sm:invisible border-primary border-opacity-75 w-4/5 object-center mx-auto mt-8">
 </div>
 <!-- Akhir Informasi Intsansi -->
 
@@ -267,6 +256,7 @@ if ($status == 'bukan user') {
             <div class="font-bold">2020</div>
         </div>
     </div>
+    <hr class="visible sm:invisible border-primary border-opacity-75 w-4/5 object-center mx-auto mt-8">
 </div>
 <!-- Akhir Riwayat Prestasi -->
 
