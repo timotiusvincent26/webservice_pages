@@ -1,19 +1,12 @@
 // awal sidebar
 
-$('#hamburgerSidebar').click(function(){
-    
-    if($('#param1').hasClass('hidden')){
-        $('#param1').removeClass('hidden');
-        $('#param2').removeClass('hidden');
-        $('#sidebarSearch').addClass('w-10/12 md:w-auto'); 
-    } else {
-        $('#param1').addClass('hidden');
-        $('#param2').addClass('hidden');
-        $('#sidebarSearch').removeClass('w-10/12 md:w-auto'); 
-    }
+$('.hamburgerSidebar').click(function(){
+    $('.param1').toggleClass('hidden');
+    $('.param2').toggleClass('hidden');
+    $('.sidebarSearch').toggleClass('w-10/12 md:w-auto');
 })
 
-const filterSidebar = document.querySelectorAll("#filterSidebar");
+const filterSidebar = document.querySelectorAll(".filterSidebar");
 
 filterSidebar.forEach(o => {
     o.addEventListener("click", () => {
@@ -29,7 +22,7 @@ filterSidebar.forEach(o => {
     })
 })
 
-const listSidebar = document.querySelectorAll("#listSidebar");
+const listSidebar = document.querySelectorAll(".listSidebar");
 
 listSidebar.forEach(o => {
     o.addEventListener("click", () => {
@@ -53,14 +46,14 @@ namaProdi.forEach(o => {
 })
 
 function toggleTempatKerja() {
-    $('#onBPS').toggleClass('hidden');
-    $('#offBPS').toggleClass('hidden');
-    $('#onLainnya').toggleClass('hidden');
-    $('#offLainnya').toggleClass('hidden');
-    $('#inputBPS').toggleClass('text-gray-300');
-    $('#inputBPS').toggleClass('text-primary');
-    $('#inputTempatKerjaLainnya').toggleClass('text-gray-300');
-    $('#inputTempatKerjaLainnya').toggleClass('text-primary');
+    $('.onBPS').toggleClass('hidden');
+    $('.offBPS').toggleClass('hidden');
+    $('.onLainnya').toggleClass('hidden');
+    $('.offLainnya').toggleClass('hidden');
+    $('.inputBPS').toggleClass('text-gray-300');
+    $('.inputBPS').toggleClass('text-primary');
+    $('.inputTempatKerjaLainnya').toggleClass('text-gray-300');
+    $('.inputTempatKerjaLainnya').toggleClass('text-primary');
 }
 
 $('#BPS').click(function(){
@@ -71,14 +64,14 @@ $('#Lainnya').click(function(){
     toggleTempatKerja();
 })
 
-$("#inputBPS").focus(function() {
-    if ($("#onBPS").hasClass('hidden')) {
+$(".inputBPS").focus(function() {
+    if ($(".onBPS").hasClass('hidden')) {
         toggleTempatKerja();
     }
 });
 
-$("#inputTempatKerjaLainnya").focus(function() {
-    if ($("#onLainnya").hasClass('hidden')) {
+$(".inputTempatKerjaLainnya").focus(function() {
+    if ($(".onLainnya").hasClass('hidden')) {
         toggleTempatKerja();
     }
 });
@@ -86,34 +79,34 @@ $("#inputTempatKerjaLainnya").focus(function() {
 function getList(param){
     
     if(param == 'Semua'){
-        $('#listFilterSidebarAlumni').addClass('hidden');
-        $('#listFilterSidebarBerita').addClass('hidden');
+        $('.listFilterSidebarAlumni').addClass('hidden');
+        $('.listFilterSidebarBerita').addClass('hidden');
     }
 
     if(param == 'Alumni'){
-        $('#listFilterSidebarAlumni').removeClass('hidden');
-        $('#listFilterSidebarBerita').addClass('hidden');
+        $('.listFilterSidebarAlumni').removeClass('hidden');
+        $('.listFilterSidebarBerita').addClass('hidden');
     }
     
     if(param == 'Artikel/Berita'){
-        $('#listFilterSidebarBerita').removeClass('hidden');
-        $('#listFilterSidebarAlumni').addClass('hidden');
+        $('.listFilterSidebarBerita').removeClass('hidden');
+        $('.listFilterSidebarAlumni').addClass('hidden');
     }
 
     if(param == 'Prodi'){
-        $('#listProdi').toggleClass('hidden');
+        $('.listProdi').toggleClass('hidden');
     } 
 
     if(param == 'Angkatan'){
-        $('#listAngkatan').toggleClass('hidden');
+        $('.listAngkatan').toggleClass('hidden');
     } 
     
     if(param == 'Tempat Kerja'){
-        $('#listTempatKerja').toggleClass('hidden');
+        $('.listTempatKerja').toggleClass('hidden');
     } 
 
     if(param == 'Rentang Waktu'){
-        $('#listRentangWaktu').toggleClass('hidden');
+        $('.listRentangWaktu').toggleClass('hidden');
     } 
 
     
@@ -128,14 +121,14 @@ var tahunAwal = waktu.getFullYear();
 var tahunAkhir = waktu.getFullYear();
 
 // Awal kalender Tahun Awal
-$('#inputTahunAwal').click(function(){
-    $('#kalenderAwal').removeClass('hidden');
-    $('#kalenderAkhir').addClass('hidden');
+$('.inputTahunAwal').click(function(){
+    $('.kalenderAwal').removeClass('hidden');
+    $('.kalenderAkhir').addClass('hidden');
 })	
 
-const tahunKalenderAwal = document.querySelectorAll("#tahunKalenderAwal");
-const inputTahunAwal = document.querySelector("#inputTahunAwal");
-const rentangTahunAwal = document.querySelector("#rentangTahunAwal");
+const tahunKalenderAwal = document.querySelectorAll(".tahunKalenderAwal");
+const inputTahunAwal = document.querySelector(".inputTahunAwal");
+const rentangTahunAwal = document.querySelector(".rentangTahunAwal");
 
 function getWaktuKalenderAwal(param){
     var param = param - 11;
@@ -150,12 +143,12 @@ function getWaktuKalenderAwal(param){
 
 getWaktuKalenderAwal(tahunfix)
 
-$('#perviousTahunAwal').click(function(){
+$('.perviousTahunAwal').click(function(){
     tahunAwal = tahunAwal - 11;
     getWaktuKalenderAwal(tahunAwal);
 })	
 
-$('#nextTahunAwal').click(function(){
+$('.nextTahunAwal').click(function(){
     if(tahunAwal + 11 <= tahunfix){
         tahunAwal = tahunAwal + 11;	
         getWaktuKalenderAwal(tahunAwal);
@@ -185,14 +178,14 @@ tahunKalenderAwal.forEach(o => {
 
 
 // Awal Kalender Tahun Akhir
-$('#inputTahunAkhir').click(function(){
-    $('#kalenderAwal').addClass('hidden');
-    $('#kalenderAkhir').removeClass('hidden');
+$('.inputTahunAkhir').click(function(){
+    $('.kalenderAwal').addClass('hidden');
+    $('.kalenderAkhir').removeClass('hidden');
 })	
 
-const tahunKalenderAkhir = document.querySelectorAll("#tahunKalenderAkhir");
-const inputTahunAkhir = document.querySelector("#inputTahunAkhir");
-const rentangTahunAkhir = document.querySelector("#rentangTahunAkhir");
+const tahunKalenderAkhir = document.querySelectorAll(".tahunKalenderAkhir");
+const inputTahunAkhir = document.querySelector(".inputTahunAkhir");
+const rentangTahunAkhir = document.querySelector(".rentangTahunAkhir");
 
 function getWaktuKalenderAkhir(param){
     var param = param - 11;
@@ -207,12 +200,12 @@ function getWaktuKalenderAkhir(param){
 
 getWaktuKalenderAkhir(tahunfix)
 
-$('#perviousTahunAkhir').click(function(){
+$('.perviousTahunAkhir').click(function(){
     tahunAkhir = tahunAkhir - 11;
     getWaktuKalenderAkhir(tahunAkhir);
 })	
 
-$('#nextTahunAkhir').click(function(){
+$('.nextTahunAkhir').click(function(){
     if(tahunAkhir + 11 <= tahunfix){
         tahunAkhir = tahunAkhir + 11;	
         getWaktuKalenderAkhir(tahunAkhir);
