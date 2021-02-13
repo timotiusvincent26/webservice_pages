@@ -10,9 +10,6 @@ html {
 }
 
 /* css buat body secara umum */
-body {
-  @apply font-paragraph font-thin;
-}
 
 /* ini menu navbar saat di desktop */
 .nav-menu {

@@ -91,8 +91,8 @@ $('.petaKabupaten').click(function () {
     function popUp(f, l) {
         var out = [];
         if (f.properties) {
-            out.push("<div class='md:text-base text-xs text-primary font-semibold text-center uppercase font-heading'> " + f.properties["NAME_2"] + "</div> <hr class='my-2'>");
-            out.push("<div class='font-bold text-center md:text-base text-xs text-primary uppercase font-paragraph'>" + f.properties["ID_1"] + "</div>");
+            out.push("<div class='md:text-base text-xs text-primary font-semibold text-center uppercase font-heading'> "+ f.properties["TYPE_2"] +" "+ f.properties["NAME_2"] + "</div> <hr class='my-2'>");
+            out.push("<div class='font-bold text-center md:text-base text-xs text-primary uppercase font-paragraph'>" + f.properties["ID_2"] + "</div>");
             out.push("<div class='text-center md:text-base text-xs font-semibold text-primary font-paragraph'> Alumni</div>");
             l.bindPopup(out.join(""));
         }
