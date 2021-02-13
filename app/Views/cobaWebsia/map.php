@@ -17,10 +17,24 @@
         <div id="mapid" class="bg-primary" style="height: 26rem;"></div>
     </div>
 
-    <div class='font-bold text-primary text-center uppercase font-heading'> Jawa Timur</div>
-    <hr>
-    <div class='text-center font-semibold text-primary uppercase font-paragraph'>Kab. Malang : 90 Alumni</div>
-    <div class='text-center font-semibold text-primary uppercase font-paragraph'> Kab. Kediri : 100 Alumni</div>
+    <div class='font-semibold md:text-base text-xs text-primary text-center uppercase font-heading'> + f.properties["NAME_1"] + </div>
+    <hr class='my-2'>
+    <div class="overflow-auto h-32">
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+        <div class='text-center font-semibold text-primary uppercase font-paragraph mb-1'>" + f.properties["NAME_1"] + " : <span class='font-bold'> + f.properties["ID_1"] + </span> Alumni </div>
+    </div>
+
+
+
+
+
 </body>
 <script type="text/javascript" src="/js/leaflet.ajax.js"></script>
 <script>
