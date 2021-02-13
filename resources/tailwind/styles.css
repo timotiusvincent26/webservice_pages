@@ -25,5 +25,5 @@ html {
 
 /* ini untuk input form di edit profil */
 .inputForm {
-  @apply w-full md:p-2 p-1 border-2 border-gray-200 focus:border-primary focus:outline-none rounded-lg my-2;
+  @apply w-full md:p-2 p-1 border-2 border-gray-200 text-black focus:border-primary focus:outline-none rounded-lg my-2;
 }
