@@ -32248,8 +32248,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* css buat body secara umum */
-
 /* ini menu navbar saat di desktop */
 
 .nav-menu {
@@ -32315,6 +32313,41 @@ html {
 @media (min-width: 1024px) {
   .card {
     padding: 1rem;
+  }
+}
+
+/* ini untuk input form di edit profil */
+
+.inputForm {
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+.inputForm:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(1, 79, 134, var(--tw-border-opacity));
+}
+
+.inputForm {
+  border-radius: 0.5rem;
+  border-width: 2px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.inputForm:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.inputForm {
+  padding: 0.25rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .inputForm {
+    padding: 0.5rem;
   }
 }
 
