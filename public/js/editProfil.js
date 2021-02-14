@@ -2,15 +2,15 @@
 $(document).ready(function () {
     $('.jk_radio').on('click', function () {
         $('.jk_radio').parent().css('color', 'gray');
-        $(this).parent().css('color', '#014F86');
+        $(this).parent().css('color', 'black');
     });
     $('.sb_radio').on('click', function () {
         $('.sb_radio').parent().css('color', 'gray');
-        $(this).parent().css('color', '#014F86');
+        $(this).parent().css('color', 'black');
     });
     $('.sp_radio').on('click', function () {
         $('.sp_radio').parent().css('color', 'gray');
-        $(this).parent().css('color', '#014F86');
+        $(this).parent().css('color', 'black');
     });
 });
 $('.updateFotoProfil').click(function () {
@@ -18,13 +18,13 @@ $('.updateFotoProfil').click(function () {
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditFoto'>
         <div class="hidden opacity-0 duration-700 transition-all md:w-1/3 w-2/3 bg-gray bg-opacity-0"> 
         <div class="bg-primary py-2 px-6 rounded-t-2xl flex items-center justify-center text-secondary text-sm">
-            <p class="font-bold">Update Foto Profil</p>
+            <p class="font-bold font-heading">Update Foto Profil</p>
         </div>
         <div class="bg-gray-100 rounded-b-2xl">
             <ul class="text-center font-heading font-bold text-sm text-primary">
                 <li id='unggahFoto' class="p-2 border-b-2 border-gray-300 cursor-pointer hover:bg-gray-300">Unggah Foto</li>
                 <li class="p-2 border-b-2 border-gray-300 cursor-pointer hover:bg-gray-300" id="hapusFoto">Hapus Foto</li>
-                <li class="closeEditFoto p-2 rounded-b-lg cursor-pointer hover:bg-gray-300">Batalkan</li>
+                <li class="closeEditFoto p-2 rounded-b-lg cursor-pointer hover:bg-gray-300 text-red-500">Batalkan</li>
             </ul>
         </div>
         </div> 
