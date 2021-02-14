@@ -3,7 +3,7 @@
 <?= $this->section('contentEdit'); ?>
 <div class="flex justify-center">
     <div class="shadow-2xl rounded-xl md:p-16 p-4 lg:w-full w-5/6">
-        <form action="" method="POST" class="font-paragraph text-primary">
+        <form action="" method="POST" class="font-paragraph text-primary" id="formEditBiodataDev">
             <label for="nama" class="font-medium">Nama:</label>
             <input type="text" name="nama" id="nama" class="inputForm mb-2" placeholder="Nama Lengkap">
             <div class="lg:grid lg:grid-cols-2 lg:gap-x-6">
