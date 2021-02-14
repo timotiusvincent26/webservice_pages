@@ -2,9 +2,9 @@
 
 <?= $this->section('content'); ?>
 
-<div class="lg:mt-32 md:mt-24 mt-16 w-full flex justify-center">
+<div class="mt-12 w-full flex justify-center">
     <div class="shadow-2xl sm:w-3/4 w-full mt-6 lg:mb-12 mb-6 rounded-xl px-0 pt-4 pb-6 sm:mx-0 mx-6">
-        <h1 class="lg:text-6xl md:text-5xl text-3xl text-center font-heading text-secondary font-bold items-center flex justify-center">PROFIL</h1>
+        <h1 class="lg:text-6xl md:text-4xl text-3xl text-center font-heading text-secondary font-bold items-center flex justify-center">PROFIL</h1>
         <div class="flex justify-center">
             <div class="lg:w-4/5 w-5/6">
                 <div class="md:mx-2 lg:mt-20 mt-8">

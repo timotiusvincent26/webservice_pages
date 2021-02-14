@@ -2,15 +2,15 @@
 
 <?= $this->section('content'); ?>
 
-<div class="lg:mx-36 mx-5 lg:mt-36 md:mt-28 mt-20 w-full">
+<div class="lg:mx-36 mx-5 mt-12 w-full">
     <h3 class="font-heading font-bold text-center text-secondary lg:text-6xl md:text-3xl text-2xl">PROYEK</h3>
     <a href="/webservice/buatProyek">
-        <div class="flex justify-center md:w-44 w-36 md:px-2 md:py-2 px-1 py-1 lg:mt-12 mt-4 mb-8 rounded-lg border-gray shadow-lg tracking-wider cursor-pointer hover:bg-gray-100">
+        <div class="flex justify-center md:w-44 w-28 md:px-2 md:py-2 px-1 py-1 lg:mt-12 mt-4 mb-8 rounded-lg border-gray shadow-lg tracking-wider cursor-pointer hover:bg-gray-100">
             <div class="flex items-center justify-center">
-                <svg class="text-secondary w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <svg class="text-secondary md:w-8 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
                 </svg>
-                <div class="font-heading font-semibold md:text-base text-sm">Buat Proyek</div>
+                <div class="font-heading font-semibold md:text-base text-xs">Buat Proyek</div>
             </div>
         </div>
     </a>

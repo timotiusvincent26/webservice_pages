@@ -92,7 +92,9 @@
             <div class="menu border-t border-b flex justify-center">
                 <ul class="w-min" id="navmobile">
                     <li class="cursor-pointer flex justify-center text-white py-1">
-                        <div class="bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">API<i class="fa fa-caret-down transform translate-y-1 translate-x-1"></i></div>
+                        <div class="bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">API<svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg></div>
                     </li>
                     <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden">
                         <a href="/webservice/">
@@ -209,6 +211,7 @@
     <script type="text/javascript" src="/js/navbar.js"></script>
     <script src="/js/aos.js"></script>
     <script type="text/javascript" src="/js/footer.js"></script>
+    <script type="text/javascript" src="/js/editProfil.js"></script>
     <script>
         AOS.init();
     </script>
