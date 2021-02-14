@@ -4,7 +4,7 @@
 
 <div class="lg:mx-36 mx-5 mt-12 w-full">
     <h3 class="font-heading font-bold text-center text-secondary lg:text-6xl md:text-3xl text-2xl">PROYEK</h3>
-    <a href="/webservice/buatProyek">
+    <a href="/developer/buatProyek">
         <div class="flex justify-center md:w-44 w-28 md:px-2 md:py-2 px-1 py-1 lg:mt-12 mt-4 mb-8 rounded-lg border-gray shadow-lg tracking-wider cursor-pointer hover:bg-gray-100">
             <div class="flex items-center justify-center">
                 <svg class="text-secondary md:w-8 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

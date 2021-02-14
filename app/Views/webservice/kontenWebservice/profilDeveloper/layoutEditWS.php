@@ -43,10 +43,10 @@
 
                 </div>
                 <ul>
-                    <a href="/webservice/edit/biodata">
+                    <a href="/developer/edit/biodata">
                         <li id="profilDev" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-lg text-sm text-white <?= (getLastCurrentUrl() == 'biodata') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Biodata</li>
                     </a>
-                    <a href="/webservice/edit/akun">
+                    <a href="/developer/edit/akun">
                         <li id="akunDev" class="button bg-primary font-heading lg:p-3 p-2 pl-3 lg:pl-7 my-2 mr-2 rounded-r-lg text-sm text-white <?= (getLastCurrentUrl() == 'akun') ? 'active' : ''; ?> hover:text-secondary hover:bg-primaryDark font-semibold">Akun</li>
                     </a>
                 </ul>

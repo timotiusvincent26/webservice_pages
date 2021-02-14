@@ -49,7 +49,7 @@
                             *Harus diisi
                         </div>
                         <div class="flex md:justify-end justify-between gap-x-6 items-center mt-2">
-                            <a href="/webservice/proyek">
+                            <a href="/developer/proyek">
                                 <div class="flex items-center gap-x-2">
                                     <img src="/img/left-on.png" class="w-3 h-3" alt="">
                                     <div class="text-secondary">KEMBALI</div>

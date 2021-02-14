@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Websia::index');
 $routes->get('/login', 'Login::index');
-$routes->get('/webservice', 'Webservice::index');
+$routes->get('/developer', 'Webservice::index');
 $routes->get('/websia/Coba', 'Websia::coba');
 $routes->get('/searchAndFilter', 'Websia::searchAndFilter');
 $routes->get('/profil', 'Websia::profil');
@@ -49,8 +49,12 @@ $routes->get('/edit/tempatKerja', 'Websia::editTempatKerja');
 $routes->get('/edit/prestasi', 'Websia::editPrestasi');
 $routes->get('/edit/publikasi', 'Websia::editPublikasi');
 $routes->get('/edit/akun', 'Websia::editAkun');
-$routes->get('/webservice/edit/biodata', 'Webservice::editBiodata');
-$routes->get('/webservice/edit/akun', 'Webservice::editAkun');
+$routes->get('/developer/edit/biodata', 'Webservice::editBiodata');
+$routes->get('/developer/edit/akun', 'Webservice::editAkun');
+$routes->get('/developer/proyek', 'Webservice::proyek');
+$routes->get('/developer/buatProyek', 'Webservice::buatProyek');
+$routes->get('/developer/profil', 'Webservice::profilDeveloper');
+$routes->get('/developer/dokumentasi', 'Webservice::dokumentasi');
 
 
 /**

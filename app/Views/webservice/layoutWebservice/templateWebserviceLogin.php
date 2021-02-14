@@ -57,19 +57,19 @@
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                         <ul class="text-secondary absolute top-9 -left-0.5 overflow-hidden transition-all max-h-0 bg-white duration-300 menuWebService">
-                            <a href="/webservice/">
+                            <a href="/developer/">
                                 <li class="list hover:text-white py-1.5 text-left border-2 border-secondary transiton duration-300 px-3">BERANDA</li>
                             </a>
-                            <a href="/webservice/dokumentasi">
+                            <a href="/developer/dokumentasi">
                                 <li class="list hover:text-white py-1.5 text-left border-l-2 border-r-2 border-secondary transiton duration-300 px-3">DOKUMENTASI</li>
                             </a>
-                            <a href="/webservice/proyek">
+                            <a href="/developer/proyek">
                                 <li class="list hover:text-white py-1.5 text-left border-2 border-secondary transiton duration-300 px-3">PROYEK</li>
                             </a>
                         </ul>
                     </li>
 
-                    <a href="/webservice/profilDeveloper">
+                    <a href="/developer/profil">
                         <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
                     </a>
                     <a href="/logout">
@@ -97,13 +97,13 @@
                             </svg></div>
                     </li>
                     <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden">
-                        <a href="/webservice/">
+                        <a href="/developer/">
                             <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">BERANDA</li>
                         </a>
-                        <a href="/webservice/dokumentasi">
+                        <a href="/developer/dokumentasi">
                             <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">DOKUMENTASI</li>
                         </a>
-                        <a href="/webservice/proyek">
+                        <a href="/developer/proyek">
                             <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-gray-500">PROYEK</li>
                         </a>
                     </ul>
@@ -111,7 +111,7 @@
             </div>
             <div class="menu border-b flex justify-center">
                 <ul class="w-min">
-                    <a href="#">
+                    <a href="/developer/profil">
                         <li class="cursor-pointer flex justify-center text-white py-1">
                             <div class="bg-secondary w-28 flex justify-center hover:bg-white hover:text-secondary py-0.5">PROFIL</div>
                         </li>
