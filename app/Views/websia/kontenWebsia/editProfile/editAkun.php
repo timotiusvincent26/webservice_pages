@@ -3,7 +3,7 @@
 <?= $this->section('contentEdit'); ?>
 <div class="shadow-2xl rounded-3xl">
     <div class="p-6 font-paragraph text-primary lg:min-h-screen">
-        <form action="" method="POST">
+        <form action="" method="POST" id="formEditAkun">
             <div class="md:w-1/2 w-full">
                 <label for="username" class="font-medium">Username:</label>
                 <input type="text" name="username" id="username" class="inputForm" placeholder="Username">
