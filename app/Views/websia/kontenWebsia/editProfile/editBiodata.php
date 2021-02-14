@@ -14,7 +14,7 @@
         <div class="col-span-2 md:mt-6 ml-6 mr-6">
             <form action="" method="POST" class="font-paragraph text-primary">
                 <label for="nama" class="font-medium">Nama:</label>
-                <input type="text" name="nama" id="nama" class="inputForm" placeholder="Nama Lengkap">
+                <input type="text" name="nama" id="nama" class="inputForm text-black" placeholder="Nama Lengkap">
                 <div class="grid grid-cols-2 gap-x-4">
                     <div>
                         <div class="font-medium mb-2">NIM:</div>

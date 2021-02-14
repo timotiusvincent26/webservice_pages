@@ -53,8 +53,10 @@
             <div id="nav" class="hidden sm:flex sm:items-center z-10">
                 <ul class="flex lg:gap-x-6 md:gap-x-4 gap-x-2 relative">
                     <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300 relative">API
-                        <i class="fa fa-caret-down"></i>
-                        <ul class="text-secondary absolute top-10 -left-0.5 overflow-hidden transition-all max-h-0 bg-white duration-300 menuWebService">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <ul class="text-secondary absolute top-9 -left-0.5 overflow-hidden transition-all max-h-0 bg-white duration-300 menuWebService">
                             <a href="/webservice/">
                                 <li class="list hover:text-white py-1.5 text-left border-2 border-secondary transiton duration-300 px-3">BERANDA</li>
                             </a>
@@ -67,7 +69,7 @@
                         </ul>
                     </li>
 
-                    <a href="">
+                    <a href="/webservice/profilDeveloper">
                         <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
                     </a>
                     <a href="/logout">
@@ -127,7 +129,8 @@
 
     </div>
     <!-- END HEADER -->
-
+    <div class="bg-primary w-full lg:h-24 md:h-20 h-12">
+    </div>
     <!-- CONTENT PAGE DI SINI -->
     <div class="w-full flex flex-1 justify-center items-center">
         <?= $this->renderSection('content'); ?>
@@ -174,14 +177,14 @@
             </div>
             <!-- akhir footer haistis -->
 
-            <!-- awal link ke webservice  -->
+            <!-- awal link ke web pkl dan websia  -->
             <div class="flex flex-col text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
-                <a href="/websia/" class="mb-4">
-                    <h3>Website PKL60</h3>
+                <a href="/" class="mb-4">
+                    <h3>Web Sistem Informasi Alumni</h3>
                 </a>
 
-                <a href="/webservice/">
-                    <h3>Webservice(API)</h3>
+                <a href="https://pkl.stis.ac.id/60/">
+                    <h3>Website PKL60</h3>
                 </a>
             </div>
             <!-- akhir link ke webservice  -->

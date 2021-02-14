@@ -2,7 +2,7 @@
 
 <?= $this->section('content'); ?>
 
-<div class="md:grid md:grid-cols-3 lg:gap-x-16 md:gap-x-8 md:my-28 sm:my-24 my-12 md:mx-8 mx-4">
+<div class="md:grid md:grid-cols-3 lg:gap-x-16 md:gap-x-8 my-4 md:mx-8 mx-4">
     <div class="md:col-span-1 mt-8">
         <h1 class="text-2xl text-center font-heading text-secondary font-bold md:hidden block mb-4">DOKUMENTASI</h1>
         <!-- SEARCH DOKUMENTASI -->
