@@ -1,14 +1,15 @@
 <?= $this->extend('websia/layoutWebsia/templateBerandaLogin.php'); ?>
 
 <?= $this->section('content'); ?>
+
 <style>
+    .layoutEdit {
+        z-index: 5;
+    }
+
     .active {
         background-color: #015998;
         color: #FFAA00;
-    }
-
-    .formEdit {
-        background-color: #F9F9F9;
     }
 
     @media screen and (max-width: 1024px) {
@@ -46,20 +47,12 @@
             padding-right: .25rem;
         }
     }
-
-    .listeditprofil:hover {
-        background-color: #015998;
-    }
-
-    #layoutEdit {
-        z-index: 5;
-    }
 </style>
 <script src="https://code.jquery.com/jquery-1.10.1.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
 
 <div class="w-full">
     <div class="flex w-full relative">
-        <div id="layoutEdit" class="md:static absolute top-0 bottom-0 sm:w-16 w-10 lg:w-1/4 md:w-1/5 bg-primary transition-all duration-500 -mb-8">
+        <div class="layoutEdit md:static absolute top-0 bottom-0 sm:w-16 w-10 lg:w-1/4 md:w-1/5 bg-primary transition-all duration-500 -mb-8">
             <?php
             function getLastCurrentUrl()
             {
@@ -75,10 +68,10 @@
                 </svg>
             </div>
 
-            <div id="navEdit" class="md:block hidden">
+            <div class="navEdit md:block hidden">
                 <div class="flex justify-between items-center text-secondary bg-primaryHover lg:text-2xl md:text-xl font-bold py-3 lg:pr-5 md:pr-2 lg:pl-7 md:pl-3 px-3">
                     <p>EDIT</p>
-                    <div id="editTutup" class="select-none">
+                    <div class="editTutup select-none">
                         <svg class="lg:w-10 md:w-8 sm:w-7 w-6 fill-current cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
