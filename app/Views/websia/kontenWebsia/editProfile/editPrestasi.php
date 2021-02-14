@@ -12,9 +12,13 @@
                     <th class="pt-3 pb-1">
                         <div class="flex justify-center">
                             <span class="mr-3">Tahun</span>
-                            <div class="select-none cursor-pointer flex flex-col justify-center sort">
-                                <i class="fas fa-caret-up text-gray-400"></i>
-                                <i class="fas fa-caret-down text-gray-400 transform -translate-y-2"></i>
+                            <div class="select-none cursor-pointer flex flex-col justify-center sort text-gray-400 gap-y-1">
+                                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4L4 0L8 4H0Z" fill="#B0BAC9" />
+                                </svg>
+                                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4 4L8 0H0Z" fill="#B0BAC9" />
+                                </svg>
                             </div>
                         </div>
                     </th>
@@ -92,7 +96,7 @@
                 </tr>
                 <tr class="formEdit">
                     <td colspan="8" class="border-b-2">
-                        <div class="ml-auto mr-3 bg-secondary text-white rounded-full w-28 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 my-2 tambahPrestasi">TAMBAH</div>
+                        <div class="ml-auto mr-3 bg-secondary text-white rounded-full w-28 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 my-2 tambahPrestasi">TAMBAH</div>
                     </td>
                 </tr>
                 <tr class="h-5 formEdit">

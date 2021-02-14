@@ -298,8 +298,8 @@ $('.editPrestasi').click(function () {
             <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
             <input type="date" placeholder="2021" class="w-2/5 cursor-pointer inputForm" name="editMasuk" id="editMasuk">
             <div class="flex justify-end my-4">
-                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
+                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
             </div>
         </form>
         </div>
@@ -356,8 +356,8 @@ $('.tambahPrestasi').click(function () {
             <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
             <input type="date" placeholder="2021" class="w-2/5 cursor-pointer inputForm" name="editMasuk" id="editMasuk">
             <div class="flex justify-end my-4">
-                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
+                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
             </div>
         </form>
         </div>
