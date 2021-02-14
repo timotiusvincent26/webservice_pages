@@ -22,7 +22,7 @@ $('.updateFotoProfil').click(function () {
         </div>
         <div class="bg-gray-100 rounded-b-2xl">
             <ul class="text-center font-heading font-bold text-sm text-primary">
-                <li class="p-2 border-b-2 border-gray-300 cursor-pointer hover:bg-gray-300">Unggah Foto</li>
+                <li id='unggahFoto' class="p-2 border-b-2 border-gray-300 cursor-pointer hover:bg-gray-300">Unggah Foto</li>
                 <li class="p-2 border-b-2 border-gray-300 cursor-pointer hover:bg-gray-300" id="hapusFoto">Hapus Foto</li>
                 <li class="closeEditFoto p-2 rounded-b-lg cursor-pointer hover:bg-gray-300">Batalkan</li>
             </ul>
@@ -44,6 +44,25 @@ $('.updateFotoProfil').click(function () {
         setTimeout(function () {
             $('#formEditFoto').remove()
         }, 400);
+    })
+
+    $('#unggahFoto').click(function () {
+        $('#formEditFoto').remove()
+        $('body').prepend(`
+        <div class="fixed top-0 bottom-0 right-0 left-0 z-50 bg-black bg-opacity-40 flex flex-col justify-end" id='updateSucces'>
+        <div class="hidden opacity-0 duration-300 transition-all p-2 pl-8 flex items-center" style="background-color: #B1FF66;">
+            <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
+            <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00;">Foto Profil Berhasil Diubah</p>
+        </div>
+    </div>
+        `)
+        $('#updateSucces').children().first().removeClass('hidden')
+        setTimeout(function () {
+            $('#updateSucces').children().first().removeClass('opacity-0')
+        }, 10);
+        setTimeout(function () {
+            $('#updateSucces').remove()
+        }, 1000);
     })
 })
 
