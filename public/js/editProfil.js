@@ -1,18 +1,18 @@
 // awal js edit biodata 
-$(document).ready(function() {
-    $('.jk_radio').on('click',function() {
-    $('.jk_radio').parent().css('color','gray');    
-        $(this).parent().css('color','#014F86');
+$(document).ready(function () {
+    $('.jk_radio').on('click', function () {
+        $('.jk_radio').parent().css('color', 'gray');
+        $(this).parent().css('color', '#014F86');
     });
-    $('.sb_radio').on('click',function() {
-    $('.sb_radio').parent().css('color','gray');    
-        $(this).parent().css('color','#014F86');
+    $('.sb_radio').on('click', function () {
+        $('.sb_radio').parent().css('color', 'gray');
+        $(this).parent().css('color', '#014F86');
     });
-    $('.sp_radio').on('click',function() {
-    $('.sp_radio').parent().css('color','gray');    
-        $(this).parent().css('color','#014F86');
+    $('.sp_radio').on('click', function () {
+        $('.sp_radio').parent().css('color', 'gray');
+        $(this).parent().css('color', '#014F86');
     });
-  });
+});
 $('.updateFotoProfil').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditFoto'>
@@ -47,7 +47,8 @@ $('.updateFotoProfil').click(function () {
     })
 })
 
-$('#submitBiodata').click(function () {
+$('#submitBiodata').click(function (e) {
+    e.preventDefault()
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='modalBiodata'>
     <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
@@ -61,6 +62,9 @@ $('#submitBiodata').click(function () {
     setTimeout(function () {
         $('#modalBiodata').children().first().removeClass('opacity-0')
     }, 10);
+    setTimeout(function () {
+        $('#formEditBiodata').submit()
+    }, 700);
 })
 // akhir js edit biodata
 
@@ -82,7 +86,6 @@ $(".sort").click(function () {
 // akhir js sorting
 
 // awal js edit pendidikan
-
 $('.editPendidikan').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formEditPendidikan'>
@@ -160,7 +163,8 @@ $('.editPendidikan').click(function () {
 
 
 // awal js edit tempat kerja
-$('#submitTempatKerja').click(function () {
+$('#submitTempatKerja').click(function (e) {
+    e.preventDefault()
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='modalTempatKerja'>
     <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
@@ -174,6 +178,9 @@ $('#submitTempatKerja').click(function () {
     setTimeout(function () {
         $('#modalTempatKerja').children().first().removeClass('opacity-0')
     }, 10);
+    setTimeout(function () {
+        $('#formEditTempatKerja').submit()
+    }, 700);
 })
 // akhir js edit tempat kerja
 
@@ -307,7 +314,8 @@ $('.editPublikasi').click(function () {
 // akhir js edit publikasi
 
 // awal js edit akun
-$('#submitAkun').click(function () {
+$('#submitAkun').click(function (e) {
+    e.preventDefault()
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='modalAkun'>
     <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
@@ -321,29 +329,36 @@ $('#submitAkun').click(function () {
     setTimeout(function () {
         $('#modalAkun').children().first().removeClass('opacity-0')
     }, 10);
+    setTimeout(function () {
+        $('#formEditAkun').submit()
+    }, 700);
 })
 // akhir js edit akun
 
 // awal js edit biodata webservice
-$('#simpanBiodata').click(function () {
+$('#simpanBiodata').click(function (e) {
+    e.preventDefault()
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='popupBiodata'>
-    <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
-    <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
-    <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00;">Biodata Berhasil Disimpan</p>
-</div>
-    </div>
-`)
+        <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
+            <img src="/img/icon/check.png" class="h-5 mr-2" style="color: #54AC00;">
+            <p class="sm:text-base text-sm font-heading font-bold" style="color: #54AC00">Biodata Berhasil Disimpan</p>
+        </div>
+    </div>`)
 
     $('#popupBiodata').children().first().removeClass('hidden')
     setTimeout(function () {
         $('#popupBiodata').children().first().removeClass('opacity-0')
     }, 10);
+    setTimeout(function () {
+        $('#formEditBiodataDev').submit()
+    }, 700);
 })
 // akhir js edit biodata webservice
 
 // awal js edit akun webservice
-$('#simpanAkun').click(function () {
+$('#simpanAkun').click(function (e) {
+    e.preventDefault()
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='popupAkun'>
     <div class="hidden opacity-0 duration-700 transition-all p-3 rounded-lg flex items-center" style="background-color: #B1FF66;">
@@ -357,5 +372,42 @@ $('#simpanAkun').click(function () {
     setTimeout(function () {
         $('#popupAkun').children().first().removeClass('opacity-0')
     }, 10);
+    setTimeout(function () {
+        $('#formEditAkunDev').submit()
+    }, 700);
 })
 // akhir js edit akun webservice
+
+
+//awal js modal hapus di edit profil
+$('.hapusModal').click(function () {
+    $('body').prepend(`
+    <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formHapus'>
+    <div class="hidden opacity-0 duration-700 transition-all bg-gray bg-opacity-0">
+        <div class="bg-white rounded-2xl flex flex-col justify-center py-2 sm:px-8 px-3">
+            <p class="font-bold sm:text-lg text-base mb-6">Apakah Anda yakin ingin menghapus data ini?</p>
+            <div class="text-white flex justify-end">
+                <div style="background-color: #D81B01;" class="buttonHapus rounded-2xl  w-20 mr-3 text-sm flex justify-center items-center cursor-pointer py-1">BATAL</div>
+                <div style="background-color: #54AC00;" class="rounded-2xl w-20 text-sm flex justify-center items-center cursor-pointer">HAPUS</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    `)
+    $('#formHapus').children().first().removeClass('hidden')
+    setTimeout(function () {
+        $('#formHapus').children().first().removeClass('opacity-0')
+    }, 10);
+
+    $('.buttonHapus').click(function () {
+        $('#formHapus').children().first().addClass('opacity-0')
+        $('#formHapus').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+            $('#formHapus').children().first().addClass('hidden')
+        });
+        setTimeout(function () {
+            $('#formHapus').remove()
+        }, 400);
+    })
+})
+
+//akhir js modal hapus di edit profil
