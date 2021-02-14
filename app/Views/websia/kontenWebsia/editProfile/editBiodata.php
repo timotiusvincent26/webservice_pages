@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="flex justify-end mt-8 mb-6">
-                    <input type="submit" value="KIRIM" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer mb-6" id="submitBiodata">
+                    <input type="submit" value="SIMPAN" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer mb-6" id="submitBiodata">
                 </div>
             </form>
         </div>
