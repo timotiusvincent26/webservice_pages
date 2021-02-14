@@ -12,6 +12,10 @@
         color: #FFAA00;
     }
 
+    .formEdit {
+        background-color: #F9F9F9;
+    }
+
     @media screen and (max-width: 1024px) {
         #pagePendidikan table tbody tr td {
             padding-left: .25rem;

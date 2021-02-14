@@ -135,8 +135,8 @@ $('.editPendidikan').click(function () {
                 <label for="editTulisan" class="text-primary font-medium">Judul Tulisan</label>
                 <textarea name="editTulisan" id="editTulisan" rows="2" class="inputForm resize-none" placeholder="Gadget Paling Top Untuk Digunakan Sehari-Hari"></textarea>
                 <div class="flex justify-end my-4">
-                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
+                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
                 </div>
 
             </form>
@@ -210,8 +210,8 @@ $('.tambahPendidikan').click(function () {
                 <label for="editTulisan" class="text-primary font-medium">Judul Tulisan</label>
                 <textarea name="editTulisan" id="editTulisan" rows="2" class="inputForm resize-none" placeholder="Gadget Paling Top Untuk Digunakan Sehari-Hari"></textarea>
                 <div class="flex justify-end my-4">
-                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
+                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
                 </div>
 
             </form>
