@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="col-span-2 md:mt-6 ml-6 mr-6">
-            <form action="" method="POST" class="font-paragraph text-primary">
+            <form action="" method="POST" class="font-paragraph text-primary" id="formEditBiodata">
                 <label for="nama" class="font-medium">Nama:</label>
                 <input type="text" name="nama" id="nama" class="inputForm text-black" placeholder="Nama Lengkap">
                 <div class="grid grid-cols-2 gap-x-4">

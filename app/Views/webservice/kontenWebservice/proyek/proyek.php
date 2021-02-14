@@ -36,9 +36,14 @@
             $(this).css("border-width", "2px")
             $(this).after(`
             <div class="w-11/12 mx-auto mb-4 rounded-b-xl shadow-xl hidden opacity-0 duration-500 transition-all">
-        <div class="flex justify-start text-sm">
-            <div class="text-white py-1 w-20 text-center mr-1 cursor-pointer transform hover:scale-105 outline-none choosed">TOKEN</div>
-            <div class="text-white py-1 w-20 text-center mr-1 cursor-pointer outline-none transform hover:scale-105 notchoose">DETAIL</div>
+        <div class="flex justify-between text-sm">
+            <div class="flex">
+                <div class="text-white py-1 w-20 text-center mr-1 cursor-pointer transform hover:scale-105 outline-none choosed">TOKEN</div>
+                <div class="text-white py-1 w-20 text-center mr-1 cursor-pointer outline-none transform hover:scale-105 notchoose">DETAIL</div>
+            </div>
+            <div class="mr-8 flex items-center">
+                <input type="button" value="HAPUS" class="text-red-500 font-semibold transition-all cursor-pointer outline-none border-none bg-transparent hover:text-red-700">
+            </div>
         </div>
         <div id="isiToken" class="sm:mx-3 mx-2">
             <div class="flex mt-3 mb-2">
@@ -66,10 +71,9 @@
         </div>
     </div>
         `)
-            $(this).next().children().first().hover(function() {
-                // alert('ok')
-                $(this).next().children().first().children().eq(0).removeAttr('style')
-                $(this).next().children().first().children().eq(1).removeAttr('style')
+            $(this).next().children().first().children().first().hover(function() {
+                $(this).next().children().first().children().first().children().eq(0).removeAttr('style')
+                $(this).next().children().first().children().first().children().eq(1).removeAttr('style')
             })
             var $this = $(this);
             $(this).next().removeClass('hidden')
@@ -78,26 +82,25 @@
             }, 30);
 
 
-            $(this).next().children().first().children().eq(1).click(function() {
+            $(this).next().children().first().children().first().children().eq(1).click(function() {
                 $(this).removeClass('notchoose').addClass('choosed')
                 $(this).prev().removeClass('choosed').addClass('notchoose')
 
-                $(this).parent().next().next().removeClass('hidden')
-                $(this).parent().next().addClass('hidden')
+                $(this).parent().parent().next().next().removeClass('hidden')
+                $(this).parent().parent().next().addClass('hidden')
             })
 
-            $(this).next().children().first().children().eq(0).click(function() {
+            $(this).next().children().first().children().first().children().eq(0).click(function() {
                 $(this).removeClass('notchoose').addClass('choosed')
                 $(this).next().removeClass('choosed').addClass('notchoose')
 
-                $(this).parent().next().next().addClass('hidden')
-                $(this).parent().next().removeClass('hidden')
+                $(this).parent().parent().next().next().addClass('hidden')
+                $(this).parent().parent().next().removeClass('hidden')
             })
 
         } else {
             $(this).removeClass('border-primary')
             $(this).css("border-width", "1px")
-            // $(this).next().addClass('hidden')
 
             $(this).next().addClass('opacity-0')
             $(this).next().addClass('hidden')
