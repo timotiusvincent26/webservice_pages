@@ -4,7 +4,7 @@
 
 <div class="w-full bg-white min-h-screen" id="pagePublikasi">
     <div class="md:overflow-x-auto overflow-x-scroll shadow-2xl rounded-3xl">
-        <table class="w-full sm:text-sm text-xs rounded-3xl shadow-2xl md:shadow-none">
+        <table class="w-full sm:text-sm text-xs rounded-3xl shadow-2xl md:shadow-none font-paragraph">
             <thead class="formEdit">
                 <tr>
                     <th class="pt-4 lg:px-3 md:px-2 px-1 pb-1 rounded-tl-3xl">No</th>
@@ -115,7 +115,7 @@
                 </tr>
                 <tr class="formEdit">
                     <td colspan="8" class="border-b-2">
-                        <div class="ml-auto mr-3 bg-secondary text-white rounded-full w-28 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 my-2">TAMBAH</div>
+                        <div class="ml-auto mr-3 bg-secondary text-white rounded-full w-28 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 my-2 tambahPublikasi">TAMBAH</div>
                     </td>
                 </tr>
                 <tr class="h-5 formEdit">
