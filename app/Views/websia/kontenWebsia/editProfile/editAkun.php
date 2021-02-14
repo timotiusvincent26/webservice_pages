@@ -11,12 +11,12 @@
                 <input type="password" name="passbaru" id="passbaru" class="inputForm" placeholder="●●●●●●●●">
                 <label for="ulangpassbaru" class="font-medium">Ketik Ulang Password Baru:</label>
                 <input type="password" name="ulangpassbaru" id="ulangpassbaru" class="inputForm" placeholder="●●●●●●●●">
-                <div class="text-red-600 text-xs mb-2 text-justify">Silakan masukkan password lama Anda untuk verifikasi.</div>
+                <div class="text-red-600 text-xs mb-2 text-justify">Silahkan Masukkan Password Lama Anda untuk Verifikasi!</div>
                 <label for="passlama" class="font-medium">Password Lama:</label>
                 <input type="password" name="passlama" id="passlama" class="inputForm" placeholder="●●●●●●●●">
             </div>
             <div class="flex justify-end md:mb-6 mt-48">
-                <input type="submit" value="KIRIM" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer" id="submitAkun">
+                <input type="submit" value="SIMPAN" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer" id="submitAkun">
             </div>
         </form>
     </div>
