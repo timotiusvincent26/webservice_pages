@@ -224,7 +224,7 @@
                     <h3>Website PKL60</h3>
                 </a>
 
-                <a href="/webservice/">
+                <a href="/developer/">
                     <h3>Webservice(API)</h3>
                 </a>
             </div>

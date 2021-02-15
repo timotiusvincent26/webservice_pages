@@ -64,7 +64,7 @@
                         <hr class="border-gray border-1 lg:mt-4 mt-2">
                     </div>
                     <div class="">
-                        <a href="/webservice/edit/biodata">
+                        <a href="/developer/edit/biodata">
                             <div class="rounded-full mt-4 bg-secondary text-white p-1 md:w-24 w-16 text-center md:text-base text-xs hover:bg-secondaryhover">EDIT</div>
                         </a>
                     </div>

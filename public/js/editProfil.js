@@ -2,15 +2,15 @@
 $(document).ready(function () {
     $('.jk_radio').on('click', function () {
         $('.jk_radio').parent().css('color', 'gray');
-        $(this).parent().css('color', '#014F86');
+        $(this).parent().css('color', 'black');
     });
     $('.sb_radio').on('click', function () {
         $('.sb_radio').parent().css('color', 'gray');
-        $(this).parent().css('color', '#014F86');
+        $(this).parent().css('color', 'black');
     });
     $('.sp_radio').on('click', function () {
         $('.sp_radio').parent().css('color', 'gray');
-        $(this).parent().css('color', '#014F86');
+        $(this).parent().css('color', 'black');
     });
 });
 $('.updateFotoProfil').click(function () {
@@ -18,13 +18,13 @@ $('.updateFotoProfil').click(function () {
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40" id='formEditFoto'>
         <div class="hidden opacity-0 duration-700 transition-all md:w-1/3 w-2/3 bg-gray bg-opacity-0"> 
         <div class="bg-primary py-2 px-6 rounded-t-2xl flex items-center justify-center text-secondary text-sm">
-            <p class="font-bold">Update Foto Profil</p>
+            <p class="font-bold font-heading">Update Foto Profil</p>
         </div>
         <div class="bg-gray-100 rounded-b-2xl">
             <ul class="text-center font-heading font-bold text-sm text-primary">
                 <li id='unggahFoto' class="p-2 border-b-2 border-gray-300 cursor-pointer hover:bg-gray-300">Unggah Foto</li>
                 <li class="p-2 border-b-2 border-gray-300 cursor-pointer hover:bg-gray-300" id="hapusFoto">Hapus Foto</li>
-                <li class="closeEditFoto p-2 rounded-b-lg cursor-pointer hover:bg-gray-300">Batalkan</li>
+                <li class="closeEditFoto p-2 rounded-b-lg cursor-pointer hover:bg-gray-300 text-red-500">Batalkan</li>
             </ul>
         </div>
         </div> 
@@ -135,8 +135,8 @@ $('.editPendidikan').click(function () {
                 <label for="editTulisan" class="text-primary font-medium">Judul Tulisan</label>
                 <textarea name="editTulisan" id="editTulisan" rows="2" class="inputForm resize-none" placeholder="Gadget Paling Top Untuk Digunakan Sehari-Hari"></textarea>
                 <div class="flex justify-end my-4">
-                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
+                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
                 </div>
 
             </form>
@@ -210,8 +210,8 @@ $('.tambahPendidikan').click(function () {
                 <label for="editTulisan" class="text-primary font-medium">Judul Tulisan</label>
                 <textarea name="editTulisan" id="editTulisan" rows="2" class="inputForm resize-none" placeholder="Gadget Paling Top Untuk Digunakan Sehari-Hari"></textarea>
                 <div class="flex justify-end my-4">
-                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
+                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                    <input type="button" value="KEMBALI" class="closePendidikan bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPendidikan'>
                 </div>
 
             </form>
@@ -298,8 +298,8 @@ $('.editPrestasi').click(function () {
             <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
             <input type="date" placeholder="2021" class="w-2/5 cursor-pointer inputForm" name="editMasuk" id="editMasuk">
             <div class="flex justify-end my-4">
-                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
+                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
             </div>
         </form>
         </div>
@@ -356,8 +356,8 @@ $('.tambahPrestasi').click(function () {
             <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
             <input type="date" placeholder="2021" class="w-2/5 cursor-pointer inputForm" name="editMasuk" id="editMasuk">
             <div class="flex justify-end my-4">
-                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
+                <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
             </div>
         </form>
         </div>
@@ -424,8 +424,8 @@ $('.editPublikasi').click(function () {
                 <label for="editTulisan" class="text-primary font-medium">Deskripsi</label>
                 <textarea name="editTulisan" id="editTulisan" rows="2" class="inputForm resize-none" placeholder="Penggunaan Jutsu Air dalam mengatasi Permasalahan Banjir yang Sering Terjadi di Wilayah Pemukiman Rawan Longsor"></textarea>
                 <div class="flex justify-end my-8">
-                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                    <input type="button" value="KEMBALI" class="closePublikasi bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPublikasi'>
+                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                    <input type="button" value="KEMBALI" class="closePublikasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPublikasi'>
                 </div>
 
             </form>
@@ -493,8 +493,8 @@ $('.tambahPublikasi').click(function () {
                 <label for="editTulisan" class="text-primary font-medium">Deskripsi</label>
                 <textarea name="editTulisan" id="editTulisan" rows="2" class="inputForm resize-none" placeholder="Penggunaan Jutsu Air dalam mengatasi Permasalahan Banjir yang Sering Terjadi di Wilayah Pemukiman Rawan Longsor"></textarea>
                 <div class="flex justify-end my-8">
-                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm mr-4 outline-none">
-                    <input type="button" value="KEMBALI" class="closePublikasi bg-secondary text-white rounded-full w-24 py-0.5 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white hover:border-opacity-70 transition-colors duration-300 text-sm outline-none" id='backPublikasi'>
+                    <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
+                    <input type="button" value="KEMBALI" class="closePublikasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPublikasi'>
                 </div>
 
             </form>
