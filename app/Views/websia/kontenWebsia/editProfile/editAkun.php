@@ -9,12 +9,12 @@
             <div class="md:w-1/2 w-full">
                 <label for="username" class="font-medium">Username:</label>
                 <input type="text" name="username" id="username" class="inputForm" placeholder="Username">
-                <label for="passbaru" class="font-medium">Password Baru:</label>
+                <label for="passbaru" class="font-medium">Kata Sandi Baru:</label>
                 <input type="password" name="passbaru" id="passbaru" class="inputForm" placeholder="🞄🞄🞄🞄🞄🞄🞄🞄">
-                <label for="ulangpassbaru" class="font-medium">Ketik Ulang Password Baru:</label>
+                <label for="ulangpassbaru" class="font-medium">Ketik Ulang Kata Sandi Baru:</label>
                 <input type="password" name="ulangpassbaru" id="ulangpassbaru" class="inputForm" placeholder="🞄🞄🞄🞄🞄🞄🞄🞄">
-                <div class="text-secondary text-xs mt-6 mb-2 text-justify">Silakan Masukkan Password Lama Anda untuk Verifikasi!</div>
-                <label for="passlama" class="font-medium">Password Lama:</label>
+                <div class="text-secondary text-xs mt-6 mb-2 text-justify">Silakan Masukkan Kata Sandi Lama Anda untuk Verifikasi!</div>
+                <label for="passlama" class="font-medium">Kata Sandi Lama:</label>
                 <input type="password" name="passlama" id="passlama" class="inputForm" placeholder="🞄🞄🞄🞄🞄🞄🞄🞄">
             </div>
             <div class="flex justify-end md:mb-6 mt-48">
