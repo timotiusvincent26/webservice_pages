@@ -14,8 +14,13 @@ html {
   @apply text-white bg-primaryDark hover:bg-primary hover:text-secondary ml-1 py-1.5 px-5;
 }
 
-.nav-menu-realtive {
+.nav-menu-relative {
   @apply text-white text-xs text-center w-11/12 mx-auto border-b border-white mt-1;
+}
+
+/* menu aktif halamannya */
+.active {
+  @apply text-secondary bg-primary !important;
 }
 
 /* ini card untuk rekomendasi */

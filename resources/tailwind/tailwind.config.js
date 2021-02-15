@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      inset: {
+        '9.5': '2.375rem',
+      },
       colors: {
         primary: "#014F86",
         primaryHover: "#003C75",
