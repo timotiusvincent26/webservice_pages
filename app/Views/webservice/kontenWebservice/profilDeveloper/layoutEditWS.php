@@ -40,7 +40,7 @@
             <!-- start sidebar posisi buka -->
             <div class="navEdit md:block hidden min-h-screen">
                 <div class="flex justify-between items-center text-secondary bg-primaryHover lg:text-2xl md:text-xl font-bold py-3 lg:pr-5 md:pr-2 lg:pl-7 md:pl-3 px-3">
-                    <p>EDIT</p>
+                    <p>EDIT PROFIL</p>
                     <div class="editTutup select-none">
                         <svg class="lg:w-10 md:w-8 sm:w-7 w-6 fill-current cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>

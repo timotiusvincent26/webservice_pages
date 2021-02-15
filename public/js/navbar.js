@@ -177,4 +177,4 @@ $('.navEdit').prev().click(function () {
 //nav mobile webservice
 $('#navmobile').click(function () {
     $('#navmobile ul').toggleClass('hidden')
-})
+});
