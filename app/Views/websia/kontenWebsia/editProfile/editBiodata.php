@@ -26,13 +26,13 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 lg:mr-4 mb-2">
-                    <label for="jeniskelamin" class="font-medium mb-2">Jenis Kelamin:</label>
+                    <label for="jeniskelamin" class="font-medium">Jenis Kelamin:</label>
                     <div class="grid grid-cols-2 gap-x-2">
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="lakilaki" value="lakilaki" class="cursor-pointer jk_radio mr-2 mt-2">Laki-laki</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="lakilaki" value="lakilaki" class="cursor-pointer jk_radio mr-2">Laki-laki</label>
                         </div>
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="perempuan" value="perempuan" class="cursor-pointer jk_radio mr-2 mt-2">Perempuan</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="perempuan" value="perempuan" class="cursor-pointer jk_radio mr-2">Perempuan</label>
                         </div>
                     </div>
                 </div>
@@ -60,10 +60,10 @@
                     <label for="statusbekerja" class="font-medium">Status Bekerja:</label>
                     <div class="grid grid-cols-2 gap-x-2 mb-2">
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="bekerja" value="bekerja" class="cursor-pointer sb_radio mr-2 mt-2">Bekerja</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="bekerja" value="bekerja" class="cursor-pointer sb_radio mr-2">Bekerja</label>
                         </div>
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="tidakbekerja" value="tidakbekerja" class="cursor-pointer sb_radio mr-2 mt-2">Tidak Bekerja</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="tidakbekerja" value="tidakbekerja" class="cursor-pointer sb_radio mr-2">Tidak Bekerja</label>
                         </div>
                     </div>
                     <div class="mr-2">
@@ -75,10 +75,10 @@
                     <label for="pns" class="font-medium">Aktif PNS:</label>
                     <div class="grid grid-cols-2 gap-x-2 mb-2">
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="aktif" value="aktif" class="cursor-pointer sp_radio mr-2 mt-2">Aktif</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="aktif" value="aktif" class="cursor-pointer sp_radio mr-2">Aktif</label>
                         </div>
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="tidakaktif" value="tidakaktif" class="cursor-pointer sp_radio mr-2 mt-2">Tidak Aktif</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="tidakaktif" value="tidakaktif" class="cursor-pointer sp_radio mr-2">Tidak Aktif</label>
                         </div>
                     </div>
                 </div>
