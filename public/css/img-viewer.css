@@ -44,6 +44,16 @@
   box-shadow: none;
 }
 
+.gambar img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.gambar:hover img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
 /* animasi */
 @keyframes zoomAndFade {
   0% {
