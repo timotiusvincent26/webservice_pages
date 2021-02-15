@@ -21,7 +21,7 @@
             <label for="instansi" class="font-medium">Instansi:</label>
             <input type="text" name="instansi" id="instansi" class="inputForm mb-2" placeholder="Politeknik Statistika STIS">
             <div class="flex justify-end">
-                <input type="submit" value="SIMPAN" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer mt-8 md:text-base text-sm" id="simpanBiodata">
+                <input type="submit" value="SIMPAN" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer focus:outline-none mt-8 md:text-base text-sm" id="simpanBiodata">
             </div>
         </form>
     </div>
