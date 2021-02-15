@@ -22,7 +22,7 @@
                     <div class="lg:mb-4 mt-2">
                         <div class="flex justify-start items-center">
                             <div class="w-2/5">
-                                <h5 class="font-bold font-heading text-primary lg:text-lg md:text-sm text-xs">TEMPAT/TGL LAHIR</h5>
+                                <h5 class="font-bold font-heading text-primary lg:text-lg md:text-sm text-xs">TEMPAT/TANGGAL LAHIR</h5>
                             </div>
                             <div class="w-3/5">
                                 <h5 class="font-paragraph text-primary lg:text-lg md:text-base text-sm">Bojong Gede, 21 Januari 1983</h5>
@@ -72,29 +72,6 @@
             </div>
         </div>
     </div>
-
-    <!-- nyoba pake table -->
-    <!-- <div class="w-full my-8 lg:px-20 md:px-8 px-2">
-            <table class="table-auto text-primary ml-5 mt-3">
-                <tbody>
-                    <tr>
-                        <td class="font-heading font-bold">NAMA LENGKAP</td>
-                        <td class="font-paragraph pl-4">Sukijan</td>
-                        <td class="font-heading font-bold">TEMPAT/TGL LAHIR</td>
-                        <td class="font-paragraph pl-4">Zimbabwe, 30 Februari 1919</td>
-                        <td class="font-heading font-bold">STATUS</td>
-                        <td class="font-paragraph pl-4">Pengedar Kebahagiaan</td>
-                        <td class="font-heading font-bold">NAMA INSTANSI</td>
-                        <td class="font-paragraph pl-4">International University of Zimbabwe</td>
-                        <td class="font-heading font-bold">EMAIL</td>
-                        <td class="font-paragraph pl-4">sukijancintadia@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
-            <hr class="border-primary border-opacity-75 w-3/4 object-center mx-auto mt-8">
-        </div> -->
-
-</div>
 </div>
 
 <?php $this->endSection(); ?>
