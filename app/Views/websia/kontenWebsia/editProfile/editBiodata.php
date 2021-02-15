@@ -3,6 +3,7 @@
 <?= $this->section('contentEdit'); ?>
 <div class="shadow-2xl rounded-3xl">
     <div class="md:grid md:grid-cols-3 md:gap-x-4">
+        <!-- start foto profil -->
         <div class="p-6">
             <div class="flex justify-center">
                 <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-1-800x800-fa5a7ac2c81a43925586ea85f2fea332.jpg" alt="" class="mb-6 md:w-48 md:h-48 w-28 h-28 rounded-full">
@@ -11,7 +12,9 @@
                 <button class="updateFotoProfil bg-secondary rounded-full font-paragraph text-white px-3 py-1 hover:bg-secondaryhover lg:text-base text-sm focus:outline-none">Ubah foto profil</button>
             </div>
         </div>
+        <!-- end foto profil -->
         <div class="col-span-2 md:mt-6 ml-6 mr-6">
+            <!-- start form edit -->
             <form action="" method="POST" class="font-paragraph text-primary" id="formEditBiodata">
                 <label for="nama" class="font-medium">Nama:</label>
                 <input type="text" name="nama" id="nama" class="inputForm text-black" placeholder="Nama Lengkap">
@@ -115,6 +118,7 @@
                     <input type="submit" value="SIMPAN" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer mb-6 focus:outline-none" id="submitBiodata">
                 </div>
             </form>
+            <!-- end form edit -->
         </div>
     </div>
 </div>

@@ -4,6 +4,7 @@
 
 <div class="lg:mx-36 mx-5 mt-12 w-full">
     <h3 class="font-heading font-bold text-center text-secondary lg:text-6xl md:text-3xl text-2xl">PROYEK</h3>
+    <!-- start tombol buat proyek -->
     <a href="/developer/buatProyek">
         <div class="flex justify-center md:w-44 w-28 md:px-2 md:py-2 px-1 py-1 lg:mt-12 mt-4 mb-8 rounded-lg border-gray shadow-lg tracking-wider cursor-pointer hover:bg-gray-100">
             <div class="flex items-center justify-center">
@@ -14,11 +15,16 @@
             </div>
         </div>
     </a>
+    <!-- end tombol buat proyek -->
+
+    <!-- ini kalau belum ada proyek (default hidden, bisa disesuaikan) -->
     <div id="tidakAdaProyek" class="flex justify-center hidden">
         <div class="mt-8 mb-24">
             <span class="font-heading text-center text-xl">Belum ada proyek yang terdaftar. <b>Buat proyekmu sekarang!</b></span>
         </div>
     </div>
+
+    <!-- ini kalau ada proyek -->
     <div id="adaProyek">
         <div class="proyek flex justify-between items-center rounded-md border font-paragraph mb-4 md:px-2 md:py-2 px-1 py-1 hover:bg-gray-100 cursor-pointer transition-all">
             <span class="font-paragraph md:text-base text-sm">Judul Proyek : Lorem Ipsum Dolor Sit Amet</span>
@@ -37,6 +43,7 @@
 </div>
 
 <script>
+    //buat nampilin detail proyek
     $(".proyek").click(function() {
         if (!$(this).hasClass('border-primary')) {
             $(this).addClass('border-primary')

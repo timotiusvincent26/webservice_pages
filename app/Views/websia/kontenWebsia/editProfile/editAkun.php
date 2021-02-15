@@ -3,7 +3,9 @@
 <?= $this->section('contentEdit'); ?>
 <div class="shadow-2xl rounded-3xl">
     <div class="p-6 font-paragraph text-primary lg:min-h-screen">
+        <!-- start form edit akun -->
         <form action="" method="POST" id="formEditAkun">
+            <!-- tambahin form actionnya ya -->
             <div class="md:w-1/2 w-full">
                 <label for="username" class="font-medium">Username:</label>
                 <input type="text" name="username" id="username" class="inputForm" placeholder="Username">
@@ -19,6 +21,7 @@
                 <input type="submit" value="SIMPAN" class="w-24 text-center py-1 bg-secondary hover:bg-secondaryhover text-white rounded-full cursor-pointer focus:outline-none" id="submitAkun">
             </div>
         </form>
+        <!-- end form edit akun -->
     </div>
 </div>
 <?= $this->endSection(); ?>

@@ -9,6 +9,7 @@
             <div class="lg:w-3/5 w-4/5">
                 <hr class="border-primary border-2 lg:mt-6 md:mt-4 mt-2">
                 <div class="mx-2 mt-4">
+                    <!-- start form buat proyek -->
                     <form action="" method="POST" class="lg:text-base md:text-sm text-xs">
                         <label for="nama" class="font-bold text-secondary lg:text-lg md:text-base text-sm">Nama*</label>
                         <input type="text" name="nama" id="nama" placeholder="Nama Proyek" class="inputForm lg:mb-4">
@@ -17,6 +18,8 @@
                         <textarea name="deskripsi" id="deskripsi" cols="50" rows="5" class="inputForm lg:mb-4" placeholder="Masukkan Deskripsi Proyek"></textarea>
                         <div>
                             <label for="scope" class="font-bold text-secondary lg:text-lg md:text-base text-sm">API*</label>
+                            <!-- start scope webservice -->
+                            <!-- note: isi scope nunggu dari backend -->
                             <div>
                                 <div class="flex items-center gap-x-2">
                                     <input type="checkbox" name="scope" id="scope1" class="cursor-pointer focus:outline-none" onclick="scope1JS()">
@@ -44,6 +47,7 @@
                                     Mengakses informasi dengan cakupan Scope 3.
                                 </div>
                             </div>
+                            <!-- end scope webservice -->
                         </div>
                         <div class="text-xs text-secondary md:mt-6 mt-4">
                             *Harus diisi
@@ -58,6 +62,7 @@
                             <input type="submit" value="BUAT" class="bg-secondary hover:bg-secondaryhover text-white py-1 px-5 cursor-pointer rounded-full focus:outline-none">
                         </div>
                     </form>
+                    <!-- end form buat proyek -->
                 </div>
             </div>
         </div>

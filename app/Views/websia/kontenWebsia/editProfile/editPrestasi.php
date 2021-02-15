@@ -2,9 +2,17 @@
 
 <?= $this->section('contentEdit'); ?>
 
+<style>
+    .formEdit {
+        background-color: #F9F9F9;
+    }
+</style>
+
 <div class="w-full bg-white min-h-screen" id="pagePrestasi">
     <div class="md:overflow-x-auto overflow-x-scroll shadow-2xl rounded-3xl">
+        <!-- start tabel prestasi -->
         <table class="w-full sm:text-sm text-xs rounded-3xl shadow-2xl md:shadow-none font-paragraph">
+            <!-- start nama kolom tabel prestasi -->
             <thead class="formEdit">
                 <tr>
                     <th class="pt-4 pb-1 rounded-tl-3xl">No</th>
@@ -30,6 +38,9 @@
                     <td colspan="2"></td>
                 </tr>
             </thead>
+            <!-- end nama kolom tabel prestasi -->
+
+            <!-- start isi tabel prestasi -->
             <tbody>
                 <tr class="border-t-2 border-b-2 bg-white">
                     <td class="text-center py-3">1</td>
@@ -103,7 +114,9 @@
                     <td colspan="8" class="rounded-b-3xl"></td>
                 </tr>
             </tbody>
+            <!-- end isi tabel prestasi -->
         </table>
+        <!-- end tabel prestasi -->
     </div>
 
 </div>
