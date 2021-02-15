@@ -1,8 +1,10 @@
 
 // awal js buat map
+var skalaAwal = 5;
+
 var mymap = L.map('mapid', {
     center: [-2.5, 118],
-    zoom: 5
+    zoom: skalaAwal
 });
 
 var myStyle = {
@@ -12,6 +14,17 @@ var myStyle = {
     "opacity": 1,
     "fillOpacity": 1
 };
+
+
+var jsonTest = new L.GeoJSON.AJAX(["/geojson/provinsi.geojson"], {
+    onEachFeature: popUp,
+    style: myStyle
+}).addTo(mymap);
+
+
+
+
+
 
 
 
@@ -60,10 +73,8 @@ function popUp(f, l) {
         }
     });
 }
-var jsonTest = new L.GeoJSON.AJAX(["/geojson/provinsi.geojson"], {
-    onEachFeature: popUp,
-    style: myStyle
-}).addTo(mymap);
+
+
 
 $('.filterPeta').click(function () {
     klikFilterPeta();
@@ -90,6 +101,7 @@ $('.petaProvinsi').click(function () {
 
 $('.petaKabupaten').click(function () {
     $('.hasilFilterPeta').text('Kabupaten');
+
 
     function popUp(f, l) {
         var out = [];
@@ -130,13 +142,21 @@ $('.petaKabupaten').click(function () {
             }
         });
     }
+
     var jsonTest = new L.GeoJSON.AJAX(["/geojson/kabupaten.geojson"], {
         onEachFeature: popUp,
         style: myStyle
     }).addTo(mymap);
-    
+   
 });
 
 
 
+
 // akhir js buat map
+
+// awal info map 
+$('.tombolInfo').click(function () {
+    $('.info').toggleClass('hidden')
+});
+// akhir info map 
