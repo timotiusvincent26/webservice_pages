@@ -33,15 +33,28 @@ listSidebar.forEach(o => {
     })
 })
 
-const namaProdi = document.querySelectorAll("#namaProdi");
+const namaProdi = document.querySelectorAll(".namaProdi");
 namaProdi.forEach(o => {
-    o.addEventListener("click", () => {
+    o.children[0].addEventListener("click", () => {
         namaProdi.forEach(p => {
             p.classList.remove('text-secondary');
+            p.classList.remove('bg-primaryDark');
             p.classList.add('text-white');
+            p.children[1].classList.add('hidden');
         });
         o.classList.add('text-secondary');
+        o.classList.add('bg-primaryDark');
         o.classList.remove('text-white');
+        o.children[1].classList.remove('hidden');
+    })
+})
+
+namaProdi.forEach(o => {
+    o.children[1].addEventListener("click", () => {
+        o.classList.remove('text-secondary');
+        o.classList.remove('bg-primaryDark');
+        o.classList.add('text-white');
+        o.children[1].classList.add('hidden');
     })
 })
 
@@ -54,13 +67,18 @@ function toggleTempatKerja() {
     $('.inputBPS').toggleClass('text-primary');
     $('.inputTempatKerjaLainnya').toggleClass('text-gray-300');
     $('.inputTempatKerjaLainnya').toggleClass('text-primary');
+    if($('.offBPS').hasClass('hidden')){
+        console.log('a');
+    };
+    alert($('.onBPS').toggleClass('hidden'));
+
 }
 
-$('#BPS').click(function(){
+$('.BPS').click(function(){
     toggleTempatKerja();
 })
 
-$('#Lainnya').click(function(){
+$('.Lainnya').click(function(){
     toggleTempatKerja();
 })
 

@@ -22,12 +22,6 @@ var jsonTest = new L.GeoJSON.AJAX(["/geojson/provinsi.geojson"], {
 }).addTo(mymap);
 
 
-
-
-
-
-
-
 function popUp(f, l) {
     var out = [];
     if (f.properties) {
@@ -157,6 +151,14 @@ $('.petaKabupaten').click(function () {
 
 // awal info map 
 $('.tombolInfo').click(function () {
-    $('.info').toggleClass('hidden')
+    $('.info').toggleClass('hidden');
+});
+
+$('.tombolInfo').mouseover(function () {
+    $('.info').removeClass('hidden');
+});
+
+$('.tombolInfo').mouseout(function () {
+    $('.info').addClass('hidden');
 });
 // akhir info map 
