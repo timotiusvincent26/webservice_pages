@@ -47,16 +47,19 @@
     </button>
 
     <!-- HEADER -->
-    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-10">
-        <div class="lingkaran-luar" id="kiri">
+    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-10" style="background-image: url(/img/bgHeaderWS.png)">
+        <!-- <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
-        </div>
+        </div> -->
         <div class="flex justify-between sm:my-2 my-1">
             <div class="font-heading flex items-center sm:gap-x-6 gap-x-3 z-10">
                 <a href="<?= base_url(); ?>">
-                    <img src="/img/logoSIA.png" class="xl:w-16 lg:w-14 md:w-12 w-8" alt="">
+                    <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
                 </a>
-                <h1 class="judulApi text-white xl:text-2xl lg:text-xl md:text-base text-sm font-light">WEB SERVICE SISTEM INFORMASI ALUMNI</h1>
+                <div class="md:px-3 px-2 my-auto text-white z-50">
+                    <p class="font-heading text-lg md:text-2xl font-semibold">Webservice Sistem Informasi Alumni</p>
+                    <p class="font-heading md:text-xs font-normal hidden md:block -mt-1.5">Akademi Ilmu Statistik - Sekolah Tinggi Ilmu Statistik - Politeknik Statistika STIS</p>
+                </div>
             </div>
             <div id="nav" class="hidden sm:flex sm:items-center z-10">
                 <ul class="flex lg:gap-x-6 md:gap-x-4 gap-x-2 relative">
@@ -92,9 +95,9 @@
             </svg>
 
         </div>
-        <div class="lingkaran-luar" id="kanan">
+        <!-- <div class="lingkaran-luar" id="kanan">
             <div class="lingkaran-dalam"></div>
-        </div>
+        </div> -->
 
         <div class="sm:hidden hidden menuWebService navbar" id="menuApi">
             <div class="menu border-t border-b flex justify-center">
