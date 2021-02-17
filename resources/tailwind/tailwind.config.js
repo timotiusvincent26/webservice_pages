@@ -18,6 +18,10 @@ module.exports = {
         heading: ["Poppins"],
         paragraph: ["Cabin"],
       },
+      borderWidth: {
+        DEFAULT: '1px',
+        '1': '1px',
+      }
     },
   },
   variants: {

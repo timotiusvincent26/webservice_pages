@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/add_style.css">
 
-    <title><?php echo $judulHalaman ?></title>
+    <title><?php echo $judulHalaman; ?></title>
 
     <style>
         .dropdown {
@@ -52,14 +52,14 @@
 
 <body>
     <!-- tombol kembali ke atas -->
-    <button onclick="topFunction()" id="onTopBtn" title="Kembali ke Atas" class="hidden fixed bottom-5 right-8 w-12 h-12 p-1 cursor-pointer rounded-full border-none focus:outline-none z-50 bg-secondary">
+    <button onclick="topFunction()" id="onTopBtn" title="Kembali ke Atas" class="hidden fixed bottom-5 right-8 w-10 h-10 p-1 cursor-pointer rounded-full border-none focus:outline-none z-50 bg-secondary">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
             <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
         </svg>
     </button>
 
     <!-- HEADER -->
-    <div class="navbar w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
+    <div class="navbar w-full fixed z-10 bg-cover bg-no-repeat bg-left transition duration-700 ease-out" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
             <div class="flex flex-col">
                 <div class="flex items-center justify-between px-6 pt-3 ">
@@ -68,23 +68,24 @@
                             <a href="<?= base_url(); ?>">
                                 <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
                             </a>
-                            <div class="md:px-3 px-2 my-auto md:text-2xl text-lg text-white font-heading font-light z-50">
-                                Sistem Informasi Alumni
+                            <div class="md:px-3 px-2 my-auto text-white z-50">
+                                <p class="font-heading text-lg md:text-2xl font-semibold">Sistem Informasi Alumni</p>
+                                <p class="font-heading md:text-xs font-normal hidden md:block -mt-1.5">Akademi Ilmu Statistik - Sekolah Tinggi Ilmu Statistik - Politeknik Statistika STIS</p>
                             </div>
                         </div>
                         <div class="font-paragraph hidden md:flex items-end justify-start pt-1">
                             <a href="<?= base_url(); ?>">
-                                <div class="nav-menu transition-colors duration-300">
+                                <div class="nav-menu transition-colors duration-300 <?= ($active == 'beranda') ? 'active' : ''; ?>">
                                     BERANDA
                                 </div>
                             </a>
                             <a href="/profil">
-                                <div class="nav-menu transition-colors duration-300">
+                                <div class="nav-menu transition-colors duration-300 <?= ($active == 'profil') ? 'active' : ''; ?>">
                                     PROFIL
                                 </div>
                             </a>
                             <div class="dropdown menuGaleri">
-                                <div class="nav-menu cursor-pointer transition-colors duration-300">
+                                <div class="nav-menu cursor-pointer transition-colors duration-300 <?= ($active == 'galeri') ? 'active' : ''; ?>">
                                     GALERI
                                 </div>
                                 <div class="dropdown-content ml-1 w-max text-sm">
@@ -94,7 +95,7 @@
                                 </div>
                             </div>
                             <a href="/admin">
-                                <div class="nav-menu transition-colors duration-300">
+                                <div class="nav-menu transition-colors duration-300 <?= ($active == 'admin') ? 'active' : ''; ?>">
                                     ADMIN
                                 </div>
                             </a>
@@ -124,21 +125,23 @@
 
                 <div class="md:hidden">
                     <div class="flex flex-col hidden w-full border-t border-b border-white py-2 font-paragraph" id="menu">
-                        <div class="nav-menu-relative px-2 py-2 ">
+                        <div class="nav-menu-relative px-2 py-2 <?= ($active == 'beranda') ? 'active' : ''; ?>">
                             <a href="<?= base_url(); ?>">BERANDA </a>
                         </div>
-                        <div class="nav-menu-relative px-2 py-2">
+                        <div class="nav-menu-relative px-2 py-2 <?= ($active == 'profil') ? 'active' : ''; ?>">
                             <a href="/profil"> PROFIL</a>
                         </div>
                         <div class="flex flex-col">
-                            <div class="flex nav-menu-relative px-2 py-2" id="galeri">
-                                <div> GALERI</div>
-                                <svg class="w-4 h-4 my-auto ml-2" fill="none" id="downGaleri" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                </svg>
-                                <svg class="w-4 h-4 my-auto ml-2 hidden" fill="currentColor" id="upGaleri" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
-                                </svg>
+                            <div class="nav-menu-relative flex px-2 py-2 <?= ($active == 'galeri') ? 'active' : ''; ?>" id="galeri">
+                                <div class="mx-auto">
+                                    GALERI
+                                    <svg class="inline w-4 h-4 my-auto ml-1" fill="none" id="downGaleri" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                    <svg class="inline w-4 h-4 my-auto ml-1 hidden" fill="currentColor" id="upGaleri" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="flex flex-col hidden" id="listGaleri">
                                 <a href="/galeriFoto" class="nav-menu-relative py-2"> Galeri Kenangan Alumni </a>
@@ -179,8 +182,8 @@
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-3 ">
-        <div class="flex flex-col md:flex-row md:justify-around md:text-sm text-xs">
+    <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-3">
+        <div class="flex flex-col md:flex-row md:justify-around text-xs">
 
             <!-- awal footer stis -->
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
@@ -188,9 +191,9 @@
                     <a href="https://stis.ac.id/"><img class="lg:w-24 lg:h-24 w-20 h-20" src="/img/STISlogo.png" alt=""></a>
                 </div>
                 <div class="text-white font-heading">
-                    <h3>Jalan Otto Iskandardinatta</h3>
-                    <h3>64C Jakarta 13330</h3>
-                    <h3>08967xxxxx</h3>
+                    <h3>Jl. Otto Iskandardinata No.64C Jakarta 13330</h3>
+                    <h3>Telp. (021) 8191437, 8508812</h3>
+                    <h3>Fax. (021) 8197577</h3>
                     <div class="flex gap-x-2 mt-2">
                         <a href="https://www.facebook.com/PolstatSTIS/"><img class="lg:h-6 h-4" src="/img/facebook.png" alt=""></a>
                         <a href="https://www.youtube.com/channel/UCwmpr4lmrApoGRpq4TcmsvA"><img class="lg:h-6 h-4" src="/img/youtube.png" alt=""></a>
@@ -205,9 +208,9 @@
             <div class="flex items-center mt-4 gap-x-2 md:mt-0 mx-auto md:mx-0">
                 <a href="https://haisstis.org/"><img class="lg:h-24 h-20 w-36 lg:w-auto" src="/img/logo_haisstis1.png" alt=""></a>
                 <div class="text-white font-heading">
-                    <h3>Jalan Otto Iskandardinatta</h3>
-                    <h3>64C Jakarta 13330</h3>
-                    <h3>08967xxxxx</h3>
+                    <h3>Jl. Otto Iskandardinata No.64C Jakarta 13330</h3>
+                    <h3>Telp. (021) 8191437, 8508812</h3>
+                    <h3>Fax. (021) 8197577</h3>
                     <div class="flex gap-x-2 mt-2">
                         <a href=""><img class="lg:h-6 h-4" src="/img/facebook.png" alt=""></a>
                         <a href=""><img class="lg:h-6 h-4" src="/img/youtube.png" alt=""></a>
@@ -219,12 +222,11 @@
             <!-- akhir footer haistis -->
 
             <!-- awal link ke webservice  -->
-            <div class="flex flex-col text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
-                <a href="/websia/" class="mb-4">
+            <div class="flex flex-col text-white font-heading mx-auto md:mx-5 mt-4 md:mt-0">
+                <a href="/websia/" class="mb-2 hover:text-secondary">
                     <h3>Website PKL60</h3>
                 </a>
-
-                <a href="/developer/">
+                <a href="/webservice/" class="hover:text-secondary">
                     <h3>Webservice(API)</h3>
                 </a>
             </div>
@@ -232,15 +234,15 @@
 
         </div>
 
-        <div class="flex items-center mt-2">
+        <div class="flex items-center mt-4">
             <div class="flex-grow">
-                <hr class="text-white border-2 my-auto">
+                <hr class="text-white bg-white border my-auto">
             </div>
 
 
         </div>
 
-        <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>
+        <h2 class="text-white text-sm text-center mt-1">Copyright &copy; PKL 60 Riset 5</h2>
     </div>
     <!-- END FOOTER -->
 </body>
@@ -253,7 +255,5 @@
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/footer.js"></script>
 <script type="text/javascript" src="/js/editProfil.js"></script>
-<script type="text/javascript" src="/js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="/js/showMore.js"></script>
 
 </html>

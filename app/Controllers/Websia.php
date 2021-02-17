@@ -9,6 +9,7 @@ class Websia extends BaseController
         // ganti login ='sudah' atau 'belum' sesuai keadaan sudah login atau belum
         $data['judulHalaman'] = 'Beranda WEBSIA';
         $data['login'] = 'sudah';
+        $data['active'] = 'beranda';
         return view('websia/kontenWebsia/halamanUtama/beranda', $data);
     }
 
@@ -28,30 +29,35 @@ class Websia extends BaseController
         // ganti status ='user' atau 'bukan user' sesuai pengakses, user itu untuk melihat profil diri sendiri, sedangkan bukan user untuk melihat profil orang lain
         $data['status'] = 'user';
         $data['judulHalaman'] = 'User Profile';
+        $data['active'] = 'profil';
         return view('websia/kontenWebsia/userProfile/userProfile', $data);
     }
 
     public function rekomendasi()
     {
         $data['judulHalaman'] = 'Rekomendasi';
+        $data['active'] = 'profil';
         return view('websia/kontenWebsia/userProfile/rekomendasi', $data);
     }
 
     public function galeriFoto()
     {
         $data['judulHalaman'] = 'Galeri Kenangan Alumni';
+        $data['active'] = 'galeri';
         return view('websia/kontenWebsia/galeri/galeriAlumni', $data);
     }
 
     public function galeriVideo()
     {
         $data['judulHalaman'] = 'Galeri Video Kegiatan Alumni';
+        $data['active'] = 'galeri';
         return view('websia/kontenWebsia/galeri/galeriVidAlumni', $data);
     }
 
     public function galeriWisuda()
     {
         $data['judulHalaman'] = 'Galeri Video Wisuda';
+        $data['active'] = 'galeri';
         return view('websia/kontenWebsia/galeri/galeriWisuda', $data);
     }
 

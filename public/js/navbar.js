@@ -3,6 +3,7 @@
 var y = null;
 var tinggiLayar = $(window).height();
 var tinggiNavbar = $('.navbar').height();
+var tinggiMenu = $('.nav-menu').height();
 var lastScroll = $(window).scrollTop();;
 var batasBawahLayar = 0;
 
@@ -51,10 +52,11 @@ window.addEventListener('mouseenter', onMouseUpdate, false);
 
 function onMouseUpdate(e) {
     y = e.pageY;
+    // kalo mouse nya kena navbar bakal keliatan
+    // kendala ga bisa dikecilin wilayah nya karena ga bisa diklik nanti
     if(y <= (lastScroll + tinggiNavbar)){
         $('.navbar').removeClass('invisible');  
     }
-  
 }
 
 function getMouseY() {

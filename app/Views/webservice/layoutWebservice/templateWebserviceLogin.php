@@ -38,12 +38,20 @@
 </head>
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
+
+    <!-- tombol kembali ke atas -->
+    <button onclick="topFunction()" id="onTopBtn" title="Kembali ke Atas" class="hidden fixed bottom-5 right-8 w-10 h-10 p-1 cursor-pointer rounded-full border-none focus:outline-none z-50 bg-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+    </button>
+
     <!-- HEADER -->
-    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-50">
+    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-10">
         <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div>
-        <div class="flex justify-between sm:my-4 my-3">
+        <div class="flex justify-between sm:my-2 my-1">
             <div class="font-heading flex items-center sm:gap-x-6 gap-x-3 z-10">
                 <a href="<?= base_url(); ?>">
                     <img src="/img/logoSIA.png" class="xl:w-16 lg:w-14 md:w-12 w-8" alt="">
@@ -96,7 +104,7 @@
                                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                             </svg></div>
                     </li>
-                    <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden">
+                    <ul class="transform -translate-y-0.5 text-white w-screen flex flex-col items-center hidden z-20 block">
                         <a href="/developer/">
                             <li class="list m-auto hover:text-white bg-white text-center text-secondary text-sm py-0.5 w-44 border-b-2 border-gray-500">BERANDA</li>
                         </a>
@@ -131,7 +139,7 @@
 
     </div>
     <!-- END HEADER -->
-    <div class="bg-primary w-full lg:h-24 md:h-20 h-12">
+    <div class="bg-primary w-full lg:h-16 md:h-16 h-10">
     </div>
     <!-- CONTENT PAGE DI SINI -->
     <div class="w-full flex flex-1 justify-center items-center">
@@ -141,7 +149,7 @@
 
     <!-- FOOTER -->
     <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-3">
-        <div class="flex flex-col md:flex-row md:justify-around md:text-sm text-xs">
+        <div class="flex flex-col md:flex-row md:justify-around text-xs">
 
             <!-- awal footer stis -->
             <div class="flex items-center gap-x-2 mx-auto md:mx-0">
@@ -149,9 +157,9 @@
                     <a href="https://stis.ac.id/"><img class="lg:w-24 lg:h-24 w-20 h-20" src="/img/STISlogo.png" alt=""></a>
                 </div>
                 <div class="text-white font-heading">
-                    <h3>Jalan Otto Iskandardinatta</h3>
-                    <h3>64C Jakarta 13330</h3>
-                    <h3>08967xxxxx</h3>
+                    <h3>Jl. Otto Iskandardinata No.64C Jakarta 13330</h3>
+                    <h3>Telp. (021) 8191437, 8508812</h3>
+                    <h3>Fax. (021) 8197577</h3>
                     <div class="flex gap-x-2 mt-2">
                         <a href="https://www.facebook.com/PolstatSTIS/"><img class="lg:h-6 h-4" src="/img/facebook.png" alt=""></a>
                         <a href="https://www.youtube.com/channel/UCwmpr4lmrApoGRpq4TcmsvA"><img class="lg:h-6 h-4" src="/img/youtube.png" alt=""></a>
@@ -166,9 +174,9 @@
             <div class="flex items-center mt-4 gap-x-2 md:mt-0 mx-auto md:mx-0">
                 <a href="https://haisstis.org/"><img class="lg:h-24 h-20 w-36 lg:w-auto" src="/img/logo_haisstis1.png" alt=""></a>
                 <div class="text-white font-heading">
-                    <h3>Jalan Otto Iskandardinatta</h3>
-                    <h3>64C Jakarta 13330</h3>
-                    <h3>08967xxxxx</h3>
+                    <h3>Jl. Otto Iskandardinata No.64C Jakarta 13330</h3>
+                    <h3>Telp. (021) 8191437, 8508812</h3>
+                    <h3>Fax. (021) 8197577</h3>
                     <div class="flex gap-x-2 mt-2">
                         <a href=""><img class="lg:h-6 h-4" src="/img/facebook.png" alt=""></a>
                         <a href=""><img class="lg:h-6 h-4" src="/img/youtube.png" alt=""></a>
@@ -179,13 +187,12 @@
             </div>
             <!-- akhir footer haistis -->
 
-            <!-- awal link ke web pkl dan websia  -->
-            <div class="flex flex-col text-white font-heading mx-auto md:mx-0 mt-4 md:mt-0">
-                <a href="/" class="mb-4">
-                    <h3>Web Sistem Informasi Alumni</h3>
+            <!-- awal link ke webservice  -->
+            <div class="flex flex-col text-white font-heading mx-auto md:mx-5 mt-4 md:mt-0">
+                <a href="/websia/" class="mb-2 hover:text-secondary">
+                    <h3>Website SIA</h3>
                 </a>
-
-                <a href="https://pkl.stis.ac.id/60/">
+                <a href="/webservice/" class="hover:text-secondary">
                     <h3>Website PKL60</h3>
                 </a>
             </div>
@@ -195,19 +202,15 @@
 
         <div class="flex items-center mt-2">
             <div class="flex-grow">
-                <hr class="text-white border-2 my-auto">
-            </div>
-            <div class="flex-grow-0">
-                <div class="flex items-center w-8 h-8 rounded-full bg-secondary cursor-pointer" id="upPage">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                        <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                    </svg>
-                </div>
+                <hr class="text-white bg-white border my-auto">
             </div>
         </div>
-        <h2 class="text-white text-center mt-3">Copyright &copy; PKL 60 Riset 5</h2>
+
+        <h2 class="text-white text-sm text-center mt-1">Copyright &copy; PKL 60 Riset 5</h2>
     </div>
     <!-- END FOOTER -->
+
+    <script type="text/javascript" src="/js/onTopBtn.js"></script>
     <script type="text/javascript" src="/js/navbar.js"></script>
     <script src="/js/aos.js"></script>
     <script type="text/javascript" src="/js/footer.js"></script>

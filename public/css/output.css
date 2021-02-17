@@ -1445,6 +1445,18 @@ video {
   border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
+.divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
+
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -11223,6 +11235,10 @@ video {
   border-width: 0px;
 }
 
+.border-1 {
+  border-width: 1px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -11253,6 +11269,22 @@ video {
 
 .border-l-0 {
   border-left-width: 0px;
+}
+
+.border-t-1 {
+  border-top-width: 1px;
+}
+
+.border-r-1 {
+  border-right-width: 1px;
+}
+
+.border-b-1 {
+  border-bottom-width: 1px;
+}
+
+.border-l-1 {
+  border-left-width: 1px;
 }
 
 .border-t-2 {
@@ -19814,6 +19846,13 @@ video {
   left: -100%;
 }
 
+.inset-9\.5 {
+  top: 2.375rem;
+  right: 2.375rem;
+  bottom: 2.375rem;
+  left: 2.375rem;
+}
+
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -20662,6 +20701,16 @@ video {
 .-inset-x-full {
   right: -100%;
   left: -100%;
+}
+
+.inset-y-9\.5 {
+  top: 2.375rem;
+  bottom: 2.375rem;
+}
+
+.inset-x-9\.5 {
+  right: 2.375rem;
+  left: 2.375rem;
 }
 
 .top-0 {
@@ -22022,6 +22071,22 @@ video {
 
 .-left-full {
   left: -100%;
+}
+
+.top-9\.5 {
+  top: 2.375rem;
+}
+
+.right-9\.5 {
+  right: 2.375rem;
+}
+
+.bottom-9\.5 {
+  bottom: 2.375rem;
+}
+
+.left-9\.5 {
+  left: 2.375rem;
 }
 
 .resize-none {
@@ -32248,6 +32313,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* supaya auto pake font open-sans */
+
+body {
+  font-family: Cabin;
+}
+
 /* ini menu navbar saat di desktop */
 
 .nav-menu {
@@ -32275,7 +32346,7 @@ html {
   color: rgba(255, 170, 0, var(--tw-text-opacity));
 }
 
-.nav-menu-realtive {
+.nav-menu-relative {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));
   border-bottom-width: 1px;
@@ -32288,6 +32359,15 @@ html {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   width: 91.666667%;
+}
+
+/* menu aktif halamannya */
+
+.active {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgba(1, 79, 134, var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgba(255, 170, 0, var(--tw-text-opacity)) !important;
 }
 
 /* ini card untuk rekomendasi */
@@ -33245,6 +33325,18 @@ html {
     --tw-divide-x-reverse: 0;
     border-right-width: calc(0px * var(--tw-divide-x-reverse));
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
+  .sm\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .sm\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
   .sm\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -43025,6 +43117,10 @@ html {
     border-width: 0px;
   }
 
+  .sm\:border-1 {
+    border-width: 1px;
+  }
+
   .sm\:border-2 {
     border-width: 2px;
   }
@@ -43055,6 +43151,22 @@ html {
 
   .sm\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .sm\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .sm\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .sm\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .sm\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .sm\:border-t-2 {
@@ -51616,6 +51728,13 @@ html {
     left: -100%;
   }
 
+  .sm\:inset-9\.5 {
+    top: 2.375rem;
+    right: 2.375rem;
+    bottom: 2.375rem;
+    left: 2.375rem;
+  }
+
   .sm\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -52464,6 +52583,16 @@ html {
   .sm\:-inset-x-full {
     right: -100%;
     left: -100%;
+  }
+
+  .sm\:inset-y-9\.5 {
+    top: 2.375rem;
+    bottom: 2.375rem;
+  }
+
+  .sm\:inset-x-9\.5 {
+    right: 2.375rem;
+    left: 2.375rem;
   }
 
   .sm\:top-0 {
@@ -53824,6 +53953,22 @@ html {
 
   .sm\:-left-full {
     left: -100%;
+  }
+
+  .sm\:top-9\.5 {
+    top: 2.375rem;
+  }
+
+  .sm\:right-9\.5 {
+    right: 2.375rem;
+  }
+
+  .sm\:bottom-9\.5 {
+    bottom: 2.375rem;
+  }
+
+  .sm\:left-9\.5 {
+    left: 2.375rem;
   }
 
   .sm\:resize-none {
@@ -64859,6 +65004,18 @@ html {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .md\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .md\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .md\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -74637,6 +74794,10 @@ html {
     border-width: 0px;
   }
 
+  .md\:border-1 {
+    border-width: 1px;
+  }
+
   .md\:border-2 {
     border-width: 2px;
   }
@@ -74667,6 +74828,22 @@ html {
 
   .md\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .md\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .md\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .md\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .md\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .md\:border-t-2 {
@@ -83228,6 +83405,13 @@ html {
     left: -100%;
   }
 
+  .md\:inset-9\.5 {
+    top: 2.375rem;
+    right: 2.375rem;
+    bottom: 2.375rem;
+    left: 2.375rem;
+  }
+
   .md\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -84076,6 +84260,16 @@ html {
   .md\:-inset-x-full {
     right: -100%;
     left: -100%;
+  }
+
+  .md\:inset-y-9\.5 {
+    top: 2.375rem;
+    bottom: 2.375rem;
+  }
+
+  .md\:inset-x-9\.5 {
+    right: 2.375rem;
+    left: 2.375rem;
   }
 
   .md\:top-0 {
@@ -85436,6 +85630,22 @@ html {
 
   .md\:-left-full {
     left: -100%;
+  }
+
+  .md\:top-9\.5 {
+    top: 2.375rem;
+  }
+
+  .md\:right-9\.5 {
+    right: 2.375rem;
+  }
+
+  .md\:bottom-9\.5 {
+    bottom: 2.375rem;
+  }
+
+  .md\:left-9\.5 {
+    left: 2.375rem;
   }
 
   .md\:resize-none {
@@ -96471,6 +96681,18 @@ html {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .lg\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .lg\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .lg\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -106249,6 +106471,10 @@ html {
     border-width: 0px;
   }
 
+  .lg\:border-1 {
+    border-width: 1px;
+  }
+
   .lg\:border-2 {
     border-width: 2px;
   }
@@ -106279,6 +106505,22 @@ html {
 
   .lg\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .lg\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .lg\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .lg\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .lg\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .lg\:border-t-2 {
@@ -114840,6 +115082,13 @@ html {
     left: -100%;
   }
 
+  .lg\:inset-9\.5 {
+    top: 2.375rem;
+    right: 2.375rem;
+    bottom: 2.375rem;
+    left: 2.375rem;
+  }
+
   .lg\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -115688,6 +115937,16 @@ html {
   .lg\:-inset-x-full {
     right: -100%;
     left: -100%;
+  }
+
+  .lg\:inset-y-9\.5 {
+    top: 2.375rem;
+    bottom: 2.375rem;
+  }
+
+  .lg\:inset-x-9\.5 {
+    right: 2.375rem;
+    left: 2.375rem;
   }
 
   .lg\:top-0 {
@@ -117048,6 +117307,22 @@ html {
 
   .lg\:-left-full {
     left: -100%;
+  }
+
+  .lg\:top-9\.5 {
+    top: 2.375rem;
+  }
+
+  .lg\:right-9\.5 {
+    right: 2.375rem;
+  }
+
+  .lg\:bottom-9\.5 {
+    bottom: 2.375rem;
+  }
+
+  .lg\:left-9\.5 {
+    left: 2.375rem;
   }
 
   .lg\:resize-none {
@@ -128083,6 +128358,18 @@ html {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .xl\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .xl\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .xl\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -137861,6 +138148,10 @@ html {
     border-width: 0px;
   }
 
+  .xl\:border-1 {
+    border-width: 1px;
+  }
+
   .xl\:border-2 {
     border-width: 2px;
   }
@@ -137891,6 +138182,22 @@ html {
 
   .xl\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .xl\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .xl\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .xl\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .xl\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .xl\:border-t-2 {
@@ -146452,6 +146759,13 @@ html {
     left: -100%;
   }
 
+  .xl\:inset-9\.5 {
+    top: 2.375rem;
+    right: 2.375rem;
+    bottom: 2.375rem;
+    left: 2.375rem;
+  }
+
   .xl\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -147300,6 +147614,16 @@ html {
   .xl\:-inset-x-full {
     right: -100%;
     left: -100%;
+  }
+
+  .xl\:inset-y-9\.5 {
+    top: 2.375rem;
+    bottom: 2.375rem;
+  }
+
+  .xl\:inset-x-9\.5 {
+    right: 2.375rem;
+    left: 2.375rem;
   }
 
   .xl\:top-0 {
@@ -148660,6 +148984,22 @@ html {
 
   .xl\:-left-full {
     left: -100%;
+  }
+
+  .xl\:top-9\.5 {
+    top: 2.375rem;
+  }
+
+  .xl\:right-9\.5 {
+    right: 2.375rem;
+  }
+
+  .xl\:bottom-9\.5 {
+    bottom: 2.375rem;
+  }
+
+  .xl\:left-9\.5 {
+    left: 2.375rem;
   }
 
   .xl\:resize-none {
@@ -159695,6 +160035,18 @@ html {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .\32xl\:divide-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+  }
+
+  .\32xl\:divide-x-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-x-reverse: 0;
+    border-right-width: calc(1px * var(--tw-divide-x-reverse));
+    border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+  }
+
   .\32xl\:divide-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -169473,6 +169825,10 @@ html {
     border-width: 0px;
   }
 
+  .\32xl\:border-1 {
+    border-width: 1px;
+  }
+
   .\32xl\:border-2 {
     border-width: 2px;
   }
@@ -169503,6 +169859,22 @@ html {
 
   .\32xl\:border-l-0 {
     border-left-width: 0px;
+  }
+
+  .\32xl\:border-t-1 {
+    border-top-width: 1px;
+  }
+
+  .\32xl\:border-r-1 {
+    border-right-width: 1px;
+  }
+
+  .\32xl\:border-b-1 {
+    border-bottom-width: 1px;
+  }
+
+  .\32xl\:border-l-1 {
+    border-left-width: 1px;
   }
 
   .\32xl\:border-t-2 {
@@ -178064,6 +178436,13 @@ html {
     left: -100%;
   }
 
+  .\32xl\:inset-9\.5 {
+    top: 2.375rem;
+    right: 2.375rem;
+    bottom: 2.375rem;
+    left: 2.375rem;
+  }
+
   .\32xl\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -178912,6 +179291,16 @@ html {
   .\32xl\:-inset-x-full {
     right: -100%;
     left: -100%;
+  }
+
+  .\32xl\:inset-y-9\.5 {
+    top: 2.375rem;
+    bottom: 2.375rem;
+  }
+
+  .\32xl\:inset-x-9\.5 {
+    right: 2.375rem;
+    left: 2.375rem;
   }
 
   .\32xl\:top-0 {
@@ -180272,6 +180661,22 @@ html {
 
   .\32xl\:-left-full {
     left: -100%;
+  }
+
+  .\32xl\:top-9\.5 {
+    top: 2.375rem;
+  }
+
+  .\32xl\:right-9\.5 {
+    right: 2.375rem;
+  }
+
+  .\32xl\:bottom-9\.5 {
+    bottom: 2.375rem;
+  }
+
+  .\32xl\:left-9\.5 {
+    left: 2.375rem;
   }
 
   .\32xl\:resize-none {
