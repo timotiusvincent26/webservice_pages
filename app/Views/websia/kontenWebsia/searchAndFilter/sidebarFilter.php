@@ -79,7 +79,7 @@
                     <div class="flex w-full outline-none rounded-lg items-center">
                         <input type="text" placeholder="Angkatan 60" class="w-full placeholder-gray-300 text-primary outline-none focus:ring-2 focus:ring-secondary font-paragraph text-xs px-2 py-1 font-paragraph rounded-lg">
 
-                        <svg class="w-3 h-3 text-primary stroke-current stroke-2 -ml-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-3 h-3 text-primary stroke-current stroke-2 -ml-5 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </div>
@@ -113,10 +113,10 @@
                     </div>
 
                     <!-- Awal Input Filter "Tempat Kerja BPS" Untuk Alumni  -->
-                    <div class="flex w-full outline-none rounded-lg items-center mb-2 inputBPS">
-                        <input type="text" placeholder="BPS RI/Provinsi/kota" class="w-full placeholder-gray-300 text-primary font-paragraph text-xs px-2 py-1 outline-none focus:ring-2 focus:ring-secondary font-paragraph rounded-lg">
+                    <div class="flex w-full outline-none rounded-lg items-center mb-2 text-primary inputBPS">
+                        <input type="text" placeholder="BPS RI/Provinsi/kota" class="w-full placeholder-gray-300 font-paragraph text-xs px-2 py-1 outline-none focus:ring-2 focus:ring-secondary font-paragraph rounded-lg">
 
-                        <svg class="w-3 h-3 text-primary stroke-current stroke-2 -ml-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-3 h-3 text-primary stroke-current stroke-2 -ml-5 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </div>
@@ -133,10 +133,10 @@
                     </div>
 
                     <!-- Awal Input Filter "Tempat Kerja Lainnya" Untuk Alumni  -->
-                    <div class="flex w-full outline-none rounded-lg items-center mb-1  inputTempatKerjaLainnya">
-                        <input type="text" placeholder="Institusi/Perusahaan Lain" class="w-full placeholder-gray-300 text-xs font-paragraph text-gray-300 px-2 py-1 outline-none focus:ring-2 focus:ring-secondary font-paragraph rounded-lg">
+                    <div class="flex w-full outline-none rounded-lg items-center mb-1 text-gray-300 inputTempatKerjaLainnya">
+                        <input type="text" placeholder="Institusi/Perusahaan Lain" class="w-full placeholder-gray-300 text-xs font-paragraph px-2 py-1 outline-none focus:ring-2 focus:ring-secondary font-paragraph rounded-lg">
 
-                        <svg class="w-3 h-3 text-primary stroke-current stroke-2 -ml-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-3 h-3 text-primary stroke-current stroke-2 -ml-5 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </div>
@@ -174,11 +174,23 @@
                     <div class="flex justify-between gap-x-1 mb-2">
 
                         <!-- Awal Input Filter "Rentang Waktu Awal" Untuk Berita  -->
-                        <input type="text" placeholder="Awal" class="placeholder-gray-300 text-xs font-paragraph text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2 inputTahunAwal">
+                        <div class="flex w-1/2 outline-none rounded-lg items-center mb-1 text-primary inputTahunAwal">
+                            <input type="text" placeholder="Awal" class="placeholder-gray-300 text-xs font-paragraph px-2 py-1 outline-none focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-full">
+
+                            <svg class="w-3 h-3 stroke-current stroke-2 -ml-5 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
                         <!-- Akhir Input Filter "Rentang Waktu Awal" Untuk Berita  -->
 
                         <!-- Awal Input Filter "Rentang Waktu Akhir" Untuk Berita  -->
-                        <input type="text" placeholder="Akhir" class="placeholder-gray-300 text-xs font-paragraph text-primary px-2 py-1 outline-none mb-1 focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-1/2 inputTahunAkhir">
+                        <div class="flex w-1/2 outline-none rounded-lg items-center mb-1 text-primary  inputTahunAkhir">
+                            <input type="text" placeholder="Akhir" class="placeholder-gray-300 text-xs font-paragraph px-2 py-1 outline-none focus:ring-2 focus:ring-secondary font-paragraph rounded-lg w-full">
+
+                            <svg class="w-3 h-3 stroke-current stroke-2 -ml-5 cursor-pointer" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
                         <!-- Akhir Input Filter "Rentang Waktu Akhir" Untuk Berita  -->
 
                     </div>

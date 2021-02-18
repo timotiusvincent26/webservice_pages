@@ -27,10 +27,7 @@ if ($login == 'belum') {
         <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-black font-heading font-semibold">HASIL DARI PROYEK PKL RISET 5</div>
         <!-- awal keterangan hasil proyek pkl riset 5 -->
         <p class="text-primary text-justify md:text-left font-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
+            Riset 5 merupakan salah satu dari enam riset yang ada dalam PKL Tahun Akademik 2020/2021 Politeknik Statistika STIS yang diadakan secara online di seluruh Indonesia dengan tema Menuju BPS yang Lebih Baik (Towards Better BPS). Riset 5 sendiri memiliki topik “Pengembangan Sistem Database Alumni AIS/STIS/Politeknik Statistika STIS”. Riset 5 memiliki tujuan untuk menjadi penyedia data alumni AIS/STIS/Politeknik Statistika STIS yang lengkap, terintegrasi, dan up to date sehingga dapat menjadi penghubung antaralumni maupun antara alumni dengan Politeknik Statistika STIS. Dengan sistem informasi database alumni ini juga diharapkan dapat mempermudah dalam mencari data alumni AIS/STIS/Politeknik Statistika STIS mulai dari angkatan 1 hingga angkatan terakhir yang baru lulus.
         </p>
         <!-- akhir keterangan hasil proyek pkl riset 5 -->
     </div>
@@ -47,14 +44,11 @@ if ($login == 'belum') {
         <img class="lg:w-2/3 md:w-11/12 w-10/12  mx-auto md:self-center" src="/img/logo_haisstis1.png" alt="" data-aos="fade-right">
     </div>
 
-    <div class="md:w-2/3 block md:px-2 md:py-8 pb-4 ">
+    <div class="md:w-2/3 block md:px-2 md:py-16 pb-4 ">
         <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-secondary font-heading font-semibold">SEJARAH SINGKAT HAISTIS</div>
         <!-- awal keterangan hasil proyek pkl riset 5 -->
         <p class="text-white text-justify md:text-left font-paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus omnis, iure numquam, quam quas, at fugit fuga voluptatibus ipsum nostrum doloremque? Harum cum quos ea qui dicta blanditiis laborum!
+            Himpunan HAISSTIS alumni AIS/STIS (HAISSTIS) merupakan organisasi yang dibentuk sebagai wadah silaturahmi alumni AIS/STIS/Polstat STIS yang beragam suku, agama dan budaya agar terjalin hubungan kekeluargaan. Himpunan alumni AIS/STIS (HAISSTIS) bertujuan untuk menjunjung tinggi nama baik almamater, membina dan mengembangkan semangat kebersamaan, ikut mengembangkan perstatistikan Indonesia, dan ikut meningkatkan kesadaran masyarakat akan arti dan kegunaan statistik.
         </p>
         <!-- akhir keterangan hasil proyek pkl riset 5 -->
     </div>

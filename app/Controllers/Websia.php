@@ -17,6 +17,7 @@ class Websia extends BaseController
     {
         $kata_kunci = $_GET['kata_kunci'];
         $data['judulHalaman'] = 'Search And Filter';
+        $data['active'] = '';
         if ($kata_kunci == "kosong") {
             return view('websia/kontenWebsia/searchAndFilter/searchKosong', $data);
         } else {
@@ -65,12 +66,14 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
+        $data['active'] = '';
         return view('websia/kontenWebsia/editProfile/editBiodata.php', $data);
     }
 
     public function editPendidikan()
     {
         $data['judulHalaman'] = 'Edit Profil';
+        $data['active'] = '';
         $data['login'] = 'sudah';
         return view('websia/kontenWebsia/editProfile/editPendidikan.php', $data);
     }
@@ -86,6 +89,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
+        $data['active'] = '';
         return view('websia/kontenWebsia/editProfile/editPrestasi.php', $data);
     }
 
@@ -93,6 +97,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
+        $data['active'] = '';
         return view('websia/kontenWebsia/editProfile/editPublikasi.php', $data);
     }
 
@@ -100,6 +105,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
+        $data['active'] = '';
         return view('websia/kontenWebsia/editProfile/editAkun.php', $data);
     }
 
@@ -107,6 +113,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Berita/Artikel';
         $data['login'] = 'sudah';
+        $data['active'] = '';
         return view('websia/kontenWebsia/beritaArtikel/berita.php', $data);
     }
 
@@ -114,11 +121,14 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Beranda Berita/Artikel';
         $data['login'] = 'sudah';
+        $data['active'] = '';
         return view('websia/kontenWebsia/beritaArtikel/berandaBerita.php', $data);
     }
 
     public function coba()
     {
-        return view('cobaWebsia/map');
+        $data['judulHalaman'] = 'Edit Profil';
+        $data['login'] = 'sudah';
+        return view('websia/kontenWebsia/searchAndFilter/searchAndFilter', $data);
     }
 }

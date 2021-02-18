@@ -67,11 +67,6 @@ function toggleTempatKerja() {
     $('.inputBPS').toggleClass('text-primary');
     $('.inputTempatKerjaLainnya').toggleClass('text-gray-300');
     $('.inputTempatKerjaLainnya').toggleClass('text-primary');
-    if($('.offBPS').hasClass('hidden')){
-        console.log('a');
-    };
-    alert($('.onBPS').toggleClass('hidden'));
-
 }
 
 $('.BPS').click(function(){
@@ -82,16 +77,16 @@ $('.Lainnya').click(function(){
     toggleTempatKerja();
 })
 
-$(".inputBPS").focus(function() {
-    if ($(".onBPS").hasClass('hidden')) {
+$(".inputBPS input").focus(function() {
+    if ($('.onBPS').hasClass('hidden')) {
         toggleTempatKerja();
     }
 });
 
-$(".inputTempatKerjaLainnya").focus(function() {
-    if ($(".onLainnya").hasClass('hidden')) {
+$(".inputTempatKerjaLainnya input").focus(function() {
+    if ($('.onLainnya').hasClass('hidden')) {
         toggleTempatKerja();
-    }
+    };
 });
 
 function getList(param){
@@ -130,25 +125,97 @@ function getList(param){
     
 }
 
+// awal input angkatan
+$('.listAngkatan div svg').click(function(){
+    $('.listAngkatan div input').val('');
+})
+// akhir input angkatan
 
-// Awal Kalender
+// akhir input tempat kerja BPS
+$('.inputBPS svg').click(function(){
+    $('.inputBPS input').val('');
+})
+// Awal tempat kerja BPS
+
+// akhir input tempat Kerja selain BPS
+$('.inputTempatKerjaLainnya svg').click(function(){
+    $('.inputTempatKerjaLainnya input').val('');
+})
+// Awal input tempat Kerja selain BPS
+
+var typingTimer;                
+var doneTypingInterval = 1000;
+
+// akhir input tahun awal berita
+$('.inputTahunAwal svg').click(function(){
+    $('.inputTahunAwal input').val('');
+});
+
+$('.inputTahunAwal input').keyup(function(){
+    clearTimeout(typingTimer);
+    if ($('.inputTahunAwal input').val()) {
+        typingTimer = setTimeout(selesaiInputTahunAwal, doneTypingInterval);
+    }
+    
+});
+
+function selesaiInputTahunAwal(){
+    if (parseInt($('.inputTahunAwal input').val()) >= parseInt($('.inputTahunAkhir input').val())){
+        $('.inputTahunAwal input').addClass('border-2');
+        $('.inputTahunAwal input').addClass('border-red-600');
+    } else {
+        $('.inputTahunAwal input').removeClass('border-2');
+        $('.inputTahunAwal input').removeClass('border-red-600');
+    };
+
+    getWaktuKalenderAwal(parseInt($('.inputTahunAwal input').val()));
+}
+// Awal tempat tahun awal berita
+
+// akhir input tahun akhir berita
+$('.inputTahunAkhir svg').click(function(){
+    $('.inputTahunAkhir input').val('');
+});
+
+$('.inputTahunAkhir input').keyup(function(){
+    clearTimeout(typingTimer);
+    if ($('.inputTahunAkhir input').val()) {
+        typingTimer = setTimeout(selesaiInputTahunAkhir, doneTypingInterval);
+    }
+    
+});
+
+function selesaiInputTahunAkhir(){
+    if (parseInt($('.inputTahunAwal input').val()) >= parseInt($('.inputTahunAkhir input').val())){
+        $('.inputTahunAkhir input').addClass('border-2');
+        $('.inputTahunAkhir input').addClass('border-red-600');
+    } else {
+        $('.inputTahunAkhir input').removeClass('border-2');
+        $('.inputTahunAkhir input').removeClass('border-red-600');
+    };
+
+    getWaktuKalenderAkhir(parseInt($('.inputTahunAkhir input').val()));
+
+}
+// Awal input tempat akhir berita
 
 var waktu = new Date();
 var tahunfix = waktu.getFullYear();
-var tahunAwal = waktu.getFullYear();
-var tahunAkhir = waktu.getFullYear();
+var tahunAwal = tahunfix;
+var tahunAkhir = tahunfix;
 
 // Awal kalender Tahun Awal
-$('.inputTahunAwal').click(function(){
+$('.inputTahunAwal input').focus(function(){
     $('.kalenderAwal').removeClass('hidden');
     $('.kalenderAkhir').addClass('hidden');
 })	
 
 const tahunKalenderAwal = document.querySelectorAll(".tahunKalenderAwal");
-const inputTahunAwal = document.querySelector(".inputTahunAwal");
+const inputTahunAwal = document.querySelector(".inputTahunAwal input");
 const rentangTahunAwal = document.querySelector(".rentangTahunAwal");
 
 function getWaktuKalenderAwal(param){
+    tahunAwal = param;
     var param = param - 11;
     rentangTahunAwal.innerHTML = param+"-"+ (param + 11);
     tahunKalenderAwal.forEach(o =>{
@@ -196,17 +263,19 @@ tahunKalenderAwal.forEach(o => {
 
 
 // Awal Kalender Tahun Akhir
-$('.inputTahunAkhir').click(function(){
+$('.inputTahunAkhir input').focus(function(){
     $('.kalenderAwal').addClass('hidden');
     $('.kalenderAkhir').removeClass('hidden');
 })	
 
 const tahunKalenderAkhir = document.querySelectorAll(".tahunKalenderAkhir");
-const inputTahunAkhir = document.querySelector(".inputTahunAkhir");
+const inputTahunAkhir = document.querySelector(".inputTahunAkhir input");
 const rentangTahunAkhir = document.querySelector(".rentangTahunAkhir");
 
 function getWaktuKalenderAkhir(param){
+    tahunAkhir = param;
     var param = param - 11;
+    console.log(tahunAkhir);
     rentangTahunAkhir.innerHTML = param+"-"+ (param + 11);
     tahunKalenderAkhir.forEach(o =>{
 
