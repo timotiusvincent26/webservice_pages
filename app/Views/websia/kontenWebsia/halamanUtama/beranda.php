@@ -128,7 +128,7 @@ if ($login == 'belum') {
         <div id="mapid" class="bg-primary z-10 h-full w-full"></div>
 
         <div class="flex flex-col items-end absolute top-0 right-0 z-20">
-            <svg class="w-6 h-6 text-white cursor-pointer mb-2 tombolInfo" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-6 h-6 text-white cursor-pointer mb-2 hover:text-gray-300 tombolInfo" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
             </svg>
 
@@ -183,7 +183,7 @@ if ($login == 'belum') {
 </div>
 
 <!-- awal tombol "Lihat Berita Selanjutnya" -->
-<div class="flex w-full justify-end lg:px-20 md:px-8 px-3">
+<div class="flex w-full justify-end lg:px-20 md:px-8 px-3 mb-8">
     <div class="text-primary font-paragraph my-auto"><a href="/websia/berandaBerita">Lihat Berita Selanjutnya</a> </div>
     <div>
         <a href="/websia/berandaBerita">
