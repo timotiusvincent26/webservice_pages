@@ -3,22 +3,22 @@
 <?= $this->section('content'); ?>
 
 <div class="flex w-full">
-    <div class="w-full lg:block hidden relative left-0 top-0" data-aos="fade-right">
-        <img src="/img/login.png" alt="gambar login" class="-mt-14 transform 2xl:scale-x-125 scale-x-100 lg:scale-y-125 xl:scale-y-100">
+    <div class="lg:block hidden lg:w-8/12 h-auto" data-aos="fade-right">
+        <img src="/img/login.png" alt="gambar login" class="transform lg:scale-y-125 xl:scale-y-100">
     </div>
-    <div class="w-full flex justify-center">
-        <form method="POST" action="/websia" class="py-8 rounded-3xl shadow-2xl flex flex-col 2xl:w-2/3 xl:w-3/4 lg:w-5/6 md:w-7/12 sm:w-2/3 w-full lg:mx-0 mx-5" data-aos="fade-left">
+    <div class="w-full flex justify-center items-center mt-4">
+        <form method="POST" action="/websia" class="pt-6 pb-16 rounded-3xl shadow-2xl flex flex-col justify-center 2xl:w-7/12 xl:w-8/12 lg:w-3/4 md:w-7/12 sm:w-2/3 w-full lg:mx-0 mx-5" data-aos="fade-left">
             <?= csrf_field(); ?>
-            <h2 class="text-2xl mb-6 mt-2 font-bold text-center cursor-default text-primary">LOGIN PENGGUNA</h2>
-            <div class="flex lg:mx-8 sm:mx-6 mx-3 h-10">
+            <h2 class="text-2xl mb-4 font-bold text-center cursor-default text-primary">LOGIN PENGGUNA</h2>
+            <div class="flex lg:mx-8 sm:mx-6 mx-3 h-10 mb-1">
                 <label for="email" class="w-1/4 text-primary font-medium flex items-center text-sm md:text-base">Email</label>
                 <input type="text" name="email" class="input pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" id="email" placeholder="Ketik email di sini">
             </div>
-            <div class="flex lg:mx-8 sm:mx-6 mx-3 my-1">
+            <div class="flex lg:mx-8 sm:mx-6 mx-3">
                 <div class="w-1/4"></div>
                 <p class="w-3/4 text-xs text-red-500 w-3/4 text-justify" id="msg-email">Email yang anda masukkan tidak cocok</p>
             </div>
-            <div class="flex lg:mx-8 sm:mx-6 mx-3 my-1 h-10 relative">
+            <div class="flex lg:mx-8 sm:mx-6 mx-3 mt-2 mb-1 h-10 relative">
                 <label for="pass" class="w-1/4 text-primary font-medium flex items-center text-sm md:text-base">Kata Sandi</label>
                 <input type="password" name="pass" class="input pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" id="pass" placeholder="Ketik kata sandi di sini">
                 <div class="relative right-7 flex items-center" id="eye">
@@ -45,29 +45,29 @@
                 </div>
             </div>
 
-            <div class="flex justify-center lg:mx-8 sm:mx-6 mx-3 my-4">
-                <input type="submit" class="tombol w-full shadow-2xl h-10 rounded-2xl text-base outline-none border-none cursor-pointer text-white duration-300" value="Kirim">
+            <div class="flex justify-center lg:mx-8 sm:mx-6 mx-3 my-2">
+                <input type="submit" class="tombol w-full shadow-2xl h-10 rounded-2xl text-base outline-none border-none cursor-pointer text-white duration-300" value="Masuk">
             </div>
 
-            <div class="lg:mx-8 sm:mx-6 mx-3 flex mt-2 mb-6">
+            <div class="lg:mx-8 sm:mx-6 mx-3 flex mt-2 mb-4">
                 <hr class="border border-primary w-1/4 transform translate-y-2">
                 <p class="flex justify-center text-sm text-primary w-1/2 font-medium cursor-default">atau masuk dengan</p>
                 <hr class="border border-primary w-1/4 transform translate-y-2">
             </div>
 
-            <div class="lg:mx-8 sm:mx-6 mx-3 mb-4">
-                <div class="sso flex justify-center rounded-2xl w-full border-2 border-secondary py-2 cursor-pointer trasform transform duration-300 hover:bg-yellow-200 hover:border-yellow-600 hover:scale-105">
+            <div class="lg:mx-8 sm:mx-6 mx-3 mb-2">
+                <div class="sso flex justify-center rounded-2xl w-full border-2 border-secondary py-1 cursor-pointer trasform transform duration-300 hover:bg-yellow-200 hover:border-yellow-600 hover:scale-105">
                     <img src="/img/sipadu.png" alt="google" width="25" height="25" class="mr-4">
                     <h3 class="flex items-center text-sm text-secondary font-bold"><a href="#">SIPADU</a></h3>
                 </div>
             </div>
             <div class="lg:mx-8 sm:mx-6 mx-3">
-                <div class="sso flex justify-center rounded-2xl w-full border-2 border-secondary py-2 cursor-pointer transform hover:scale-105 duration-300 hover:bg-yellow-200 hover:border-yellow-600">
-                    <img src="/img/google.png" alt="google" width="25" height="25" class="mr-4">
+                <div class="sso flex justify-center rounded-2xl w-full border-2 border-secondary py-1 cursor-pointer transform hover:scale-105 duration-300 hover:bg-yellow-200 hover:border-yellow-600">
+                    <img src="/img/bps.png" alt="google" width="25" height="25" class="mr-4">
                     <h3 class="flex items-center text-sm text-secondary font-bold"><a href="#">BPS</a></h3>
                 </div>
             </div>
-            <p class="text-center mt-6 text-primary mb-4 font-medium cursor-default">Akun belum terdaftar? <span><a href="/login/daftar" class="text-secondary hover:text-yellow-700 font-medium">Daftar</a></span></p>
+            <p class="text-center mt-3 -mb-9 text-primary font-medium cursor-default">Akun belum terdaftar? <span><a href="/daftar" class="text-secondary hover:text-yellow-700 font-medium">Daftar</a></span></p>
         </form>
     </div>
 </div>
