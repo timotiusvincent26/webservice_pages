@@ -33,6 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Websia::index');
 $routes->get('/login', 'Login::index');
+$routes->get('/daftar', 'Login::daftar');
 $routes->get('/developer', 'Webservice::index');
 $routes->get('/websia/Coba', 'Websia::coba');
 $routes->get('/searchAndFilter', 'Websia::searchAndFilter');
