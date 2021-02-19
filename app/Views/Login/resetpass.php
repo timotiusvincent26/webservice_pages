@@ -2,8 +2,8 @@
 
 <?= $this->section('content'); ?>
 
-<div class="xl:w-8/12 md:w-10/12">
-    <form method="POST" action="" class="rounded-3xl shadow-2xl xl:px-16 md:px-8 px-4 sm:mx-0 mx-4" data-aos="zoom-in">
+<div class="xl:w-7/12 md:w-10/12 flex items-center">
+    <form method="POST" action="" class="rounded-3xl shadow-2xl xl:px-16 md:px-8 px-4 sm:mx-0 mx-4 w-full" data-aos="zoom-in">
         <h2 class="sm:text-2xl text-lg mb-3 font-bold text-center pt-8 text-primary">ATUR ULANG KATA SANDI</h2>
         <div class="pl-3 rounded-full flex items-center" style="background-color: #B1FF66;">
             <img src="/img/icon/check.png" class="h-5 mr-1">
@@ -25,7 +25,7 @@
             <div class="w-3/4 flex sm:flex-row flex-col sm:items-center">
                 <form action="">
                     <input type="submit" class="px-8 shadow-2xl sm:h-9 h-8 rounded-2xl text-base outline-none border-none bg-secondary cursor-pointer text-white duration-300 hover:bg-yellow-400 sm:w-max w-1/2" value="Kirim">
-                    <a href="/login/" class="text-secondary text-sm font-medium sm:ml-6 ml-0 mt-2 sm:mt-0">Kembali ke laman login</a>
+                    <a href="/login/" class="text-secondary text-sm font-medium sm:ml-6 ml-0 mt-2 sm:mt-0 hover:text-yellow-700">Kembali ke laman login</a>
                 </form>
             </div>
         </div>
