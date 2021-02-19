@@ -46,6 +46,19 @@ $('.updateFotoProfil').click(function () {
         }, 400);
     })
 
+    var modal = document.getElementById('formEditFoto')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formEditFoto').children().first().addClass('opacity-0')
+            $('#formEditFoto').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formEditFoto').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formEditFoto').remove()
+            }, 400);
+        }
+    })
+
     $('#unggahFoto').click(function () {
         $('#formEditFoto').remove()
         $('body').prepend(`
@@ -123,13 +136,13 @@ $('.editPendidikan').click(function () {
                 <label for="editStudi" class="text-primary font-medium">Program Studi :</label>
                 <input type="text" placeholder="Nama Program Studi" class="inputForm" name="editStudi" id="editStudi">
                 <div class="flex">
-                    <div class="flex flex-col mr-8 w-1/3">
+                    <div class="flex flex-col mr-8 sm:w-1/3 w-5/12">
                         <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
-                        <input type="date" placeholder="2021" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+                        <input type="date" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
                     </div>
-                    <div class="flex flex-col w-1/3">
+                    <div class="flex flex-col sm:w-1/3 w-5/12">
                         <label for="editLulus" class="text-primary font-medium">Tahun Lulus :</label>
-                        <input type="date" placeholder="2021" class="cursor-pointer px-4 inputForm" name="editLulus" id="editLulus">
+                        <input type="date" class="cursor-pointer px-4 inputForm" name="editLulus" id="editLulus">
                     </div>
                 </div>
                 <label for="editTulisan" class="text-primary font-medium">Judul Tulisan</label>
@@ -158,6 +171,19 @@ $('.editPendidikan').click(function () {
         setTimeout(function () {
             $('#formEditPendidikan').remove()
         }, 400);
+    })
+
+    var modal = document.getElementById('formEditPendidikan')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formEditPendidikan').children().first().addClass('opacity-0')
+            $('#formEditPendidikan').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formEditPendidikan').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formEditPendidikan').remove()
+            }, 400);
+        }
     })
 
     $('#backPendidikan').prev().click(function (e) {
@@ -200,11 +226,11 @@ $('.tambahPendidikan').click(function () {
                 <div class="flex">
                     <div class="flex flex-col mr-8 w-1/3">
                         <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
-                        <input type="date" placeholder="2021" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+                        <input type="date" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
                     </div>
                     <div class="flex flex-col w-1/3">
                         <label for="editLulus" class="text-primary font-medium">Tahun Lulus :</label>
-                        <input type="date" placeholder="2021" class="cursor-pointer px-4 inputForm" name="editLulus" id="editLulus">
+                        <input type="date" class="cursor-pointer px-4 inputForm" name="editLulus" id="editLulus">
                     </div>
                 </div>
                 <label for="editTulisan" class="text-primary font-medium">Judul Tulisan</label>
@@ -233,6 +259,19 @@ $('.tambahPendidikan').click(function () {
         setTimeout(function () {
             $('#formTambahPendidikan').remove()
         }, 400);
+    })
+
+    var modal = document.getElementById('formTambahPendidikan')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formTambahPendidikan').children().first().addClass('opacity-0')
+            $('#formTambahPendidikan').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formTambahPendidikan').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formTambahPendidikan').remove()
+            }, 400);
+        }
     })
 
     $('#backPendidikan').prev().click(function (e) {
@@ -295,8 +334,10 @@ $('.editPrestasi').click(function () {
         <form action="" method="post" class="flex flex-col bg-gray-100 sm:px-12 px-4 rounded-b-2xl text-sm">
             <label for="editJenjang" class="text-primary font-medium mt-2">Nama Prestasi :</label>
             <input type="text" placeholder="Nama Prestasi" class="inputForm" name="editJenjang" id="editJenjang">
-            <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
-            <input type="date" placeholder="2021" class="w-2/5 cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+            <div class="sm:w-2/5 w-1/2">
+                <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
+                <input type="date" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+            </div>
             <div class="flex justify-end my-4">
                 <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
                 <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
@@ -319,6 +360,19 @@ $('.editPrestasi').click(function () {
         setTimeout(function () {
             $('#formEditPrestasi').remove()
         }, 400);
+    })
+
+    var modal = document.getElementById('formEditPrestasi')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formEditPrestasi').children().first().addClass('opacity-0')
+            $('#formEditPrestasi').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formEditPrestasi').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formEditPrestasi').remove()
+            }, 400);
+        }
     })
 
     $('#backPrestasi').prev().click(function (e) {
@@ -353,8 +407,10 @@ $('.tambahPrestasi').click(function () {
         <form action="" method="post" class="flex flex-col bg-gray-100 sm:px-12 px-4 rounded-b-2xl text-sm">
             <label for="editJenjang" class="text-primary font-medium mt-2">Nama Prestasi :</label>
             <input type="text" placeholder="Nama Prestasi" class="inputForm" name="editJenjang" id="editJenjang">
-            <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
-            <input type="date" placeholder="2021" class="w-2/5 cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+            <div class="sm:w-2/5 w-1/2">
+                <label for="editMasuk" class="text-primary font-medium">Tahun Masuk :</label>
+                <input type="date" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+            </div>
             <div class="flex justify-end my-4">
                 <input type="submit" value="SIMPAN" class="bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none">
                 <input type="button" value="KEMBALI" class="closePrestasi bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none" id='backPrestasi'>
@@ -377,6 +433,19 @@ $('.tambahPrestasi').click(function () {
         setTimeout(function () {
             $('#formTambahPrestasi').remove()
         }, 400);
+    })
+
+    var modal = document.getElementById('formTambahPrestasi')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formTambahPrestasi').children().first().addClass('opacity-0')
+            $('#formTambahPrestasi').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formTambahPrestasi').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formTambahPrestasi').remove()
+            }, 400);
+        }
     })
 
     $('#backPrestasi').prev().click(function (e) {
@@ -416,9 +485,9 @@ $('.editPublikasi').click(function () {
                 <label for="editPublisher" class="text-primary font-medium">Publisher :</label>
                 <input type="text" placeholder="Nama Publisher" class="inputForm" name="editPublisher" id="editPublisher">
                 <div class="flex">
-                    <div class="flex flex-col mr-8 w-1/3">
+                    <div class="flex flex-col mr-8 sm:w-1/3 w-1/2">
                         <label for="editMasuk" class="text-primary font-medium">Tanggal Publikasi :</label>
-                        <input type="date" placeholder="2021" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+                        <input type="date" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
                     </div>
                 </div>
                 <label for="editTulisan" class="text-primary font-medium">Deskripsi</label>
@@ -447,6 +516,19 @@ $('.editPublikasi').click(function () {
         setTimeout(function () {
             $('#formEditPublikasi').remove()
         }, 400);
+    })
+
+    var modal = document.getElementById('formEditPublikasi')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formEditPublikasi').children().first().addClass('opacity-0')
+            $('#formEditPublikasi').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formEditPublikasi').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formEditPublikasi').remove()
+            }, 400);
+        }
     })
 
     $('#backPublikasi').prev().click(function (e) {
@@ -485,9 +567,9 @@ $('.tambahPublikasi').click(function () {
                 <label for="editPublisher" class="text-primary font-medium">Publisher :</label>
                 <input type="text" placeholder="Nama Publisher" class="inputForm" name="editPublisher" id="editPublisher">
                 <div class="flex">
-                    <div class="flex flex-col mr-8 w-1/3">
+                    <div class="flex flex-col mr-8 sm:w-1/3 w-1/2">
                         <label for="editMasuk" class="text-primary font-medium">Tanggal Publikasi :</label>
-                        <input type="date" placeholder="2021" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
+                        <input type="date" class="cursor-pointer inputForm" name="editMasuk" id="editMasuk">
                     </div>
                 </div>
                 <label for="editTulisan" class="text-primary font-medium">Deskripsi</label>
@@ -516,6 +598,19 @@ $('.tambahPublikasi').click(function () {
         setTimeout(function () {
             $('#formTambahPublikasi').remove()
         }, 400);
+    })
+
+    var modal = document.getElementById('formTambahPublikasi')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formTambahPublikasi').children().first().addClass('opacity-0')
+            $('#formTambahPublikasi').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formTambahPublikasi').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formTambahPublikasi').remove()
+            }, 400);
+        }
     })
 
     $('#backPublikasi').prev().click(function (e) {
@@ -610,15 +705,15 @@ $('#simpanAkun').click(function (e) {
 $('.hapusModal').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formHapus'>
-    <div class="hidden opacity-0 duration-700 transition-all bg-gray bg-opacity-0">
-        <div class="bg-white rounded-2xl flex flex-col justify-center py-2 sm:px-8 px-3">
-            <p class="font-bold sm:text-lg text-base mb-6">Apakah Anda yakin ingin menghapus data ini?</p>
-            <div class="text-white flex justify-end">
-                <div style="background-color: #D81B01;" class="buttonHapus rounded-2xl  w-20 mr-3 text-sm flex justify-center items-center cursor-pointer py-1">BATAL</div>
-                <div style="background-color: #54AC00;" class="rounded-2xl w-20 text-sm flex justify-center items-center cursor-pointer">HAPUS</div>
+        <div class="hidden opacity-0 duration-700 transition-all bg-gray bg-opacity-0">
+            <div class="bg-white rounded-2xl flex flex-col justify-center pt-3 pb-4 sm:px-8 px-3">
+                <p class="font-bold sm:text-lg text-base mb-6">Apakah Anda yakin ingin menghapus data ini?</p>
+                <div class="text-white flex justify-end">
+                    <div class="buttonBatal text-black hover:text-gray-600 font-bold rounded-2xl border border-black hover:border-gray-600 w-20 mr-2 text-sm flex justify-center items-center cursor-pointer py-1 transition-all">BATAL</div>
+                    <div class="rounded-2xl w-20 text-sm flex justify-center items-center cursor-pointer hover:bg-red-800 bg-red-600 transition-all">HAPUS</div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     `)
     $('#formHapus').children().first().removeClass('hidden')
@@ -626,7 +721,7 @@ $('.hapusModal').click(function () {
         $('#formHapus').children().first().removeClass('opacity-0')
     }, 10);
 
-    $('.buttonHapus').click(function () {
+    $('.buttonBatal').click(function () {
         $('#formHapus').children().first().addClass('opacity-0')
         $('#formHapus').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
             $('#formHapus').children().first().addClass('hidden')
@@ -634,6 +729,19 @@ $('.hapusModal').click(function () {
         setTimeout(function () {
             $('#formHapus').remove()
         }, 400);
+    })
+
+    var modal = document.getElementById('formHapus')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#formHapus').children().first().addClass('opacity-0')
+            $('#formHapus').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#formHapus').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#formHapus').remove()
+            }, 400);
+        }
     })
 })
 
