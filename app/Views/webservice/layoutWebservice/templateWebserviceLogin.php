@@ -47,7 +47,7 @@
     </button>
 
     <!-- HEADER -->
-    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-10" style="background-image: url(/img/bgHeaderWS.png)">
+    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-10 bg-no-repeat bg-cover bg-left" style="background-image: url(/img/bgHeaderWS.png)">
         <!-- <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div> -->
