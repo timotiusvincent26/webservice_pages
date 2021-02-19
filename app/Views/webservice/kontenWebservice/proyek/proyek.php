@@ -49,13 +49,13 @@
             $(this).addClass('border-primary')
             $(this).css("border-width", "2px")
             $(this).after(`
-            <div class="w-11/12 mx-auto mb-4 rounded-b-xl shadow-xl hidden opacity-0 duration-500 transition-all">
+            <div class="w-11/12 mx-auto mb-4 rounded-b-xl hidden opacity-0 duration-500 transition-all" style="box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1), 0 0px 3px 3px rgba(0, 0, 0, 0.06);;">
         <div class="flex justify-between text-sm">
             <div class="flex">
                 <div class="text-white py-1 w-20 text-center mr-1 cursor-pointer transform hover:scale-105 outline-none choosed">TOKEN</div>
                 <div class="text-white py-1 w-20 text-center mr-1 cursor-pointer outline-none transform hover:scale-105 notchoose">DETAIL</div>
             </div>
-            <div class="mr-8 flex items-center">
+            <div class="mr-3 flex items-center">
                 <input type="button" value="HAPUS" class="text-red-500 font-semibold transition-all cursor-pointer outline-none border-none bg-transparent hover:text-red-700">
             </div>
         </div>
