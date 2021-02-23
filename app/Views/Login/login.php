@@ -12,7 +12,7 @@
             <h2 class="text-2xl mb-4 font-bold text-center cursor-default text-primary">LOGIN PENGGUNA</h2>
             <div class="flex lg:mx-8 sm:mx-6 mx-3 h-10 mb-1">
                 <label for="email" class="w-1/4 text-primary font-medium flex items-center text-sm md:text-base">Email</label>
-                <input type="text" name="email" class="input pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" id="email" placeholder="Ketik email di sini">
+                <input type="text" name="email" class="input pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" spellcheck="false" id="email" placeholder="Ketik email di sini">
             </div>
             <div class="flex lg:mx-8 sm:mx-6 mx-3">
                 <div class="w-1/4"></div>
@@ -20,9 +20,9 @@
             </div>
             <div class="flex lg:mx-8 sm:mx-6 mx-3 mt-2 mb-1 h-10 relative">
                 <label for="pass" class="w-1/4 text-primary font-medium flex items-center text-sm md:text-base">Kata Sandi</label>
-                <input type="password" name="pass" class="input pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" id="pass" placeholder="Ketik kata sandi di sini">
-                <div class="relative right-7 flex items-center" id="eye">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-primary cursor-pointer sm:w-5 w-4 absolute">
+                <input type="password" name="pass" class="input input-sandi pl-2 w-3/4 border-2 rounded-lg border-gray-400 text-sm outline-none text-gray-400" spellcheck="false" id="pass" placeholder="Ketik kata sandi di sini">
+                <div class="relative right-7 flex items-center text-gray-500" id="eye">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="cursor-pointer sm:w-5 w-4 absolute">
                         <path fill-rule="evenodd" d="M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z" clip-rule="evenodd" />
                         <path d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z" />
                     </svg>
