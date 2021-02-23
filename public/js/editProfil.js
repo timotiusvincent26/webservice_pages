@@ -103,15 +103,15 @@ $('#submitBiodata').click(function (e) {
 // awal js sorting
 
 $(".sort").click(function () {
-    $(".sort").not(this).children().removeClass('invisible text-primary')
-    if ($(this).children().eq(0).hasClass('invisible')) {
-        $(this).children().first().removeClass('invisible')
-        $(this).children().first().removeClass('text-gray-400').addClass('text-primary')
-        $(this).children().eq(1).addClass('invisible')
+    $(".sort").not(this).children().first().children().first().attr('fill', '#B0BAC9').attr('class', '')
+    $(".sort").not(this).children().eq(1).children().first().attr('fill', '#B0BAC9').attr('class', '')
+
+    if (!this.children[1].children[0].classList.contains('invisible')) {
+        $(this).children().eq(0).children().first().attr('fill', '#058').attr('class', '')
+        $(this).children().eq(1).children().first().attr('class', 'invisible')
     } else {
-        $(this).children().eq(1).removeClass('invisible')
-        $(this).children().first().addClass('invisible')
-        $(this).children().eq(1).removeClass('text-gray-400').addClass('text-primary')
+        $(this).children().eq(1).children().first().attr('fill', '#058').attr('class', '')
+        $(this).children().eq(0).children().first().attr('class', 'invisible')
     }
 })
 
