@@ -2,44 +2,7 @@
   max-height: 9em;
 }
 
-.lingkaran-luar {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  z-index: 0;
-  border-radius: 50%;
-}
-
-.lingkaran-dalam {
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #003c75 0%, #014f86 70.83%);
-}
-
-#kiri {
-  background: linear-gradient(to right, rgb(0, 87, 148), rgb(1, 79, 134));
-  top: -108px;
-  left: -27px;
-}
-
-@media screen and (max-width: 430px) {
-  .judulApi {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
 @media screen and (max-width: 640px) {
-  #kiri {
-    display: none;
-  }
-
-  #kanan {
-    display: none;
-  }
-
   #utama::before {
     content: ' ';
     display: block;
@@ -52,26 +15,4 @@
     background-position: center;
     background-size: contain;
   }
-}
-
-#kiri div {
-  top: 20px;
-  left: 20px;
-}
-
-#kanan {
-  background: linear-gradient(to right, rgb(0, 87, 148), rgb(1, 84, 143));
-  top: -100px;
-  right: -50px;
-}
-
-@media screen and (max-width: 1024px) {
-  #kanan {
-    top: -110px;
-  }
-}
-
-#kanan div {
-  top: 22px;
-  right: 22px;
 }
