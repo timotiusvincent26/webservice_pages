@@ -19,13 +19,13 @@
                     <th class="pt-4 lg:px-2 px-1 pb-1">Topik</th>
                     <th class="pt-4 lg:px-2 px-1 pb-1">Publisher</th>
                     <th class="pt-4 pb-1 pl-1">
-                        <div class="flex">
-                            <span class="mr-1">Tanggal Publikasi</span>
-                            <div class="select-none cursor-pointer flex flex-col justify-center sort text-gray-400 gap-y-1">
-                                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="flex justify-center">
+                            <span class="mr-2">Tanggal Publikasi</span>
+                            <div class="sort select-none cursor-pointer flex flex-col justify-center gap-y-1">
+                                <svg width="10" height="5" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4L4 0L8 4H0Z" fill="#B0BAC9" />
                                 </svg>
-                                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="10" height="5" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4 4L8 0H0Z" fill="#B0BAC9" />
                                 </svg>
                             </div>
@@ -40,8 +40,8 @@
                     <td class="text-sm px-2">
                         <div class="flex items-center justify-between">
                             <span>All</span>
-                            <span class="select-none cursor-pointer float-right sort text-gray-400">
-                                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="select-none cursor-pointer float-right text-gray-400 p-0.5">
+                                <svg width="10" height="5" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4 4L8 0H0Z" fill="#B0BAC9" />
                                 </svg>
                             </span>
@@ -50,8 +50,8 @@
                     <td class="text-sm px-2">
                         <div class="flex items-center justify-between">
                             <span>All</span>
-                            <span class="select-none cursor-pointer float-right sort text-gray-400">
-                                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="select-none cursor-pointer float-right text-gray-400 p-0.5">
+                                <svg width="10" height="5" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4 4L8 0H0Z" fill="#B0BAC9" />
                                 </svg>
                             </span>
