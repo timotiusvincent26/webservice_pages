@@ -7,11 +7,6 @@
         z-index: 5;
     }
 
-    .active {
-        background-color: #015998;
-        color: #FFAA00;
-    }
-
     @media screen and (max-width: 1024px) {
         #pagePendidikan table tbody tr td {
             padding-left: .25rem;
