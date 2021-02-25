@@ -66,14 +66,14 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
-        $data['active'] = '';
+        $data['active'] = 'profil';
         return view('websia/kontenWebsia/editProfile/editBiodata.php', $data);
     }
 
     public function editPendidikan()
     {
         $data['judulHalaman'] = 'Edit Profil';
-        $data['active'] = '';
+        $data['active'] = 'pendidikan';
         $data['login'] = 'sudah';
         return view('websia/kontenWebsia/editProfile/editPendidikan.php', $data);
     }
@@ -82,6 +82,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
+        $data['active'] = 'tempatKerja';
         return view('websia/kontenWebsia/editProfile/editTempatKerja.php', $data);
     }
 
@@ -89,7 +90,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
-        $data['active'] = '';
+        $data['active'] = 'prestasi';
         return view('websia/kontenWebsia/editProfile/editPrestasi.php', $data);
     }
 
@@ -97,7 +98,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
-        $data['active'] = '';
+        $data['active'] = 'publikasi';
         return view('websia/kontenWebsia/editProfile/editPublikasi.php', $data);
     }
 
@@ -105,7 +106,7 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
-        $data['active'] = '';
+        $data['active'] = 'akun';
         return view('websia/kontenWebsia/editProfile/editAkun.php', $data);
     }
 
