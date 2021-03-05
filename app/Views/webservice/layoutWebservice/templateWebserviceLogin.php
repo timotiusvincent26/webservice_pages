@@ -33,6 +33,12 @@
         #utama {
             z-index: -1;
         }
+
+        @media (max-width: 409px) {
+            #divKosong {
+                height: 65px;
+            }
+        }
     </style>
 
 </head>
@@ -90,7 +96,7 @@
             </div>
 
 
-            <svg id="hamburgerApi" class="w-8 fill-current block text-white hover:text-gray-200 focus:text-gray-200 sm:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg id="hamburgerApi" class="w-8 select-none cursor-pointer fill-current block text-white hover:text-gray-200 focus:text-gray-200 sm:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
 
@@ -142,16 +148,16 @@
 
     </div>
     <!-- END HEADER -->
-    <div class="bg-primary w-full lg:h-20 md:h-20 h-16">
+    <div id="divKosong" class="bg-primary w-full md:h-20 sm:h-14 h-12">
     </div>
     <!-- CONTENT PAGE DI SINI -->
-    <div class="w-full flex flex-1 justify-center items-center">
+    <div class="w-full flex flex-1">
         <?= $this->renderSection('content'); ?>
     </div>
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <div class="bg-primary w-full mt-8 pt-6 pb-3 lg:px-20 md:px-8 px-3">
+    <div class="bg-primary w-full pt-6 pb-3 lg:px-20 md:px-8 px-3">
         <div class="flex flex-col md:flex-row md:justify-around text-xs">
 
             <!-- awal footer stis -->

@@ -2,8 +2,8 @@
 
 <?= $this->section('content'); ?>
 
-<div class="lg:mx-36 mx-5 mt-12 w-full">
-    <h3 class="font-heading font-bold text-center text-secondary lg:text-6xl md:text-3xl text-2xl">PROYEK</h3>
+<div class="lg:mx-36 mx-5 lg:mt-12 md:mt-16 mt-12 mb-8 w-full">
+    <h3 class="font-heading font-bold text-center text-secondary xl:text-6xl lg:text-5xl md:text-4xl text-2xl">PROYEK</h3>
     <!-- start tombol buat proyek -->
     <a href="/developer/buatProyek">
         <div class="flex justify-center md:w-44 w-28 md:px-2 md:py-2 px-1 py-1 lg:mt-12 mt-4 mb-8 rounded-lg border-gray shadow-lg tracking-wider cursor-pointer hover:bg-gray-100">
