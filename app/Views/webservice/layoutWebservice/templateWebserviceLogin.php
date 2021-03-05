@@ -47,23 +47,23 @@
     </button>
 
     <!-- HEADER -->
-    <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-10 bg-no-repeat bg-cover bg-left" style="background-image: url(/img/bgHeaderWS.png)">
+    <div class="bg-primary lg:px-12 sm:px-8 px-4 w-full navbar fixed z-10 bg-no-repeat bg-cover bg-left" style="background-image: url(/img/bgHeaderWS.png)">
         <!-- <div class="lingkaran-luar" id="kiri">
             <div class="lingkaran-dalam"></div>
         </div> -->
         <div class="flex justify-between sm:my-2 my-1">
-            <div class="font-heading flex items-center sm:gap-x-6 gap-x-3 z-10">
+            <div class="font-heading flex items-center gap-x-1 lg:gap-x-3 z-10">
                 <a href="<?= base_url(); ?>">
                     <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
                 </a>
                 <div class="md:px-3 px-2 my-auto text-white z-50">
-                    <p class="font-heading text-lg md:text-2xl font-semibold">Webservice Sistem Informasi Alumni</p>
-                    <p class="font-heading md:text-xs font-normal hidden md:block -mt-1.5">Akademi Ilmu Statistik - Sekolah Tinggi Ilmu Statistik - Politeknik Statistika STIS</p>
+                    <p class="font-heading text-lg lg:text-2xl font-semibold">Webservice Sistem Informasi Alumni</p>
+                    <p class="font-heading md:text-xs font-normal hidden md:block lg:-mt-1.5">Akademi Ilmu Statistik - Sekolah Tinggi Ilmu Statistik - Politeknik Statistika STIS</p>
                 </div>
             </div>
             <div id="nav" class="hidden sm:flex sm:items-center z-10">
                 <ul class="flex lg:gap-x-6 md:gap-x-4 gap-x-2 relative">
-                    <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300 relative">API
+                    <li class="bg-secondary text-white py-1.5 md:w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300 relative">API
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
@@ -81,10 +81,10 @@
                     </li>
 
                     <a href="/developer/profil">
-                        <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
+                        <li class="bg-secondary text-white py-1.5 md:w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">PROFIL</li>
                     </a>
                     <a href="/logout">
-                        <li class="bg-secondary text-white py-1.5 sm:w-20 md:w-24 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">KELUAR</li>
+                        <li class="bg-secondary text-white py-1.5 md:w-20 text-center cursor-pointer border-secondary border-2 hover:text-secondary hover:bg-white transition-colors duration-300">KELUAR</li>
                     </a>
                 </ul>
             </div>
@@ -142,7 +142,7 @@
 
     </div>
     <!-- END HEADER -->
-    <div class="bg-primary w-full lg:h-16 md:h-16 h-10">
+    <div class="bg-primary w-full lg:h-20 md:h-20 h-16">
     </div>
     <!-- CONTENT PAGE DI SINI -->
     <div class="w-full flex flex-1 justify-center items-center">
