@@ -1,8 +1,8 @@
 <?= $this->extend('websia/kontenWebsia/editProfile/layoutEdit.php'); ?>
 
 <?= $this->section('contentEdit'); ?>
-<div class="shadow-2xl rounded-3xl">
-    <div class="md:grid md:grid-cols-3 md:gap-x-4">
+<div class="shadow-2xl rounded-3xl mb-8">
+    <div class="lg:grid lg:grid-cols-3 lg:gap-x-4">
         <!-- start foto profil -->
         <div class="p-6">
             <div class="flex justify-center">
@@ -16,8 +16,8 @@
         <div class="col-span-2 md:mt-6 ml-6 mr-6">
             <!-- start form edit -->
             <form action="" method="POST" class="font-paragraph text-primary" id="formEditBiodata">
-                <label for="nama" class="font-medium">Nama:</label>
-                <input type="text" name="nama" id="nama" class="inputForm text-black" placeholder="Nama Lengkap">
+                <div class="font-medium">Nama Lengkap:</div>
+                <div class="text-black font-heading font-normal mb-2">Ini Nama Lengkap</div>
                 <div class="grid grid-cols-2 gap-x-4">
                     <div>
                         <div class="font-medium">NIM:</div>
@@ -29,27 +29,20 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 lg:mr-4 mb-2">
-                    <label for="jeniskelamin" class="font-medium">Jenis Kelamin:</label>
-                    <div class="grid grid-cols-2 gap-x-2">
-                        <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="lakilaki" value="lakilaki" class="cursor-pointer jk_radio mr-2">Laki-laki</label>
-                        </div>
-                        <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium jk_label"><input type="radio" name="jeniskelamin" id="perempuan" value="perempuan" class="cursor-pointer jk_radio mr-2">Perempuan</label>
-                        </div>
-                    </div>
+                    <div class="font-medium">Jenis Kelamin:</div>
+                    <div class="text-black font-heading font-normal mb-2">Laki-laki</div>
                 </div>
                 <div class="md:grid md:grid-cols-2 md:gap-x-4">
                     <div>
-                        <label for="tempatlahir" class="font-medium">Tempat Lahir:</label>
-                        <input type="text" name="tempatlahir" id="tempatlahir" class="inputForm" placeholder="Tempat lahir">
+                        <div class="font-medium">Tempat Lahir:</div>
+                        <div class="text-black font-heading font-normal mb-2">Indonesia</div>
                     </div>
                     <div>
-                        <label for="tanggallahir" class="font-medium">Tanggal Lahir:</label>
-                        <input type="date" name="tanggallahir" id="tanggallahir" class="inputForm">
+                        <div class="font-medium">Tanggal Lahir:</div>
+                        <div class="text-black font-heading font-normal mb-2">29 Februari 2000</div>
                     </div>
                 </div>
-                <div class="lg:w-1/2 lg:mb-2">
+                <div class="lg:w-1/2">
                     <div class="lg:mr-2">
                         <label for="notelepon" class="font-medium">No. Telepon:</label>
                         <input type="text" name="notelepon" id="notelepon" class="inputForm" placeholder="08999339379">
@@ -63,25 +56,25 @@
                     <label for="statusbekerja" class="font-medium">Status Bekerja:</label>
                     <div class="grid grid-cols-2 gap-x-2 mb-2">
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="bekerja" value="bekerja" class="cursor-pointer sb_radio mr-2">Bekerja</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sb_label cursor-pointer"><input type="radio" name="statusbekerja" id="bekerja" value="bekerja" class="cursor-pointer sb_radio mr-2">Bekerja</label>
                         </div>
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sb_label"><input type="radio" name="statusbekerja" id="tidakbekerja" value="tidakbekerja" class="cursor-pointer sb_radio mr-2">Tidak Bekerja</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sb_label cursor-pointer"><input type="radio" name="statusbekerja" id="tidakbekerja" value="tidakbekerja" class="cursor-pointer sb_radio mr-2">Tidak Bekerja</label>
                         </div>
                     </div>
                     <div class="mr-2">
-                        <label for="tahunpensiun" class="font-medium">Perkiraan Tahun Pensiun:</label>
-                        <input type="number" name="tahunpensiun" id="tahunpensiun" min="1990" max="2100" class="inputForm" placeholder="2020">
+                        <div class="font-medium">Perkiraan Tahun Pensiun:</div>
+                        <div class="text-black font-heading font-normal mb-2">2056</div>
                         <label for="jabatan" class="font-medium">Jabatan Terakhir:</label>
                         <input type="text" name="jabatan" id="jabatan" class="inputForm" placeholder="Jabatan terakhir">
                     </div>
                     <label for="pns" class="font-medium">Aktif PNS:</label>
                     <div class="grid grid-cols-2 gap-x-2 mb-2">
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="aktif" value="aktif" class="cursor-pointer sp_radio mr-2">Aktif</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sp_label cursor-pointer"><input type="radio" name="statuspns" id="aktif" value="aktif" class="cursor-pointer sp_radio mr-2">Aktif</label>
                         </div>
                         <div class="flex items-center">
-                            <label class="font-heading text-sm text-gray-500 font-medium sp_label"><input type="radio" name="statuspns" id="tidakaktif" value="tidakaktif" class="cursor-pointer sp_radio mr-2">Tidak Aktif</label>
+                            <label class="font-heading text-sm text-gray-500 font-medium sp_label cursor-pointer"><input type="radio" name="statuspns" id="tidakaktif" value="tidakaktif" class="cursor-pointer sp_radio mr-2">Tidak Aktif</label>
                         </div>
                     </div>
                 </div>

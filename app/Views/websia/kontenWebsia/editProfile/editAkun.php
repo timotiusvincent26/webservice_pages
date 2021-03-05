@@ -7,8 +7,8 @@
         <form action="" method="POST" id="formEditAkun">
             <!-- tambahin form actionnya ya -->
             <div class="md:w-1/2 w-full">
-                <label for="username" class="font-medium">Username:</label>
-                <input type="text" name="username" id="username" class="inputForm" placeholder="Username">
+                <label for="email" class="font-medium">Email:</label>
+                <input type="email" name="email" id="email" placeholder="iniemail@stis.ac.id" class="inputForm">
                 <label for="passbaru" class="font-medium">Kata Sandi Baru:</label>
                 <input type="password" name="passbaru" id="passbaru" class="inputForm" placeholder="🞄🞄🞄🞄🞄🞄🞄🞄">
                 <label for="ulangpassbaru" class="font-medium">Ketik Ulang Kata Sandi Baru:</label>

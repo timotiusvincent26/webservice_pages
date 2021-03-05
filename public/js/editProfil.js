@@ -1,9 +1,5 @@
 // awal js edit biodata 
 $(document).ready(function () {
-    $('.jk_radio').on('click', function () {
-        $('.jk_radio').parent().css('color', 'gray');
-        $(this).parent().css('color', 'black');
-    });
     $('.sb_radio').on('click', function () {
         $('.sb_radio').parent().css('color', 'gray');
         $(this).parent().css('color', 'black');
@@ -298,6 +294,25 @@ $('.tambahPendidikan').click(function () {
 
 
 // awal js edit tempat kerja
+$('.tambahInstansi').click(function () {
+    if ($('#lainnya').hasClass('hidden')) {
+        $('#lainnya').removeClass('hidden')
+        $('#adainstansi').addClass('hidden')
+    } else {
+        $('#lainnya').addClass('hidden')
+        $('#adainstansi').removeClass('hidden')
+    }
+});
+
+$('.kembaliInstansi').click(function () {
+    if ($('#adainstansi').hasClass('hidden')) {
+        $('#adainstansi').removeClass('hidden')
+        $('#lainnya').addClass('hidden')
+    } else {
+        $('#adainstansi').addClass('hidden')
+        $('#lainnya').removeClass('hidden')
+    }
+});
 $('#submitTempatKerja').click(function (e) {
     e.preventDefault()
     $('body').prepend(`
