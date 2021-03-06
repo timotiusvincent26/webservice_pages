@@ -1,7 +1,7 @@
 <?= $this->extend('websia/kontenWebsia/editProfile/layoutEdit.php'); ?>
 
 <?= $this->section('contentEdit'); ?>
-<div class="shadow-2xl rounded-3xl">
+<div class="shadow-2xl rounded-3xl mb-8">
     <div class="p-6 font-paragraph text-primary lg:min-h-screen">
         <!-- start form edit akun -->
         <form action="" method="POST" id="formEditAkun">

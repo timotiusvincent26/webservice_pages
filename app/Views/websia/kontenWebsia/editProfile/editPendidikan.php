@@ -49,42 +49,6 @@
                     <th class="pt-4 lg:px-2 px-1 pb-1 w-3/12">Judul Tulisan</th>
                     <th class="pt-4 pr-4 pb-1 w-1/12">Aksi</th>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td class="text-sm px-2">
-                        <div class="flex items-center justify-between">
-                            <span>All</span>
-                            <span class="select-none cursor-pointer float-right text-gray-400 p-0.5">
-                                <svg width="10" height="5" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4 4L8 0H0Z" fill="#B0BAC9" />
-                                </svg>
-                            </span>
-                        </div>
-                    </td>
-                    <td class="text-sm px-2">
-                        <div class="flex items-center justify-between">
-                            <span>All</span>
-                            <span class="select-none cursor-pointer float-right text-gray-400 p-0.5">
-                                <svg width="10" height="5" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4 4L8 0H0Z" fill="#B0BAC9" />
-                                </svg>
-                            </span>
-                        </div>
-                    </td>
-                    <td class="text-sm px-2">
-                        <div class="flex items-center justify-between">
-                            <span>All</span>
-                            <span class="select-none cursor-pointer float-right text-gray-400 p-0.5">
-                                <svg width="10" height="5" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4 4L8 0H0Z" fill="#B0BAC9" />
-                                </svg>
-                            </span>
-                        </div>
-                    </td>
-                    <td colspan="2"></td>
-                    <td class="flex justify-center"><input type="text" name="cariTulisan" id="cariTulisan" placeholder="Cari" class="w-11/12 focus:outline-none focus:ring rounded-md md:px-2 px-0.5 text-gray-400 formEdit mb-3"></td>
-                    <td></td>
-                </tr>
             </thead>
             <!-- end nama kolom tabel pendidikan-->
 
