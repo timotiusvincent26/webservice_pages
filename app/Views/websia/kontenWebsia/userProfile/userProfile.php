@@ -68,7 +68,7 @@ if ($status == 'bukan user') {
                 <p class="font-heading my-2 mt-2"> Jl Gading Griya Lestari Bl Y-1, DKI Jakarta </p>
             </span>
             <!-- Awal media sosial-->
-            <div class="md:space-x-4 flex flex-row items-center justify-center lg:justify-start md:py-2 px-5 md:px-0">
+            <div class="md:space-x-4 flex flex-row items-start justify-center lg:justify-start md:py-2 px-5 md:px-0">
                 <div class="w-1/2">
                     <!-- Email -->
                     <div class="inline-block mb-2 flex flex-row">
@@ -78,10 +78,10 @@ if ($status == 'bukan user') {
                     <!-- Facebook -->
                     <div class="inline-block flex flex-row">
                         <img src="/img/icon/facebook.png" alt="" class="float-left ml-1 w-2 h-4">
-                        <span class="font-heading text-xs text-primary text-center flex items-center ml-3 md:ml-4">Khabib Nurmagomedov</span>
+                        <span class="font-heading text-xs text-primary text-left flex items-center ml-3 md:ml-4">Khabib Nurmagomedov</span>
                     </div>
                 </div>
-                <div class="w-1/2 ml-2">
+                <div class="w-1/2 pl-6">
                     <!-- Twitter -->
                     <div class="inline-block mb-2 flex flex-row">
                         <img src="/img/icon/twitter.png" alt="" class="float-left w-4 w-4">
@@ -199,17 +199,23 @@ if ($status == 'bukan user') {
                 <table class="table-auto font-paragraph text-black  ">
                     <thead>
                         <tr>
-                            <th class="bg-gray-100 border-b-2 border-gray-200 rounded-tl-xl lg:rounded-tl-3xl text-sm text-left pl-3 lg:pl-5 lg:pr-3 py-2 md:py-3 lg:py-4">Jenjang Pendidikan</th>
-                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-12 md:pr-0 py-2 md:py-3 lg:py-4">Univeristas</th>
-                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-12 md:pr-0 py-2 md:py-3 lg:py-4">Program Studi</th>
-                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 lg:pr-1 py-2 md:py-3 lg:py-4">Tahun Masuk</th>
-                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 lg:pr-2 py-2 md:py-3 lg:py-4">Tahun Lulus</th>
+                            <th class="bg-gray-100 border-b-2 border-gray-200 rounded-tl-xl lg:rounded-tl-3xl text-sm text-left pl-3 lg:pl-5 pr-3 lg:pr-0 py-2 md:py-3 lg:py-4">Jenjang Pendidikan</th>
+                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-3 lg:pr-32 py-2 md:py-3 lg:py-4">Univeristas</th>
+                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-3 lg:pr-14 py-2 md:py-3 lg:py-4">Program Studi</th>
+                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-3 lg:pr-3 py-2 md:py-3 lg:py-4">Tahun Masuk</th>
+                            <th class="bg-gray-100 border-b-2 border-gray-200 text-sm text-left pl-3 lg:pl-5 pr-3 lg:pr-3 py-2 md:py-3 lg:py-4">Tahun Lulus</th>
                             <th class="bg-gray-100 border-b-2 border-gray-200 rounded-tr-xl lg:rounded-tr-3xl text-sm text-left pl-3 pr-32 md:pr-24 lg:pr-80 lg:pl-5 py-2 md:py-3 lg:py-4">Judul Tulisan</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php for ($x = 0; $x < 3; $x++) : ?>
                             <tr>
+                                <!-- <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td>
+                                <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td>
+                                <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td>
+                                <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td>
+                                <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td>
+                                <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td> -->
                                 <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">D3</td>
                                 <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Politeknik Statistika STIS</td>
                                 <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">DIII Komputasi Statistik</td>
