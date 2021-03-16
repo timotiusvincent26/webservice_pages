@@ -2,56 +2,23 @@
 
 <?= $this->section('content'); ?>
 
-<style>
-    #sidebarDok {
-        z-index: 5;
-    }
-
-    @media (min-width: 1024px) {
-        #sidebarDok {
-            width: 1500px;
-        }
-    }
-
-    #menu1:hover,
-    #menu1+ul>li>div:hover,
-    #menu1+ul>li>ul>li:hover {
-        background-color: rgb(1, 89, 152);
-    }
-
-    #menuDok>li:first-child:hover,
-    #menuDok>li>div:hover,
-    #menuDok>li>ul>li:hover {
-        background-color: rgb(1, 89, 152);
-    }
-
-    .open-submenu {
-        max-height: 65px;
-    }
-
-    .close-submenu {
-        max-height: 0;
-    }
-</style>
 <script src="https://code.jquery.com/jquery-1.10.1.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
 
 <div class="w-full">
     <div class="flex w-full h-full relative">
-        <div id="sidebarDok" class="lg:relative absolute top-0 bottom-0 w-0 transition-all duration-1000 easy-out" style="background-color: rgb(4,72,120)">
+        <div id="sidebarDok" class="lg:relative absolute top-0 bottom-0 w-0 lg:w-80 xl:w-96 transition-all duration-1000 easy-out bg-primary">
             <!-- start sidebar hamburger/posisi tutup -->
             <div class="flex justify-end lg:hidden">
                 <svg class="cursor-pointer w-8 sm:mr-5 mr-2 mt-1 fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </div>
-
-
             <!-- end sidebar hamburger/posisi tutup -->
 
             <!-- start sidebar posisi buka -->
 
             <div class="absolute lg:left-0 -left-72 duration-1000 easy-out w-full">
-                <div class="text-secondary md:text-xl font-bold lg:mt-3 -mt-2 mb-3 text-center">DOKUMENTASI</div>
+                <div class="text-secondary text-xl font-bold lg:mt-3 -mt-2 mb-3 text-center">DOKUMENTASI</div>
                 <div class="flex justify-center mt-2 mb-5 h-9 relative w-full">
                     <input type="text" name="search" class="input w-5/6 pl-2 pr-8 border-2 rounded-lg border-gray-400 md:text-base outline-none text-gray-400" spellcheck="false" id="search" placeholder="Pencarian">
                     <div class="relative right-8 flex items-center text-gray-500">
@@ -78,11 +45,6 @@
 
                         <p class="ml-2">SIA WEB SERVICE</p>
                     </div>
-                    <!-- <div class="editTutup select-none">
-                        <svg class="lg:w-10 md:w-8 sm:w-7 w-6 fill-current cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </div> -->
 
                 </div>
 
@@ -126,7 +88,7 @@
         </div>
 
         <!-- content edit di sini -->
-        <div class="w-auto my-7 xl:mx-10 lg:mx-6 mx-6">
+        <div class="w-auto xl:mx-4 lg:mx-0 xl:left-80 lg:left-60 left-0 w-full transition-all duration-1000 easy-out">
             <?php $this->renderSection('dokumentasi'); ?>
         </div>
         <!-- end content edit -->
@@ -135,24 +97,5 @@
 </div>
 
 </div>
-
-<script>
-    $(document).ready(function() {
-
-
-
-        $('ul li div span').click(function() {
-            ($(this).parent().next().hasClass('close-submenu')) ? $(this).parent().next().removeClass('close-submenu').addClass('open-submenu'): $(this).parent().next().removeClass('open-submenu').addClass('close-submenu')
-            $(this).parent().parent().next().toggleClass('translate-y-16')
-        })
-        $('ul li div img').click(function() {
-            ($(this).parent().next().hasClass('close-submenu')) ? $(this).parent().next().removeClass('close-submenu').addClass('open-submenu'): $(this).parent().next().removeClass('open-submenu').addClass('close-submenu')
-            $(this).parent().parent().next().toggleClass('translate-y-16')
-        })
-
-    });
-</script>
-
-
 
 <?= $this->endSection(); ?>

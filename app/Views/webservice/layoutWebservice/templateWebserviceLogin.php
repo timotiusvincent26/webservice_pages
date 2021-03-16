@@ -11,36 +11,6 @@
     <link rel="stylesheet" href="/css/aos.css" />
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?= $judul; ?></title>
-
-    <style>
-        .menu {
-            background-image: linear-gradient(to right, #014f86, #025e9e, #0567ab);
-            background-size: 200% auto;
-        }
-
-        .choosed {
-            background-color: #003c75;
-        }
-
-        .notchoose {
-            background-color: #005490;
-        }
-
-        .list:hover {
-            background-color: #FF8A00;
-        }
-
-        #utama {
-            z-index: -1;
-        }
-
-        @media (max-width: 409px) {
-            #divKosong {
-                height: 65px;
-            }
-        }
-    </style>
-
 </head>
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
@@ -224,6 +194,7 @@
     <script src="/js/aos.js"></script>
     <script type="text/javascript" src="/js/footer.js"></script>
     <script type="text/javascript" src="/js/editProfil.js"></script>
+    <script type="text/javascript" src="/js/webservices.js"></script>
     <script>
         AOS.init();
     </script>

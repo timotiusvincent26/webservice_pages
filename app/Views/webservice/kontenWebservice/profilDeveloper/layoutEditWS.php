@@ -2,11 +2,6 @@
 
 <?= $this->section('content'); ?>
 
-<style>
-    .layoutEdit {
-        z-index: 5;
-    }
-</style>
 <script src="https://code.jquery.com/jquery-1.10.1.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
 
 <div class="w-full">
@@ -55,8 +50,4 @@
 </div>
 
 </div>
-
-
-
-
 <?= $this->endSection(); ?>

@@ -2,7 +2,7 @@
 
 <?= $this->section('dokumentasi'); ?>
 
-<div>
+<div class="sm:mt-7 mt-4 sm:mx-6 mx-3">
     <div class="lg:hidden absolute mt-3" id="burgerDok">
         <svg class="block w-7 cursor-pointer fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -33,23 +33,9 @@
                 <li>Masukkan identitas proyek/aplikasi seperti nama, deskripsi proyek, pilih cakupan data yang diiginkan dan klik "buat"</li>
                 <li>Tunggu hingga status permintaan berubah dan Anda akan mendapat kunci beserta token API SIA</li>
             </ol>
-            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consectetur vel sint ad reprehenderit officia officiis quod expedita magni accusamus eveniet ipsum possimus soluta ipsa non similique et sed quo, deleniti iusto vero necessitatibus ipsam! Excepturi placeat possimus pariatur odit. Consequatur necessitatibus harum, blanditiis aut explicabo vitae repudiandae in iusto?</p>
+            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus consectetur vel sint ad reprehenderit officia officiis quod expedita magni accusamus eveniet ipsum possimus soluta ipsa non similique et sed quo, deleniti iusto vero necessitatibus ipsam! Excepturi placeat possimus pariatur odit. Consequatur necessitatibus harum, blanditiis aut explicabo vitae repudiandae in iusto? Lorem100</p>
         </div>
     </section>
 </div>
-
-<script>
-    $('#burgerDok').click(function() {
-        $('#sidebarDok').removeClass('w-0').addClass('sm:w-1/2 w-3/4')
-        setTimeout(() => {
-            $('#sidebarDok').children().eq(1).removeClass('-left-72').addClass('left-0')
-        }, 0);
-    })
-
-    $('#sidebarDok').children().first().children().first().click(function() {
-        $('#sidebarDok').removeClass('sm:w-1/2 w-3/4').addClass('w-0')
-        $('#sidebarDok').children().eq(1).removeClass('left-0').addClass('-left-72')
-    })
-</script>
 
 <?= $this->endSection(); ?>
