@@ -35,28 +35,18 @@ listSidebar.forEach(o => {
 
 const namaProdi = document.querySelectorAll(".namaProdi");
 namaProdi.forEach(o => {
-    o.children[0].addEventListener("click", () => {
-        namaProdi.forEach(p => {
-            p.classList.remove('text-secondary');
-            p.classList.remove('bg-primaryDark');
-            p.classList.add('text-white');
-            p.children[1].classList.add('hidden');
-        });
-        o.classList.add('text-secondary');
-        o.classList.add('bg-primaryDark');
-        o.classList.remove('text-white');
-        o.children[1].classList.remove('hidden');
+    o.addEventListener("click", () => {
+        o.children[1].classList.toggle("hidden");
+        o.children[2].classList.toggle("hidden");
+        if(o.children[3].checked == false){
+            o.children[3].checked = true;
+        } else {
+            o.children[3].checked = false;
+        };
     })
 })
 
-namaProdi.forEach(o => {
-    o.children[1].addEventListener("click", () => {
-        o.classList.remove('text-secondary');
-        o.classList.remove('bg-primaryDark');
-        o.classList.add('text-white');
-        o.children[1].classList.add('hidden');
-    })
-})
+
 
 function toggleTempatKerja() {
     $('.onBPS').toggleClass('hidden');
@@ -67,6 +57,14 @@ function toggleTempatKerja() {
     $('.inputBPS').toggleClass('text-primary');
     $('.inputTempatKerjaLainnya').toggleClass('text-gray-300');
     $('.inputTempatKerjaLainnya').toggleClass('text-primary');
+    if ($('#tempatKerjaBPS').is(':checked')) {
+        $('#tempatKerjaBPS').removeAttr('checked');
+        $('#tempatKerjaLainnya').attr('checked','checked');
+    } else {
+        $('#tempatKerjaBPS').attr('checked','checked');
+        $('#tempatKerjaLainnya').removeAttr('checked');
+    }  
+   
 }
 
 $('.BPS').click(function(){
@@ -74,7 +72,7 @@ $('.BPS').click(function(){
 })
 
 $('.Lainnya').click(function(){
-    toggleTempatKerja();
+    toggleTempatKerja(); 
 })
 
 $(".inputBPS input").focus(function() {

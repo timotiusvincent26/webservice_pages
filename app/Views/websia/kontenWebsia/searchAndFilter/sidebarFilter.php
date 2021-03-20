@@ -33,28 +33,46 @@
                 <!-- Awal List Filter "Prodi" Untuk Alumni  -->
                 <div class="flex flex-col font-paragraph mb-1 px-3 hidden listProdi">
 
-                    <div class="flex items-center justify-between text-white cursor-pointer  py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
+                    <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DIII Statistika</div>
 
-                        <svg class="w-3 h-3 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                            <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
                         </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary hidden" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                            <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
+                        </svg>
+
+                        <input type="checkbox" checked="true" class="hidden" id="DTigaStatistik">
                     </div>
 
-                    <div class="flex items-center justify-between text-white cursor-pointer  py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
+                    <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DIV Statistika</div>
 
-                        <svg class="w-3 h-3 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                            <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
                         </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary hidden" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                            <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
+                        </svg>
+
+                        <input type="checkbox" checked="true" class="hidden" id="DEmpatStatistik">
                     </div>
 
-                    <div class="flex items-center justify-between text-white cursor-pointer  py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
+                    <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DIV Komputasi Statistik</div>
 
-                        <svg class="w-3 h-3 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                            <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
                         </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary hidden" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                            <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
+                        </svg>
+
+                        <input type="checkbox" checked="true" class="hidden" id="DTigaKomputasi">
                     </div>
                 </div>
                 <!-- Akhir List Filter "Prodi" Untuk Alumni  -->
@@ -110,6 +128,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary hidden offBPS" id="offBPS" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
                             <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
                         </svg>
+                        <input type="checkbox" class="hidden" checked id="tempatKerjaBPS">
                     </div>
 
                     <!-- Awal Input Filter "Tempat Kerja BPS" Untuk Alumni  -->
@@ -130,6 +149,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary offLainnya" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
                             <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
                         </svg>
+                        <input type="checkbox" class="hidden" id="tempatKerjaLainnya">
                     </div>
 
                     <!-- Awal Input Filter "Tempat Kerja Lainnya" Untuk Alumni  -->
