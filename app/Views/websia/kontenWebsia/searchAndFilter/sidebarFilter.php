@@ -34,6 +34,20 @@
                 <div class="flex flex-col font-paragraph mb-1 px-3 hidden listProdi">
 
                     <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
+                        <div class="text-xs w-full">DI Statistika</div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+                            <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary hidden" fill="currentColor" class="bi bi-toggle-off" viewBox="0 0 16 16">
+                            <path d="M11 4a4 4 0 0 1 0 8H8a4.992 4.992 0 0 0 2-4 4.992 4.992 0 0 0-2-4h3zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5z" />
+                        </svg>
+
+                        <input type="checkbox" checked="true" class="hidden" id="DTigaStatistik">
+                    </div>
+
+                    <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DIII Statistika</div>
 
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-5 text-secondary" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
