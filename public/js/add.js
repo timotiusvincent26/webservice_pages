@@ -4,7 +4,10 @@ var skalaAwal = 5;
 
 var mymap = L.map('mapid', {
     center: [-2.5, 118],
-    zoom: skalaAwal
+    zoom: skalaAwal,
+    maxZoom: 8,
+    minZoom: 4,
+    scrollWheelZoom: false
 });
 
 var myStyle = {
@@ -67,6 +70,10 @@ function popUp(f, l) {
         }
     });
 }
+
+$('.zoomResetPeta').click(function(){
+    mymap.setView([-2.5, 118], 5);
+});
 
 
 
