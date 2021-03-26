@@ -49,43 +49,17 @@ namaProdi.forEach(o => {
 
 
 function toggleTempatKerja() {
-    $('.onBPS').toggleClass('hidden');
-    $('.offBPS').toggleClass('hidden');
-    $('.onLainnya').toggleClass('hidden');
-    $('.offLainnya').toggleClass('hidden');
-    $('.inputBPS').toggleClass('text-gray-300');
-    $('.inputBPS').toggleClass('text-primary');
-    $('.inputTempatKerjaLainnya').toggleClass('text-gray-300');
-    $('.inputTempatKerjaLainnya').toggleClass('text-primary');
-    if ($('#tempatKerjaBPS').is(':checked')) {
-        $('#tempatKerjaBPS').removeAttr('checked');
-        $('#tempatKerjaLainnya').attr('checked','checked');
-    } else {
-        $('#tempatKerjaBPS').attr('checked','checked');
-        $('#tempatKerjaLainnya').removeAttr('checked');
-    }  
-   
+    $('.inputKerja').toggleClass('text-gray-300');
+    $('.inputKerja').toggleClass('text-primary');
 }
 
-$('.BPS').click(function(){
-    toggleTempatKerja();
-})
-
-$('.Lainnya').click(function(){
-    toggleTempatKerja(); 
-})
-
-$(".inputBPS input").focus(function() {
-    if ($('.onBPS').hasClass('hidden')) {
+$(".inputKerja input").focus(function() {
         toggleTempatKerja();
-    }
 });
 
-$(".inputTempatKerjaLainnya input").focus(function() {
-    if ($('.onLainnya').hasClass('hidden')) {
-        toggleTempatKerja();
-    };
-});
+$('.inputKerja svg').click(function(){
+    $('.inputKerja input').val('');
+})
 
 function getList(param){
     
@@ -129,17 +103,8 @@ $('.listAngkatan div svg').click(function(){
 })
 // akhir input angkatan
 
-// akhir input tempat kerja BPS
-$('.inputBPS svg').click(function(){
-    $('.inputBPS input').val('');
-})
-// Awal tempat kerja BPS
 
-// akhir input tempat Kerja selain BPS
-$('.inputTempatKerjaLainnya svg').click(function(){
-    $('.inputTempatKerjaLainnya input').val('');
-})
-// Awal input tempat Kerja selain BPS
+
 
 var typingTimer;                
 var doneTypingInterval = 1000;
