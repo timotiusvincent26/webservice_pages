@@ -6,10 +6,10 @@
 
 <div class="w-full">
     <div class="flex w-full h-full relative">
-        <div id="sidebarDok" class="lg:relative absolute top-0 bottom-0 w-0 lg:w-80 xl:w-96 transition-all duration-1000 easy-out bg-primary">
+        <div id="sidebarDok" class="absolute top-0 bottom-0 lg:left-0 sm:w-80 sm:-left-80 -left-64 w-64 transition-all duration-1000 easy-out bg-primary">
             <!-- start sidebar hamburger/posisi tutup -->
-            <div class="flex justify-end lg:hidden">
-                <svg class="cursor-pointer w-8 sm:mr-5 mr-2 mt-1 fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="flex justify-end lg:hidden hidden">
+                <svg class="cursor-pointer w-8 transition-all duration-1000 easy-out sm:mr-5 mr-2 mt-1 fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </div>
@@ -17,8 +17,8 @@
 
             <!-- start sidebar posisi buka -->
 
-            <div class="absolute lg:left-0 -left-72 duration-1000 easy-out w-full">
-                <div class="text-secondary text-xl font-bold lg:mt-3 -mt-2 mb-3 text-center">DOKUMENTASI</div>
+            <div class="lg:mt-0">
+                <div class="text-secondary text-xl font-bold mt-3 mb-3 text-center">DOKUMENTASI</div>
                 <div class="flex justify-center mt-2 mb-5 h-9 relative w-full">
                     <input type="text" name="search" class="input w-5/6 pl-2 pr-8 border-2 rounded-lg border-gray-400 md:text-base outline-none text-gray-400" spellcheck="false" id="search" placeholder="Pencarian">
                     <div class="relative right-8 flex items-center text-gray-500">
@@ -50,12 +50,12 @@
 
                 <ul class="mr-4 mt-5" id="menuDok">
                     <li class="pl-7 rounded-r-lg md:text-xl text-secondary font-semibold mb-1 py-0.5">
-                        <a href="" class="py-1">Meminta Data</a>
+                        <a href="#memintaData" class="py-1">Meminta Data</a>
                     </li>
                     <li class="text-secondary relative mb-1">
                         <div class="pl-5 rounded-r-lg flex justify-between items-center pr-4 md:text-xl font-semibold">
                             <span class="py-0.5 px-2 cursor-pointer select-none">Data 1</span>
-                            <img src="/img/icon/drop-down.svg" class="text-red-500 cursor-pointer">
+                            <img src="/img/icon/drop-down.svg" class="text-red-500 cursor-pointer transform transition-all duration-300">
                         </div>
                         <ul class="text-white text-white transition-all duration-300 easy-out absolute overflow-hidden open-submenu w-full">
                             <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
@@ -70,7 +70,7 @@
                     <li class="text-secondary relative transform translate-y-16 duration-300">
                         <div class="pl-5 rounded-r-lg flex justify-between items-center pr-4 md:text-xl font-semibold">
                             <span class="py-0.5 px-2 cursor-pointer select-none">Judul</span>
-                            <img src="/img/icon/drop-down.svg" class="text-red-500 cursor-pointer">
+                            <img src="/img/icon/drop-down.svg" class="text-red-500 cursor-pointer transform transition-all duration-300">
                         </div>
                         <ul class="text-white text-white transition-all duration-300 easy-out absolute overflow-hidden open-submenu w-full">
                             <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
@@ -88,7 +88,7 @@
         </div>
 
         <!-- content edit di sini -->
-        <div class="w-auto xl:mx-4 lg:mx-0 xl:left-80 lg:left-60 left-0 w-full transition-all duration-1000 easy-out">
+        <div class="xl:mx-4 lg:mx-0 relative w-full lg:left-72 -left-4 transition-all duration-1000 easy-out xl:ml-10 xl:mr-80 xl:pr-2 lg:mr-72">
             <?php $this->renderSection('dokumentasi'); ?>
         </div>
         <!-- end content edit -->

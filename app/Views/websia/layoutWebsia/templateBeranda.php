@@ -16,15 +16,26 @@
 <!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
 
 <body>
+    <!-- loading -->
+    <div class="loading flex fixed w-full h-screen z-50 transition-opacity duration-200">
+        <img src="/img/load1.gif" class="m-auto items-center md:w-96 sm:w-72 w-60">
+    </div>
+    <!-- loading -->
+    <!-- tombol kembali ke atas -->
+    <button onclick="topFunction()" id="onTopBtn" title="Kembali ke Atas" class="hidden fixed bottom-5 right-8 w-10 h-10 p-1 cursor-pointer rounded-full border-none focus:outline-none z-40 bg-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white mx-auto" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+    </button>
     <!-- HEADER -->
     <div class="navbar w-full fixed z-10 bg-cover bg-no-repeat bg-left" style="background-image: url(/img/bgHeader.png)" id="navbar">
         <header>
             <div class="flex items-center justify-between px-6 pt-3">
                 <div class="flex">
                     <a href="<?= base_url(); ?>">
-                        <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
+                        <img src="/img/logoSIA.png" class=" z-30 md:w-16 w-10" alt="">
                     </a>
-                    <div class="md:px-3 px-2 my-auto md:text-2xl text-base text-white font-heading font-light z-50">
+                    <div class="md:px-3 px-2 my-auto md:text-2xl text-base text-white font-heading font-light z-30">
                         Sistem Informasi Alumni
                     </div>
                 </div>
@@ -122,11 +133,12 @@
     </div>
     <!-- END FOOTER -->
 </body>
-
+<script type="text/javascript" src="/js/loading.js"></script>
 <script src="/js/aos.js"></script>
 <script>
     AOS.init();
 </script>
+<script type="text/javascript" src="/js/onTopBtn.js"></script>
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/footer.js"></script>
 

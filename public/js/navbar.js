@@ -198,29 +198,33 @@ $('.navEdit').prev().click(function () {
 //nav mobile webservice
 $('#navmobile').click(function () {
     $('#navmobile ul').toggleClass('hidden')
-});
+})
 
 // js dokumentasi
 $('#burgerDok').click(function () {
-    $('#sidebarDok').removeClass('w-0').addClass('sm:w-1/2 w-3/4')
-    setTimeout(() => {
-        $('#sidebarDok').children().eq(1).removeClass('-left-72').addClass('left-0')
-    }, 0);
+    $('#sidebarDok').removeClass('sm:-left-80 -left-64').addClass('left-0')
+    $('#sidebarDok').children().first().toggleClass('hidden')
+    $('#sidebarDok').children().eq(1).toggleClass('-mt-5')
 })
 
 $('#sidebarDok').children().first().children().first().click(function () {
-    $('#sidebarDok').removeClass('sm:w-1/2 w-3/4').addClass('w-0')
-    $('#sidebarDok').children().eq(1).removeClass('left-0').addClass('-left-72')
+    $('#sidebarDok').removeClass('left-0').addClass('sm:-left-80 -left-64')
+    setTimeout(() => {
+        $('#sidebarDok').children().first().toggleClass('hidden')
+        $('#sidebarDok').children().eq(1).toggleClass('-mt-5')
+    }, 1000)
 })
 // js dokumentasi
 
 // js layoutDokumentasi
 $(document).ready(function () {
     $('ul li div span').click(function () {
+        $(this).next().toggleClass('rotate-180');
         ($(this).parent().next().hasClass('close-submenu')) ? $(this).parent().next().removeClass('close-submenu').addClass('open-submenu'): $(this).parent().next().removeClass('open-submenu').addClass('close-submenu')
         $(this).parent().parent().next().toggleClass('translate-y-16')
     })
     $('ul li div img').click(function () {
+        $(this).toggleClass('rotate-180');
         ($(this).parent().next().hasClass('close-submenu')) ? $(this).parent().next().removeClass('close-submenu').addClass('open-submenu'): $(this).parent().next().removeClass('open-submenu').addClass('close-submenu')
         $(this).parent().parent().next().toggleClass('translate-y-16')
     })

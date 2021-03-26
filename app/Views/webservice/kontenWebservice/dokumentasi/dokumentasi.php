@@ -2,7 +2,7 @@
 
 <?= $this->section('dokumentasi'); ?>
 
-<div class="sm:mt-7 mt-4 sm:mx-6 mx-3">
+<div class="sm:ml-12 sm:mr-5 ml-8 mr-2 sm:mt-7 mt-4 transition-none">
     <div class="lg:hidden absolute mt-3" id="burgerDok">
         <svg class="block w-7 cursor-pointer fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -14,13 +14,16 @@
             <h2 class="font-bold lg:text-xl">DOKUMENTASI WEB SERVICE</h2>
         </div>
         <hr class="border border-gray-500 transform translate-y-2">
-        <div class="lg:mx-4 mx-3 mt-4 mb-8">
+        <div class="lg:mx-4 mx-3 mt-4">
             <h3 class="text-secondary mb-5">Penjelasan API Sistem Informasi Alumni</h3>
-            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consequuntur hic? Nostrum ratione perferendis repellendus aspernatur illum at nam ex asperiores natus excepturi. Quae, nam laboriosam. Odit consequatur repellendus illo neque rerum ut vel ad quidem! Delectus, sed in similique veniam vero, ducimus qui quasi quos ipsa a consequuntur! Possimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit tempora laboriosam deleniti rerum veniam officia provident quis, aspernatur ad doloribus nihil. Molestias placeat error, architecto dolorem et pariatur iusto. Veniam?</p>
+            <div class="flex 2xl:-mb-10 lg:mb-4 mb-8">
+                <p class="text-justify sm:mr-4 mr-0 xl:w-9/12 lg:w-7/12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, consequuntur hic? Nostrum ratione perferendis repellendus aspernatur illum at nam ex asperiores natus excepturi. Quae, nam laboriosam. Odit consequatur repellendus illo neque rerum ut vel ad quidem! Delectus, sed in similique veniam vero, ducimus qui quasi quos ipsa a consequuntur! Possimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit tempora laboriosam deleniti rerum veniam officia provident quis, aspernatur ad doloribus nihil. Molestias placeat error, architecto dolorem et pariatur iusto. Veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <img src="/img/logo api.png" alt="Logo Api" class="xl:w-3/12 lg:w-5/12 sm:w-4/12 sm:block hidden">
+            </div>
         </div>
     </section>
 
-    <section>
+    <section id="memintaData">
         <div class="text-secondary lg:mx-4 mx-3">
             <h1 class="font-bold lg:text-xl">MEMINTA DATA</h1>
         </div>

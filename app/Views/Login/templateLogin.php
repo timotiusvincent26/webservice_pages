@@ -47,6 +47,10 @@
                 height: 64px;
             }
         }
+
+        body div.loading {
+            background: #fff center;
+        }
     </style>
 
 </head>
@@ -54,15 +58,20 @@
 <!-- CATATAN: Font Cabin belum bisa dipakai, kayaknya ada salah waktu konfigurasi di Tailwind nya, coba bantu cek lagi ya guys! Sama font Poppins nya masih tebel banget, gabisa diganti jenis ketebalannya... -->
 
 <body class="flex min-h-screen flex-col w-screen overflow-x-hidden font-paragraph">
+    <!-- loading -->
+    <div class="loading flex fixed w-full h-screen z-50 transition-opacity duration-200">
+        <img src="/img/load1.gif" class="m-auto items-center md:w-96 sm:w-72 w-60">
+    </div>
+    <!-- loading -->
     <!-- HEADER -->
     <div class="bg-primary md:px-12 sm:px-8 px-4 w-full navbar fixed z-20 bg-no-repeat bg-cover bg-left">
 
         <div class="flex justify-between sm:my-2 my-1">
             <div class="font-heading flex items-center sm:gap-x-6 gap-x-3">
                 <a href="<?= base_url(); ?>">
-                    <img src="/img/logoSIA.png" class="z-50 md:w-16 w-10" alt="">
+                    <img src="/img/logoSIA.png" class="z-30 md:w-16 w-10" alt="">
                 </a>
-                <div class="md:px-3 px-2 my-auto text-white z-50">
+                <div class="md:px-3 px-2 my-auto text-white z-30">
                     <p class="font-heading text-lg md:text-2xl font-semibold">Webservice Sistem Informasi Alumni</p>
                     <p class="font-heading md:text-xs font-normal hidden md:block -mt-1.5">Akademi Ilmu Statistik - Sekolah Tinggi Ilmu Statistik - Politeknik Statistika STIS</p>
                 </div>
@@ -130,7 +139,7 @@
         <h2 class="text-white text-sm text-center mt-1">Copyright &copy; PKL 60 Riset 5</h2>
     </div>
     <!-- END FOOTER -->
-
+    <script type="text/javascript" src="/js/loading.js"></script>
     <script type="text/javascript" src="/js/login.js"></script>
     <script type="text/javascript" src="/js/navbar.js"></script>
     <script src="/js/aos.js"></script>
