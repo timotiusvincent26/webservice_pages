@@ -115,7 +115,9 @@ if ($login == 'belum') {
 
     <!-- awal gambar peta alumni -->
     <div class="bg-primary relative" style="height: 26rem;" data-aos="zoom-in">
-        <div id="mapid" class="bg-primary z-10 h-full w-full"></div>
+
+        <div id="mapProvinsi" class="bg-primary z-10 h-full w-full "></div>
+        <div id="mapKabupaten" class="bg-primary z-10 h-full w-full absolute top-0 invisible"></div>
 
         <div class="flex flex-col items-end bg-white p-1 rounded-sm zoomResetPeta hover:bg-gray-200 cursor-pointer absolute top-20 left-3 z-20">
             <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
