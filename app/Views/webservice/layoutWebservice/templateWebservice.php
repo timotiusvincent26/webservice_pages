@@ -31,9 +31,9 @@
         <div class="flex justify-between sm:my-2 my-1">
             <div class="font-heading flex items-center sm:gap-x-6 gap-x-3 z-10">
                 <a href="<?= base_url(); ?>">
-                    <img src="/img/logoSIA.png" class=" z-50 md:w-16 w-10" alt="">
+                    <img src="/img/logoSIA.png" class="z-30 md:w-16 w-10" alt="logo SIA">
                 </a>
-                <div class="md:px-3 px-2 my-auto text-white z-50">
+                <div class="md:px-3 px-2 my-auto text-white z-30">
                     <p class="font-heading text-lg md:text-2xl font-semibold">Webservice Sistem Informasi Alumni</p>
                     <p class="font-heading md:text-xs font-normal hidden md:block -mt-1.5">Akademi Ilmu Statistik - Sekolah Tinggi Ilmu Statistik - Politeknik Statistika STIS</p>
                 </div>

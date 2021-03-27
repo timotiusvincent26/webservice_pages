@@ -12,7 +12,7 @@
                     <input type="text" name="tempatlahir" id="tempatlahir" class="inputForm mb-2" placeholder="Tempat lahir">
                 </div>
                 <div>
-                    <label for="tempatlahir" class="font-medium">Tanggal Lahir:</label>
+                    <label for="tanggallahir" class="font-medium">Tanggal Lahir:</label>
                     <input type="date" name="tanggallahir" id="tanggallahir" class="inputForm mb-2">
                 </div>
             </div>
