@@ -47,8 +47,10 @@ if ($status == 'bukan user') {
             </p>
             <!-- Instansi tempat bekerja dan jabatan -->
             <p class="font-heading text-base text-center md:text-left">
-                Bekerja di <span class="text-primary"> BPS Provinsi Aceh </span><br />
-                Sebagai <span class="text-primary"> Kepala BPS</span>
+                <!-- Bekerja di <span class="text-primary"> BPS Provinsi Aceh </span><br /> -->
+                Bekerja di <span class="text-primary"> Belum diisi </span><br />
+                <!-- Sebagai <span class="text-primary"> Kepala BPS</span> -->
+                Sebagai <span class="text-primary"> Belum diisi</span>
             </p>
         </div>
     </div>
@@ -66,6 +68,8 @@ if ($status == 'bukan user') {
                 <img class="my-2 mt-2 mr-0 md:mr-2 ml-1 md:ml-0 w-6 h-6 md:w-6 float-left" src="/img/icon/maps_flag.png" alt="">
                 <!-- Lokasi tempat tinggal -->
                 <p class="font-heading my-2 mt-2"> Jl Gading Griya Lestari Bl Y-1, DKI Jakarta </p>
+                <!-- Jika alamat belum diisi -->
+                <!-- <p class="font-heading my-2 mt-2"> Alamat belum diisi </p> -->
             </span>
             <!-- Awal media sosial-->
             <div class="md:space-x-4 flex flex-row items-start justify-center lg:justify-start md:py-2 px-5 md:px-0">
@@ -74,11 +78,13 @@ if ($status == 'bukan user') {
                     <div class="inline-block mb-2 flex flex-row">
                         <img src="/img/icon/message.png" alt="" class="float-left w-5">
                         <span class="font-heading text-xs text-primary text-center ml-1 md:ml-2">pkl12345@gmail.com</span>
+                        <!-- <span class="font-heading text-xs text-primary text-center ml-1 md:ml-2"></span> -->
                     </div>
                     <!-- Facebook -->
                     <div class="inline-block flex flex-row">
                         <img src="/img/icon/facebook.png" alt="" class="float-left ml-1 w-2 h-4">
                         <span class="font-heading text-xs text-primary text-left flex items-center ml-3 md:ml-4">Khabib Nurmagomedov</span>
+                        <!-- <span class="font-heading text-xs text-primary text-left flex items-center ml-3 md:ml-4"></span> -->
                     </div>
                 </div>
                 <div class="w-1/2 pl-6">
@@ -86,11 +92,13 @@ if ($status == 'bukan user') {
                     <div class="inline-block mb-2 flex flex-row">
                         <img src="/img/icon/twitter.png" alt="" class="float-left w-4 w-4">
                         <span class="font-heading text-xs text-primary text-center ml-2 md:ml-3">@khabibNMGDV</span>
+                        <!-- <span class="font-heading text-xs text-primary text-center ml-2 md:ml-3"></span> -->
                     </div>
                     <!-- Instagram -->
                     <div class="inline-block flex flex-row">
                         <img src="/img/icon/instagram.png" alt="" class="float-left w-4">
                         <span class="font-heading text-xs text-primary text-center flex items-center ml-2 md:ml-3">@IG_Khabib</span>
+                        <!-- <span class="font-heading text-xs text-primary text-center flex items-center ml-2 md:ml-3"></span> -->
                     </div>
                 </div>
             </div>
@@ -152,22 +160,32 @@ if ($status == 'bukan user') {
             <div class="flex items-start">
                 <div class="font-bold text-primary w-3/12 md:w-2/12 lg:w-1/12 lg:pb-2">Instansi :</div>
                 <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Badan Pusat Statistik (BPS)</div>
+                <!-- Jika belum diisi -->
+                <!-- <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Belum diisi</div> -->
             </div>
             <div class="flex items-start">
                 <div class="font-bold text-primary w-3/12 md:w-2/12 lg:w-1/12 lg:pb-2">Alamat : </div>
                 <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Jl. Otto Iskandardinata 64C, Jatinegara</div>
+                <!-- Jika belum diisi -->
+                <!-- <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Belum diisi</div> -->
             </div>
             <div class="flex items-start">
                 <div class="font-bold text-primary w-3/12 md:w-2/12 lg:w-1/12 lg:pb-2">Telp : </div>
                 <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">021 - 12002112</div>
+                <!-- Jika belum diisi -->
+                <!-- <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Belum diisi</div> -->
             </div>
             <div class="flex items-start">
                 <div class="font-bold text-primary w-3/12 md:w-2/12 lg:w-1/12 lg:pb-2">Faks : </div>
                 <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">1234 - 12345</div>
+                <!-- Jika belum diisi -->
+                <!-- <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Belum diisi</div> -->
             </div>
             <div class="flex items-start">
                 <div class="font-bold text-primary w-3/12 md:w-2/12 lg:w-1/12 lg:pb-2">Email : </div>
                 <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">bps@bps.go.id</div>
+                <!-- Jika belum diisi -->
+                <!-- <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Belum diisi</div> -->
             </div>
         </div>
     </div>
@@ -185,6 +203,9 @@ if ($status == 'bukan user') {
                 <div class="font-bold">2020</div>
             </div>
         <?php endfor; ?>
+        <!-- Jika data prestasi belum diinput -->
+
+        <!-- <div class="w-9/12 md:w-10/12 lg:w-11/12 lg:ml-5">Belum ada prestasi</div> -->
     </div>
     <hr class="visible sm:invisible border-primary border-opacity-75 w-4/5 object-center mx-auto mt-8">
 </div>
@@ -208,6 +229,7 @@ if ($status == 'bukan user') {
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Jika ada data yang null dalam satu baris, maka data tersebut tersebut diisi dengan 'belum diisi' -->
                         <?php for ($x = 0; $x < 3; $x++) : ?>
                             <tr>
                                 <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">D3</td>
@@ -218,6 +240,13 @@ if ($status == 'bukan user') {
                                 <td class="text-sm text-left border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Implementasi KSA dan Penerapan Metode COD </td>
                             </tr>
                         <?php endfor; ?>
+
+                        <!-- Tampilan jika data semua kolom belum diisi -->
+
+                        <!-- <tr>
+                            <td colspan="6" class="text-sm text-center border-b-2 border-gray-200 px-3 lg:px-5 py-2 md:py-3 lg:py-4">Belum diisi</td>
+                        </tr> -->
+
                         <tr>
                             <td class="bg-gray-100 rounded-bl-xl lg:rounded-bl-3xl text-sm text-left px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td>
                             <td class="bg-gray-100 text-sm text-left px-3 lg:px-5 py-2 md:py-3 lg:py-4"></td>
