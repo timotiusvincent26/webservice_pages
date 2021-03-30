@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/leaflet.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/add_style.css">
     <link rel="stylesheet" href="/css/scrollbar.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <title><?php echo $judulHalaman ?></title>
@@ -33,7 +34,7 @@
             <div class="flex items-center justify-between px-6 pt-3">
                 <div class="flex">
                     <a href="<?= base_url(); ?>">
-                        <img src="/img/logoSIA.png" class=" z-30 md:w-16 w-10" alt="">
+                        <img src="/img/logoSIA.png" class="z-30 md:w-16 w-10" alt="logo SIA">
                     </a>
                     <div class="md:px-3 px-2 my-auto md:text-2xl text-base text-white font-heading font-light z-30">
                         Sistem Informasi Alumni

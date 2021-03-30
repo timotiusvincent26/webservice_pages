@@ -59,10 +59,10 @@
                         </div>
                         <ul class="text-white text-white transition-all duration-300 easy-out absolute overflow-hidden open-submenu w-full">
                             <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
-                                <a href="" class="py-1">Sub-Data 1.1</a>
+                                <a href="#subData1_1" class="py-1">Sub-Data 1.1</a>
                             </li>
                             <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
-                                <a href="" class="py-1">Sub-Data 1.2</a>
+                                <a href="#subData1_2" class="py-1">Sub-Data 1.2</a>
                             </li>
                         </ul>
                     </li>
