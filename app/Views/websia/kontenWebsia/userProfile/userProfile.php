@@ -37,6 +37,9 @@ if ($status == 'bukan user') {
             </div>
             <!-- tempat dan tanggal lahir -->
             <p class="font-heading text-primary text-center md:text-left text-sm mb-5 md:mb-3 lg:mb-5">Aceh, 32 Januari 2021</p>
+            <!-- TTL yang belum diisi -->
+            <!-- <p class="font-heading text-primary text-center md:text-left text-sm mb-5 md:mb-3 lg:mb-5">TTL belum diisi</p> -->
+
             <p class="font-heading text-center md:text-left text-base mb-5 md:mb-3 lg:mb-5">
                 <!-- Angkatan -->
                 Angkatan <span class="text-primary">ke-XX </span><br />
@@ -47,10 +50,12 @@ if ($status == 'bukan user') {
             </p>
             <!-- Instansi tempat bekerja dan jabatan -->
             <p class="font-heading text-base text-center md:text-left">
-                <!-- Bekerja di <span class="text-primary"> BPS Provinsi Aceh </span><br /> -->
-                Bekerja di <span class="text-primary"> Belum diisi </span><br />
-                <!-- Sebagai <span class="text-primary"> Kepala BPS</span> -->
-                Sebagai <span class="text-primary"> Belum diisi</span>
+                Bekerja di <span class="text-primary"> BPS Provinsi Aceh </span><br />
+                <!-- Jika belum diisi -->
+                <!-- Bekerja di <span class="text-primary"> Belum diisi </span><br /> -->
+                Sebagai <span class="text-primary"> Kepala BPS</span>
+                <!-- Jika belum diisi -->
+                <!-- Sebagai <span class="text-primary"> Belum diisi</span> -->
             </p>
         </div>
     </div>
@@ -72,8 +77,8 @@ if ($status == 'bukan user') {
                 <!-- <p class="font-heading my-2 mt-2"> Alamat belum diisi </p> -->
             </span>
             <!-- Awal media sosial-->
-            <div class="md:space-x-4 flex flex-row items-start justify-center lg:justify-start md:py-2 px-5 md:px-0">
-                <div class="w-1/2">
+            <div class="md:space-x-4 md:flex md:flex-row items-start justify-center lg:justify-start md:py-2 px-5 md:px-0">
+                <div class="w-full md:w-1/2 mr-10">
                     <!-- Email -->
                     <div class="inline-block mb-2 flex flex-row">
                         <img src="/img/icon/message.png" alt="" class="float-left w-5">
@@ -87,7 +92,7 @@ if ($status == 'bukan user') {
                         <!-- <span class="font-heading text-xs text-primary text-left flex items-center ml-3 md:ml-4"></span> -->
                     </div>
                 </div>
-                <div class="w-1/2 pl-6">
+                <div class="w-full md:w-1/2 mt-2 md:mt-0">
                     <!-- Twitter -->
                     <div class="inline-block mb-2 flex flex-row">
                         <img src="/img/icon/twitter.png" alt="" class="float-left w-4 w-4">
