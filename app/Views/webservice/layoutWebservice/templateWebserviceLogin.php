@@ -126,7 +126,7 @@
     <!-- END CONTENT PAGE -->
 
     <!-- FOOTER -->
-    <div class="bg-primary w-full pt-6 pb-3 lg:px-20 md:px-8 px-3">
+    <div class="bg-primary w-full pt-6 pb-3 lg:px-20 md:px-8 px-3 z-40">
         <div class="flex flex-col md:flex-row md:justify-around text-xs">
 
             <!-- awal footer stis -->

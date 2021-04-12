@@ -3,6 +3,10 @@
   background-image: linear-gradient(to right, #014f86, #025e9e, #0567ab);
   background-size: 200% auto;
 } */
+html {
+  scroll-behavior: smooth;
+}
+
 body div.loading {
   background: #fff center;
 }
@@ -48,7 +52,8 @@ body div.loading {
 
 #menuDok>li:first-child:hover,
 #menuDok>li>div:hover,
-#menuDok>li>ul>li:hover {
+#menuDok>li>ul>li:hover,
+#menuDok .activeSideDok {
   background-color: rgb(1, 89, 152);
 }
 

@@ -212,17 +212,17 @@ $('#sidebarDok').children().first().children().first().click(function () {
     setTimeout(() => {
         $('#sidebarDok').children().first().toggleClass('hidden')
         $('#sidebarDok').children().eq(1).toggleClass('-mt-5')
-    }, 1000)
+    }, 700)
 })
 // js dokumentasi
 
 // js layoutDokumentasi
 $(document).ready(function () {
-    $('ul li div span').click(function () {
-        $(this).next().toggleClass('rotate-180');
-        ($(this).parent().next().hasClass('close-submenu')) ? $(this).parent().next().removeClass('close-submenu').addClass('open-submenu'): $(this).parent().next().removeClass('open-submenu').addClass('close-submenu')
-        $(this).parent().parent().next().toggleClass('translate-y-16')
-    })
+    // $('ul li div span').click(function () {
+    //     $(this).next().toggleClass('rotate-180');
+    //     ($(this).parent().next().hasClass('close-submenu')) ? $(this).parent().next().removeClass('close-submenu').addClass('open-submenu'): $(this).parent().next().removeClass('open-submenu').addClass('close-submenu')
+    //     $(this).parent().parent().next().toggleClass('translate-y-16')
+    // })
     $('ul li div img').click(function () {
         $(this).toggleClass('rotate-180');
         ($(this).parent().next().hasClass('close-submenu')) ? $(this).parent().next().removeClass('close-submenu').addClass('open-submenu'): $(this).parent().next().removeClass('open-submenu').addClass('close-submenu')

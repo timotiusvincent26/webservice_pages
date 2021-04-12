@@ -6,10 +6,10 @@
 
 <div class="w-full">
     <div class="flex w-full h-full relative">
-        <div id="sidebarDok" class="absolute top-0 bottom-0 lg:left-0 sm:w-80 sm:-left-80 -left-64 w-64 transition-all duration-1000 easy-out bg-primary">
+        <div id="sidebarDok" class="md:top-20 top-16 bottom-0 lg:left-0 sm:w-80 sm:-left-80 -left-64 w-64 transition-all duration-700 easy-out bg-primary -mt-20 pt-20 z-30 fixed ">
             <!-- start sidebar hamburger/posisi tutup -->
             <div class="flex justify-end lg:hidden hidden">
-                <svg class="cursor-pointer w-8 transition-all duration-1000 easy-out sm:mr-5 mr-2 mt-1 fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="cursor-pointer w-8 transition-all duration-700 easy-out sm:mr-5 mr-2 mt-1 fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </div>
@@ -49,35 +49,35 @@
                 </div>
 
                 <ul class="mr-4 mt-5" id="menuDok">
-                    <li class="pl-7 rounded-r-lg md:text-xl text-secondary font-semibold mb-1 py-0.5">
+                    <li class="itemSideDok pl-7 rounded-r-lg md:text-xl text-secondary font-semibold mb-1 py-0.5">
                         <a href="#memintaData" class="py-1">Meminta Data</a>
                     </li>
                     <li class="text-secondary relative mb-1">
-                        <div class="pl-5 rounded-r-lg flex justify-between items-center pr-4 md:text-xl font-semibold">
-                            <span class="py-0.5 px-2 cursor-pointer select-none">Data 1</span>
+                        <div class="itemSideDok pl-5 rounded-r-lg flex justify-between items-center pr-4 md:text-xl font-semibold">
+                            <a href="#data" class="py-0.5 px-2 cursor-pointer select-none">Data</a>
                             <img src="/img/icon/drop-down.svg" class="text-red-500 cursor-pointer transform transition-all duration-300">
                         </div>
                         <ul class="text-white text-white transition-all duration-300 easy-out absolute overflow-hidden open-submenu w-full">
-                            <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
-                                <a href="#subData1_1" class="py-1">Sub-Data 1.1</a>
+                            <li class="itemSideDok pl-12 py-0.5 rounded-r-lg md:text-lg">
+                                <a href="#dataUser" class="py-1">Data User</a>
                             </li>
-                            <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
-                                <a href="#subData1_2" class="py-1">Sub-Data 1.2</a>
+                            <li class="itemSideDok pl-12 py-0.5 rounded-r-lg md:text-lg">
+                                <a href="#dataAlumni" class="py-1">Data Alumni</a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="text-secondary relative transform translate-y-16 duration-300">
-                        <div class="pl-5 rounded-r-lg flex justify-between items-center pr-4 md:text-xl font-semibold">
-                            <span class="py-0.5 px-2 cursor-pointer select-none">Judul</span>
+                        <div class="itemSideDok pl-5 rounded-r-lg flex justify-between items-center pr-4 md:text-xl font-semibold">
+                            <a href="#judul" class="py-0.5 px-2 cursor-pointer select-none">Judul</a>
                             <img src="/img/icon/drop-down.svg" class="text-red-500 cursor-pointer transform transition-all duration-300">
                         </div>
                         <ul class="text-white text-white transition-all duration-300 easy-out absolute overflow-hidden open-submenu w-full">
-                            <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
-                                <a href="" class="py-1">Sub-Judul 1.1</a>
+                            <li class="itemSideDok pl-12 py-0.5 rounded-r-lg md:text-lg">
+                                <span class="py-1">Sub-Judul 1.1</span>
                             </li>
-                            <li class="pl-12 py-0.5 rounded-r-lg md:text-lg">
-                                <a href="" class="py-1">Sub-Judul 1.2</a>
+                            <li class="itemSideDok pl-12 py-0.5 rounded-r-lg md:text-lg">
+                                <span class="py-1">Sub-Judul 1.2</span>
                             </li>
                         </ul>
                     </li>
@@ -88,7 +88,7 @@
         </div>
 
         <!-- content edit di sini -->
-        <div class="xl:mx-4 lg:mx-0 relative w-full lg:left-72 -left-4 transition-all duration-1000 easy-out xl:ml-10 xl:mr-80 xl:pr-2 lg:mr-72">
+        <div class="xl:mx-4 lg:mx-0 relative w-full lg:left-72 -left-4 transition-all duration-700 easy-out xl:ml-10 xl:mr-80 xl:pr-2 lg:mr-72 ">
             <?php $this->renderSection('dokumentasi'); ?>
         </div>
         <!-- end content edit -->
@@ -97,5 +97,23 @@
 </div>
 
 </div>
+<script>
+    let mainNavLinks = document.querySelectorAll("#menuDok .itemSideDok a");
+    let mainSections = document.querySelectorAll("section");
 
+    window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach(link => {
+            let section = document.querySelector(`${link.hash}`);
+            if (section !== null) {
+                if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                    link.parentElement.classList.add("activeSideDok");
+                } else {
+                    link.parentElement.classList.remove("activeSideDok");
+                }
+            }
+        });
+    });
+</script>
 <?= $this->endSection(); ?>
