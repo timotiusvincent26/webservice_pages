@@ -44,6 +44,19 @@ body div.loading {
   z-index: 5;
 }
 
+@media (max-width: 409px) {
+
+  #sidebarDok,
+  #divKosong,
+  #burgerDok {
+    top: 4rem;
+  }
+}
+
+.field-response {
+  color: #8bc;
+}
+
 #menu1:hover,
 #menu1+ul>li>div:hover,
 #menu1+ul>li>ul>li:hover {

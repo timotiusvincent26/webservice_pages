@@ -6,13 +6,13 @@
 
 <div class="w-full">
     <div class="flex w-full h-full relative">
-        <div id="sidebarDok" class="md:top-20 top-16 bottom-0 lg:left-0 sm:w-80 sm:-left-80 -left-64 w-64 transition-all duration-700 easy-out bg-primary -mt-20 pt-20 z-30 fixed ">
+        <div id="sidebarDok" class="md:top-20 sm:top-16 top-11 bottom-0 xl:w-80 lg:w-64 lg:left-0 -left-64 w-64 transition-all duration-700 easy-out -mt-20 pt-20 z-20 fixed" style="background-color: rgb(4,72,120);">
             <!-- start sidebar hamburger/posisi tutup -->
-            <div class="flex justify-end lg:hidden hidden">
-                <svg class="cursor-pointer w-8 transition-all duration-700 easy-out sm:mr-5 mr-2 mt-1 fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- <div class="flex justify-end lg:hidden hidden">
+                <svg class="cursor-pointer w-8 transition-all duration-700 easy-out mr-3 mt-1 fill-current text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-            </div>
+            </div> -->
             <!-- end sidebar hamburger/posisi tutup -->
 
             <!-- start sidebar posisi buka -->
@@ -88,7 +88,7 @@
         </div>
 
         <!-- content edit di sini -->
-        <div class="xl:mx-4 lg:mx-0 relative w-full lg:left-72 -left-4 transition-all duration-700 easy-out xl:ml-10 xl:mr-80 xl:pr-2 lg:mr-72 ">
+        <div class="xl:mx-4 lg:mx-0 relative w-full xl:left-72 lg:left-64 -left-4 transition-all duration-700 easy-out xl:ml-10 xl:mr-80 xl:pr-2 lg:mr-72 ">
             <?php $this->renderSection('dokumentasi'); ?>
         </div>
         <!-- end content edit -->
@@ -101,7 +101,7 @@
     let mainNavLinks = document.querySelectorAll("#menuDok .itemSideDok a");
     let mainSections = document.querySelectorAll("section");
 
-    window.addEventListener("scroll", event => {
+    $(window).scroll(function() {
         let fromTop = window.scrollY;
 
         mainNavLinks.forEach(link => {

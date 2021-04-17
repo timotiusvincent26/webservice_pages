@@ -49,8 +49,9 @@
 
     </div>
     <!-- END HEADER -->
+    <div id="divKosong" class="bg-primary w-full md:h-20 sm:h-16 h-10"></div>
     <!-- CONTENT PAGE DI SINI -->
-    <div class="w-full flex flex-1 mt-24">
+    <div class="w-full flex flex-1 mt-6">
         <?= $this->renderSection('content'); ?>
     </div>
     <!-- END CONTENT PAGE -->
@@ -122,6 +123,7 @@
 <script type="text/javascript" src="/js/loading.js"></script>
 <script type="text/javascript" src="/js/onTopBtn.js"></script>
 <script src="/js/aos.js"></script>
+<script type="text/javascript" src="/js/navbar.js"></script>
 <script>
     AOS.init();
 </script>
