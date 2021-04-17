@@ -24,9 +24,9 @@ if ($login == 'belum') {
 </div>
 <div class="flex md:flex-row flex-col-reverse my-8 pt-0 lg:px-20 md:px-8 px-3">
     <div class="md:w-2/3 block md:px-2 md:py-8 pb-4">
-        <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-black font-heading font-semibold">HASIL DARI PROYEK PKL RISET 5</div>
+        <div class="md:mb-6 mb-2 text-lg text-center md:text-left text-black font-heading font-semibold">HASIL DARI PROYEK PKL RISET 5</div>
         <!-- awal keterangan hasil proyek pkl riset 5 -->
-        <p class="text-primary text-justify md:text-left font-paragraph">
+        <p class="text-primary lg:text-sm text-justify md:text-left font-paragraph">
             Riset 5 merupakan salah satu dari enam riset yang ada dalam PKL Tahun Akademik 2020/2021 Politeknik Statistika STIS yang diadakan secara online di seluruh Indonesia dengan tema Menuju BPS yang Lebih Baik (Towards Better BPS). Riset 5 sendiri memiliki topik “Pengembangan Sistem Database Alumni AIS/STIS/Politeknik Statistika STIS”. Riset 5 memiliki tujuan untuk menjadi penyedia data alumni AIS/STIS/Politeknik Statistika STIS yang lengkap, terintegrasi, dan up to date sehingga dapat menjadi penghubung antaralumni maupun antara alumni dengan Politeknik Statistika STIS. Dengan sistem informasi database alumni ini juga diharapkan dapat mempermudah dalam mencari data alumni AIS/STIS/Politeknik Statistika STIS mulai dari angkatan 1 hingga angkatan terakhir yang baru lulus.
         </p>
         <!-- akhir keterangan hasil proyek pkl riset 5 -->
@@ -45,9 +45,9 @@ if ($login == 'belum') {
     </div>
 
     <div class="md:w-2/3 block md:px-2 md:py-16 pb-4 ">
-        <div class="md:mb-6 mb-2 text-xl text-center md:text-left text-secondary font-heading font-semibold">SEJARAH SINGKAT HAISTIS</div>
+        <div class="md:mb-6 mb-2 text-lg text-center md:text-left text-secondary font-heading font-semibold">SEJARAH SINGKAT HAISTIS</div>
         <!-- awal keterangan hasil proyek pkl riset 5 -->
-        <p class="text-white text-justify md:text-left font-paragraph">
+        <p class="text-white lg:text-sm text-justify md:text-left font-paragraph">
             Himpunan HAISSTIS alumni AIS/STIS (HAISSTIS) merupakan organisasi yang dibentuk sebagai wadah silaturahmi alumni AIS/STIS/Polstat STIS yang beragam suku, agama dan budaya agar terjalin hubungan kekeluargaan. Himpunan alumni AIS/STIS (HAISSTIS) bertujuan untuk menjunjung tinggi nama baik almamater, membina dan mengembangkan semangat kebersamaan, ikut mengembangkan perstatistikan Indonesia, dan ikut meningkatkan kesadaran masyarakat akan arti dan kegunaan statistik.
         </p>
         <!-- akhir keterangan hasil proyek pkl riset 5 -->
@@ -57,7 +57,7 @@ if ($login == 'belum') {
 
 <!-- Awal Jumlah Alumni AIS/STIS/Polstat STIS -->
 <div class="w-full my-8 lg:px-20 md:px-8 px-3">
-    <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-heading font-bold">ALUMNI AIS/STIS/POLSTAT STIS</div>
+    <div class="w-full md:mb-6 mb-4 text-center text-lg text-black font-heading font-bold">ALUMNI AIS/STIS/POLSTAT STIS</div>
 
     <div class="flex flex-col items-center md:flex-row md:justify-around w-full mt-4">
         <!-- Awal Jumlah Alumni AIS/STIS/Polstat STIS I -->
@@ -68,6 +68,7 @@ if ($login == 'belum') {
         <!-- Akhir Jumlah Alumni AIS/STIS/Polstat STIS I-->
 
         <!-- Awal Jumlah Alumni AIS/STIS/Polstat STIS II-->
+
         <div class="w-min mb-2 md:mb-0 py-6 px-6 bg-contain bg-no-repeat bg-center" style="background-image: url(/img/bulat.png)">
             <div class="angka text-primary md:text-6xl text-3xl font-bold md:mb-4 mb-2 font-heading">38400</div>
             <div class="text-gray-500 text-sm font-semibold text-center font-paragraph">Lulusan STIS</div>
@@ -87,12 +88,12 @@ if ($login == 'belum') {
 
 <!-- Awal Peta Sebaran ALUMNI -->
 <div class="bg-primary my-8 md:py-8 py-4 lg:px-20 md:px-8 px-3 z-10">
-    <div class="w-full md:mb-6 mb-4 text-center text-xl text-secondary font-bold font-heading">PETA SEBARAN ALUMNI</div>
+    <div class="w-full md:mb-6 mb-4 text-center text-lg text-secondary font-bold font-heading">PETA SEBARAN ALUMNI</div>
 
     <div class="text-white font-medium text-center mb-1">Tampilkan Berdasarkan :</div>
     <!-- <div> -->
     <div class="flex flex-col w-32 h-20 items-center mx-auto filterPeta">
-        <div class="w-full flex justify-center items-center  mb-1 py-1 mx-auto text-primary text-sm bg-white font-medium font-paragraph rounded-lg cursor-pointer">
+        <div class="w-full flex justify-center items-center  mb-1 py-1 mx-auto text-primary text-xs bg-white font-medium font-paragraph rounded-lg cursor-pointer">
             <div class="hasilFilterPeta">Provinsi</div>
 
             <svg class="w-4 h-4 downFilterPeta" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -106,8 +107,8 @@ if ($login == 'belum') {
         </div>
         <!-- </div> -->
         <div class="mx-auto flex flex-col justify-center mb-4 bg-white cursor-pointer rounded-lg hidden z-20 listFilterPeta">
-            <div class="w-32 text-primary text-center text-sm py-1 font-medium font-paragraph border-b border-primary petaProvinsi">Provinsi</div>
-            <div class="w-32 text-primary text-center text-sm py-1 font-medium font-paragraph petaKabupaten">Kabupaten</div>
+            <div class="w-32 text-primary text-center text-xs py-1 font-medium font-paragraph border-b border-primary petaProvinsi">Provinsi</div>
+            <div class="w-32 text-primary text-center text-xs py-1 font-medium font-paragraph petaKabupaten">Kabupaten</div>
         </div>
     </div>
 
@@ -131,7 +132,7 @@ if ($login == 'belum') {
             </svg>
 
             <div class="p-2 bg-gray-200 rounded-xl text-primary hidden info">
-                <div class="text-sm font-heading font-semibold">Keterangan :</div>
+                <div class="text-xs font-heading font-semibold">Keterangan :</div>
                 <div class="flex items-center text-xs font-paragraph">
                     <span class="font-heading flex justify-start text-left">
                         <img class="mr-0 md:mr-2 ml-1 md:ml-0 w-4 h-4 md:w-4 float-left" src="/img/icon/peta_lokasi.png" alt="">
@@ -153,7 +154,7 @@ if ($login == 'belum') {
 
 <!-- awal card -->
 <div class="w-full mt-8 lg:px-20 md:px-8 px-3">
-    <div class="w-full md:mb-6 mb-4 text-center text-xl text-black font-bold font-heading">BERITA TERBARU</div>
+    <div class="w-full md:mb-6 mb-4 text-center text-lg text-black font-bold font-heading">BERITA TERBARU</div>
 
     <div class="flex flex-col md:flex-row md:justify-between w-full mt-4">
 
@@ -166,18 +167,18 @@ if ($login == 'belum') {
                 <div class="py-4">
                     <!-- Awal judul berita -->
                     <div>
-                        <a href="#" class="text-black text-xl font-heading font-semibold hover:font-bold">
+                        <a href="#" class="text-black lg:text-base font-heading font-semibold hover:font-bold">
                             Pelatihan Kepegawaian di Masa Pandemi
                         </a>
                     </div>
                     <!-- akhir judul berita -->
 
                     <!-- awal tanggal berita -->
-                    <div class="text-gray-700 text-sm font-paragraph font-semibold ">1 Januari 2020</div>
+                    <div class="text-gray-700 text-xs font-paragraph font-semibold ">1 Januari 2020</div>
                     <!-- akhir tanggal berita -->
 
                     <!-- awal isi berita -->
-                    <p class="text-gray-600 break-words font-paragraph text-justify leading-none mt-4">
+                    <p class="text-gray-600 lg:text-sm break-words font-paragraph text-justify leading-none mt-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum quibusdam nemo, incidunt dolorem voluptatem, rem eligendi beatae numquam a rerum debitis omnis ratione tempora, quisquam ullam id aperiam quam.
                     </p>
                     <!-- akhir isi berita -->
@@ -193,7 +194,7 @@ if ($login == 'belum') {
 
 <!-- awal tombol "Lihat Berita Selanjutnya" -->
 <div class="flex w-full justify-end lg:px-20 md:px-8 px-3 mb-8">
-    <div class="text-primary font-paragraph my-auto"><a href="/websia/berandaBerita">Lihat Berita Selanjutnya</a> </div>
+    <div class="text-primary lg:text-sm font-paragraph my-auto"><a href="/websia/berandaBerita">Lihat Berita Selanjutnya</a> </div>
     <div>
         <a href="/websia/berandaBerita">
             <svg class="w-6 h-6 font-bold text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
