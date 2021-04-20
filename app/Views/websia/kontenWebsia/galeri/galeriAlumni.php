@@ -93,7 +93,7 @@
             <div class="my-4 md:my-5 font-paragraph italic text-base lg:text-xl">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci sed fuga, earum fugit reiciendis repellendus maxime at quia dolore similique cupiditate inventore accusantium autem exercitationem ratione, natus minus fugiat?"
             </div>
-            <button class="p-1 rounded-3xl text-base lg:text-xl bg-secondary border-2 border-secondary text-white hover:bg-white hover:border-2 hover:border-secondary hover:text-secondary transition-colors duration-300 font-paragraph text-base lg:text-xl">UNGGAH KENANGANMU</button>
+            <button class="unggahFoto p-1 rounded-3xl text-base lg:text-xl bg-secondary border-2 border-secondary text-white hover:bg-white hover:border-2 hover:border-secondary hover:text-secondary transition-colors duration-300 font-paragraph text-base lg:text-xl">UNGGAH KENANGANMU</button>
             <label for="komentar" class="mt-5 font-paragraph text-red-400">*Wajib diisi</label>
             <input type="text" name="komentar" placeholder="Komentar.." class="mb-6 p-2 border-2 border-gray-300 rounded-xl font-paragraph focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
             <div class="text-right">
