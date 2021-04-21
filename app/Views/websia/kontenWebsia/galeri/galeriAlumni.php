@@ -85,7 +85,7 @@
 
 <!-- Awal fitur unggah foto galeri -->
 <div class="flex flex-col-reverse md:grid md:grid-cols-4 lg:grid-cols-5 md:gap-4">
-    <div class="md:col-span-2 lg:col-span-3">
+    <div class="md:col-span-2 lg:col-span-3 md:mx-8 mb-6">
         <div class="flex flex-col mx-6 md:m-6">
             <div class="mt-5 md:mt-1 text-center md:text-left text-3xl text-secondary font-bold font-heading">
                 Mama Lorent
@@ -93,12 +93,7 @@
             <div class="my-4 md:my-5 font-paragraph italic text-base lg:text-xl">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci sed fuga, earum fugit reiciendis repellendus maxime at quia dolore similique cupiditate inventore accusantium autem exercitationem ratione, natus minus fugiat?"
             </div>
-            <button class="unggahFoto p-1 rounded-3xl text-base lg:text-xl bg-secondary border-2 border-secondary text-white hover:bg-white hover:border-2 hover:border-secondary hover:text-secondary transition-colors duration-300 font-paragraph text-base lg:text-xl">UNGGAH KENANGANMU</button>
-            <label for="komentar" class="mt-5 font-paragraph text-red-400">*Wajib diisi</label>
-            <input type="text" name="komentar" placeholder="Komentar.." class="mb-6 p-2 border-2 border-gray-300 rounded-xl font-paragraph focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
-            <div class="text-right">
-                <button class="py-1 px-6 text-right rounded-3xl bg-secondary border-2 border-secondary text-white hover:bg-white hover:border-2 hover:border-secondary hover:text-secondary transition-colors duration-300 font-paragraph text-base lg:text-xl">KIRIM</button>
-            </div>
+            <button class="unggahFoto focus:outline-none p-1 rounded-3xl text-base lg:text-xl bg-secondary border-2 border-secondary text-white hover:bg-white hover:border-2 hover:border-secondary hover:text-secondary transition-colors duration-300 font-paragraph text-base lg:text-xl">UNGGAH KENANGANMU</button>
         </div>
     </div>
     <div class="md:col-span-2 lg:col-span-2">
