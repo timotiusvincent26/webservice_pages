@@ -1,6 +1,6 @@
-<div class="md:relative fixed flex flex-col bg-primary rounded-r md:h-auto h-full sidebarSearch">
+<div class="md:relative fixed flex flex-col bg-primary rounded-r md:h-auto h-full sidebarSearch  ">
 
-    <div class="flex md:px-5 px-2 py-2 justify-between bg-primaryHover items-center">
+    <div class="flex md:px-5 px-2 py-2 justify-between bg-primaryHover items-center ">
         <div class="md:text-2xl text-base font-heading font-semibold text-secondary hidden md:mr-32 param1"> FILTER</div>
         <svg class="md:w-7 w-4 fill-current text-secondary cursor-pointer hamburgerSidebar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />

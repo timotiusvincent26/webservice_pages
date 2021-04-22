@@ -360,7 +360,7 @@
   <span class="field-response">"message"</span>: <span class="text-secondary">"Successful!"</span>,
   <span class="field-response">"data"</span>: [
     {
-        <span class="field-response">"angaktan"</span>: <span class="text-secondary">9</span>,
+        <span class="field-response">"angkatan"</span>: <span class="text-secondary">9</span>,
         <span class="field-response">"nama"</span>: <span class="text-secondary">"Haillyn Ethan Callisto"</span>,
         <span class="field-response">"nim"</span>: <span class="text-secondary">223099999</span>
         <span class="field-response">"jenis_kelamin"</span>: <span class="text-secondary">"P"</span>,
@@ -560,7 +560,7 @@
   <span class="field-response">"message"</span>: <span class="text-secondary">"Successful!"</span>,
   <span class="field-response">"data"</span>: [
     {
-        <span class="field-response">"angaktan"</span>: <span class="text-secondary">57</span>,
+        <span class="field-response">"angkatan"</span>: <span class="text-secondary">57</span>,
         <span class="field-response">"nama"</span>: <span class="text-secondary">"Dummy_dummy"</span>,
         <span class="field-response">"nim"</span>: <span class="text-secondary">221810160</span>
         <span class="field-response">"jenis_kelamin"</span>: <span class="text-secondary">"L"</span>,
@@ -569,7 +569,7 @@
         <span class="field-response">"aktif_pns"</span>: <span class="text-secondary">1</span>,
     },
     {
-        <span class="field-response">"angaktan"</span>: <span class="text-secondary">9</span>,
+        <span class="field-response">"angkatan"</span>: <span class="text-secondary">9</span>,
         <span class="field-response">"nama"</span>: <span class="text-secondary">"Haillyn Ethan Callisto"</span>,
         <span class="field-response">"nim"</span>: <span class="text-secondary">223099999</span>
         <span class="field-response">"jenis_kelamin"</span>: <span class="text-secondary">"P"</span>,
@@ -578,7 +578,7 @@
         <span class="field-response">"aktif_pns"</span>: <span class="text-secondary">1</span>,
     },
     {
-        <span class="field-response">"angaktan"</span>: <span class="text-secondary">1</span>,
+        <span class="field-response">"angkatan"</span>: <span class="text-secondary">1</span>,
         <span class="field-response">"nama"</span>: <span class="text-secondary">"Johanes Aristo"</span>,
         <span class="field-response">"nim"</span>: <span class="text-secondary">340000888</span>
         <span class="field-response">"jenis_kelamin"</span>: <span class="text-secondary">"L"</span>,
@@ -587,7 +587,7 @@
         <span class="field-response">"aktif_pns"</span>: <span class="text-secondary">0</span>,
     },
     {
-        <span class="field-response">"angaktan"</span>: <span class="text-secondary">1</span>,
+        <span class="field-response">"angkatan"</span>: <span class="text-secondary">1</span>,
         <span class="field-response">"nama"</span>: <span class="text-secondary">"Kayla Hasan"</span>,
         <span class="field-response">"nim"</span>: <span class="text-secondary">340000989</span>
         <span class="field-response">"jenis_kelamin"</span>: <span class="text-secondary">"P"</span>,
@@ -596,7 +596,7 @@
         <span class="field-response">"aktif_pns"</span>: <span class="text-secondary">0</span>,
     },
     {
-        <span class="field-response">"angaktan"</span>: <span class="text-secondary">1</span>,
+        <span class="field-response">"angkatan"</span>: <span class="text-secondary">1</span>,
         <span class="field-response">"nama"</span>: <span class="text-secondary">"Muhammad Reno"</span>,
         <span class="field-response">"nim"</span>: <span class="text-secondary">340000759</span>
         <span class="field-response">"jenis_kelamin"</span>: <span class="text-secondary">"L"</span>,

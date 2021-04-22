@@ -258,5 +258,6 @@
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/footer.js"></script>
 <script type="text/javascript" src="/js/editProfil.js"></script>
+<script type="text/javascript" src="/js/galeri.js"></script>
 
 </html>
