@@ -44,8 +44,8 @@
             <!-- Awal Image viewer (Ketika gambar diklik) -->
             <div class="overlay" id="img-1">
                 <a href="#" class="close">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="absolute w-8 text-gray-300 top-3 right-3">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg class="absolute w-8 text-gray-300 top-3 right-3 text-secondary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
                     </svg>
                 </a>
                 <!-- Tombol navigasi previous dan next (Karena gambarnya masih sama semua jadi linknya diarahkan ke gambar yang sama) -->
