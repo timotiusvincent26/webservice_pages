@@ -135,6 +135,9 @@ $('.unggahFoto').click(function () {
         </div>
     </div>
 `)
+    $('#pilihFile').change(function() {
+        $(this).next().next().text(this.files[0].name)
+    });
 
     $('#formUnggahFoto').children().first().removeClass('hidden')
     setTimeout(function () {
