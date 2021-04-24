@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // awal js unggah foto suksesLaporkanFoto
 function tutupFormUnggahFoto() {
     $('#formUnggahFoto').children().first().addClass('opacity-0')
@@ -10,7 +9,6 @@ function tutupFormUnggahFoto() {
     }, 400);
 }
 
-=======
 // awal js image viewer
 $('.albumImg').click(function () {
     $('body').prepend(`
@@ -87,7 +85,6 @@ $(window).click(function (e) {
 // akhir js image viewer
 
 // awal js unggah foto
->>>>>>> 701024e121ef888eac6f158cf08b67459d3de929
 $('.unggahFoto').click(function () {
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formUnggahFoto'>
@@ -100,11 +97,10 @@ $('.unggahFoto').click(function () {
             </div>
             <form action="" method="post" class="flex flex-col bg-gray-100 sm:px-12 px-4 rounded-b-2xl text-sm">
                 <div class="flex mt-5">
-                    <div class="flex flex-col">
-                    <input type="button" value="Pilih File" class="pilihFile bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none" id='pilihFile'>
-                    </div>
-                    <div class="flex flex-col justify-center">
-                        <p class="font-heading text-primary text-xs">Kenangan.jpg</p>
+                    <div class="flex justify-start items-center mb-2 w-full relative">
+                    <input type="file" hidden accept=".jpg, .jpeg, .img, .png" title="Pilih File" id='pilihFile'>
+                    <label for="pilihFile" title="Harus Diisi" class="pilihFile bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none" >Pilih File</label>
+                    <span class="text-primary absolute md:left-28 left-28 select-none cursor-default cursor md:text-sm text-sm">Tidak ada foto yang dipilih</span>
                     </div>
                 </div>
                 <label for="albumFoto" class="text-primary font-medium mt-2">Album Foto:</label>
@@ -126,7 +122,7 @@ $('.unggahFoto').click(function () {
                 </select>
                 <div class="font-heading text-xs text-primary">
                     <p class="mb-2"> *Required </p>
-                    <p class="mb-2"> Format file harus .jpg/.jpeg/.png </p>
+                    <p> Format file harus .jpg/.jpeg/.png </p>
                     <p> Ukuran file maksimum 2 MB </p>
                 </div>
                 <div class="flex justify-end my-4">
