@@ -4,7 +4,7 @@
 
 <div class="xl:w-7/12 md:w-10/12 flex items-center">
     <form method="POST" action="" class="rounded-3xl shadow-2xl xl:px-16 md:px-8 px-4 sm:mx-0 mx-4 w-full" data-aos="zoom-in">
-        <h2 class="sm:text-2xl text-lg mb-3 font-bold text-center pt-8 text-primary">ATUR ULANG KATA SANDI</h2>
+        <h2 class="sm:text-2xl text-lg mb-3 font-bold text-center pt-8 text-black">ATUR ULANG KATA SANDI</h2>
         <div class="pl-3 rounded-full flex items-center" style="background-color: #B1FF66;">
             <img src="/img/icon/check.png" class="h-5 mr-1">
             <p class="sm:text-base text-sm" style="color: #54AC00;">Kata sandi baru telah dikirim.</p>
@@ -15,8 +15,8 @@
         </div>
         <p class="text-primary font-medium mb-4 mt-1 xl:text-base sm:text-sm text-xs text-justify">Masukkan email yang terdaftar. Kata sandi baru akan dikirimkan melalui email tersebut.</p>
         <div class="flex sm:h-10 h-8 mb-5">
-            <label for="email" class="w-1/4 text-primary font-medium flex items-center sm:text-lg text-base">Email</label>
-            <input type="text" name="email" class="input pl-2 w-3/4 rounded-lg border-gray-400 outline-none text-gray-400 border-2" id=email placeholder="Ketik email di sini">
+            <label for="email" class="w-1/4 text-primary font-medium flex items-center sm:text-lg text-base">Alamat Email :</label>
+            <input type="text" name="email" class="input pl-2 w-3/4 rounded-lg border-gray-400 outline-none text-gray-400 border-2" id=email placeholder="mail@example.com">
         </div>
 
         <div class="flex pb-10">

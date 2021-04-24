@@ -142,6 +142,7 @@
     <script type="text/javascript" src="/js/loading.js"></script>
     <script type="text/javascript" src="/js/login.js"></script>
     <script type="text/javascript" src="/js/navbar.js"></script>
+    <script type="text/javascript" src="/js/resetPass.js"></script>
     <script src="/js/aos.js"></script>
     <script>
         AOS.init();
