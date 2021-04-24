@@ -1,25 +1,30 @@
 <?= $this->extend('websia/layoutWebsia/templateBerandaLogin.php'); ?>
 
 <?= $this->section('content'); ?>
+<style>
+    .album-btn:hover {
+        border-radius: 0px;
+    }
+</style>
+
 <!-- Awal Galeri Alumni -->
 <div class="text-center">
-    <div id="coba" class="coba mt-8 text-2xl font-bold font-heading">
+    <div class="mt-8 text-2xl font-bold font-heading">
         Galeri Kenangan Alumni
     </div>
     <div class="flex items-center justify-center mt-4 mb-8">
-        <div class="flex justify-between items-center rounded-3xl text-sm bg-secondary text-white hover:bg-yellow-500 transition-colors duration-300">
+        <button class="-ml-4 mr-4 px-4 py-1 rounded-3xl border border-secondary text-sm bg-white text-secondary hover:bg-secondaryhover hover:text-white transition-colors duration-300 focus:outline-none galeriButton">SEMUA FOTO</button>
+        <div class="album-btn rounded-3xl text-sm bg-white text-secondary hover:bg-secondaryhover hover:text-white transition-all duration-400 galeriButton">
             <!-- Awal dropdown button album -->
             <div class="dropdown font-paragraph">
-                <button class="px-2 py-1">
+                <button class="text-center rounded-3xl px-4 py-1 border border-secondary focus:outline-none">
                     ALBUM
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline w-6 text-white">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
                     <!-- awal konten dropdown -->
-                    <div class="dropdown-content content-center mt-1">
-                        <a href="" class="text-secondary bg-white border-b-2 hover:border-secondary hover:bg-gray-100 py-2 px-3 text-left transiton duration-300"> ALBUM </a>
-                        <a href="" class="text-secondary bg-white border-b-2 hover:border-secondary hover:bg-gray-100 py-2 px-3 text-left transiton duration-300"> ALBUM </a>
-                        <a href="" class="text-secondary bg-white border-b-2 hover:border-secondary hover:bg-gray-100 py-2 px-3 text-left transiton duration-300"> ALBUM </a>
+                    <div class="dropdown-content content-center w-max -ml-6 mt-1">
+                        <a href="" class="text-secondary bg-white border-2 border-secondary hover:bg-secondary hover:text-white py-4 px-3 text-left transiton duration-300"> AIS/STIS/POLSTAT STIS </a>
+                        <a href="" class="text-secondary bg-white border-b-2 border-l-2 border-r-2 border-secondary hover:bg-secondary hover:text-white py-1 px-3 text-left transiton duration-300"> Wisuda </a>
+                        <a href="" class="text-secondary bg-white border-l-2 border-r-2 border-secondary hover:bg-secondary hover:text-white py-1 px-3 text-left transiton duration-300"> Prestasi </a>
+                        <a href="" class="text-secondary bg-white border-2 border-secondary hover:bg-secondary hover:text-white py-1 px-3 text-left transiton duration-300"> Sweet Memories </a>
                     </div>
                     <!-- akhir konten dropdown -->
                 </button>
@@ -36,28 +41,11 @@
                 <!-- 1 gambar -->
                 <a href="#img-1">
                     <div class="rounded-3xl m-2 relative hover:shadow-xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 cursor-pointer">
-                        <img class="w-full rounded-3xl mx-auto" src="/img/alumni.jpg" alt="" />
+                        <img class="albumImg w-full rounded-3xl mx-auto" src="/img/alumni.jpg" alt="" />
                     </div>
                 </a>
             <?php endfor; ?>
             <!-- Akhir Tampilan Galeri -->
-            <!-- Awal Image viewer (Ketika gambar diklik) -->
-            <div class="overlay" id="img-1">
-                <a href="#" class="close">
-                    <svg class="absolute w-8 text-gray-300 top-3 right-3 text-secondary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
-                    </svg>
-                </a>
-                <!-- Tombol navigasi previous dan next (Karena gambarnya masih sama semua jadi linknya diarahkan ke gambar yang sama) -->
-                <a href="#img-1">
-                    <img src="/img/left-on.png" alt="" class="absolute top-32 sm:top-1/3">
-                    <img src="/img/right-on.png" alt="" class="absolute top-32 right-0 sm:top-1/3">
-                </a>
-                <!-- Gambar yang ditampilkan sesuai dengan gambar yang diklik -->
-                <img src="/img/alumni.jpg" alt="" class="w-full sm:max-w-screen-sm">
-                <p class="mx-12 mt-2 sm:mx-24 md:mx-40 lg:mx-48 text-center text-gray-300 font-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam impedit optio praesentium soluta quasi. Voluptatibus molestias sequi inventore odit voluptas pariatur a ut, totam obcaecati accusamus iure, labore dolorum dolor.</p>
-            </div>
-            <!-- Akhir Image viewer -->
         </div>
         <!-- Awal Navigasi -->
         <div class="flex justify-center md:justify-end items-center mx-8 p-2 text-secondary font-paragraph">
@@ -101,6 +89,8 @@
             <img src="/img/galeri.png" alt="" class="w-full md:h-full md:w-auto">
         </div>
     </div>
+
+
 </div>
 </div>
 <!-- Akhir fitur unggah foto galeri -->

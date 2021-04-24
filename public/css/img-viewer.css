@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0);
-  z-index: 50;
+  z-index: 49;
   transition: 1s;
   text-align: center;
 }

@@ -1,3 +1,78 @@
+// awal js image viewer
+$('.albumImg').click(function () {
+    $('body').prepend(`
+    <div class="fixed overflow-auto top-0 bottom-0 right-0 left-0 z-40 bg-black bg-opacity-80 text-center font-paragraph" id="img-1">
+        <div class="hidden m-auto opacity-0 duration-700 transition-all bg-gray bg-opacity-0 w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12">
+
+            <!-- Awal Tombol Laporkan foto -->
+            <button onClick="laporkanFoto()"><img src="/img/danger-sign.png" alt="" class="absolute top-3 right-3"></button>
+            <!-- Akhir Tombol Laporkan foto -->
+
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex flex-row justify-center items-center gap-x-4 mt-8 mb-6">
+                    <a href="#img-1">
+                        <img src="/img/left-on.png" alt="" class="">
+                    </a>
+                    <img src="/img/alumni.jpg" alt="" class="w-3/4">
+                    <a href="">
+                        <img src="/img/right-on.png" alt="" class="">
+                    </a>
+                </div>
+
+                <!-- Awal Caption -->
+                <div class="text-white w-3/4 mx-2 text-base">
+                    <p class="mb-2">Oleh : Si Fulan (59)</p>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam impedit optio praesentium soluta quasi. Voluptatibus molestias sequi inventore odit voluptas pariatur a ut, totam obcaecati accusamus iure, labore dolorum dolor.</p>
+                </div>
+                <!-- Akhir Caption -->
+
+                <div class="text-white w-3/4 mx-2 mt-10 md:text-xl">
+                <p class="mb-2">1 dari 13</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+`)
+
+    $('#img-1').children().first().removeClass('hidden')
+    setTimeout(function () {
+        $('#img-1').children().first().removeClass('opacity-0')
+    }, 10);
+
+    var modal = document.getElementById('img-1')
+    $(window).click(function (e) {
+        if (e.target === modal) {
+            $('#img-1').children().first().addClass('opacity-0')
+            $('#img-1').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+                $('#img-1').children().first().addClass('hidden')
+            });
+            setTimeout(function () {
+                $('#img-1').remove()
+            }, 400);
+        }
+    })
+})
+
+$('#img-1').children().first().removeClass('hidden')
+setTimeout(function () {
+    $('#img-1').children().first().removeClass('opacity-0')
+}, 10);
+
+var modal = document.getElementById('img-1')
+$(window).click(function (e) {
+    if (e.target === modal) {
+        $('#img-1').children().first().addClass('opacity-0')
+        $('#img-1').children().first().on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function () {
+            $('#img-1').children().first().addClass('hidden')
+        });
+        setTimeout(function () {
+            $('#img-1').remove()
+        }, 400);
+    }
+})
+// akhir js image viewer
+
 // awal js unggah foto
 $('.unggahFoto').click(function () {
     $('body').prepend(`
@@ -159,7 +234,7 @@ function tutupFormLaporFoto() {
     }, 400);
 }
 
-$('.laporkanFoto').click(function () {
+function laporkanFoto(){
     $('body').prepend(`
     <div class="fixed top-0 bottom-0 right-0 left-0 z-50 flex justify-center items-center bg-black bg-opacity-40 font-paragraph" id='formLaporFoto'>
         <div class="hidden opacity-0 duration-700 transition-all xl:w-1/2 lg:w-7/12 md:w-2/3 sm:w-3/4 w-11/12 bg-gray bg-opacity-0">
@@ -172,35 +247,32 @@ $('.laporkanFoto').click(function () {
             <form action="" method="post" class="flex flex-col bg-gray-100 sm:px-12 px-4 rounded-b-2xl text-sm">
                 <label for="inputLaporan" class="text-primary font-medium mt-8">Mengapa Anda melaporkan foto ini?</label>
                 <textarea name="inputLaporan" class="inputForm h-36" style="resize: none;" required></textarea>
-
-
+    
                 <div class="flex justify-end my-4">
                     <input type="button" value="BATAL" class="closeFormLaporFoto bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm mr-4 outline-none" id='backFormLaporFoto'>
                     <input type="submit" value="UNGGAH" class="submitFormLaporFoto bg-secondary text-white rounded-full w-24 py-1 text-center cursor-pointer hover:bg-secondaryhover transition-colors duration-300 text-sm outline-none">
                 </div>
-
             </form>
-
         </div>
     </div>
 `)
-
+    
     $('#formLaporFoto').children().first().removeClass('hidden')
     setTimeout(function () {
         $('#formLaporFoto').children().first().removeClass('opacity-0')
     }, 10);
-
+    
     $('.closeFormLaporFoto').click(function () {
         tutupFormLaporFoto();
     })
-
+    
     var modal = document.getElementById('formLaporFoto')
     $(window).click(function (e) {
         if (e.target === modal) {
             tutupFormLaporFoto();
         }
     })
-
+    
     $('#backFormLaporFoto').click(function (e) {
         e.preventDefault()
         $('#formLaporFoto').children().first().addClass('hidden')
@@ -212,8 +284,7 @@ $('.laporkanFoto').click(function () {
             $('#formLaporFoto').children().eq(1).children().eq(1).submit()
         }, 700);
     })
-
-})
+}
 
 //Akhir Lapor Foto
 
@@ -402,4 +473,22 @@ function suksesUnggahVideo () {
 
 //Akhir Unggah Video
 
+const galeriButton = document.querySelectorAll(".galeriButton");
 
+galeriButton.forEach(o => {
+    o.addEventListener("click", () => {
+        galeriButton.forEach(p => {
+            p.classList.remove('text-white');
+            p.classList.remove('bg-secondary');
+            if(!p.classList.contains('text-secondary', 'bg-white')){
+                p.classList.add('text-secondary');
+                p.classList.add('bg-white');
+            }
+        });
+        o.classList.remove('text-secondary');
+        o.classList.remove('bg-white');
+        o.classList.add('text-white');
+        o.classList.add('bg-secondary');
+        getList(o.innerHTML);
+    })
+})
