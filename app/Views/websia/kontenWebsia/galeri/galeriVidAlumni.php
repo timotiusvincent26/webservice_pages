@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<!-- Awal fitur unggah foto galeri -->
+<!-- Awal fitur unggah Video galeri -->
 <div class="flex flex-col-reverse md:grid md:grid-cols-4 lg:grid-cols-5 md:gap-4">
     <div class="md:col-span-2 lg:col-span-3">
         <div class="flex flex-col mb-10 mx-6 md:m-10 text-center md:text-left">
@@ -82,7 +82,7 @@
             <div class="my-4 lg:mr-18 md:my-5 font-paragraph italic text-base lg:text-xl">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci sed fuga, earum fugit reiciendis repellendus maxime at quia dolore similique cupiditate inventore accusantium autem exercitationem ratione, natus minus fugiat?"
             </div>
-            <button class="lg:mr-24 p-1 rounded-3xl text-base lg:text-xl bg-secondary border-2 border-secondary text-white hover:bg-white hover:border-2 hover:border-secondary hover:text-secondary transition-colors duration-300 font-paragraph">UNGGAH KENANGANMU</button>
+            <button class="unggahVideo focus:outline-none p-1 rounded-3xl text-base lg:text-xl bg-secondary border-2 border-secondary text-white hover:bg-white hover:border-2 hover:border-secondary hover:text-secondary transition-colors duration-300 font-paragraph text-base lg:text-xl">UNGGAH VIDEO KENANGANMU</button>
         </div>
     </div>
     <div class="md:col-span-2 lg:col-span-2">
@@ -92,7 +92,10 @@
     </div>
 </div>
 </div>
-<!-- Akhir fitur unggah foto galeri -->
+<!-- Akhir fitur unggah Video  -->
+
+<!-- Catatan : Apabila sukses mengunggah video dapat maka dapat memanggil fungsi js => suksesUnggahVideo ()  -->
+
 <!-- Akhir Galeri Alumni -->
 
 <?= $this->endSection(); ?>

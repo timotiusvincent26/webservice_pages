@@ -94,5 +94,10 @@
 </div>
 </div>
 <!-- Akhir fitur unggah foto galeri -->
+
+<!-- Catatan : Apabila sukses mengunggah foto dapat maka dapat memanggil fungsi js => suksesUnggahFoto ()  -->
+<!-- Catatan : Apabila sukses laporkan foto dapat maka dapat memanggil fungsi js => suksesLaporkanFoto ()  -->
+
+
 <!-- Akhir Galeri Alumni -->
 <?= $this->endSection(); ?>
