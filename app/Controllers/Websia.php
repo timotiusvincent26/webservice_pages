@@ -138,6 +138,8 @@ class Websia extends BaseController
     {
         $data['judulHalaman'] = 'Edit Profil';
         $data['login'] = 'sudah';
-        return view('cobaWebsia/map', $data);
+        $data['active'] = '';
+
+        return view('websia/kontenWebsia/searchAndFilter/semuaBerita', $data);
     }
 }

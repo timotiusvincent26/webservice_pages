@@ -1,10 +1,22 @@
 // awal sidebar
 
+$(window).scroll(function (event) {
+    $('.navbar').removeClass('invisible')
+})
+
+var tampung = $('.marginSidebar').width();
 $('.hamburgerSidebar').click(function(){
     $('.param1').toggleClass('hidden');
     $('.param2').toggleClass('hidden');
     $('.sidebarSearch').toggleClass('w-10/12 md:w-auto');
+    if (screen.width>=768) {
+        $('.marginSidebar').width($('.sidebarSearch').width());
+    }
 })
+
+$(window).resize(function () {
+    $('.marginSidebar').width(tampung);
+});
 
 const filterSidebar = document.querySelectorAll(".filterSidebar");
 
@@ -63,20 +75,20 @@ $('.inputKerja svg').click(function(){
 
 function getList(param){
     
-    if(param == 'Semua'){
-        $('.listFilterSidebarAlumni').addClass('hidden');
-        $('.listFilterSidebarBerita').addClass('hidden');
-    }
+    // if(param == 'Semua'){
+    //     $('.listFilterSidebarAlumni').addClass('hidden');
+    //     $('.listFilterSidebarBerita').addClass('hidden');
+    // }
 
-    if(param == 'Alumni'){
-        $('.listFilterSidebarAlumni').removeClass('hidden');
-        $('.listFilterSidebarBerita').addClass('hidden');
-    }
+    // if(param == 'Alumni'){
+    //     $('.listFilterSidebarAlumni').removeClass('hidden');
+    //     $('.listFilterSidebarBerita').addClass('hidden');
+    // }
     
-    if(param == 'Artikel/Berita'){
-        $('.listFilterSidebarBerita').removeClass('hidden');
-        $('.listFilterSidebarAlumni').addClass('hidden');
-    }
+    // if(param == 'Artikel/Berita'){
+    //     $('.listFilterSidebarBerita').removeClass('hidden');
+    //     $('.listFilterSidebarAlumni').addClass('hidden');
+    // }
 
     if(param == 'Prodi'){
         $('.listProdi').toggleClass('hidden');

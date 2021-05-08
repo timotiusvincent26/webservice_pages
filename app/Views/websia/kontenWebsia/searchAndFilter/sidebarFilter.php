@@ -1,4 +1,4 @@
-<div class="md:relative fixed flex flex-col bg-primary rounded-r md:h-auto h-full sidebarSearch  ">
+<div class="fixed flex flex-col bg-primary rounded-r h-screen sidebarSearch">
 
     <div class="flex md:px-5 px-2 py-2 justify-between bg-primaryHover items-center ">
         <div class="md:text-2xl text-base font-heading font-semibold text-secondary hidden md:mr-32 param1"> FILTER</div>
@@ -10,13 +10,18 @@
     <div class="flex flex-col mt-4 hidden param2">
 
         <!-- Awal tombol filter "Semua" -->
-        <div class="md:text-base text-sm text-secondary hover:bg-primaryDark font-heading font-medium px-4 py-1 cursor-pointer filterSidebar">Semua</div>
+        <a href="">
+            <div class="md:text-base text-sm text-secondary hover:bg-primaryDark font-heading font-medium px-4 py-1 cursor-pointer filterSidebar">Semua</div>
+        </a>
         <!-- Akhir tombol filter "Semua" -->
 
         <!-- Awal filter "Alumni" -->
-        <div class="md:text-base text-sm  text-white hover:bg-primaryDark font-heading font-medium px-4 py-1 cursor-pointer filterSidebar">Alumni</div>
+        <!-- Catatan : kalo di halaman semuaAlumni masukkan css "hidden" di div yang ada class "listFilterSidebarBerita" -->
+        <a href="">
+            <div class="md:text-base text-sm  text-white hover:bg-primaryDark font-heading font-medium px-4 py-1 cursor-pointer filterSidebar">Alumni</div>
+        </a>
 
-        <div class="flex flex-col py-1 px-6 w-full hidden listFilterSidebarAlumni">
+        <div class="flex flex-col py-1 px-6 w-full listFilterSidebarAlumni">
 
             <!-- Awal Filter "Prodi" Untuk Alumni  -->
             <div class="flex flex-col">
@@ -33,6 +38,7 @@
                 <!-- Awal List Filter "Prodi" Untuk Alumni  -->
                 <div class="flex flex-col font-paragraph mb-1 px-3 hidden listProdi">
 
+                    <!-- awal DI Statistik  -->
                     <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DI Statistika</div>
 
@@ -46,7 +52,9 @@
 
                         <input type="checkbox" checked="true" class="hidden" id="DTigaStatistik">
                     </div>
+                    <!-- akhir DI Statistik  -->
 
+                    <!-- awal DIII Statistik  -->
                     <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DIII Statistika</div>
 
@@ -60,7 +68,9 @@
 
                         <input type="checkbox" checked="true" class="hidden" id="DTigaStatistik">
                     </div>
+                    <!-- akhir DIII Statistik  -->
 
+                    <!-- awal DIV Statistik  -->
                     <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DIV Statistika</div>
 
@@ -74,7 +84,9 @@
 
                         <input type="checkbox" checked="true" class="hidden" id="DEmpatStatistik">
                     </div>
+                    <!-- akhir DIV Statistik  -->
 
+                    <!-- awal DIV Komputasi Statistik  -->
                     <div class="flex items-center justify-between text-white cursor-pointer mb-1 py-1 px-1 hover:bg-primaryDark rounded-lg namaProdi">
                         <div class="text-xs w-full">DIV Komputasi Statistik</div>
 
@@ -88,6 +100,8 @@
 
                         <input type="checkbox" checked="true" class="hidden" id="DTigaKomputasi">
                     </div>
+                    <!-- akhir DIV Komputasi Statistik Statistik  -->
+
                 </div>
                 <!-- Akhir List Filter "Prodi" Untuk Alumni  -->
 
@@ -149,10 +163,14 @@
         </div>
         <!-- Akhir filter "Alumni" -->
 
-        <!-- Awal filter "Berita" -->
-        <div class="md:text-base text-sm text-white hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer filterSidebar">Artikel/Berita</div>
 
-        <div class="flex flex-col py-1 px-7 w-full hidden listFilterSidebarBerita">
+        <!-- Awal filter "Berita" -->
+        <!-- Catatan : kalo di halaman semuaBerita masukkan css "hidden" di div yang ada class "listFilterSidebarAlumni" -->
+        <a href="">
+            <div class="md:text-base text-sm text-white hover:bg-primaryDark font-medium px-4 py-1 cursor-pointer filterSidebar">Artikel/Berita</div>
+        </a>
+
+        <div class="flex flex-col py-1 px-7 w-full listFilterSidebarBerita">
 
             <div class="flex flex-col">
                 <div class="flex justify-between mb-1 hover:bg-primaryDark py-1 px-2 rounded-lg cursor-pointer listSidebar">
